@@ -1,0 +1,41 @@
+.header{
+    width: 100%;
+    box-shadow: 0 2px 0 #222628;
+    position: fixed;
+    top: 0px;
+}
+.Navbar{
+    width:1200px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+    height: 142px;
+}
+.logoBlock{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.navSections{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 0px;
+}
+.link{
+    text-decoration: none;
+    color: #222628;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Space Grotesk';
+
+}
+@media screen and (min-width: 1600px){
+    .header{
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
