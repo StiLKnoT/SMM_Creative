@@ -1,0 +1,30 @@
+.TabPanelButtons{
+    flex-direction: column !important;
+}
+.css-heg063-MuiTabs-flexContainer{
+    flex-direction: column !important;
+}
+.css-8atqhb{
+    display: flex;
+    justify-content: space-between !important;
+    width: 75% !important;
+    margin: 0px 200px !important;
+}
+/* .css-19kzrtu{} */
+.TabValue{
+    width: 790px;
+    height: auto;
+    background: #FFFFFF;
+}
+.TabButtons{
+    border: 2px solid #222628;
+
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+    border: 2px solid #222628 !important;
+    background-color: #FFFFFF !important;
+    width: 380px !important;
+    height: 90px !important;
+    margin-bottom: 20px !important;
+
+}

@@ -1,3 +1,6 @@
+.firstMain{
+    background-color: #F5F5F5;
+}
 .CreativeBlock{
     display: flex;
     margin-top: 142px;
@@ -28,23 +31,199 @@
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 140%;
+    font-size: 26px;
+    /* line-height: 140%; */
     text-transform: uppercase;
 }
 .line{
     width: 2px;
-    color: black;
-    background-color: black;
+    color: #222628;
+    background-color: #222628;
     height: 100%;
     margin-top: 0px;
 }
+.mainImg{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.MainUO{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.AsosiySpiker{
+    position: absolute;
+    bottom: 8%;
+    left: 15%;
+    font-family: 'Monument Extended';
+    font-style: normal;
+    background: none;
+    font-weight: 800;
+    font-size: 32px;
+    color: #FFFFFF;
+    line-height: 120%;
+}
+.UmidjonOrtiqov{
+    background: none;
+}
+.Wheel{
+    width: 100%;
+    background-color: #222628;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.WheelLine{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #222628;
+}
+.WheelText{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 10px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #222628;
+}
+.sunSVG{
+    width: 20px;
+    height: 20px;
+}
+.Wheel svg path{
+    font-size: 16px;
+    background-color: #222628;
+}
+.AfterCourse{
+    margin-top: 120px;
+}
+.hrLine{
+    height: 2px;
+    background: #222628;
+}
+.h2Text{
+    font-size: 32px;
+    font-weight: 800;
+    margin-left: 200px;
+    line-height: 38px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #222628;
+}
+.FirstLines{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 120px;
+}
+.LineBLock{
+    width: 33%;
+}
+.LinesText{
+    width: 80%;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+.LineNumber{
+    display: flex;
+    align-items: center;
+}
+.zeroNumber{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 85%;
+    }
+
+.hrBlocks{
+    width: 70%;
+    height: 2px;
+    color: #FFD100;;
+    background-color: #FFD100;;
+}
+.LinesBlocks{
+    width: 90%;
+    margin: 50px auto 0;
+}
+
 
 @media screen and (min-width: 1600px) {
     .firstMain{
         max-width: 1600px;
         margin: 0 auto;
         background-color: #F5F5F5;
+    }
+    
+}
+@media screen and (max-width: 1200px) {
+    .mainImg{
+        width: 100%;
+    }
+    .CreativeBlock{
+        width: 100%;
+    }
+    .Wheel{
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 800px) {
+    .smmCreative{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 34px;
+        line-height: 110%;
+        padding-left: 100px;
+    }
+    .textCreative{
+        padding-right: 100px;
+    }
+    .CreativeBlock{
+        width: 100%;
+        margin: 80px auto 0;
+        height: 180px;
+    }
+    .h2Text {
+        margin-left: 100px;
+        font-family: 'Monument Extended';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .smmText{
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 140%;
+    }
+    .AsosiySpiker{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .AfterCourse{
+        margin-top: 100px;
+    }
+    .WheelText{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        margin-right: 20px;
+    }
+   
+    
+}
+@media screen and (max-width:576px) {
+    .CreativeBlock {
+        margin-top: 80px;
+        flex-direction: column !important;
     }
     
 }

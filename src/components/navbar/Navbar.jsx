@@ -9,7 +9,7 @@ function Navbar() {
         <ul className="navSections">
         <div className="logoBlock">
           <div>
-            <img src={logo}/>
+            <img className="logoIcon" src={logo}/>
           </div>
         </div>
           <li>
