@@ -9,6 +9,7 @@ import Wheel from './Wheel/Wheel'
 import ColorBlock from './ColorBlock/ColorBlock'
 import ShadowButton from '../atom/buttons/ShadowButton'
 import KursCarousel from './KursCarousel/KursCarousel'
+import ForWho from './ForWho/ForWho'
 
 function First() {
  
@@ -72,6 +73,7 @@ function First() {
             </div>
           </div>
         </div>
+        <ForWho/>
         <ColorBlock/>
         
         <TabPanel/>
