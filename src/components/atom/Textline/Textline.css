@@ -1,0 +1,13 @@
+.hrLine{
+    height: 2px;
+    background: #222628;
+}
+.h2Text{
+    font-size: 32px;
+    font-weight: 800;
+    margin-left: 200px;
+    line-height: 38px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #222628;
+}

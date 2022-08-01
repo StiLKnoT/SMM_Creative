@@ -1,18 +1,21 @@
 .TabPanelButtons{
     flex-direction: column !important;
 }
-.css-heg063-MuiTabs-flexContainer{
-    flex-direction: column !important;
-}
+
 .css-8atqhb{
-    display: flex;
     justify-content: space-between !important;
-    width: 75% !important;
-    margin: 0px 200px !important;
+    /* width: 75% !important;
+    margin: 0px 200px !important; */
 }
-/* .css-19kzrtu{} */
+.css-19kzrtu{
+    width: 100% !important;
+    background: #F5F5F5;
+    padding: 0px !important;
+}
+.css-1aquho2-MuiTabs-indicator{
+    display: none;
+}
 .TabValue{
-    width: 790px;
     height: auto;
     background: #FFFFFF;
 }
@@ -20,11 +23,85 @@
     border: 2px solid #222628;
 
 }
+.css-heg063-MuiTabs-flexContainer, .SpikerBlock{
+    width: 75% !important;
+    margin: 0 200px !important;
+}
+.SpikerBlock{
+    margin: 50px 200px !important;
+}
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
     border: 2px solid #222628 !important;
     background-color: #FFFFFF !important;
-    width: 380px !important;
     height: 90px !important;
     margin-bottom: 20px !important;
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 800 !important;
+    font-size: 20px !important;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222628 !important;
+    width: 380px !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected{
+    background-color: #FFD100 !important;
+    color: #222628 !important;
+    font-size: 20px;
+    
+}
+.TabButtons2{
+    margin-left: 30px !important;
+}
+.SpikerBlock{
+    display: flex;
+    justify-content: space-between;
+}
+.SpikerName{
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #000000;
 
+}
+.SpikerBio{
+    margin-left: 30px !important;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.SpikerAbout{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #222628;
+}
+.ConnectIcons{
+    width: 39px;
+    height: 39px;
+    background-color: #F5F5F5;
+    border: 1px solid black !important;
+    -webkit-box-shadow: 25px 25px 0px -9px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 25px 25px 0px -9px rgba(0, 0, 0, 1);
+    box-shadow: 6px 6px 0px 0px rgb(0 0 0);
+    margin-bottom: 12px;
+}
+.connectLink{
+    height: 20px;
+}
+.SpikerConnect{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.ConnectIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

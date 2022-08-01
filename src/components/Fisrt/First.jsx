@@ -4,6 +4,7 @@ import Navbar from '../navbar/Navbar'
 import './First.css'
 import MainUO from '../../assets/images/mainUO.png'
 import sunIcon from '../../assets/images/sun.png'
+import Textline from '../atom/Textline/Textline'
 
 
 function First() {
@@ -88,9 +89,7 @@ function First() {
         </div>
 
         <div className="AfterCourse">
-          <hr className='hrLine' />
-            <h2 className='h2Text'>Kurs so‘ngida nimalarga ega bo‘lasiz?</h2>
-          <hr className='hrLine'/>
+         <Textline/>
 
           <div className='LinesBlocks'>
             <div className='FirstLines'>

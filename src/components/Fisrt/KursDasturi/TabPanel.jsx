@@ -5,6 +5,12 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import './TabPanel.css'
+import MainSpiker from '../../../assets/images/MainSpiker.png'
+import Spiker2 from '../../../assets/images/Spiker2.png'
+import Spiker3 from '../../../assets/images/Spiker3.png'
+import {ReactComponent as InstaIcon} from '../../../assets/images/InstaIcon.svg'
+import {ReactComponent as TelegramIcon} from '../../../assets/images/TelegramIcon.svg'
+import {ReactComponent as YouTubeIcon} from '../../../assets/images/YouTubeIcon.svg'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -25,6 +31,41 @@ function TabPanel(props) {
     </div>
   );
 }
+const Spikers = [
+  {'name': 'Umidjon',
+  'surname': 'Ortiqov',
+  'img': MainSpiker,
+  'about': 'Qwerty Aljafr academy asoschisi, ijtimoiy tarmoqlar bo‘yicha ekspert, biznesmen',
+  'insta':"https://active-vision.ru/icon/box-shadow/",
+  "telegram":"",
+  "youtube":"",
+  },
+  {'name': 'Akmal',
+  'surname': 'Rahmonov',
+  'img': Spiker2,
+  'about': 'Najot Ta’lim markazi mentori,marketing sohasida 3 + yillik tajribaga ega, tajribali marketolog, targetolog',
+  'insta':"https://active-vision.ru/icon/box-shadow/",
+  "telegram":"",
+  "youtube":"",
+  },
+  {'name': 'Islom',
+  'surname': 'JALOLOV',
+  'img': Spiker3,
+  'about': 'Asiaconsalt, At-tabib, Kolibri education va boshqa ko‘plab brendlar bilan muvaffaqiyatli faoliyat olib borgan, tajribali SMM menejer ',
+  'insta':"https://active-vision.ru/icon/box-shadow/",
+  "telegram":"",
+  "youtube":"",
+  }
+]
+const Ghost = [
+  {'name': 'Umidjon',
+  'surname': 'Ortiqov',
+  'img': MainSpiker,
+  'about': 'Qwerty Aljafr academy asoschisi, ijtimoiy tarmoqlar bo‘yicha ekspert, biznesmen',
+  'insta':"https://active-vision.ru/icon/box-shadow/",
+  "telegram":"",
+  "youtube":"",}
+]
 
 TabPanel.propTypes = {
   children: PropTypes.node,
@@ -48,34 +89,37 @@ export default function BasicTabs() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+      <Box sx={{  }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" className='TabPanelButtons'>
-          <Tab label="1 - modul" {...a11yProps(0)} className="TabButtons"/>
-          <Tab label="2 - modul" {...a11yProps(1)} className="TabButtons"/>
-          <Tab label="3 - modul" {...a11yProps(2)} className="TabButtons"/>
-          <Tab label="Bonus darslar" {...a11yProps(3)} className="TabButtons"/>
+          <Tab label="Spikerlar" {...a11yProps(0)} className="TabButtons"/>
+          <Tab label="Mehmon spikerlar" {...a11yProps(1)} className="TabButtons TabButtons2"/>
+          
         </Tabs>
       </Box>
       <TabPanel value={value} index={0} className="TabValue">
-        01 — Kursdan qanday  to‘g‘ri foydalanish va natijaga chiqish usullari<br/>
-        02 — SMM bu nima va SMM mutaxassisi bu kim ?<br/>
-        03 — SMM mutaxassisi terminlari va qo‘llash joylari<br/>
-        04 — Maqasadli auditoriya hamda mijoz portreti <br/>
-        05 — UTP, offer va trigger. Bular qanday tushunchalar ? <br/>
-        06 — Sotuv varonkasi va mijozga yo‘l<br/>
-        07 — Raqobatchilarni analiz qilish <br/>
-        08 — SWOT analiz<br/>
-        09 — Texnik topshiriqlar va deadline<br/>
-        10 — Grafik dizaynerlarga tz yozish va Imtihon 
+        {Spikers.map(({name, surname, about, img, telegram, insta, youtube}, index) =>{
+          return(
+            // <hr className='hrLine'/>
+            <div className='SpikerBlock'>
+              <div className='SpikerImg'><img src={img}/></div>
+              <div className='SpikerBio'>
+                <div className='SpikerName'>{name}<br/>{surname}</div>
+                <div className='SpikerAbout'>{about}</div>
+                <div className='SpikerConnect'>
+                  <div className='ConnectIcons'><a target="_blank" className='connectLink' href={insta}><InstaIcon className='connectIcons'/></a></div>
+                  <div className='ConnectIcons'><a target="_blank" className='connectLink' href={telegram}><TelegramIcon className='connectIcons'/></a></div>
+                  <div className='ConnectIcons'><a target="_blank" className='connectLink' href={youtube}><YouTubeIcon className='connectIcons'/></a></div>
+                </div>
+              </div>
+            </div>
+            // <hr className='hrLine'/>
+          )
+        })}
+          {/* // })} */}
+     
       </TabPanel>
       <TabPanel value={value} index={1} className="TabValue">
         Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2} className="TabValue">
-        Item Three
-      </TabPanel>
-      <TabPanel value={value} index={3} className="TabValue">
-        Item Threes
       </TabPanel>
     </Box>
   );
