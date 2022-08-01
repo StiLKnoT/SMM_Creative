@@ -7,10 +7,10 @@ import Col from "react-bootstrap/Col";
 import { Avatar } from "@mui/material";
 import Card from '@mui/material/Card';
 import Row from "react-bootstrap/Row";
-import Image from 'react-bootstrap/Image';
+// import Image from 'react-bootstrap/Image';
 import Carousel from "react-multi-carousel";
-import Container from "react-bootstrap/Container";
-import Typography from '@mui/material/Typography';
+// import Container from "react-bootstrap/Container";
+// import Typography from '@mui/material/Typography';
 import MuiAccordion from "@mui/material/Accordion";
 import CardContent from '@mui/material/CardContent';
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
@@ -181,12 +181,12 @@ const Second = () => {
     return { title, answer }
   }
   const carouselAccor = [
-    createAccordion('DARSLAR QANDAY OLIB BORILADI ?', 'Darslarimiz online holatda, maxsus platforma orqali olib boriladi. Sizga ushbu platformaga kirish uchun ruxsat beriladi. Siz belgilangan vaqt davomida darslarni ko‘rishingiz va takrorlashingiz mumkin'),
-    createAccordion('DARSLAR QANDAY OLIB BORILADI ?', 'afshon_official'),
-    createAccordion('TARIFNI KEYINCHALIK ALMASHTIRISH MUMKINMI ?', 'afshon_official'),
-    createAccordion('BO‘LIB TO‘LASH IMKONIYATI MAVJUDMI ?', 'afshon_official'),
-    createAccordion('DARSLAR YOZIB OLINADIMI ?', 'afshon_official'),
-    createAccordion('DARSLARNI QANCHA VAQT DAVOMIDA KO‘RISH MUMKIN ?', 'afshon_official'),
+    createAccordion('DARSLAR QANDAY OLIB BORILADI ?', 'Darslarimiz online holatda, maxsus yopiq guruh orqali olib boriladi. Sizga ushbu guruhga kirish uchun ruxsat beriladi. Siz belgilangan vaqt davomida darslarni ko‘rishingiz va takrorlashingiz mumkin'),
+    createAccordion("DARSLARNI KIM O'TADI ?", " Asosiy darsni Umidjon Ortiqov o'tadi va SMM sohasiga oid mehmon spikerlar o'tadi  "),
+    createAccordion('TARIFNI KEYINCHALIK ALMASHTIRISH MUMKINMI ?', "Darslar  boshlanganidan so'ng 5 kun ichida almashtirishingiz mumkin. "),
+    createAccordion('BO‘LIB TO‘LASH IMKONIYATI MAVJUDMI ?', " Albatta, kursning 50% qismini oldindan to'lab qolgan qismini 1 oy muddat ichida to'lashingiz mumkin  "),
+    createAccordion('DARSLAR YOZIB OLINADIMI ?', " Darslarga maxsus yopiq guruhda ruxsat beriladi.  "),
+    createAccordion('DARSLARNI QANCHA VAQT DAVOMIDA KO‘RISH MUMKIN ?', "Darslardan 2 oy ichida foydalanishingiz mumkin. "),
   ]
 
 
@@ -209,16 +209,7 @@ const Second = () => {
       items: 1
     }
   };
-
-  function scrollL(params) {
-    window.scroll({
-      top: 100,
-      left: 100,
-      behavior: 'smooth'
-    });
-  }
-
-
+ 
   // Modal
   const [lgShow1, setLgShow1] = useState(false);
   const [lgShow2, setLgShow2] = useState(false);
@@ -375,7 +366,7 @@ const Second = () => {
       <div className="titleBox">
         <h4 className="titleBox__item">Ko'p Beriladigan savollar</h4>
       </div>
-      <div className="box carouselContainer">
+      <div className="box carouselContainer ">
         {
           carouselAccor.map((elem, i) => {
             return (
@@ -399,9 +390,7 @@ const Second = () => {
       </div>
 
       {/* Tariflar section */}
-
-      <>
-
+ 
         <section className="planChange">
           <Row>
 
@@ -501,12 +490,6 @@ const Second = () => {
 
           </Row>
         </section>
-
-
-      </>
-
-
-
 
     </main>
   );
