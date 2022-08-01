@@ -1,23 +1,91 @@
-import React from "react";
-import "./Second.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
+import React, { useState } from "react";
+import { Input, Link } from "@mui/material";
+import { styled } from "@mui/material/styles";
+// Components
+import Box from '@mui/material/Box';
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
+import { Avatar } from "@mui/material";
+import Card from '@mui/material/Card';
+import Row from "react-bootstrap/Row";
+import Image from 'react-bootstrap/Image';
+import Carousel from "react-multi-carousel";
+import Container from "react-bootstrap/Container";
+import Typography from '@mui/material/Typography';
+import MuiAccordion from "@mui/material/Accordion";
+import CardContent from '@mui/material/CardContent';
+import MuiAccordionDetails from "@mui/material/AccordionDetails";
+import MuiAccordionSummary from "@mui/material/AccordionSummary";
 
-// Assets
+
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
+
+
+// Styles
+import "./Second.css";
+import './components/CarouselCard.css'
+import './components/CarouselCards.css'
+import './components/Accordion.css'
+import "react-multi-carousel/lib/styles.css";
+
+// Images
 import umidjon from "../../assets/keyslar/umidjon.png";
 import ilxom from "../../assets/keyslar/ilxom.png";
 import jamila from "../../assets/keyslar/jamila.png";
 import tabib from "../../assets/keyslar/tabib.png";
-import { IoLogoInstagram } from "react-icons/io5";
+
+// Icons
 import instagramLogo from "../../assets/icons/instagram.png";
+import instaIcon from "../../assets/icons/instaIconsm.png";
 import TikTokLogo from "../../assets/icons/tiktok.png";
 import YouTubeLogo from "../../assets/icons/youtube.png";
-
 import { FaArrowRight } from "react-icons/fa";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+
+const Accordion = styled((props) => (
+  <MuiAccordion disableGutters elevation={0} square {...props} />
+))(({ theme }) => ({
+  border: `1px solid ${theme.palette.divider}`,
+  "&:not(:last-child)": {
+    borderBottom: 0,
+  },
+  "&:before": {
+    display: "none",
+  },
+}));
+
+const AccordionSummary = styled((props) => (
+  <MuiAccordionSummary
+    expandIcon={<ExpandMoreIcon sx={{ fontSize: "0.9rem" }} />}
+    {...props}
+  />
+))(({ theme }) => ({
+  backgroundColor:
+    theme.palette.mode === "dark"
+      ? "rgba(255, 255, 255, .05)"
+      : "rgba(0, 0, 0, .03)",
+  flexDirection: "row-reverse",
+  "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+    transform: "rotate(90deg)",
+    fill: "#28468C"
+  },
+  "& .MuiAccordionSummary-content": {
+    marginLeft: theme.spacing(1),
+  },
+}));
+
+const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+  padding: theme.spacing(2),
+  borderTop: "1px solid rgba(0, 0, 0, .125)",
+}));
+
+
 
 const Second = () => {
+
+  // Data for KeysBox
   const createData = (
     bannerImg,
     Name,
@@ -88,13 +156,85 @@ const Second = () => {
       "https://www.youtube.com/c/UmidjonOrtiqov"
     ),
   ];
+  // Data for Carousel
+  const createCarousel = (img, name, nickname, text) => {
+    return { img, name, nickname, text }
+  }
+  const carouselRows = [
+    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Siz insonga katta motivatsiya berasiz va o‘z yo‘lini ko‘rsatasiz. Shuning uchun sizga ishonamiz'),
+    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Ummatga foyda keltirib kelayotganingiz uchun, Allohni eslatib halol ish qilyotganingiz uchun'),
+    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad'),
+    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+  ]
+
+  // Data for Accordion
+  const [expanded, setExpanded] = React.useState(`panel0`);
+
+  const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded ? panel : false);
+  };
+
+  const createAccordion = (title, answer) => {
+    return { title, answer }
+  }
+  const carouselAccor = [
+    createAccordion('DARSLAR QANDAY OLIB BORILADI ?', 'Darslarimiz online holatda, maxsus platforma orqali olib boriladi. Sizga ushbu platformaga kirish uchun ruxsat beriladi. Siz belgilangan vaqt davomida darslarni ko‘rishingiz va takrorlashingiz mumkin'),
+    createAccordion('DARSLAR QANDAY OLIB BORILADI ?', 'afshon_official'),
+    createAccordion('TARIFNI KEYINCHALIK ALMASHTIRISH MUMKINMI ?', 'afshon_official'),
+    createAccordion('BO‘LIB TO‘LASH IMKONIYATI MAVJUDMI ?', 'afshon_official'),
+    createAccordion('DARSLAR YOZIB OLINADIMI ?', 'afshon_official'),
+    createAccordion('DARSLARNI QANCHA VAQT DAVOMIDA KO‘RISH MUMKIN ?', 'afshon_official'),
+  ]
+
+
+  // Carousel responsive settings
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 947 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 768 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 768, min: 0 },
+      items: 1
+    }
+  };
+
+  function scrollL(params) {
+    window.scroll({
+      top: 100,
+      left: 100,
+      behavior: 'smooth'
+    });
+  }
+
+
+  // Modal
+  const [lgShow1, setLgShow1] = useState(false);
+  const [lgShow2, setLgShow2] = useState(false);
+  const [lgShow3, setLgShow3] = useState(false);
+
+
+
 
   return (
+
     <main className="keyBox">
+
+      {/* Keys Section */}
+
       <div className="titleBox">
         <h4 className="titleBox__item">BIZNING keyslar</h4>
       </div>
-      {/* <main className="container"> */}
       <div className="box">
         <div className="container">
           {rows.map((el, i) => {
@@ -120,7 +260,6 @@ const Second = () => {
                 <Row className="greenCards">
                   <Col xl={4} lg={4} md={4} sm={12} className=" greenCardCol ">
                     <div className="greenCard">
-                      Pp
                       <div className="innerGreenCard">
                         <div className="innerGreenCardLeft">
                           <img src={instagramLogo} alt={el.Name} />
@@ -180,17 +319,191 @@ const Second = () => {
         </div>
       </div>
 
+      {/* Carousel setcion */}
       <div className="titleBox">
         <h4 className="titleBox__item">NEGA bizni tanlashdi</h4>
       </div>
+      <section className=" box carouselContainer " >
+
+        <Carousel responsive={responsive} id="carCardsBot">
+          {
+            carouselRows.map((el, i) => {
+              return (
+                <>
+
+                  <div className='KarouselMainCard' key={i} >
+                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
+                      <Card className='Karousel__card' variant="outlined">
+                        <>
+                          <CardContent>
+                            <div className="upperBlock">
+                              <Avatar className="upperAvatar" alt={el.name} src={el.img} />
+                              <div className="upperBlockText">
+                                <div>
+                                  <h5 className="Karousel__cardTitle" >
+                                    {el.name}
+                                  </h5>
+                                </div>
+                                <div className="Karousel__cardContent" >
+                                  <img src={instaIcon} alt={el.Name} className="upperIcon" />
+                                  <span className="upperDblTxt" >{el.nickname}</span>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div className="underBlock">
+                              <h5> {el.text} </h5>
+                            </div>
+                          </CardContent>
+                        </>
+                      </Card>
+                    </Box>
+                  </div>
+                </>
 
 
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+              )
+            })
+          }
+        </Carousel>
 
-      .carouselbox
+      </section>
+
+      {/* FAQs Section */}
+
+      <div className="titleBox">
+        <h4 className="titleBox__item">Ko'p Beriladigan savollar</h4>
+      </div>
+      <div className="box carouselContainer">
+        {
+          carouselAccor.map((elem, i) => {
+            return (
+              <Accordion className="KouchAccor__accordion" expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)} >
+                <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
+                  <div>
+                    <h5 className="accordion_title">
+                      {elem.title}
+                    </h5>
+                  </div>
+                </AccordionSummary>
+                <AccordionDetails className="accordionInner">
+                  <div className="innerAcc_text">
+                    {elem.answer}
+                  </div>
+                </AccordionDetails>
+              </Accordion>
+            )
+          })
+        }
+      </div>
+
+      {/* Tariflar section */}
+
+      <>
+
+        <section className="planChange">
+          <Row>
+
+            <Col xl={4} lg={4} md={4} sm={4}>
+              <div className="boxTarif" >
+
+                <>
+                  <Button onClick={() => setLgShow1(true)}>Kursga yozilish</Button>
+                  <Modal
+                    size="lg"
+                    className="payBox"
+                    show={lgShow1}
+                    onHide={() => setLgShow1(false)}
+                    aria-labelledby="modal1"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="modal1">
+                        SMM CREATIVE 2.0 kursiga yozilish
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <form>
+                        <input type="text" placeholder="Name" required />
+                        <br />
+                        <input type="number" placeholder="Name" required />
+                        <button  > Ro'yxatdan o'tish </button>
+                      </form>
+                    </Modal.Body>
+                  </Modal>
+                </>
+              </div>
+            </Col>
+
+            <Col xl={4} lg={4} md={4} sm={4}>
+
+              <div className="boxTarif" >
+
+                <>
+                  <Button onClick={() => setLgShow2(true)}>Kursga yozilish</Button>
+                  <Modal
+                    size="lg"
+                    className="payBox"
+                    show={lgShow2}
+                    onHide={() => setLgShow2(false)}
+                    aria-labelledby="modal2"
+                  >
+
+                    <Modal.Header closeButton>
+                      <Modal.Title id="modal2">
+                        SMM CREATIVE 2.0 kursiga yozilish
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <form>
+                        <input type="text" placeholder="Name" required />
+                        <br />
+                        <input type="number" placeholder="Name" required />
+                        <button> Ro'yxatdan o'tish </button>
+                      </form>
+                    </Modal.Body>
+                  </Modal>
+                </>
+              </div>
+            </Col>
+
+            <Col xl={4} lg={4} md={4} sm={4}>
+
+              <div className="boxTarif" >
+
+                <>
+                  <Button onClick={() => setLgShow3(true)}>Kursga yozilish</Button>
+                  <Modal
+                    size="lg"
+                    className="payBox"
+                    show={lgShow3}
+                    onHide={() => setLgShow3(false)}
+                    aria-labelledby="modal3"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="modal3">
+                        SMM CREATIVE 2.0 kursiga yozilish
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      <form>
+                        <input type="text" placeholder="Name" required />
+                        <br />
+                        <input type="number" placeholder="Name" required />
+                        <button> Ro'yxatdan o'tish </button>
+                      </form>
+                    </Modal.Body>
+                  </Modal>
+                </>
+              </div>
+            </Col>
+
+          </Row>
+        </section>
+
+
+      </>
+
+
 
 
     </main>
