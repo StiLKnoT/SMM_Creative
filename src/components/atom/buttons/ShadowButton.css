@@ -26,6 +26,9 @@
 }
 
 @media screen and (max-width: 576px) {
+    .ShadowBtn{
+        margin: 0 auto !important;
+    }
     /* .InBtn{
         width: 360px;
         height: 78px;

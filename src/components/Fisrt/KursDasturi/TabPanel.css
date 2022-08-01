@@ -131,6 +131,31 @@
     }
     
 }
+@media screen and (max-width: 947px) {
+    .SpikerImg img{
+        width: 390px;
+        height: 100%;
+    }
+    .TabButtons{
+        width: 180px !important;
+        padding: 0px !important;
+    }
+    .SpikerImg{
+        width: 390px;
+        height: 138px;
+    }
+    .SpikerName{
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .SpikerAbout{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+}
 @media screen and (max-width: 576px) {
     .SpikerBlock{
         display: flex;

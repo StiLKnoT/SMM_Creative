@@ -40,6 +40,13 @@
     padding-bottom: 80px !important;
     border-bottom: 2px solid #222628;
 }
+@media screen and (max-width: 947px) {
+    #ModulMainCard{
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+    
+}
 @media screen and (max-width: 576px) {
     #ModulCard{
         width: 100% !important;

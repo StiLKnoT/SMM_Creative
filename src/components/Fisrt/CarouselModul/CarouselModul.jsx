@@ -8,16 +8,21 @@ import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
 import './CarouselModul.css'
 
-const createCarousel = (modul, name, nickname, text, text2,  text3, text4, text5, text6) => {
-    return { modul, name, nickname, text, text2, text3, text4, text5, text6 }
+const createCarousel = (modul, name, nickname, text, text2,  text3, text4, text5, text6, text7, text8, text9, text10, text11) => {
+    return { modul, name, nickname, text, text2, text3, text4, text5, text6, text7, text8, text9, text10, text11 }
   }
   const carouselRows = [
-    createCarousel( '1 - modul','Umidjon', 'afshon_official', '01 — Vaqtni to‘g‘ri taqsimlash', '02 — Kursdan to‘g‘ri foydalanish va natijaga chiqish usullari', 'Moduldan so‘ng:', 'Siz 1-modulni tugatganingizdan so‘ng vaqtingizni to‘g‘ri boshqarishni va kursdan unumli foydalanishni o‘rganasiz. '),
-    createCarousel( '2 - modul','Umidjon', 'afshon_official', 'Ummatga foyda keltirib kelayotganingiz uchun, Allohni eslatib halol ish qilyotganingiz uchun'),
-    createCarousel( '3 - modul','Umidjon', 'afshon_official', 'Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad'),
-    createCarousel( '4 - modul','Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
-    createCarousel( '5 - modul','Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
-    createCarousel( '6 - modul','Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel( '1 - modul','kirish', 'afshon_official', '01 — Vaqtni to‘g‘ri taqsimlash', '02 — Kursdan to‘g‘ri foydalanish va natijaga chiqish usullari', 'Moduldan so‘ng:', 'Siz 1-modulni tugatganingizdan so‘ng vaqtingizni to‘g‘ri boshqarishni va kursdan unumli foydalanishni o‘rganasiz. '),
+    createCarousel( '2 - modul','smm', 'afshon_official', '01 — Kursdan qanday  to‘g‘ri foydalanish va natijaga chiqish usullari ', '02 — SMM bu nima va SMM mutaxassisi kim ?', '03 — SMM mutaxassisi terminlari va qo‘llash joylari', '04 — Maqsadli auditoriya va mijoz portreti', '05 — UTP, offer va trigger nima ?', '06 — Sotuv voronkasi va mijozga yo‘l', '07 — Raqobatchilarni analiz qilish','08 — SVOT analiz', '09 — Texnik topshiriqlar va deadline', '10 — Grafik dizaynerga TZ  yozish', '11 — Kopirayting va sotuvchi matn yozish', '12 — Imtixon', 'Modul so‘ngida:'),
+    createCarousel( '3 - modul','vizual', 'afshon_official', 'Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad'),
+    createCarousel( '4 - modul','kontent', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel( '5 - modul','meta', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel( '6 - modul','Veb sayt va chatbot bilan ishlash', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel( '7 - modul','sotuv', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel( '8 - modul','shaxsiy brend', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel( '9 - modul','psixolog', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel( '','maxsus modul', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+   
   ]
 
   // Data for Accordion
@@ -68,7 +73,7 @@ function CarouselModul() {
                     <Box className='KarouselMainCard' id="ModulMainCard" sx={{ minWidth: 275 }}>
                         <div className='ModulLeft'>
                             <div className='ModulLeftH2'>{el.modul}</div>
-                            <p className='ModulLeftText'>{el.modul}</p>
+                            <p className='ModulLeftText'>{el.name}</p>
                         </div>
                       <Card className='Karousel__card' id="ModulCard" variant="outlined">
                         <>
