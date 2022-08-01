@@ -7,6 +7,78 @@
 #CarouselCards {
     margin-top: 40px;
 }
+
+/*  */
+
+
+.Karousel__card {
+    font-family: "Space Grotesk", sans-serif !important;
+    position: relative;
+    width: 380px;
+    height: 266px;
+    margin-right: 30px;
+    border: 2px solid #222628 !important;
+    border-radius: 0 !important;
+  }
+  
+  /* Upper Block */
+  .upperBlock {
+      display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid #222628;
+    background-color: #f5f5f5 !important;
+  }
+  .upperAvatar {
+    margin: 20px;
+    border: 2px solid #222628;
+  }
+  
+  .Karousel__cardTitle {
+    font-family: "Space Grotesk" !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  .upperIcon {
+      margin-right: 5px;
+  }
+  
+  .upperBlockText {
+    display: flex;
+    flex-direction: column;
+  }
+  .Karousel__cardContent{
+      color: #7d7d7d;
+  }
+  .Karousel__card:hover .upperBlock {
+      background-color: #ffd100 !important ;
+      transition: 0.3s all;
+  }
+  
+  /* Under Block */
+  .underBlock {
+    margin: 20px;
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    height: auto;
+    left: 0;
+  }
+  
+
+
+
+
+/*  */
+
 .iconBox {
     display: flex;
     align-items: center;

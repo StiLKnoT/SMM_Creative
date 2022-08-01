@@ -19,7 +19,6 @@ import MuiAccordionSummary from "@mui/material/AccordionSummary";
 
 // Styles
 import "./Second.css";
-import './components/CarouselCard.css'
 import './components/CarouselCards.css'
 import "react-multi-carousel/lib/styles.css";
 
@@ -359,50 +358,26 @@ const Second = () => {
         <h4 className="titleBox__item">Ko'p Beriladigan savollar</h4>
       </div>
       <div className="box" >
-        <Accordion
-          className="KouchAccor__accordion"
-          expanded={expanded === "panel1"}
-          onChange={handleChange("panel1")}
-
-        >
-          <AccordionSummary
-            aria-controls="panel1d-content"
-            id="panel1d-header"
-          >
-            <Typography
-              className="accordion__title kouchAccTitleBl "
-              component={"div"}
-            >
-              01 — HR tizimini yaratish
+       
+        <Accordion className="KouchAccor__accordion" expanded={expanded === "panel1"} onChange={handleChange("panel1")} >
+          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
+            <Typography className="accordion__title kouchAccTitleBl " component={"div"}>
+            DARSLAR QANDAY OLIB BORILADI ?
             </Typography>
           </AccordionSummary>
           <AccordionDetails className="accordionInner">
             <Typography className="innerAcc__text" component={"div"}>
               <div className="accTextPart">
-                Kompaniyaning missiyalari, qadriyatlari va vazifalari.
-                <br /> HR rejalash (Kompaniya kerak buladigan xodimlar sonini aniqlash).
-                <br /> Ishga olishda samarali usullar (Intervyu, testlar, case savollar,…).
+              Darslarimiz online holatda, maxsus platforma orqali olib boriladi. Sizga ushbu <br /> platformaga kirish uchun ruxsat beriladi. Siz belgilangan vaqt davomida <br /> darslarni ko‘rishingiz va takrorlashingiz mumkin
               </div>
-              <div className="accTextPart">
-                Adaptatsiya tizimi (Yangi kelgan xodimlarni tezda ishga ko'nikib ketishi va foyda keltirishi).
-                <br />  Kompaniya samaradorligini oshiruvchi KPI tizimini yo'lga qo'yish.
-                <br />  Maosh wa kompensatsiya tizimini yaratish.
-                <br /> Motivatsiya dasturlari.
-                <br />  Ichki nizom va standart operatsion protseduralar yaratish.
-              </div>
+
             </Typography>
           </AccordionDetails>
         </Accordion>
 
       </div>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+     
     </main>
   );
 };
