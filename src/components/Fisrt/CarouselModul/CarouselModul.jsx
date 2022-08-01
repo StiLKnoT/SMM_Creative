@@ -8,16 +8,16 @@ import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
 import './CarouselModul.css'
 
-const createCarousel = (img, name, nickname, text) => {
-    return { img, name, nickname, text }
+const createCarousel = (modul, name, nickname, text) => {
+    return { modul, name, nickname, text }
   }
   const carouselRows = [
-    createCarousel( 'Umidjon', 'afshon_official', 'Siz insonga katta motivatsiya berasiz va o‘z yo‘lini ko‘rsatasiz. Shuning uchun sizga ishonamiz'),
-    createCarousel( 'Umidjon', 'afshon_official', 'Ummatga foyda keltirib kelayotganingiz uchun, Allohni eslatib halol ish qilyotganingiz uchun'),
-    createCarousel( 'Umidjon', 'afshon_official', 'Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad'),
-    createCarousel( 'Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
-    createCarousel( 'Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
-    createCarousel( 'Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel( 'modul-1','Umidjon', 'afshon_official', 'Siz insonga katta motivatsiya berasiz va o‘z yo‘lini ko‘rsatasiz. Shuning uchun sizga ishonamiz'),
+    createCarousel( 'modul-2','Umidjon', 'afshon_official', 'Ummatga foyda keltirib kelayotganingiz uchun, Allohni eslatib halol ish qilyotganingiz uchun'),
+    createCarousel( 'modul-3','Umidjon', 'afshon_official', 'Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad'),
+    createCarousel( 'modul-4','Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel( 'modul-5','Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel( 'modul-6','Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
   ]
 
   // Data for Accordion
@@ -66,7 +66,10 @@ function CarouselModul() {
 
                   <div className='KarouselMainCard' key={i} >
                     <Box className='KarouselMainCard' id="ModulMainCard" sx={{ minWidth: 275 }}>
-                        <div>MODUL-1</div>
+                        <div className='ModulLeft'>
+                            <div className='ModulLeftH2'>{el.modul}</div>
+                            <p className='ModulLeftText'>sssss</p>
+                        </div>
                       <Card className='Karousel__card' id="ModulCard" variant="outlined">
                         <>
                           <CardContent>
