@@ -15,7 +15,7 @@ import MuiAccordion from "@mui/material/Accordion";
 import CardContent from '@mui/material/CardContent';
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
-
+import Paycom from '../../Paycom';
 
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -43,6 +43,7 @@ import YouTubeLogo from "../../assets/icons/youtube.png";
 import { FaArrowRight } from "react-icons/fa";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ShadowButton from "../atom/buttons/ShadowButton";
+import Payme from "../../Paycom";
 
 
 const Accordion = styled((props) => (
@@ -398,12 +399,20 @@ const Second = () => {
               <div className="boxTarif" >
 
                 <>
-                  <Button onClick={() => setLgShow1(true)}>Kursga yozilish</Button>
+                  <Button onClick={() => {
+                    setLgShow1(true);
+                    new Paycom('#submitPlan1', '#submitPlan1Buttonontainer');
+                  }
+                  }>Kursga yozilish</Button>
                   <Modal
                     size="lg"
                     className="payBox"
                     show={lgShow1}
-                    onHide={() => setLgShow1(false)}
+                    onHide={
+                      () => {
+                        setLgShow1(false)
+                      }
+                    }
                     aria-labelledby="modal1"
                   >
                     <Modal.Header closeButton>
@@ -412,12 +421,11 @@ const Second = () => {
                       </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                    <form className="modalForm">
-                        <input className="formInput"  type="text" placeholder="Name" required />
-                        <br />
-                        <input className="formInput"  type="number" placeholder="Name" required />
-                        <ShadowButton />
-                      </form>
+
+
+                    <Payme/>
+
+
                     </Modal.Body>
                   </Modal>
                 </>
@@ -444,10 +452,10 @@ const Second = () => {
                       </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                    <form className="modalForm">
-                        <input className="formInput"  type="text" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required />
+                      <form className="modalForm">
+                        <input className="formInput" type="text" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required />
                         <br />
-                        <input className="formInput"  type="number" placeholder="Telefon raqamingiz (+99891 234 56 78 ko‘rinishida)" required />
+                        <input className="formInput" type="number" placeholder="Telefon raqamingiz (+99891 234 56 78 ko‘rinishida)" required />
                         <ShadowButton />
                       </form>
                     </Modal.Body>
@@ -476,10 +484,10 @@ const Second = () => {
                     </Modal.Header>
                     <Modal.Body>
                       <form className="modalForm" >
-                        <input className="formInput"  type="text" placeholder="Name" required />
+                        <input className="formInput" type="text" placeholder="Name" required />
                         <br />
-                        <input className="formInput"  type="number" placeholder="Name" required />
-                        
+                        <input className="formInput" type="number" placeholder="Name" required />
+
                         <ShadowButton />
                       </form>
                     </Modal.Body>
