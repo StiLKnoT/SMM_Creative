@@ -1,6 +1,6 @@
 .hrLine{
-    height: 2px;
-    background: #222628;
+    height: 2px !important;
+    background: black !important;
 }
 .h2Text{
     font-size: 32px;

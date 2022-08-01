@@ -1,0 +1,37 @@
+.ColorBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #CDB4FF;
+    height: 339px;
+    margin: 80px auto;
+    border-top: 2px solid #222628;
+    border-bottom: 2px solid #222628;
+    /* box-shadow: 2px 2px 2px 0 #222628; */
+    
+}
+.ColorBlockCenter{
+    width: 50%;
+    margin-left: 25%;
+    
+}
+.ColorBlockH2{
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #222628;
+}
+.ColorBlockP{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #222628;
+}
+.hrLines{
+    border: 2px solid black;
+}
