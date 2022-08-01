@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+/* @font-face {
+    font-family: 'Sansation Light';
+    src: url('../../shrift/sansation.light.woff');
+    /* src: url('../../shrift/sansation.light.woff') format('embedded-opentype'),  url('../../shrift/sansation.light.woff') format('woff'),  url('SansationLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  } */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .container {
+  width: 100%;
+  position: relative;
+} */
+.box {
+  max-width: 1200px !important;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.titleBox {
+  width: 100%;
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #111111;
+  padding: 30px 0 30px 200px;
+
+}
+.titleBox__item {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #222628;
+}
+.personBlock {
+  margin: 50px 0;
+  border-bottom: 2px solid #222628;
+  padding-bottom: 50px;
+  font-family: "Space Grotesk";
+}
+.bannerImgPort {
+  border: 2px solid #222628;
+}
+.simpleCard {
+  padding: 20px;
+  border: 2px solid #222628;
+  height: 280px;
+}
+.card__name {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.card__info {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #222628;
+}
+.brText {
+  margin: 30px 0 20px;
+}
+.greenCards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.greenCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+  width: 380px;
+
+  background-color: #b4ffc9;
+  font-family: "Space Grotesk";
+  border: 2px solid #222628;
+}
+.innerGreenCard {
+  position: absolute;
+  top: 50px;
+  padding: 0px 20px 0px 20px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 51px;
+  color: #222628;
+}
+.innerGreenCardLeft {
+  position: relative;
+  display: block;
+  background: #b4ffc9 !important;
+  left: -35px;
+}
+.innerGreenCardLeft > * {
+  background-color: #b4ffc9;
+}
+.greenCard > *,
+.innerGreenCard > * {
+  background-color: #b4ffc9 !important;
+}
+
+.greenCardBtn {
+  position: absolute;
+  bottom: 20px;
+  height: 80px;
+  width: 334px;
+  background-color: #fff !important;
+  color: #000;
+}
+.greenCardBtn:hover,
+.greenCardBtn:hover a,
+.greenCardBtn:hover svg {
+  background-color: #ffd100 !important;
+}
+.greenCardBtn a {
+  color: #000;
+  background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .simpleCard {
+    height: 142px;
+  }
+  .bannerImgPort {
+    height: 142px;
+  }
+}

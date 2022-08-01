@@ -1,50 +1,49 @@
-.CreativeBlock{
-    display: flex;
-    margin-top: 142px;
-    width: 1200px;
-    margin: 142px auto 0;
-    height: 287px;
+.CreativeBlock {
+  display: flex;
+  margin-top: 142px;
+  width: 1200px;
+  margin: 142px auto 0;
+  height: 287px;
 }
-.smmCreative{
-    width: 45%;
-    font-size: 76px;
-    font-weight: 800;
-    line-height: 110%;
-    /* font-family: 'Monument Extended'; */
-    font-style: normal;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+.smmCreative {
+  width: 45%;
+  font-size: 76px;
+  font-weight: 800;
+  line-height: 110%;
+  /* font-family: 'Monument Extended'; */
+  font-style: normal;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
-.textCreative{
-    width: 55%;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 22px;
+.textCreative {
+  width: 55%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 22px;
 }
-.smmText{
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 140%;
-    text-transform: uppercase;
+.smmText {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  text-transform: uppercase;
 }
-.line{
-    width: 2px;
-    color: black;
-    background-color: black;
-    height: 100%;
-    margin-top: 0px;
+.line {
+  width: 2px;
+  color: black;
+  background-color: black;
+  height: 100%;
+  margin-top: 0px;
 }
 
 @media screen and (min-width: 1600px) {
-    .firstMain{
-        max-width: 1600px;
-        margin: 0 auto;
-        background-color: #F5F5F5;
-    }
-    
+  .firstMain {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+  }
 }
