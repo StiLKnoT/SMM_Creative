@@ -22,7 +22,7 @@ function First() {
             <div className='textCreative'>
                 <div className='smmText'>Shunchaki SMM’ni bilish kamlik qiladi,<br/>
                 “SMM Creative” kursi - boshqacha yondashuv</div>
-                <div className=' button'><ShadowButton/></div>
+                <div className=' button' id="buttonInviseble"><ShadowButton/></div>
             </div>
 
         </div>
@@ -32,8 +32,10 @@ function First() {
           <h4 className='AsosiySpiker'>ASOSIY SPIKER:<br/>
           <span className='UmidjonOrtiqov'>UMIDJON ORTIQOV</span></h4>
         </div>
+      
 
         <Wheel/>
+        <div className=' button' id="buttonInvisebleMob"><ShadowButton/></div>
 
         <div className="AfterCourse">
          <Textline/>

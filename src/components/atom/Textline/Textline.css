@@ -18,3 +18,16 @@
     }
     
 }
+@media screen and (max-width: 576px) {
+    .h2Text{
+        font-family: 'Monument Extended';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #222628;
+        text-align: center;
+    }
+    
+}

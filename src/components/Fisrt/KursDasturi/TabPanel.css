@@ -1,6 +1,9 @@
 .TabPanelButtons{
     flex-direction: column !important;
 }
+#SpikerAboutMob{
+    display: none;
+}
 
 .css-8atqhb{
     justify-content: space-between !important;
@@ -127,4 +130,49 @@
         object-fit: cover;
     }
     
+}
+@media screen and (max-width: 576px) {
+    .SpikerBlock{
+        display: flex;
+        flex-direction: column;
+    }
+    .SpikerImg img{
+        width: 360px !important;
+    }
+    .css-heg063-MuiTabs-flexContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .TabButtons{
+        width: 360px !important;
+        padding: 0px !important;
+    }
+    .TabButtons2{
+        margin: 0px !important;
+    }
+    .SpikerBio{
+       
+        flex-direction: row-reverse;
+        margin: 10px 0px !important;
+    }
+    .SpikerConnect {
+        width: 40%;
+    }
+    .SpikerAbout{
+        display: none;
+    }
+    .SpikerName{
+        font-family: 'Monument Extended';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+
+        color: #000000;
+        width: 40%;
+    }
+    #SpikerAboutMob{
+        display: block;
+    }
 }

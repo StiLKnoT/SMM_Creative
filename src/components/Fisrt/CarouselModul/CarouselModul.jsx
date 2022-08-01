@@ -8,16 +8,16 @@ import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
 import './CarouselModul.css'
 
-const createCarousel = (modul, name, nickname, text) => {
-    return { modul, name, nickname, text }
+const createCarousel = (modul, name, nickname, text, text2,  text3, text4, text5, text6) => {
+    return { modul, name, nickname, text, text2, text3, text4, text5, text6 }
   }
   const carouselRows = [
-    createCarousel( 'modul-1','Umidjon', 'afshon_official', 'Siz insonga katta motivatsiya berasiz va o‘z yo‘lini ko‘rsatasiz. Shuning uchun sizga ishonamiz'),
-    createCarousel( 'modul-2','Umidjon', 'afshon_official', 'Ummatga foyda keltirib kelayotganingiz uchun, Allohni eslatib halol ish qilyotganingiz uchun'),
-    createCarousel( 'modul-3','Umidjon', 'afshon_official', 'Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad'),
-    createCarousel( 'modul-4','Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
-    createCarousel( 'modul-5','Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
-    createCarousel( 'modul-6','Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel( '1 - modul','Umidjon', 'afshon_official', '01 — Vaqtni to‘g‘ri taqsimlash', '02 — Kursdan to‘g‘ri foydalanish va natijaga chiqish usullari', 'Moduldan so‘ng:', 'Siz 1-modulni tugatganingizdan so‘ng vaqtingizni to‘g‘ri boshqarishni va kursdan unumli foydalanishni o‘rganasiz. '),
+    createCarousel( '2 - modul','Umidjon', 'afshon_official', 'Ummatga foyda keltirib kelayotganingiz uchun, Allohni eslatib halol ish qilyotganingiz uchun'),
+    createCarousel( '3 - modul','Umidjon', 'afshon_official', 'Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad'),
+    createCarousel( '4 - modul','Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel( '5 - modul','Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel( '6 - modul','Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
   ]
 
   // Data for Accordion
@@ -56,7 +56,7 @@ const createCarousel = (modul, name, nickname, text) => {
 
 function CarouselModul() {
   return (
-    <div>
+    <div className='CarouselModul'>
         
         <Carousel responsive={responsives} id="carCardsBot">
           {
@@ -68,28 +68,21 @@ function CarouselModul() {
                     <Box className='KarouselMainCard' id="ModulMainCard" sx={{ minWidth: 275 }}>
                         <div className='ModulLeft'>
                             <div className='ModulLeftH2'>{el.modul}</div>
-                            <p className='ModulLeftText'>sssss</p>
+                            <p className='ModulLeftText'>{el.modul}</p>
                         </div>
                       <Card className='Karousel__card' id="ModulCard" variant="outlined">
                         <>
                           <CardContent>
-                            <div className="upperBlock">
-                              <Avatar className="upperAvatar" alt={el.name} src={el.img} />
-                              <div className="upperBlockText" id='upperBlockTextModul'>
-                                <div>
-                                  <h5 className="Karousel__cardTitle" >
-                                    {el.name}
-                                  </h5>
-                                </div>
-                                <div className="Karousel__cardContent" >
-                                  <img src="" alt={el.Name} className="upperIcon" />
-                                  <span className="upperDblTxt" >{el.nickname}</span>
-                                </div>
-                              </div>
-
-                            </div>
-                            <div className="underBlock">
+                        
+                            <div className="underBlock" id="ModulUnderBlock">
                               <h5> {el.text} </h5>
+                              <h5>{el.text2}</h5>
+                              <h5>{el.text3}</h5>
+                              <h5>{el.text4}</h5>
+                              <h5>{el.text5}</h5>
+                              <h5>{el.text6}</h5>
+                              <h5>{el.text7}</h5>
+                              <h5>{el.text8}</h5>
                             </div>
                           </CardContent>
                         </>

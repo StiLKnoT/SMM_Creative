@@ -24,3 +24,11 @@
 .ShadowBtn:hover{
     background-color: #FFD100;
 }
+
+@media screen and (max-width: 576px) {
+    /* .InBtn{
+        width: 360px;
+        height: 78px;
+    } */
+    
+}

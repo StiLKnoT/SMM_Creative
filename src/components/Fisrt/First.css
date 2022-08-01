@@ -37,6 +37,9 @@
     line-height: 140%;    
     color: #222628;
 }
+#buttonInvisebleMob{
+    display: none;
+}
 .line {
   width: 2px;
   color: black;
@@ -58,7 +61,7 @@
 .AsosiySpiker{
     position: absolute;
     bottom: 8%;
-    left: 15%;
+    left: 11%;
     font-family: 'Monument Extended';
     font-style: normal;
     background: none;
@@ -228,5 +231,52 @@
         margin-top: 80px;
         flex-direction: column !important;
     }
+    .h2Text {
+        font-size: 14px;
+    }
+    .ForWhoH2 h2{
+        font-family: 'Monument Extended';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px !important;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #222628;
+        width: 90%;
+        margin: 0 auto !important;
+        text-align: center;
+    }
+    .FirstLines{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .smmCreative{
+        width: 90%;
+        margin: 0 auto;
+        padding: 30px 0 0 0!important;
+    }
+    .textCreative {
+        width: 90%;
+        margin: 0 auto;
+        border: none;
+        padding: 0px !important;
+    }
+    #buttonInviseble{
+        display: none;
+    }
+    #buttonInvisebleMob{
+        display: block;
+    }
+    #buttonInvisebleMob{
+        width: 90%;
+        margin: 50px 12% 50px 8%;
+    }
+    .SpikerImg, .SpikerImg img{
+        width: 100% !important;
+    }
+    .smmText{
+        margin-top: 10px;
+    }
+    
     
 }

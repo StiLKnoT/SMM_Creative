@@ -120,7 +120,9 @@ export default function BasicTabs() {
                   <div className='ConnectIcons'><a target="_blank" className='connectLink' href={telegram}><TelegramIcon className='connectIcons'/></a></div>
                   <div className='ConnectIcons'><a target="_blank" className='connectLink' href={youtube}><YouTubeIcon className='connectIcons'/></a></div>
                 </div>
+                
               </div>
+              <div className='SpikerAbout' id="SpikerAboutMob">{about}</div>
             </div>
              <hr className='hrLine'/>
             </div>
@@ -144,6 +146,7 @@ export default function BasicTabs() {
                   <div className='ConnectIcons'><a target="_blank" className='connectLink' href={youtube}><YouTubeIcon className='connectIcons'/></a></div>
                 </div>
               </div>
+              <div className='SpikerAbout' id="SpikerAboutMob">{about}</div>
             </div>
              <hr className='hrLine'/>
             </div>

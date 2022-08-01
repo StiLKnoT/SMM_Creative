@@ -35,3 +35,25 @@
 .hrLines{
     border: 2px solid black;
 }
+
+@media screen and (max-width: 576px) {
+    .ColorBlockCenter{
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+    .ColorBlock{
+        height: auto !important;
+        padding-bottom: 20px !important;
+    }
+    .ColorBlockH2{
+        font-family: 'Monument Extended';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 17px;
+        padding-top: 20px;
+        text-transform: uppercase;
+        color: #222628;
+    }
+    
+}
