@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "@mui/material";
+import { Input, Link } from "@mui/material";
 import { styled } from "@mui/material/styles";
 // Components
 import Box from '@mui/material/Box';
@@ -17,9 +17,16 @@ import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 
 
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
+
+
 // Styles
 import "./Second.css";
+import './components/CarouselCard.css'
 import './components/CarouselCards.css'
+import './components/Accordion.css'
 import "react-multi-carousel/lib/styles.css";
 
 // Images
@@ -163,7 +170,7 @@ const Second = () => {
   ]
 
   // Data for Accordion
-  const [expanded, setExpanded] = React.useState("panel1");
+  const [expanded, setExpanded] = React.useState(`panel0`);
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
@@ -173,12 +180,12 @@ const Second = () => {
     return { title, answer }
   }
   const carouselAccor = [
-    createCarousel('Umidjon', 'afshon_official'),
-    createCarousel('Umidjon', 'afshon_official'),
-    createCarousel('Umidjon', 'afshon_official'),
-    createCarousel('Umidjon', 'afshon_official'),
-    createCarousel('Umidjon', 'afshon_official'),
-    createCarousel('Umidjon', 'afshon_official'),
+    createAccordion('DARSLAR QANDAY OLIB BORILADI ?', 'Darslarimiz online holatda, maxsus platforma orqali olib boriladi. Sizga ushbu platformaga kirish uchun ruxsat beriladi. Siz belgilangan vaqt davomida darslarni ko‘rishingiz va takrorlashingiz mumkin'),
+    createAccordion('DARSLAR QANDAY OLIB BORILADI ?', 'afshon_official'),
+    createAccordion('TARIFNI KEYINCHALIK ALMASHTIRISH MUMKINMI ?', 'afshon_official'),
+    createAccordion('BO‘LIB TO‘LASH IMKONIYATI MAVJUDMI ?', 'afshon_official'),
+    createAccordion('DARSLAR YOZIB OLINADIMI ?', 'afshon_official'),
+    createAccordion('DARSLARNI QANCHA VAQT DAVOMIDA KO‘RISH MUMKIN ?', 'afshon_official'),
   ]
 
 
@@ -210,8 +217,18 @@ const Second = () => {
     });
   }
 
+
+  // Modal
+  const [lgShow1, setLgShow1] = useState(false);
+  const [lgShow2, setLgShow2] = useState(false);
+  const [lgShow3, setLgShow3] = useState(false);
+
+
+
+
   return (
-    <main className="keyBox ">
+
+    <main className="keyBox">
 
       {/* Keys Section */}
 
@@ -357,27 +374,138 @@ const Second = () => {
       <div className="titleBox">
         <h4 className="titleBox__item">Ko'p Beriladigan savollar</h4>
       </div>
-      <div className="box" >
-       
-        <Accordion className="KouchAccor__accordion" expanded={expanded === "panel1"} onChange={handleChange("panel1")} >
-          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
-            <Typography className="accordion__title kouchAccTitleBl " component={"div"}>
-            DARSLAR QANDAY OLIB BORILADI ?
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails className="accordionInner">
-            <Typography className="innerAcc__text" component={"div"}>
-              <div className="accTextPart">
-              Darslarimiz online holatda, maxsus platforma orqali olib boriladi. Sizga ushbu <br /> platformaga kirish uchun ruxsat beriladi. Siz belgilangan vaqt davomida <br /> darslarni ko‘rishingiz va takrorlashingiz mumkin
-              </div>
-
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-
+      <div className="box carouselContainer">
+        {
+          carouselAccor.map((elem, i) => {
+            return (
+              <Accordion className="KouchAccor__accordion" expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)} >
+                <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
+                  <div>
+                    <h5 className="accordion_title">
+                      {elem.title}
+                    </h5>
+                  </div>
+                </AccordionSummary>
+                <AccordionDetails className="accordionInner">
+                  <div className="innerAcc_text">
+                    {elem.answer}
+                  </div>
+                </AccordionDetails>
+              </Accordion>
+            )
+          })
+        }
       </div>
 
-     
+      {/* Tariflar section */}
+
+      <>
+
+        <section className="planChange">
+          <Row>
+
+            <Col xl={4} lg={4} md={4} sm={4}>
+              <div className="boxTarif" >
+
+                <>
+                  <Button onClick={() => setLgShow1(true)}>Kursga yozilish</Button>
+                  <Modal
+                    size="lg"
+                    className="payBox"
+                    show={lgShow1}
+                    onHide={() => setLgShow1(false)}
+                    aria-labelledby="modal1"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="modal1">
+                        SMM CREATIVE 2.0 kursiga yozilish
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <form>
+                        <input type="text" placeholder="Name" required />
+                        <br />
+                        <input type="number" placeholder="Name" required />
+                        <button  > Ro'yxatdan o'tish </button>
+                      </form>
+                    </Modal.Body>
+                  </Modal>
+                </>
+              </div>
+            </Col>
+
+            <Col xl={4} lg={4} md={4} sm={4}>
+
+              <div className="boxTarif" >
+
+                <>
+                  <Button onClick={() => setLgShow2(true)}>Kursga yozilish</Button>
+                  <Modal
+                    size="lg"
+                    className="payBox"
+                    show={lgShow2}
+                    onHide={() => setLgShow2(false)}
+                    aria-labelledby="modal2"
+                  >
+
+                    <Modal.Header closeButton>
+                      <Modal.Title id="modal2">
+                        SMM CREATIVE 2.0 kursiga yozilish
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    <form>
+                        <input type="text" placeholder="Name" required />
+                        <br />
+                        <input type="number" placeholder="Name" required />
+                        <button> Ro'yxatdan o'tish </button>
+                      </form>
+                    </Modal.Body>
+                  </Modal>
+                </>
+              </div>
+            </Col>
+
+            <Col xl={4} lg={4} md={4} sm={4}>
+
+              <div className="boxTarif" >
+
+                <>
+                  <Button onClick={() => setLgShow3(true)}>Kursga yozilish</Button>
+                  <Modal
+                    size="lg"
+                    className="payBox"
+                    show={lgShow3}
+                    onHide={() => setLgShow3(false)}
+                    aria-labelledby="modal3"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="modal3">
+                        SMM CREATIVE 2.0 kursiga yozilish
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      <form>
+                        <input type="text" placeholder="Name" required />
+                        <br />
+                        <input type="number" placeholder="Name" required />
+                        <button> Ro'yxatdan o'tish </button>
+                      </form>
+                    </Modal.Body>
+                  </Modal>
+                </>
+              </div>
+            </Col>
+
+          </Row>
+        </section>
+
+
+      </>
+
+
+
+
     </main>
   );
 };

@@ -1,0 +1,26 @@
+
+
+/* Accordion Arrow  */
+
+.MuiAccordionSummary-expandIconWrapper {
+    position: absolute;
+    right: 30px; 
+    color: #222628;
+    font-size: 50px;
+    width: 25px;
+    height: 25px;
+}
+.MuiAccordionSummary-expandIconWrapper svg{
+    height: 20px !important;
+    width: 20px !important;
+    font-size: 25px !important;
+}
+
+/* Box Shadow effect */
+
+.KouchAccor__accordion{
+    box-shadow: 10px 10px 10px black !important;
+    margin: 50px 0;
+}
+
+
