@@ -19,6 +19,7 @@
 body {
   background: #f3f3f3;
 }
+/* KeysBox Part */
 .box {
   max-width: 1200px !important;
   display: flex;
@@ -136,9 +137,53 @@ body {
   background-color: #fff;
 }
 
+/* Carousel Part */
 .carouselContainer {
   margin: 80px auto 120px;
 }
+
+/* Accordion Part */
+
+/*  Tariflar Section  */
+
+.planChange{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.boxTarif{
+  height: 500px;
+  width: 380px;
+  border: 2px solid #222628;
+}
+.payBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal-header{
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.modal-title{
+  width: 100%;
+  display: flex;
+  align-items: center ;
+  justify-content: center ;
+}
+.modal-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 @media screen and (max-width: 768px) {
   .simpleCard {
     height: 142px;
