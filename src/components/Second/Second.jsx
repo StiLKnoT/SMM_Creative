@@ -1,40 +1,85 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { Link } from "@mui/material";
+import { styled } from "@mui/material/styles";
 // Components
 import Box from '@mui/material/Box';
 import Col from "react-bootstrap/Col";
+import { Avatar } from "@mui/material";
 import Card from '@mui/material/Card';
 import Row from "react-bootstrap/Row";
 import Image from 'react-bootstrap/Image';
 import Carousel from "react-multi-carousel";
 import Container from "react-bootstrap/Container";
 import Typography from '@mui/material/Typography';
+import MuiAccordion from "@mui/material/Accordion";
 import CardContent from '@mui/material/CardContent';
-import { Avatar } from "@mui/material";
+import MuiAccordionDetails from "@mui/material/AccordionDetails";
+import MuiAccordionSummary from "@mui/material/AccordionSummary";
+
 
 // Styles
 import "./Second.css";
 import './components/CarouselCard.css'
-// import './components/CarouselCards.css'
-
+import './components/CarouselCards.css'
 import "react-multi-carousel/lib/styles.css";
 
-// Assets
+// Images
 import umidjon from "../../assets/keyslar/umidjon.png";
 import ilxom from "../../assets/keyslar/ilxom.png";
 import jamila from "../../assets/keyslar/jamila.png";
 import tabib from "../../assets/keyslar/tabib.png";
-import { IoLogoInstagram } from "react-icons/io5";
+
+// Icons
 import instagramLogo from "../../assets/icons/instagram.png";
 import instaIcon from "../../assets/icons/instaIconsm.png";
-
 import TikTokLogo from "../../assets/icons/tiktok.png";
 import YouTubeLogo from "../../assets/icons/youtube.png";
-
 import { FaArrowRight } from "react-icons/fa";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+
+const Accordion = styled((props) => (
+  <MuiAccordion disableGutters elevation={0} square {...props} />
+))(({ theme }) => ({
+  border: `1px solid ${theme.palette.divider}`,
+  "&:not(:last-child)": {
+    borderBottom: 0,
+  },
+  "&:before": {
+    display: "none",
+  },
+}));
+
+const AccordionSummary = styled((props) => (
+  <MuiAccordionSummary
+    expandIcon={<ExpandMoreIcon sx={{ fontSize: "0.9rem" }} />}
+    {...props}
+  />
+))(({ theme }) => ({
+  backgroundColor:
+    theme.palette.mode === "dark"
+      ? "rgba(255, 255, 255, .05)"
+      : "rgba(0, 0, 0, .03)",
+  flexDirection: "row-reverse",
+  "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+    transform: "rotate(90deg)",
+    fill: "#28468C"
+  },
+  "& .MuiAccordionSummary-content": {
+    marginLeft: theme.spacing(1),
+  },
+}));
+
+const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+  padding: theme.spacing(2),
+  borderTop: "1px solid rgba(0, 0, 0, .125)",
+}));
+
+
 
 const Second = () => {
-// Data for KeysBox
+
+  // Data for KeysBox
   const createData = (
     bannerImg,
     Name,
@@ -105,7 +150,7 @@ const Second = () => {
       "https://www.youtube.com/c/UmidjonOrtiqov"
     ),
   ];
-// Data for Carousel
+  // Data for Carousel
   const createCarousel = (img, name, nickname, text) => {
     return { img, name, nickname, text }
   }
@@ -119,16 +164,22 @@ const Second = () => {
   ]
 
   // Data for Accordion
-  const createAccordion= (title, answer) => {
+  const [expanded, setExpanded] = React.useState("panel1");
+
+  const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded ? panel : false);
+  };
+
+  const createAccordion = (title, answer) => {
     return { title, answer }
   }
   const carouselAccor = [
-    createCarousel( 'Umidjon', 'afshon_official'   ),
-    createCarousel( 'Umidjon', 'afshon_official'   ),
-    createCarousel( 'Umidjon', 'afshon_official'   ),
-    createCarousel( 'Umidjon', 'afshon_official'   ),
-    createCarousel( 'Umidjon', 'afshon_official'   ),
-    createCarousel( 'Umidjon', 'afshon_official'   ),
+    createCarousel('Umidjon', 'afshon_official'),
+    createCarousel('Umidjon', 'afshon_official'),
+    createCarousel('Umidjon', 'afshon_official'),
+    createCarousel('Umidjon', 'afshon_official'),
+    createCarousel('Umidjon', 'afshon_official'),
+    createCarousel('Umidjon', 'afshon_official'),
   ]
 
 
@@ -303,13 +354,55 @@ const Second = () => {
       </section>
 
       {/* FAQs Section */}
-      
+
       <div className="titleBox">
         <h4 className="titleBox__item">Ko'p Beriladigan savollar</h4>
       </div>
       <div className="box" >
-          
+        <Accordion
+          className="KouchAccor__accordion"
+          expanded={expanded === "panel1"}
+          onChange={handleChange("panel1")}
+
+        >
+          <AccordionSummary
+            aria-controls="panel1d-content"
+            id="panel1d-header"
+          >
+            <Typography
+              className="accordion__title kouchAccTitleBl "
+              component={"div"}
+            >
+              01 — HR tizimini yaratish
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails className="accordionInner">
+            <Typography className="innerAcc__text" component={"div"}>
+              <div className="accTextPart">
+                Kompaniyaning missiyalari, qadriyatlari va vazifalari.
+                <br /> HR rejalash (Kompaniya kerak buladigan xodimlar sonini aniqlash).
+                <br /> Ishga olishda samarali usullar (Intervyu, testlar, case savollar,…).
+              </div>
+              <div className="accTextPart">
+                Adaptatsiya tizimi (Yangi kelgan xodimlarni tezda ishga ko'nikib ketishi va foyda keltirishi).
+                <br />  Kompaniya samaradorligini oshiruvchi KPI tizimini yo'lga qo'yish.
+                <br />  Maosh wa kompensatsiya tizimini yaratish.
+                <br /> Motivatsiya dasturlari.
+                <br />  Ichki nizom va standart operatsion protseduralar yaratish.
+              </div>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+
       </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </main>
   );
 };

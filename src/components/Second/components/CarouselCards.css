@@ -1,22 +1,18 @@
 .rowCarousel {
     display: flex;
 }
-
 .rowCarousel>div {
     margin: 0 50px;
 }
-
 #CarouselCards {
     margin-top: 40px;
 }
-
 .iconBox {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 }
-
 .arrowPart {
     display: flex;
     align-items: center;
@@ -26,11 +22,9 @@
     bottom: 20px;
     right: 20px;
 }
-
 .arrowPart>* {
     margin: 0 20px;
 }
-
 #CarouselCards{
     margin-bottom: 120px !important;
 }
@@ -43,73 +37,13 @@
 .css-1okfn8i {
     background-color: #fafafa !important;
 }
-
 .react-multi-carousel-list  {
     padding-top: 60px;
-    /* height: 360px !important; */
-}
-
-.Karousel__card {
-    background-color: #FAFAFA !important;
-    margin-bottom: 20px;
-    border: none !important;
-    border-top: 3px solid #E1E1E1 !important;
-    border-radius: 0;
-    width: 380px !important;
-    height: 261px !important;
-}
-
-/* .KarouselAccor__cardPartBl{
-    border-top: 3px solid #28468C !important;
-} */
-.Karousel__card:hover {
-    transition: 0.1s ease all;
-    animation: 0.1s ease all;
-    border-top: 3px solid #28468C !important;
-}
-
-/* .KouchAccor__accordion:first-child .accordion__title, .KouchAccor__accordion:first-child .MuiAccordionSummary-expandIconWrapper {
-    color: #28468C;
-} */
-.Karousel__cardTitle {
-    color: #0F0F0F;
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 510;
-}
-
-.Karousel__cardContent {
-    position: relative;
-    color: #828282;
-    font-size: 18px;
-    line-height: 25.2px;
-    font-weight: 400;
-    top: 10px;
-    margin: 0 auto;
-}
-
-.Karousel__cardLink a {
-    color: #0F0F0F !important;
-    text-decoration: underline;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21.48px;
-    margin: 10px auto;
-}
-
-/* .react-multi-carousel-item, .react-multi-carousel-item--active {
-    margin: 0 20px !important;
-} */
-
-/* .react-multi-carousel-list{
-    height: 450px;
-} */
+} 
 .react-multi-carousel-list {
     display: flex;
     align-items: flex-end;
 }
-
-/* .react-multiple-carousel__arrow--left::before */
 .react-multiple-carousel__arrow--right::before,
 .react-multiple-carousel__arrow--left::before {
     background-color: inherit;
@@ -119,31 +53,15 @@
     top: -5px;
     content: '\2192' !important;
 }
-
-/* .react-multi-carousel-track{
-    height: auto;
-} */
-.Karousel__card {
-    top: 50px;
-}
-#carCardsBot{
-    height: 450px !important;
-}
-#carCardsBot .react-multi-carousel-track{
-    top: 20px !important;
-}
-
 .react-multiple-carousel__arrow--right::before {
     z-index: 11;
 }
-
 .react-multiple-carousel__arrow--left::before {
     content: '\2192';
     z-index: 11;
     transform: rotateY(180deg);
 
 }
-
 .react-multi-carousel-list .react-multiple-carousel__arrow {
     position: absolute;
     top: 0px;
@@ -196,22 +114,15 @@
 
 /* Laptop */
 @media screen and (max-width: 1200px) {
-
-    /* .MuiPaper-root, .MuiPaper-outlined, .MuiPaper-rounded, .MuiCard-root, .Karousel__card, .KarouselAccor__cardPartBl, */
-    .css-1v5z4dq-MuiPaper-root-MuiCard-root {
+     .css-1v5z4dq-MuiPaper-root-MuiCard-root {
         width: 300px !important;
         height: 261px;
         background-color: #F0F0F0 !important;
     }
-
-    /* .react-multi-carousel-list  {
-        width: 1000px;
-    } */
-    .react-multi-carousel-item,
+     .react-multi-carousel-item,
     .react-multi-carousel-item--active {
         margin: 0 25px !important;
     }
-
     .react-multiple-carousel__arrow {
         z-index: 1 !important;
     }
