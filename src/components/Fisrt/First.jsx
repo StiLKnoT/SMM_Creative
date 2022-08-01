@@ -5,20 +5,24 @@ import './First.css'
 import MainUO from '../../assets/images/mainUO.png'
 import sunIcon from '../../assets/images/sun.png'
 import Textline from '../atom/Textline/Textline'
-
+import Wheel from './Wheel/Wheel'
+import ColorBlock from './ColorBlock/ColorBlock'
+import ShadowButton from '../atom/buttons/ShadowButton'
+import ForWho from './ForWho/ForWho'
+import CarouselModul from './CarouselModul/CarouselModul'
 
 function First() {
+ 
   return (
     <div className='firstMain'>
         <Navbar/>
 
         <div className='CreativeBlock'>
             <div className='smmCreative'>SMM <br/>CREATIVE</div>
-            <hr className='line'/>
             <div className='textCreative'>
                 <div className='smmText'>Shunchaki SMM’ni bilish kamlik qiladi,<br/>
                 “SMM Creative” kursi - boshqacha yondashuv</div>
-                <div className=' button'>Kursga yozilish</div>
+                <div className=' button' id="buttonInviseble"><ShadowButton/></div>
             </div>
 
         </div>
@@ -28,65 +32,10 @@ function First() {
           <h4 className='AsosiySpiker'>ASOSIY SPIKER:<br/>
           <span className='UmidjonOrtiqov'>UMIDJON ORTIQOV</span></h4>
         </div>
+      
 
-        <div className='Wheel'>
-          <div className='WheelLine'>
-            <img src={sunIcon} style={{background: "#222628"}}/>
-            <div className='WheelText'>Target</div>
-          </div>
-      
-          <div className='WheelLine'>
-            <img src={sunIcon} style={{background: "#222628"}}/>
-            <div className='WheelText'>AUDITORIYA</div>
-          </div>
-      
-          <div className='WheelLine'>
-            <img src={sunIcon} style={{background: "#222628"}}/>
-            <div className='WheelText'>POST</div>
-          </div>
-      
-          <div className='WheelLine'>
-            <img src={sunIcon} style={{background: "#222628"}}/>
-            <div className='WheelText'>INSTAGRAM</div>
-          </div>
-      
-          <div className='WheelLine'>
-            <img src={sunIcon} style={{background: "#222628"}}/>
-            <div className='WheelText'>Facebook</div>
-          </div>
-      
-          <div className='WheelLine'>
-            <img src={sunIcon} style={{background: "#222628"}}/>
-            <div className='WheelText'>reels</div>
-          </div>
-          <div className='WheelLine'>
-            <img src={sunIcon} style={{background: "#222628"}}/>
-            <div className='WheelText'>lives</div>
-          </div>
-          <div className='WheelLine'>
-            <img src={sunIcon} style={{background: "#222628"}}/>
-            <div className='WheelText'>followers</div>
-          </div>
-          <div className='WheelLine'>
-            <img src={sunIcon} style={{background: "#222628"}}/>
-            <div className='WheelText'>stories</div>
-          </div>
-          <div className='WheelLine'>
-            <img src={sunIcon} style={{background: "#222628"}}/>
-            <div className='WheelText'>LIKES</div>
-          </div>
-          <div className='WheelLine'>
-            <img src={sunIcon} style={{background: "#222628"}}/>
-            <div className='WheelText'>COMMENTS</div>
-          </div>
-          <div className='WheelLine'>
-            <img src={sunIcon} style={{background: "#222628"}}/>
-            <div className='WheelText'>TIK TOK</div>
-          </div>
-          <div className='WheelLine'>
-            <img src={sunIcon} style={{background: "#222628"}}/>
-          </div>
-        </div>
+        <Wheel/>
+        <div className=' button' id="buttonInvisebleMob"><ShadowButton/></div>
 
         <div className="AfterCourse">
          <Textline/>
@@ -126,9 +75,17 @@ function First() {
             </div>
           </div>
         </div>
-
+        <ForWho/>
+        <ColorBlock/>
+        <div className='ForWhoH2'>
+            <h2>KURS DASTURI BILAN TANISHING</h2>
+        </div>
+        <CarouselModul/>
+        <ColorBlock/>
+        
         <TabPanel/>
-      
+       
+        <ColorBlock/>
     </div>
   )
 }

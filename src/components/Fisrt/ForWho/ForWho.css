@@ -1,0 +1,68 @@
+.ForWho{
+    background: #B4FFC9;
+}
+.ForWhoH2{
+    border-top: 2px solid #222628;
+    border-bottom: 2px solid #222628;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 64px;
+    background: #B4FFC9;
+    
+}
+.ForWhoH2 h2{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 800;
+    margin-left: 200px;
+    line-height: 38px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #222628;
+ 
+}
+.ForWhoMain{
+    display: flex;
+    border-bottom: 2px solid #222628;
+  
+}
+.ForWhoLeft, .ForWhoRight{
+    width: 50%;
+}
+.ForWhoLeft{
+    margin-left: 10%;
+}
+.ForLeftH2{
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+    
+    letter-spacing: 0.03em;
+    
+    /* brand black color */
+    
+    color: #222628;
+
+    /* brand black color */
+
+    color: #222628;
+}
+.ForLeftP{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    /* brand black color */
+
+
+}
+.ForWhoRight img{
+    width: 100%;
+}

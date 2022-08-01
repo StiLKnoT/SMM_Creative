@@ -8,6 +8,8 @@ import './TabPanel.css'
 import MainSpiker from '../../../assets/images/MainSpiker.png'
 import Spiker2 from '../../../assets/images/Spiker2.png'
 import Spiker3 from '../../../assets/images/Spiker3.png'
+import MehSpiker1 from '../../../assets/images/MehSpiker1.png'
+import MehSpiker2 from '../../../assets/images/MehSpiker2.png'
 import {ReactComponent as InstaIcon} from '../../../assets/images/InstaIcon.svg'
 import {ReactComponent as TelegramIcon} from '../../../assets/images/TelegramIcon.svg'
 import {ReactComponent as YouTubeIcon} from '../../../assets/images/YouTubeIcon.svg'
@@ -57,11 +59,18 @@ const Spikers = [
   "youtube":"",
   }
 ]
-const Ghost = [
-  {'name': 'Umidjon',
-  'surname': 'Ortiqov',
-  'img': MainSpiker,
-  'about': 'Qwerty Aljafr academy asoschisi, ijtimoiy tarmoqlar bo‘yicha ekspert, biznesmen',
+const guest = [
+  {'name': 'ISMOIL',
+  'surname': 'SAFAROV',
+  'img': MehSpiker1,
+  'about': 'Lead UX/UI dizayner, Socially Design Academy asoschisi',
+  'insta':"https://active-vision.ru/icon/box-shadow/",
+  "telegram":"",
+  "youtube":"",},
+  {'name': 'Axmadjon',
+  'surname': 'Majidov',
+  'img': MehSpiker2,
+  'about': '17 yosh, video editing sohasida 2+ yil tajribaga ega, Qwerty Al-fajr markazida senior video editor',
   'insta':"https://active-vision.ru/icon/box-shadow/",
   "telegram":"",
   "youtube":"",}
@@ -93,13 +102,39 @@ export default function BasicTabs() {
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" className='TabPanelButtons'>
           <Tab label="Spikerlar" {...a11yProps(0)} className="TabButtons"/>
           <Tab label="Mehmon spikerlar" {...a11yProps(1)} className="TabButtons TabButtons2"/>
-          
         </Tabs>
       </Box>
       <TabPanel value={value} index={0} className="TabValue">
         {Spikers.map(({name, surname, about, img, telegram, insta, youtube}, index) =>{
           return(
-            // <hr className='hrLine'/>
+            <div>
+           
+          
+            <div className='SpikerBlock'>
+              <div className='SpikerImg'><img src={img}/></div>
+              <div className='SpikerBio'>
+                <div className='SpikerName'>{name}<br/>{surname}</div>
+                <div className='SpikerAbout'>{about}</div>
+                <div className='SpikerConnect'>
+                  <div className='ConnectIcons'><a target="_blank" className='connectLink' href={insta}><InstaIcon className='connectIcons'/></a></div>
+                  <div className='ConnectIcons'><a target="_blank" className='connectLink' href={telegram}><TelegramIcon className='connectIcons'/></a></div>
+                  <div className='ConnectIcons'><a target="_blank" className='connectLink' href={youtube}><YouTubeIcon className='connectIcons'/></a></div>
+                </div>
+                
+              </div>
+              <div className='SpikerAbout' id="SpikerAboutMob">{about}</div>
+            </div>
+             <hr className='hrLine'/>
+            </div>
+          )
+        })}
+          {/* // })} */}
+     
+      </TabPanel>
+      <TabPanel value={value} index={1} className="TabValue">
+      {guest.map(({name, surname, about, img, telegram, insta, youtube}, index) =>{
+          return(
+           <div>
             <div className='SpikerBlock'>
               <div className='SpikerImg'><img src={img}/></div>
               <div className='SpikerBio'>
@@ -111,15 +146,12 @@ export default function BasicTabs() {
                   <div className='ConnectIcons'><a target="_blank" className='connectLink' href={youtube}><YouTubeIcon className='connectIcons'/></a></div>
                 </div>
               </div>
+              <div className='SpikerAbout' id="SpikerAboutMob">{about}</div>
             </div>
-            // <hr className='hrLine'/>
+             <hr className='hrLine'/>
+            </div>
           )
         })}
-          {/* // })} */}
-     
-      </TabPanel>
-      <TabPanel value={value} index={1} className="TabValue">
-        Item Two
       </TabPanel>
     </Box>
   );
