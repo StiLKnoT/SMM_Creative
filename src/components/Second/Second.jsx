@@ -15,7 +15,7 @@ import MuiAccordion from "@mui/material/Accordion";
 import CardContent from '@mui/material/CardContent';
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
-
+import Paycom from '../../Paycom';
 
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -408,12 +408,20 @@ const Second = () => {
               <div className="boxTarif" >
 
                 <>
-                  <Button onClick={() => setLgShow1(true)}>Kursga yozilish</Button>
+                  <Button onClick={() => {
+                    setLgShow1(true);
+                    new Paycom('#submitPlan1', '#submitPlan1Buttonontainer');
+                  }
+                  }>Kursga yozilish</Button>
                   <Modal
                     size="lg"
                     className="payBox"
                     show={lgShow1}
-                    onHide={() => setLgShow1(false)}
+                    onHide={
+                      () => {
+                        setLgShow1(false)
+                      }
+                  }
                     aria-labelledby="modal1"
                   >
                     <Modal.Header closeButton>
@@ -422,11 +430,21 @@ const Second = () => {
                       </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                    <form>
+                    <form id="submitPlan1" >
+
+                        <input type="hidden" name="merchant" value="621e19c42590be2d78408142"/>
+                        <input type="hidden" name="account[login]" value="{{order_id}}"/>
+                        <input type="hidden" name="amount" value="5000"/> 
                         <input type="text" placeholder="Name" required />
+                        <input type="hidden" name="lang" value="ru"/>
+
+
+
                         <br />
                         <input type="number" placeholder="Name" required />
-                        <button  > Ro'yxatdan o'tish </button>
+                        {/* <button> Ro'yxatdan o'tish </button> */}
+                        <div id="submitPlan1Buttonontainer"></div>
+
                       </form>
                     </Modal.Body>
                   </Modal>
