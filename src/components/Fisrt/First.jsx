@@ -8,8 +8,8 @@ import Textline from '../atom/Textline/Textline'
 import Wheel from './Wheel/Wheel'
 import ColorBlock from './ColorBlock/ColorBlock'
 import ShadowButton from '../atom/buttons/ShadowButton'
-import KursCarousel from './KursCarousel/KursCarousel'
 import ForWho from './ForWho/ForWho'
+import CarouselModul from './CarouselModul/CarouselModul'
 
 function First() {
  
@@ -75,9 +75,14 @@ function First() {
         </div>
         <ForWho/>
         <ColorBlock/>
+        <div className='ForWhoH2'>
+            <h2>KURS DASTURI BILAN TANISHING</h2>
+        </div>
+        <CarouselModul/>
+        <ColorBlock/>
         
         <TabPanel/>
-        <KursCarousel/>
+       
         <ColorBlock/>
     </div>
   )
