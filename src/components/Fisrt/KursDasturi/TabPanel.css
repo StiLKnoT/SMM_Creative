@@ -105,3 +105,22 @@
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width: 1400px) {
+    .SpikerBlock{
+        margin: 50px auto !important;
+        width: 90% !important;
+    }
+    .css-heg063-MuiTabs-flexContainer{
+        margin: 50px auto 0px !important;
+        width: 90% !important;
+    }
+    
+    
+    
+}
+@media screen and (max-width: 1200px) {
+    .SpikerImg, .SpikerImg img{
+        width: 100% !important;
+    }
+    
+}

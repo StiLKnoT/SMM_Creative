@@ -3,8 +3,10 @@
     box-shadow: 0 2px 0 #222628;
     position: fixed;
     top: 0px;
-    background-color: #F5F5F5;
+    left: 0px;
     z-index: 2;
+    background-color: #F5F5F5 !important;
+  
 }
 .Navbar{
     width: 1200px;
@@ -42,7 +44,7 @@
 }
 
 @media screen and (min-width: 1600px){
-    .header{
+    .Navbar{
         max-width: 1600px;
         margin: 0 auto;
     }

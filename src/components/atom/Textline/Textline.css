@@ -11,3 +11,10 @@
     text-transform: uppercase;
     color: #222628;
 }
+@media screen and (max-width: 1400px) {
+    .h2Text{
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+    
+}
