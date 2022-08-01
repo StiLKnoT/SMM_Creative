@@ -42,6 +42,7 @@ import TikTokLogo from "../../assets/icons/tiktok.png";
 import YouTubeLogo from "../../assets/icons/youtube.png";
 import { FaArrowRight } from "react-icons/fa";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ShadowButton from "../atom/buttons/ShadowButton";
 
 
 const Accordion = styled((props) => (
@@ -422,11 +423,11 @@ const Second = () => {
                       </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                    <form>
-                        <input type="text" placeholder="Name" required />
+                    <form className="modalForm">
+                        <input className="formInput"  type="text" placeholder="Name" required />
                         <br />
-                        <input type="number" placeholder="Name" required />
-                        <button  > Ro'yxatdan o'tish </button>
+                        <input className="formInput"  type="number" placeholder="Name" required />
+                        <ShadowButton />
                       </form>
                     </Modal.Body>
                   </Modal>
@@ -454,11 +455,11 @@ const Second = () => {
                       </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                    <form>
-                        <input type="text" placeholder="Name" required />
+                    <form className="modalForm">
+                        <input className="formInput"  type="text" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required />
                         <br />
-                        <input type="number" placeholder="Name" required />
-                        <button> Ro'yxatdan o'tish </button>
+                        <input className="formInput"  type="number" placeholder="Telefon raqamingiz (+99891 234 56 78 ko‘rinishida)" required />
+                        <ShadowButton />
                       </form>
                     </Modal.Body>
                   </Modal>
@@ -485,11 +486,12 @@ const Second = () => {
                       </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                      <form>
-                        <input type="text" placeholder="Name" required />
+                      <form className="modalForm" >
+                        <input className="formInput"  type="text" placeholder="Name" required />
                         <br />
-                        <input type="number" placeholder="Name" required />
-                        <button> Ro'yxatdan o'tish </button>
+                        <input className="formInput"  type="number" placeholder="Name" required />
+                        
+                        <ShadowButton />
                       </form>
                     </Modal.Body>
                   </Modal>

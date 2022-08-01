@@ -146,7 +146,7 @@ body {
 
 /*  Tariflar Section  */
 
-.planChange{
+.planChange {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -154,35 +154,78 @@ body {
   justify-content: space-around;
 }
 
-.boxTarif{
+.boxTarif {
   height: 500px;
   width: 380px;
   border: 2px solid #222628;
 }
-.payBox{
+.payBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.modal-header{
+.modal-dialog,
+.modal-lg {
+  top: 35%;
+  width: 560px !important;
+  height: 280px !important;
+  background: #fff;
+  border: 2px solid #222628;
+  border-bottom: 2px solid #222628;
+  border-right: 2px solid #222628;
+  z-index: 10;
+
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 9px 9px 0px 0px rgba(255, 255, 255, 1),
+    10px 10px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.modal-dialog .ShadowBtn , .modal-lg .ShadowBtn{
+  height: 80px;
+  width: 335px;
+  margin: 5px;
+}
+
+.modalForm {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+}
+
+.modal-content {
+  height: 100%;
+}
+.modal-header {
   display: flex;
   align-items: center !important;
   justify-content: center !important;
+  border: none;
 }
-.modal-title{
+.modal-title {
   width: 100%;
-  display: flex;
-  align-items: center ;
-  justify-content: center ;
-}
-.modal-body{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+}
+.modal-body form {
+  width: 100%;
+}
+.formInput {
+  border: none;
+  border-bottom: 2px solid #222628;
+  width: 90%;
+  margin-top: 10px;
+}
 
 @media screen and (max-width: 768px) {
   .simpleCard {
