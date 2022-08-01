@@ -1,9 +1,23 @@
 import React from "react";
-import "./Second.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
+
+// Components
+import Box from '@mui/material/Box';
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
+import Card from '@mui/material/Card';
+import Row from "react-bootstrap/Row";
+import Image from 'react-bootstrap/Image';
+import Carousel from "react-multi-carousel";
+import Container from "react-bootstrap/Container";
+import Typography from '@mui/material/Typography';
+import CardContent from '@mui/material/CardContent';
+import { Avatar } from "@mui/material";
+
+// Styles
+import "./Second.css";
+import './components/CarouselCard.css'
+// import './components/CarouselCards.css'
+
+import "react-multi-carousel/lib/styles.css";
 
 // Assets
 import umidjon from "../../assets/keyslar/umidjon.png";
@@ -12,12 +26,15 @@ import jamila from "../../assets/keyslar/jamila.png";
 import tabib from "../../assets/keyslar/tabib.png";
 import { IoLogoInstagram } from "react-icons/io5";
 import instagramLogo from "../../assets/icons/instagram.png";
+import instaIcon from "../../assets/icons/instaIconsm.png";
+
 import TikTokLogo from "../../assets/icons/tiktok.png";
 import YouTubeLogo from "../../assets/icons/youtube.png";
 
 import { FaArrowRight } from "react-icons/fa";
 
 const Second = () => {
+// Data for KeysBox
   const createData = (
     bannerImg,
     Name,
@@ -88,13 +105,69 @@ const Second = () => {
       "https://www.youtube.com/c/UmidjonOrtiqov"
     ),
   ];
+// Data for Carousel
+  const createCarousel = (img, name, nickname, text) => {
+    return { img, name, nickname, text }
+  }
+  const carouselRows = [
+    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Siz insonga katta motivatsiya berasiz va o‘z yo‘lini ko‘rsatasiz. Shuning uchun sizga ishonamiz'),
+    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Ummatga foyda keltirib kelayotganingiz uchun, Allohni eslatib halol ish qilyotganingiz uchun'),
+    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad'),
+    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+  ]
+
+  // Data for Accordion
+  const createAccordion= (title, answer) => {
+    return { title, answer }
+  }
+  const carouselAccor = [
+    createCarousel( 'Umidjon', 'afshon_official'   ),
+    createCarousel( 'Umidjon', 'afshon_official'   ),
+    createCarousel( 'Umidjon', 'afshon_official'   ),
+    createCarousel( 'Umidjon', 'afshon_official'   ),
+    createCarousel( 'Umidjon', 'afshon_official'   ),
+    createCarousel( 'Umidjon', 'afshon_official'   ),
+  ]
+
+
+  // Carousel responsive settings
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 947 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 768 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 768, min: 0 },
+      items: 1
+    }
+  };
+
+  function scrollL(params) {
+    window.scroll({
+      top: 100,
+      left: 100,
+      behavior: 'smooth'
+    });
+  }
 
   return (
-    <main className="keyBox">
+    <main className="keyBox ">
+
+      {/* Keys Section */}
+
       <div className="titleBox">
         <h4 className="titleBox__item">BIZNING keyslar</h4>
       </div>
-      {/* <main className="container"> */}
       <div className="box">
         <div className="container">
           {rows.map((el, i) => {
@@ -120,7 +193,6 @@ const Second = () => {
                 <Row className="greenCards">
                   <Col xl={4} lg={4} md={4} sm={12} className=" greenCardCol ">
                     <div className="greenCard">
-                      Pp
                       <div className="innerGreenCard">
                         <div className="innerGreenCardLeft">
                           <img src={instagramLogo} alt={el.Name} />
@@ -180,19 +252,64 @@ const Second = () => {
         </div>
       </div>
 
+      {/* Carousel setcion */}
       <div className="titleBox">
         <h4 className="titleBox__item">NEGA bizni tanlashdi</h4>
       </div>
+      <section className=" box carouselContainer " >
+
+        <Carousel responsive={responsive} id="carCardsBot">
+          {
+            carouselRows.map((el, i) => {
+              return (
+                <>
+
+                  <div className='KarouselMainCard' key={i} >
+                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
+                      <Card className='Karousel__card' variant="outlined">
+                        <>
+                          <CardContent>
+                            <div className="upperBlock">
+                              <Avatar className="upperAvatar" alt={el.name} src={el.img} />
+                              <div className="upperBlockText">
+                                <div>
+                                  <h5 className="Karousel__cardTitle" >
+                                    {el.name}
+                                  </h5>
+                                </div>
+                                <div className="Karousel__cardContent" >
+                                  <img src={instaIcon} alt={el.Name} className="upperIcon" />
+                                  <span className="upperDblTxt" >{el.nickname}</span>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div className="underBlock">
+                              <h5> {el.text} </h5>
+                            </div>
+                          </CardContent>
+                        </>
+                      </Card>
+                    </Box>
+                  </div>
+                </>
 
 
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+              )
+            })
+          }
+        </Carousel>
 
-      .carouselbox
+      </section>
 
-
+      {/* FAQs Section */}
+      
+      <div className="titleBox">
+        <h4 className="titleBox__item">Ko'p Beriladigan savollar</h4>
+      </div>
+      <div className="box" >
+          
+      </div>
     </main>
   );
 };
