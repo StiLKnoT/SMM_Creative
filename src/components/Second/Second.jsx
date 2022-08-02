@@ -58,6 +58,7 @@ const Accordion = styled((props) => (
   },
 }));
 
+
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
     expandIcon={<ExpandMoreIcon sx={{ fontSize: "0.9rem" }} />}
@@ -463,6 +464,7 @@ const Second = () => {
                   <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
                 </ul>
                 <Button className=" ShadowBtn  formKursBtn" onClick={() => {
+
                   setLgShow1(true);
                 }
                 }>
@@ -487,7 +489,10 @@ const Second = () => {
                   </Modal.Header>
                   <Modal.Body>
 
-                    <Payme />
+
+                    <Payme  />
+
+
 
                   </Modal.Body>
                 </Modal>
