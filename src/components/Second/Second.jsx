@@ -283,8 +283,8 @@ const Second = () => {
                           <p>Instagram obunachilari</p>
                         </div>
                         <button className="ShadowBtn greenCardBtn">
-                          <a href="#">
-                            {" "}
+                          <a target="_blank" href={el.instLink}>
+                            {""}
                             Profilga o'tish <FaArrowRight />{" "}
                           </a>
                         </button>
@@ -301,7 +301,7 @@ const Second = () => {
                           <p>TikTok obunachilari</p>
                         </div>
                         <button className="ShadowBtn greenCardBtn">
-                          <a href="#">
+                          <a target="_blank" href={el.tikLink}>
                             {" "}
                             Profilga o'tish <FaArrowRight />{" "}
                           </a>
@@ -320,7 +320,7 @@ const Second = () => {
                           <p>YouTube obunachilari</p>
                         </div>
                         <button className="ShadowBtn greenCardBtn">
-                          <a href="#">
+                          <a target="_blank" href={el.youLink}>
                             {" "}
                             Profilga o'tish <FaArrowRight />{" "}
                           </a>
