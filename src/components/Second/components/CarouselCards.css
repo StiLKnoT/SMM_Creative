@@ -107,6 +107,7 @@
 }
 .react-multi-carousel-list  {
     padding-top: 60px;
+    height: 500px !important;
 } 
 .react-multi-carousel-list {
     display: flex;
@@ -133,15 +134,17 @@
 .react-multi-carousel-list .react-multiple-carousel__arrow {
     position: absolute;
     top: 0px;
-    background: inherit;
+    background: inherit !important;
 }
-
+ 
 .react-multiple-carousel__arrow--left {
     position: absolute;
-    left: 85%;
+    left: 75% !important;
 }
-
-
+.react-multiple-carousel__arrow--right::before  , .react-multiple-carousel__arrow--left::before{
+    font-size: 60px !important;
+    background-color: inherit !important;
+}
 .css-1qxcd35-MuiGrid-root {
     width: 100vw !important;
 }

@@ -53,7 +53,7 @@ const Spikers = [
   {'name': 'Islom',
   'surname': 'JALOLOV',
   'img': Spiker3,
-  'about': 'Asiaconsalt, At-tabib, Kalibri education va boshqa ko‘plab brendlar bilan muvaffaqiyatli faoliyat olib borgan, tajribali SMM menejer ',
+  'about': 'Umidjon Ortiqov va Ilxom Begimqulovning shaxsiy brendlari, Kalibri education  boshqa ko‘plab brendlar bilan muvaffaqiyatli faoliyat olib borgan, tajribali SMM menejer ',
   'insta':"https://active-vision.ru/icon/box-shadow/",
   "telegram":"",
   "youtube":"",

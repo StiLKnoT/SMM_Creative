@@ -23,7 +23,7 @@ export default class Payme extends Component {
 
                 <input className="formInput" type="text" name="account[name]" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required />
                 {/* <input className="formInput" type="text" name="account[number]" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required /> */}
-                <NumberFormat format="+998 (##) ###-##-##" allowEmptyFormatting mask="_"/>
+                <NumberFormat  className="formInput" format="+998 (##) ###-##-##" allowEmptyFormatting mask="_"/>
 
                 <input type="hidden" name="amount" value="5000" />
                 <input type="hidden" name="lang" value="ru" />

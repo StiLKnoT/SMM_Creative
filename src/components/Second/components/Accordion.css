@@ -1,4 +1,9 @@
-
+#faqsCont{
+    min-height: 100vh;
+    max-height: max-content;
+    width: 100%;
+    position: relative;
+}
 /* Accordion Arrow  */
 
 .MuiAccordionSummary-expandIconWrapper {
@@ -25,75 +30,32 @@
     border: none !important;
 }
 .KouchAccor__accordion{
-    position: absolute !important;
-    width: 90% !important;
+    position: relative !important;
+    width: 100% !important;
     margin: 50px 0 !important;
     border: 2px solid #222628 !important;
     background-color: #FFF !important;
 }
-.ustmaUst{
-    margin-top: 50px !important;
-    height: 120px !important;
-    position: relative !important;
-}
-/* .ustmaUst > *  {
+.KouchAccor__accordion::before{
+    content: ' ';
     position: absolute;
-} */
-
-
-.css-1fjvggn-MuiPaper-root-MuiAccordion-root{
-    position: absolute !important ;
-    margin: 20px 0 !important; 
-}
-
-.css-1fjvggn-MuiPaper-root-MuiAccordion-root:nth-child(1){
-    position: absolute !important;
-    top: 0px !important;
-    left: 0px !important;
-    z-index: 3 !important;
-    opacity: 0 !important;
-}
-.css-1fjvggn-MuiPaper-root-MuiAccordion-root:nth-child(1)::before{
-    content: ' ' !important;
-    position: absolute !important;
-    top: 10px !important;
-    width: 100% !important;
-    height: 100% !important;
-    border: 2px solid #222628 !important;
-    left: 0px !important;
-    z-index: 2 !important;
-    background-color: rgb(255, 255, 255) !important;
-    /* bottom: 0    !important; */
-}
-.css-1fjvggn-MuiPaper-root-MuiAccordion-root:nth-child(2){
-    top: 20px !important;
-    left: 20px !important;
-    z-index:3 !important;
-}
-.css-1fjvggn-MuiPaper-root-MuiAccordion-root:nth-child(3){
-    top: 40px !important;
-    left: 40px !important;
-    z-index: 2 !important;
-}
-.css-1fjvggn-MuiPaper-root-MuiAccordion-root:nth-child(4){
-    top: 60px !important;
-    left: 60px !important;
-    z-index: 1 !important;
-}
-.css-1fjvggn-MuiPaper-root-MuiAccordion-root:nth-child(3) > *, .css-1fjvggn-MuiPaper-root-MuiAccordion-root:nth-child(4) > * {
-    opacity: 0 !important;
-}
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #222628;
+    left: 10px;
+    z-index: 2;
+    background-color: aqua;
+    /* bottom: 0   ; */
+} 
 .KouchAccor__accordion::before {
-    content: ' ' !important;
-    background: rgb(255, 255, 255);
-    position: absolute !important;
-    left: 0px !important;
+    content: ' ';
+    background: rebeccapurple;
+    position: absolute;
+    left: 0px;
     /* margin-top: 30px; */
-    top: 10px !important;
+    top: 10px ;
     border: 2px solid #222628 !important;
     width: 100% !important;
     height: 100% !important;
-
 }
-
-
