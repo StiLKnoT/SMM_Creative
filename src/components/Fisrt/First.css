@@ -69,7 +69,7 @@
     top: -150px;
     /* left: 0; */
 
-    right: -250px;
+    right: -280px;
     transform: rotate(270deg);
     /* display: flex; */
     /* flex-direction: row; */
@@ -121,7 +121,11 @@
   animation: while 15s linear infinite;
   
 }
-
+#strelka{
+  display: flex;
+  color: #fff;
+  font-family: 10px;
+}
 @keyframes while {
   0%{
     transform: translateX(0);

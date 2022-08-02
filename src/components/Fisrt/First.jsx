@@ -51,7 +51,7 @@ function First() {
         </>
         <>
           <div className="forBtnSlide"> <p className='slideBtnParam'>
-            <a href="#Dastur">
+            <a id='strelka' href="#Dastur">
             <div className='forBtnFlat'>
               <BsTriangle /><BsTriangle /><BsTriangle />
             </div>

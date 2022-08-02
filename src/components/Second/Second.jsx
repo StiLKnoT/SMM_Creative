@@ -347,8 +347,7 @@ const Second = () => {
         "09 — Texnik topshiriqlar va deadline",
         "10 — Grafik dizaynerga TZ  yozish",
         "11 — Kopirayting va sotuvchi matn yozish",
-        "12 — Imtixon",
-        " ",
+         " ",
         "Modul so‘ngida:",
         "Siz SMM qanday soha ekanligini, sohada uchraydigan terminlarni tushunasiz, maqsadli auditoriyani topish, kuchli takliflar berish, kompaniyani tahlili qilish va grafik dizaynerlarga texnik topshiriq berishni o‘rganasiz. Sotuvchi matnlarni yozish ko‘nikmasiga ega bo‘lasiz. Deadline bilan ishlashni o‘rganasiz. ",
       ],
@@ -365,6 +364,46 @@ const Second = () => {
         "Vizual nima ekanligini bilib olasiz. Akkauntga bio yozishni, akkauntga nickname tanlashni o‘zlashtirasiz. Akkauntni oformleniya qilishni va taplink oformleniyani o‘rganasiz.",
       ],
     },
+    {
+      title: "4-Modul  Kontent",
+      items: [
+        "01 — Kontent marketing ",
+        "02 — Rubrikator ",
+        "03 — Kontent plan  ",
+        "04 — Instagram reels ",
+        "05 — Instagram Live va Instagram storiyes",
+        "06 — Kontent uchun g‘oya topish",
+        " ",
+        "Moduldan so‘ng:",
+        "Kontent nima ekanligini bilasiz, kontent turlarini farqlashni boshlaysiz. Kontent plan tuzishni o‘rganasiz, instagram reels va istoriyalar uchun kontent ishlashni o‘zlashtirasiz. YouTube va TikTok ga postlar joylashni o‘ganasiz. Kontent uchu g‘oya topish yo‘llarini  o‘rganasiz. ",
+      ],
+    },
+    {
+      title: "5-Modul Meta ",
+      items: [
+        "01 — Meta ( Instagram va Facebook ) ",
+        "02 — Facebook business suite ",
+        "03 — Targetingga kirish  ",
+        "04 — Retargeting va Look-Alike ",
+        " ",
+        "Moduldan so‘ng:",
+        "Meta haqida tushanchaga ega bo‘lasiz, Instagram va Facebook bo‘yicha instrumentarga ega bo‘lasiz, postlarni oldindan rejalashtirib qo‘yishni, boshlang‘ich targeting va retargetinglarni o‘rganasiz.",
+      ],
+    },
+    
+    {
+      title: "6-Modul Sotuv  ",
+      items: [
+        "01 — Mijozlarni topish va muzokara o‘tkazish",
+        "02 — Mijoz uchun Briyef va SMM strategiya ",
+        "03 — Portfoliyoga ega bo‘lmasdan turib, mijozga tijoriy taklif berish usullari  ",
+        "04 — Qonuniy ishlash va aldanib qolmaslik yo‘llari ",
+        "05 — Yurist bilan zoom   ",
+        " ",
+        "Moduldan so‘ng:",
+        "Mijozni qayerlardan topish, ular bilan muzokara o‘tkazishni o‘rganasiz, portfoliyoga ega bo‘lmasdan mijoz topishni o‘rganasiz. Sotuv bo‘yicha ko‘nikmaga ega bo‘lasiz. Qonuniy ishlash va aldanib qolmaslik yo‘llarini o‘rganasiz. ",
+      ],
+    }
   ];
 
   const FaqsAccorPrem = [
@@ -449,6 +488,36 @@ const Second = () => {
         "Dasturlashsiz veb sayt yasashni o‘rganasiz, o‘zingiz va mijozlar uchun veb sayt yasay olasiz. Chatbotlar bilan ishlashni o‘rganasiz, bloggerlar bilan ishlaganda qanday ishlashni o‘zlashtirasiz. Bitta patron qoidasini hayotda qo‘llashni o‘rganasiz.",
       ],
     },
+    {
+      title: "7-Modul Sotuv  ",
+      items: [
+        "01 — Mijozlarni topish va muzokara o‘tkazish",
+        "02 — Mijoz uchun Briyef va SMM strategiya ",
+        "03 — Portfoliyoga ega bo‘lmasdan turib, mijozga tijoriy taklif berish usullari  ",
+        "04 — Qonuniy ishlash va aldanib qolmaslik yo‘llari ",
+        "05 — Professional sotuvchi blan zoom ",
+        "06 — Yurist bilan zoom   ",
+        " ",
+        "Moduldan so‘ng:",
+        "Mijozni qayerlardan topish, ular bilan muzokara o‘tkazishni o‘rganasiz, portfoliyoga ega bo‘lmasdan mijoz topishni o‘rganasiz. Sotuv bo‘yicha ko‘nikmaga ega bo‘lasiz. Qonuniy ishlash va aldanib qolmaslik yo‘llarini o‘rganasiz. ",
+      ],
+    },
+    {
+      title: "8-Modul Shaxsiy brend ",
+      items: [
+        "01 — Shaxsiy brend nima va uning kuchi ",
+        " ",
+        "Moduldan so‘ng:",
+        "Shaxsiy brend nima ekanligini va qanday qurilishini, sotuvga qanday qilib ta’sir o‘tkaza olishini o‘rganasiz. Shaxsiy brend qurishni boshlaysiz. ",
+      ],
+    },
+    {
+      title: "9-Modul Psixolog ",
+      items: [
+        "01 — Kuratorlar ko‘magi va telegram guruh ",
+        "02 — Umidjon Ortiqov bilan 2 ta  zoom ",
+      ],
+    }
   ];
 
   const FaqsAccor = [

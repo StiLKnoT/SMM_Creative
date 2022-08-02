@@ -167,6 +167,9 @@
     .menuGridTemp{
         display: none;
     }   
+    .menuMob{
+        display: none;
+    }
     
 }
 
