@@ -7,7 +7,6 @@ function Textline() {
         <hr className='hrLine' />
             <h2 className='h2Text'>Kurs so‘ngida nimalarga ega bo‘lasiz?</h2>
         <hr className='hrLine'/>
-      
     </div>
   )
 }

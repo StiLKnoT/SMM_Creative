@@ -1,3 +1,14 @@
+.headerTitleBlock{
+    border-top: 2px solid #222628;
+    border-bottom: 2px solid #222628;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #222628;
+    margin-bottom: 50px;
+}
 .hrLine{
     height: 2px !important;
     background: black !important;
@@ -10,14 +21,11 @@
     font-style: normal;
     text-transform: uppercase;
     color: #222628;
-    width: 90% !important;
-    margin: 0 10% !important;
-
 }
 @media screen and (max-width: 1400px) {
     .h2Text{
         width: 90% !important;
-        margin: 0 10% !important;
+        margin: 0 auto !important;
     }
     
 }

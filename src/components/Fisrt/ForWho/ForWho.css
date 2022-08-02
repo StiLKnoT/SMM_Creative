@@ -93,6 +93,9 @@
     color: #222628;
 
 }
+.ForWhoMain{
+    overflow: hidden !important;
+}
 .IconMan{
     margin-top: 60px;
 }
@@ -106,5 +109,8 @@
     }
     .IconMan{
         margin-top: 30px;
+    }
+    .ForWhoRight{
+        border: none;
     }
 }

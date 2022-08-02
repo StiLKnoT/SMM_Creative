@@ -4,6 +4,10 @@
 #SpikerAboutMob{
     display: none;
 }
+.TabButtons:hover{
+    transform: scale(1.02);
+    transition: 0.4s ease-in-out;
+}
 
 .css-8atqhb{
     justify-content: space-between !important;

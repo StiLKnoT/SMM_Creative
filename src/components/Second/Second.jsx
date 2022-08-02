@@ -2,24 +2,24 @@ import React, { useState } from "react";
 import { Input, Link } from "@mui/material";
 import { styled } from "@mui/material/styles";
 // Components
+import Payme from "../../Paycom";
+import Paycom from '../../Paycom';
+import Footer from "../navbar/Footer";
 import Box from '@mui/material/Box';
 import Col from "react-bootstrap/Col";
 import { Avatar } from "@mui/material";
 import Card from '@mui/material/Card';
 import Row from "react-bootstrap/Row";
-// import Image from 'react-bootstrap/Image';
+import Wheel from "../Fisrt/Wheel/Wheel";
+import Modal from 'react-bootstrap/Modal';
 import Carousel from "react-multi-carousel";
-// import Container from "react-bootstrap/Container";
-// import Typography from '@mui/material/Typography';
+import Button from 'react-bootstrap/Button';
 import MuiAccordion from "@mui/material/Accordion";
+import HeaderTitle from "../atom/header/HeaderTitle";
+import ColorBlock from "../Fisrt/ColorBlock/ColorBlock";
 import CardContent from '@mui/material/CardContent';
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
-import Paycom from '../../Paycom';
-
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-
 
 
 // Styles
@@ -42,8 +42,8 @@ import TikTokLogo from "../../assets/icons/tiktok.png";
 import YouTubeLogo from "../../assets/icons/youtube.png";
 import { FaArrowRight } from "react-icons/fa";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ShadowButton from "../atom/buttons/ShadowButton";
-import Payme from "../../Paycom";
+
+
 
 
 const Accordion = styled((props) => (
@@ -221,496 +221,448 @@ const Second = () => {
 
 
   return (
+    <>
+      <main className="keyBox">
 
-    <main className="keyBox">
-
-      {/* Keys Section */}
-
-      <div className="titleBox">
-        <h4 className="titleBox__item">BIZNING keyslar</h4>
-      </div>
-      <div className="box">
-        <div className="container">
-          {rows.map((el, i) => {
-            return (
-              <div className="personBlock">
-                <Row key={i}>
-                  <Col xl={8} lg={8} md={8} sm={12}>
-                    <img
-                      src={el.bannerImg}
-                      alt={el.Name}
-                      className="img-fluid shadow-4 bannerImgPort "
-                    />
-                  </Col>
-                  <Col xl={4} lg={4} md={4} sm={12}>
-                    <div className="simpleCard">
-                      <div className="card__name">{el.Name}</div>
-                      <div className="card__info">{el.infoText}</div>
-                    </div>
-                  </Col>
-                </Row>
-                <h4 className="brText"> Biz bilan hamkorlikdan so'ng </h4>
-
-                <Row className="greenCards">
-                  <Col xl={4} lg={4} md={4} sm={12} className=" greenCardCol ">
-                    <div className="greenCard">
-                      <div className="innerGreenCard">
-                        <div className="innerGreenCardLeft">
-                          <img src={instagramLogo} alt={el.Name} />
-                          <span>{el.instNum}</span>
-                        </div>
-                        <p>Instagram obunachilari</p>
+        {/* Keys Section */}
+        <HeaderTitle theme="BIZNING keyslar" />
+        <div className="box">
+          <div className="container">
+            {rows.map((el, i) => {
+              return (
+                <div className="personBlock">
+                  <Row key={i}>
+                    <Col xl={8} lg={8} md={8} sm={12}>
+                      <img
+                        src={el.bannerImg}
+                        alt={el.Name}
+                        className="img-fluid shadow-4 bannerImgPort "
+                      />
+                    </Col>
+                    <Col xl={4} lg={4} md={4} sm={12}>
+                      <div className="simpleCard">
+                        <div className="card__name">{el.Name}</div>
+                        <div className="card__info">{el.infoText}</div>
                       </div>
-                      <button className="greenCardBtn">
-                        <a href="#">
-                          {" "}
-                          Profilga o'tish <FaArrowRight />{" "}
-                        </a>
-                      </button>
-                    </div>
-                  </Col>
+                    </Col>
+                  </Row>
+                  <h4 className="brText"> Biz bilan hamkorlikdan so'ng </h4>
 
-                  <Col xl={4} lg={4} md={4} sm={12} className=" greenCardCol ">
-                    <div className="greenCard">
-                      <div className="innerGreenCard">
-                        <div className="innerGreenCardLeft">
-                          <img src={TikTokLogo} alt={el.Name} />
-                          <span>{el.tikNum}</span>
+                  <Row className="greenCards">
+                    <Col xl={4} lg={4} md={4} sm={12} className=" greenCardCol ">
+                      <div className="greenCard">
+                        <div className="innerGreenCard">
+                          <div className="innerGreenCardLeft">
+                            <img src={instagramLogo} alt={el.Name} />
+                            <span>{el.instNum}</span>
+                          </div>
+                          <p>Instagram obunachilari</p>
                         </div>
-                        <p>TikTok obunachilari</p>
+                        <button className="greenCardBtn">
+                          <a href="#">
+                            {" "}
+                            Profilga o'tish <FaArrowRight />{" "}
+                          </a>
+                        </button>
                       </div>
-                      <button className="greenCardBtn">
-                        <a href="#">
-                          {" "}
-                          Profilga o'tish <FaArrowRight />{" "}
-                        </a>
-                      </button>
-                    </div>
-                  </Col>
+                    </Col>
 
-                  <Col xl={4} lg={4} md={4} sm={12} className=" greenCardCol ">
-                    <div className="greenCard">
-                      {/* <YouTubeLogo /> */}
-                      <div className="innerGreenCard">
-                        <div className="innerGreenCardLeft">
-                          <img src={YouTubeLogo} alt="{el.Name}" />
-                          <span>{el.youNum}</span>
+                    <Col xl={4} lg={4} md={4} sm={12} className=" greenCardCol ">
+                      <div className="greenCard">
+                        <div className="innerGreenCard">
+                          <div className="innerGreenCardLeft">
+                            <img src={TikTokLogo} alt={el.Name} />
+                            <span>{el.tikNum}</span>
+                          </div>
+                          <p>TikTok obunachilari</p>
                         </div>
-                        <p>YouTube obunachilari</p>
+                        <button className="greenCardBtn">
+                          <a href="#">
+                            {" "}
+                            Profilga o'tish <FaArrowRight />{" "}
+                          </a>
+                        </button>
                       </div>
-                      <button className="greenCardBtn">
-                        <a href="#">
-                          {" "}
-                          Profilga o'tish <FaArrowRight />{" "}
-                        </a>
-                      </button>
-                    </div>
-                  </Col>
-                </Row>
-              </div>
-            );
-          })}
+                    </Col>
+
+                    <Col xl={4} lg={4} md={4} sm={12} className=" greenCardCol ">
+                      <div className="greenCard">
+                        {/* <YouTubeLogo /> */}
+                        <div className="innerGreenCard">
+                          <div className="innerGreenCardLeft">
+                            <img src={YouTubeLogo} alt="{el.Name}" />
+                            <span>{el.youNum}</span>
+                          </div>
+                          <p>YouTube obunachilari</p>
+                        </div>
+                        <button className="greenCardBtn">
+                          <a href="#">
+                            {" "}
+                            Profilga o'tish <FaArrowRight />{" "}
+                          </a>
+                        </button>
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
 
-      {/* Carousel setcion */}
-      <div className="titleBox">
-        <h4 className="titleBox__item">NEGA bizni tanlashdi</h4>
-      </div>
-      <section className=" box carouselContainer " >
+        {/* Carousel setcion */}
+        <HeaderTitle theme="Nega bizni tanlashdi" />
+        <section className=" box carouselContainer " >
 
-        <Carousel responsive={responsive} id="carCardsBot">
-          {
-            carouselRows.map((el, i) => {
-              return (
-                <>
+          <Carousel responsive={responsive} id="carCardsBot">
+            {
+              carouselRows.map((el, i) => {
+                return (
+                  <>
 
-                  <div className='KarouselMainCard' key={i} >
-                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                      <Card className='Karousel__card' variant="outlined">
-                        <>
-                          <CardContent>
-                            <div className="upperBlock">
-                              <Avatar className="upperAvatar" alt={el.name} src={el.img} />
-                              <div className="upperBlockText">
-                                <div>
-                                  <h5 className="Karousel__cardTitle" >
-                                    {el.name}
-                                  </h5>
+                    <div className='KarouselMainCard' key={i} >
+                      <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
+                        <Card className='Karousel__card' variant="outlined">
+                          <>
+                            <CardContent>
+                              <div className="upperBlock">
+                                <Avatar className="upperAvatar" alt={el.name} src={el.img} />
+                                <div className="upperBlockText">
+                                  <div>
+                                    <h5 className="Karousel__cardTitle" >
+                                      {el.name}
+                                    </h5>
+                                  </div>
+                                  <div className="Karousel__cardContent" >
+                                    <img src={instaIcon} alt={el.Name} className="upperIcon" />
+                                    <span className="upperDblTxt" >{el.nickname}</span>
+                                  </div>
                                 </div>
-                                <div className="Karousel__cardContent" >
-                                  <img src={instaIcon} alt={el.Name} className="upperIcon" />
-                                  <span className="upperDblTxt" >{el.nickname}</span>
-                                </div>
+
                               </div>
+                              <div className="underBlock">
+                                <h5> {el.text} </h5>
+                              </div>
+                            </CardContent>
+                          </>
+                        </Card>
+                      </Box>
+                    </div>
+                  </>
 
-                            </div>
-                            <div className="underBlock">
-                              <h5> {el.text} </h5>
-                            </div>
-                          </CardContent>
-                        </>
-                      </Card>
-                    </Box>
+
+                )
+              })
+            }
+          </Carousel>
+
+        </section>
+
+        {/* FAQs || Accordion Section */}
+        <HeaderTitle theme="Ko'p Beriladigan savollar" />
+        <div className="box carouselContainer "   >
+          <section id="faqsCont">
+            {
+              carouselAccor.map((elem, i) => {
+                return (
+
+                  <>
+                    {/* <div className="ustmaUst"> */}
+                    <Accordion className="KouchAccor__accordion" expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)} >
+                      <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
+                        <div>
+                          <h5 className="accordion_title">
+                            {elem.title}
+                          </h5>
+                        </div>
+                      </AccordionSummary>
+                      <AccordionDetails className="accordionInner">
+                        <div className="innerAcc_text">
+                          {elem.answer}
+                        </div>
+                      </AccordionDetails>
+                    </Accordion>
+
+                    {/* </div> */}
+                  </>
+                )
+              })
+            }
+
+
+          </section>
+        </div>
+        {/* Lenta bn pinkBox */}
+        <Wheel />
+        <ColorBlock />
+
+
+        {/* Tariflar section */}
+
+        <section className="planChange">
+          <Row>
+
+            <Col xl={4} lg={4} md={6} sm={4}>
+              <div className="boxTarif" >
+                <>
+                  <div className="tarifTitle">
+                    <span>&#10033; </span> Silver    Tarifi
                   </div>
-                </>
-
-
-              )
-            })
-          }
-        </Carousel>
-
-      </section>
-
-      {/* FAQs Section */}
-
-      <div className="titleBox">
-        <h4 className="titleBox__item">Ko'p Beriladigan savollar</h4>
-      </div>
-      <div className="box carouselContainer "   >
-        <section id="faqsCont">
-          {
-            carouselAccor.map((elem, i) => {
-              return (
-
-
-                <div className="ustmaUst">
-                  <Accordion className="KouchAccor__accordion" expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)} >
-                    <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
-                      <div>
-                        <h5 className="accordion_title">
-                          {elem.title}
-                        </h5>
-                      </div>
-                    </AccordionSummary>
-                    <AccordionDetails className="accordionInner">
-                      <div className="innerAcc_text">
-                        {elem.answer}
-                      </div>
-                    </AccordionDetails>
-                  </Accordion>
-
-                  <Accordion className="KouchAccor__accordion" expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)} >
-                    <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
-                      <div>
-                        <h5 className="accordion_title">
-                          {elem.title}
-                        </h5>
-                      </div>
-                    </AccordionSummary>
-                    <AccordionDetails className="accordionInner">
-                      <div className="innerAcc_text">
-                        {elem.answer}
-                      </div>
-                    </AccordionDetails>
-                  </Accordion>
-
-                  <Accordion className="KouchAccor__accordion" expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)} >
-                    <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
-                      <div>
-                        <h5 className="accordion_title">
-                          {elem.title}
-                        </h5>
-                      </div>
-                    </AccordionSummary>
-                    <AccordionDetails className="accordionInner">
-                      <div className="innerAcc_text">
-                        {elem.answer}
-                      </div>
-                    </AccordionDetails>
-                  </Accordion>
-
-                  <Accordion className="KouchAccor__accordion" expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)} >
-                    <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
-                      <div>
-                        <h5 className="accordion_title">
-                          {elem.title}
-                        </h5>
-                      </div>
-                    </AccordionSummary>
-                    <AccordionDetails className="accordionInner">
-                      <div className="innerAcc_text">
-                        {elem.answer}
-                      </div>
-                    </AccordionDetails>
-                  </Accordion>
-                </div>
-              )
-            })
-          }
-        </section>
-      </div>
-      {/* Lenta bn pinkBox */}
-
-      {/* Tariflar section */}
-
-      <section className="planChange">
-        <Row>
-
-          <Col xl={4} lg={4} md={6} sm={4}>
-            <div className="boxTarif" >
-              <>
-                <div className="tarifTitle">
-                  <span>&#10033; </span> Silver    Tarifi
-                </div>
-                <div className="tarifPrice">
-                  1.000.000 <span> UZS</span>
-                </div>
-                <ul className="tarifServis" >
-                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                </ul>
-                <Button className=" ShadowBtn  formKursBtn" onClick={() => {
-
-                  setLgShow1(true);
-                }
-                }>
-                  <p className="InBtn" >Kursga yozilish</p>
-
-                </Button>
-                <Modal
-                  size="lg"
-                  className="payBox"
-                  show={lgShow1}
-                  onHide={
-                    () => {
-                      setLgShow1(false)
-                    }
+                  <div className="tarifPrice">
+                    1.000.000 <span> UZS</span>
+                  </div>
+                  <ul className="tarifServis" >
+                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  </ul>
+                  <Button className=" ShadowBtn  formKursBtn" onClick={() => {
+                    setLgShow1(true);
                   }
-                  aria-labelledby="modal1"
-                >
-                  <Modal.Header closeButton>
-                    <Modal.Title id="modal1">
-                      SMM CREATIVE 2.0 kursiga yozilish
-                    </Modal.Title>
-                  </Modal.Header>
-                  <Modal.Body>
+                  }>
+                    <p className="InBtn" >Kursga yozilish</p>
 
+                  </Button>
+                  <Modal
+                    size="lg"
+                    className="payBox"
+                    show={lgShow1}
+                    onHide={
+                      () => {
+                        setLgShow1(false)
+                      }
+                    }
+                    aria-labelledby="modal1"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="modal1">
+                        SMM CREATIVE 2.0 kursiga yozilish
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
 
-                    <Payme  />
+                      <Payme />
 
-
-
-                  </Modal.Body>
-                </Modal>
-              </>
-            </div>
-          </Col>
-
-          <Col xl={4} lg={4} md={6} sm={4}>
-
-            <div className="boxTarif" >
-              <>
-                <div className="tarifTitle">
-                  <span>&#10033; </span> Gold Tarifi
-                </div>
-                <div className="tarifPrice">
-                  2.000.000 <span> UZS</span>
-                </div>
-                <ul className="tarifServis" >
-                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-
-                </ul>
-                <Button className=" ShadowBtn  formKursBtn" onClick={() => {
-                  setLgShow2(true);
-                }
-                }>
-                  <p className="InBtn" >Kursga yozilish</p>
-
-                </Button>
-                <Modal
-                  size="lg"
-                  className="payBox"
-                  show={lgShow2}
-                  onHide={() => setLgShow2(false)}
-                  aria-labelledby="modal2"
-                >
-
-                  <Modal.Header closeButton>
-                    <Modal.Title id="modal2">
-                      SMM CREATIVE 2.0 kursiga yozilish
-                    </Modal.Title>
-                  </Modal.Header>
-                  <Modal.Body>
-                    <Payme />
-
-                  </Modal.Body>
-                </Modal>
-              </>
-            </div>
-          </Col>
-
-          <Col xl={4} lg={4} md={12} sm={4}>
-
-            <div className="boxTarif" >
-              <>
-                <div className="tarifTitle">
-                  <span>&#10033; </span>  Platinum Tarifi
-                </div>
-                <div className="tarifPrice">
-                  3.000.000 <span> UZS</span>
-                </div>
-                <ul className="tarifServis" >
-                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                </ul>
-                <Button className=" ShadowBtn  formKursBtn" onClick={() => {
-                  setLgShow3(true);
-                }
-                }>
-                  <p className="InBtn" >Kursga yozilish</p>
-
-                </Button>
-                <Modal
-                  size="lg"
-                  className="payBox"
-                  show={lgShow3}
-                  onHide={() => setLgShow3(false)}
-                  aria-labelledby="modal3"
-                >
-                  <Modal.Header closeButton>
-                    <Modal.Title id="modal3">
-                      SMM CREATIVE 2.0 kursiga yozilish
-                    </Modal.Title>
-                  </Modal.Header>
-                  <Modal.Body>
-
-                    <Payme />
-
-                  </Modal.Body>
-                </Modal>
-              </>
-            </div>
-          </Col>
-
-        </Row>
-      </section>
-
-      {/* Darslar section */}
-      <div className="titleBox">
-        <h4 className="titleBox__item">KURS QANDAY OLIB BORILADI</h4>
-      </div>
-      <div className="box carouselContainer">
-        <section id="darsBlock" >
-          <Row className="darsRow" >
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="darsBlockTitle"> Darslar </div>
-            </Col>
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="darsBlockText"> Kurs modullardan tashkil topgan. Sizga ma’lum vaqtda darslar ochib beriladi </div>
-            </Col>
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="boxShadowBox">
-              <div className="darsBlockCardShadow">1  </div>
-               <div className="darsBlockCardShadow">1  </div>
-                <div className="darsBlockCardShadow">1  </div>
+                    </Modal.Body>
+                  </Modal>
+                </>
               </div>
             </Col>
-          </Row>
-          <Row className="darsRow" >
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="darsBlockTitle"> Vazifalar </div>
-            </Col>
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="darsBlockText"> Darslar so‘ngida siz berilgan uy vazifalarini topshirasiz </div>
-            </Col>
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="boxShadowBox">
-              <div className="darsBlockCardShadow"> 2 </div>
-               <div className="darsBlockCardShadow"> 2 </div>
-                <div className="darsBlockCardShadow"> 2 </div>
-              </div>
-            </Col>
-          </Row>
-          <Row className="darsRow" >
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="darsBlockTitle"> Tekshiruv </div>
-            </Col>
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="darsBlockText"> Vazifalaringiz kurs rahbaringiz tomonidan tekshirib boriladi </div>
-            </Col>
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="boxShadowBox">
-              <div className="darsBlockCardShadow"> 3 </div>
-               <div className="darsBlockCardShadow"> 3 </div>
-                <div className="darsBlockCardShadow"> 3 </div>
-              </div>
-            </Col>
-          </Row>
 
-          <Row className="darsRow" >
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="darsBlockTitle"> ALOQA </div>
-            </Col>
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="darsBlockText"> Kurs rahbari bilan belgilangan vaqtda to‘g‘ridan-to‘g‘ri aloqada bo‘lasiz </div>
-            </Col>
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="boxShadowBox">
-              <div className="darsBlockCardShadow">4  </div>
-               <div className="darsBlockCardShadow">4  </div>
-                <div className="darsBlockCardShadow">4  </div>
+            <Col xl={4} lg={4} md={6} sm={4}>
+
+              <div className="boxTarif" >
+                <>
+                  <div className="tarifTitle">
+                    <span>&#10033; </span> Gold Tarifi
+                  </div>
+                  <div className="tarifPrice">
+                    2.000.000 <span> UZS</span>
+                  </div>
+                  <ul className="tarifServis" >
+                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+
+                  </ul>
+                  <Button className=" ShadowBtn  formKursBtn" onClick={() => {
+                    setLgShow2(true);
+                  }
+                  }>
+                    <p className="InBtn" >Kursga yozilish</p>
+
+                  </Button>
+                  <Modal
+                    size="lg"
+                    className="payBox"
+                    show={lgShow2}
+                    onHide={() => setLgShow2(false)}
+                    aria-labelledby="modal2"
+                  >
+
+                    <Modal.Header closeButton>
+                      <Modal.Title id="modal2">
+                        SMM CREATIVE 2.0 kursiga yozilish
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      <Payme />
+
+                    </Modal.Body>
+                  </Modal>
+                </>
               </div>
             </Col>
-          </Row>
-          <Row className="darsRow" >
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="darsBlockTitle"> EKSPERTLAR </div>
-            </Col>
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="darsBlockText"> Barcha modullar so‘ngida kurs rahbari hamda ekspertlar bilan muloqot qilasiz </div>
-            </Col>
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="boxShadowBox">
-              <div className="darsBlockCardShadow">5  </div>
-               <div className="darsBlockCardShadow">5  </div>
-                <div className="darsBlockCardShadow">5  </div>
+
+            <Col xl={4} lg={4} md={12} sm={4}>
+
+              <div className="boxTarif" >
+                <>
+                  <div className="tarifTitle">
+                    <span>&#10033; </span>  Platinum Tarifi
+                  </div>
+                  <div className="tarifPrice">
+                    3.000.000 <span> UZS</span>
+                  </div>
+                  <ul className="tarifServis" >
+                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                  </ul>
+                  <Button className=" ShadowBtn  formKursBtn" onClick={() => {
+                    setLgShow3(true);
+                  }
+                  }>
+                    <p className="InBtn" >Kursga yozilish</p>
+
+                  </Button>
+                  <Modal
+                    size="lg"
+                    className="payBox"
+                    show={lgShow3}
+                    onHide={() => setLgShow3(false)}
+                    aria-labelledby="modal3"
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="modal3">
+                        SMM CREATIVE 2.0 kursiga yozilish
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+
+                      <Payme />
+
+                    </Modal.Body>
+                  </Modal>
+                </>
               </div>
             </Col>
-          </Row>
-          <Row className="darsRow" >
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="darsBlockTitle"> Imtixon </div>
-            </Col>
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="darsBlockText"> Modul so‘ngida umumiy imtihon vazifasini bajarasiz </div>
-            </Col>
-            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
-              <div className="boxShadowBox">
-              <div className="darsBlockCardShadow">  6</div>
-               <div className="darsBlockCardShadow">  6</div>
-                <div className="darsBlockCardShadow">  6</div>
-              </div>
-            </Col>
+
           </Row>
         </section>
-      </div>
-      {/* Lenta bn pinkBox */}
 
+        {/* Darslar section */}
+        <HeaderTitle theme="KURS QANDAY OLIB BORILADI" />
+        <div className="box carouselContainer">
+          <section id="darsBlock" >
+            <Row className="darsRow" >
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="darsBlockTitle"> Darslar </div>
+              </Col>
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="darsBlockText"> Kurs modullardan tashkil topgan. Sizga ma’lum vaqtda darslar ochib beriladi </div>
+              </Col>
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="boxShadowBox">
+                  <div className="darsBlockCardShadow">1  </div>
+                  <div className="darsBlockCardShadow">1  </div>
+                  <div className="darsBlockCardShadow">1  </div>
+                </div>
+              </Col>
+            </Row>
+            <Row className="darsRow" >
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="darsBlockTitle"> Vazifalar </div>
+              </Col>
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="darsBlockText"> Darslar so‘ngida siz berilgan uy vazifalarini topshirasiz </div>
+              </Col>
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="boxShadowBox">
+                  <div className="darsBlockCardShadow"> 2 </div>
+                  <div className="darsBlockCardShadow"> 2 </div>
+                  <div className="darsBlockCardShadow"> 2 </div>
+                </div>
+              </Col>
+            </Row>
+            <Row className="darsRow" >
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="darsBlockTitle"> Tekshiruv </div>
+              </Col>
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="darsBlockText"> Vazifalaringiz kurs rahbaringiz tomonidan tekshirib boriladi </div>
+              </Col>
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="boxShadowBox">
+                  <div className="darsBlockCardShadow"> 3 </div>
+                  <div className="darsBlockCardShadow"> 3 </div>
+                  <div className="darsBlockCardShadow"> 3 </div>
+                </div>
+              </Col>
+            </Row>
 
-    </main>
+            <Row className="darsRow" >
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="darsBlockTitle"> ALOQA </div>
+              </Col>
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="darsBlockText"> Kurs rahbari bilan belgilangan vaqtda to‘g‘ridan-to‘g‘ri aloqada bo‘lasiz </div>
+              </Col>
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="boxShadowBox">
+                  <div className="darsBlockCardShadow">4  </div>
+                  <div className="darsBlockCardShadow">4  </div>
+                  <div className="darsBlockCardShadow">4  </div>
+                </div>
+              </Col>
+            </Row>
+            <Row className="darsRow" >
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="darsBlockTitle"> EKSPERTLAR </div>
+              </Col>
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="darsBlockText"> Barcha modullar so‘ngida kurs rahbari hamda ekspertlar bilan muloqot qilasiz </div>
+              </Col>
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="boxShadowBox">
+                  <div className="darsBlockCardShadow">5  </div>
+                  <div className="darsBlockCardShadow">5  </div>
+                  <div className="darsBlockCardShadow">5  </div>
+                </div>
+              </Col>
+            </Row>
+            <Row className="darsRow" >
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="darsBlockTitle"> Imtixon </div>
+              </Col>
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="darsBlockText"> Modul so‘ngida umumiy imtihon vazifasini bajarasiz </div>
+              </Col>
+              <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+                <div className="boxShadowBox">
+                  <div className="darsBlockCardShadow">  6</div>
+                  <div className="darsBlockCardShadow">  6</div>
+                  <div className="darsBlockCardShadow">  6</div>
+                </div>
+              </Col>
+            </Row>
+          </section>
+        </div>
+        {/* Lenta bn pinkBox */}
+        <ColorBlock />
+        <Wheel />
+
+      </main>
+      <Footer />
+      <br /><br /><br /><br /><br />
+    </>
   );
 };
 

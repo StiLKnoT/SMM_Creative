@@ -47,6 +47,9 @@ body {
   padding-bottom: 50px;
   font-family: "Space Grotesk";
 }
+.personBlock:last-child {
+  border: none;
+}
 .bannerImgPort {
   border: 2px solid #222628;
 }
@@ -130,6 +133,7 @@ body {
 .greenCardBtn:hover a,
 .greenCardBtn:hover svg {
   background-color: #ffd100 !important;
+  transition: all 0.3s;
 }
 .greenCardBtn a {
   color: #000;
@@ -284,6 +288,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 140%;
+  /* or 36px */
+  text-transform: uppercase;
+  color: #222628;
+  border: 2px solid #222628;
+}
+.btn-close{
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  background-color: #FFF !important;
+}
+.btn-close > * {
+  color: #FFF !important;
 }
 .modal-body {
   display: flex;
@@ -309,9 +332,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-.darsRow:nth-child(odd) {
-}
-.darsRow:nth-child(even){
+.darsRow:nth-child(even) {
   flex-direction: row-reverse;
 }
 .darsRow:nth-child(even) .darsBlockItem:nth-child(3) {
@@ -331,13 +352,14 @@ body {
 .darsBlockItem:nth-child(3) {
   border-right: 5px solid #ffd100;
 }
-.boxShadowBox{
+.boxShadowBox {
   right: -10px;
 }
-.darsRow:nth-child(even)  .boxShadowBox{
+.darsRow:nth-child(even) .boxShadowBox {
   left: -10px;
 }
-.boxShadowBox, .darsBlockItem {
+.boxShadowBox,
+.darsBlockItem {
   position: relative;
   display: flex;
   align-items: center;
@@ -376,9 +398,8 @@ body {
   border: 2px solid #222628;
   top: 36%;
   right: -65px;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 1;
-
 }
 .darsBlockCardShadow:nth-child(2) {
   display: flex;
@@ -391,11 +412,10 @@ body {
   border: 2px solid #222628;
   top: 39%;
   right: -75px;
-  background-color:#FFF;
+  background-color: #fff;
   z-index: 0;
 }
-.darsRow:nth-child(even) .darsBlockCardShadow:nth-child(1){
-
+.darsRow:nth-child(even) .darsBlockCardShadow:nth-child(1) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,10 +426,10 @@ body {
   border: 2px solid #222628;
   top: 36%;
   left: -40px;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 1;
-}  
-.darsRow:nth-child(even) .darsBlockCardShadow:nth-child(2){
+}
+.darsRow:nth-child(even) .darsBlockCardShadow:nth-child(2) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -420,10 +440,9 @@ body {
   border: 2px solid #222628;
   top: 39%;
   left: -30px;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 0;
-  }
-
+}
 
 @media screen and (max-width: 768px) {
   .simpleCard {

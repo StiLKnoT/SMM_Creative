@@ -24,6 +24,8 @@
 .ShadowBtn:hover{
     background-color: #FFD100;
     transition: all 0.3s;
+    transform: scale(1.02);
+    transition: 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 576px) {
