@@ -8,18 +8,19 @@ function Navbar() {
       <div className="Navbar">
         <ul className="navSections">
         <div className="logoBlock">
-          <div>
+          <div><a href="#">
             <img className="logoIcon" src={logo}/>
+            </a>
           </div>
         </div>
           <li>
-            <a className="link" href="">SPIKERLAR</a>
+            <a className="link" href="#PaddingDiv">SPIKERLAR</a>
           </li>
           <li>
-            <a className="link" href="">Kurs kimlar uchun?</a>
+            <a className="link" href="#kimlarUchun">Kurs kimlar uchun?</a>
           </li>
           <li>
-            <a className="link" href="">Dastur</a>
+            <a className="link" href="#Dastur">Dastur</a>
           </li>
           <li>
             <a className="link" href="">Keyslar</a>

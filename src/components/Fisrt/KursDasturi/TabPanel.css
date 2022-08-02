@@ -29,11 +29,11 @@
 
 }
 .css-heg063-MuiTabs-flexContainer, .SpikerBlock{
-    width: 75% !important;
-    margin: 0 200px !important;
+    width: 80% !important;
+    margin: 0 10% !important;
 }
 .SpikerBlock{
-    margin: 50px 200px !important;
+    margin: 50px 10% !important;
 }
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
     border: 2px solid #222628 !important;
@@ -103,7 +103,7 @@
 .SpikerConnect{
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 50%;
 }
 .ConnectIcons{
     display: flex;
@@ -200,4 +200,5 @@
     #SpikerAboutMob{
         display: block;
     }
+  
 }

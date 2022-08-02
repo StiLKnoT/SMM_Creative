@@ -11,6 +11,9 @@
     background: #B4FFC9;
     
 }
+#kimlarUchun{
+    background-color: #F5F5F5;
+}
 .ForWhoH2 h2{
     width: 90%;
     margin: 0 auto;
@@ -21,6 +24,7 @@
     font-style: normal;
     text-transform: uppercase;
     color: #222628;
+    margin: 0 10%;
  
 }
 .ForWhoMain{
@@ -40,16 +44,7 @@
     font-weight: 800;
     font-size: 24px;
     line-height: 120%;
-    /* or 29px */
-    
     letter-spacing: 0.03em;
-    
-    /* brand black color */
-    
-    color: #222628;
-
-    /* brand black color */
-
     color: #222628;
 }
 .ForLeftP{
@@ -58,11 +53,58 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
+    color: #222628;
 
     /* brand black color */
 
 
 }
+.ForWhoRight{
+    border-left: 2px solid #222628;
+    /* border-top: 2px solid #222628;
+    border-bottom: 2px solid #222628; */
+}
 .ForWhoRight img{
     width: 100%;
+    height: 100%;
+}
+.ForWhoForm{
+    background: #fff;
+    width: 60%;
+    height: auto;
+    padding: 20px 20px 0px;
+    border: 2px solid #222628;
+}
+.ForWhoFormH2{font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #222628;
+    
+}
+.ForWhoFormP{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 20px;
+    color: #222628;
+
+}
+.IconMan{
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 576px) {
+    .ForWhoForm{
+        margin-bottom: 40px !important;
+    }
+    .ForWhoForm{
+        width: 100%;
+    }
+    .IconMan{
+        margin-top: 30px;
+    }
 }
