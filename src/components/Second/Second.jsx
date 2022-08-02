@@ -236,6 +236,273 @@ const Second = () => {
     }
   };
 
+  // FAQs's accordion
+
+
+  const FaqsAccorStan = [
+    {
+      title: "1-Modul Kirish  ",
+      items: [
+        "01 — Vaqtni to'g'ri taqsimlash",
+        "02 — Kursdan to'g'ri foydalanish va natijaga chiqish usullari",
+        "Moduldan so'ng:",
+        "Siz 1-modulni tugatganingizdan so‘ng vaqtingizni to‘g‘ri boshqarishni va kursdan unumli foydalanishni o‘rganasiz. "
+      ]
+    },
+    {
+      title: "2-Modul SMM  ",
+      items: [
+        "01 — Kursdan qanday  to‘g‘ri foydalanish va natijaga chiqish usullari ",
+        "02 — SMM bu nima va SMM mutaxassisi kim ?",
+        "03 — SMM mutaxassisi terminlari va qo‘llash joylari",
+        "04 — Maqsadli auditoriya va mijoz portreti",
+        "05 — UTP, offer va trigger nima ?",
+        "06 — Sotuv voronkasi va mijozga yo‘l",
+        "07 — Raqobatchilarni analiz qilish",
+        "08 — SVOT analiz",
+        "09 — Texnik topshiriqlar va deadline",
+        "10 — Grafik dizaynerga TZ  yozish",
+        "11 — Kopirayting va sotuvchi matn yozish",
+        "12 — Imtixon",
+        " ",
+        "Modul so‘ngida:",
+        "Siz SMM qanday soha ekanligini, sohada uchraydigan terminlarni tushunasiz, maqsadli auditoriyani topish, kuchli takliflar berish, kompaniyani tahlili qilish va grafik dizaynerlarga texnik topshiriq berishni o‘rganasiz. Sotuvchi matnlarni yozish ko‘nikmasiga ega bo‘lasiz. Deadline bilan ishlashni o‘rganasiz. "
+      ]
+    },
+    {
+      title: "3-Modul  Vizual  ",
+      items: [
+        "01 — Akkauntga bio yozish  ",
+        "02 — Nickname tanlash",
+        "03 — Akkauntni  vizual oformleniya qilish  ",
+        "04 — Taplink oformleniya",
+        " ",
+        "Moduldan so‘ng:",
+        "Vizual nima ekanligini bilib olasiz. Akkauntga bio yozishni, akkauntga nickname tanlashni o‘zlashtirasiz. Akkauntni oformleniya qilishni va taplink oformleniyani o‘rganasiz."
+      ]
+    }
+  ]
+
+
+
+  const FaqsAccorPrem = [
+    {
+      title: "1-Modul Kirish  ",
+      items: [
+        "01 — Vaqtni to'g'ri taqsimlash",
+        "02 — Kursdan to'g'ri foydalanish va natijaga chiqish usullari",
+        "Moduldan so'ng:",
+        "Siz 1-modulni tugatganingizdan so‘ng vaqtingizni to‘g‘ri boshqarishni va kursdan unumli foydalanishni o‘rganasiz. "
+      ]
+    },
+    {
+      title: "2-Modul SMM  ",
+      items: [
+        "01 — Kursdan qanday  to‘g‘ri foydalanish va natijaga chiqish usullari ",
+        "02 — SMM bu nima va SMM mutaxassisi kim ?",
+        "03 — SMM mutaxassisi terminlari va qo‘llash joylari",
+        "04 — Maqsadli auditoriya va mijoz portreti",
+        "05 — UTP, offer va trigger nima ?",
+        "06 — Sotuv voronkasi va mijozga yo‘l",
+        "07 — Raqobatchilarni analiz qilish",
+        "08 — SVOT analiz",
+        "09 — Texnik topshiriqlar va deadline",
+        "10 — Grafik dizaynerga TZ  yozish",
+        "11 — Kopirayting va sotuvchi matn yozish",
+        "12 — Imtixon",
+        " ",
+        "Modul so‘ngida:",
+        "Siz SMM qanday soha ekanligini, sohada uchraydigan terminlarni tushunasiz, maqsadli auditoriyani topish, kuchli takliflar berish, kompaniyani tahlili qilish va grafik dizaynerlarga texnik topshiriq berishni o‘rganasiz. Sotuvchi matnlarni yozish ko‘nikmasiga ega bo‘lasiz. Deadline bilan ishlashni o‘rganasiz. "
+      ]
+    },
+    {
+      title: "3-Modul  Vizual  ",
+      items: [
+        "01 — Akkauntga bio yozish  ",
+        "02 — Nickname tanlash",
+        "03 — Akkauntni  vizual oformleniya qilish  ",
+        "04 — Taplink oformleniya",
+        " ",
+        "Moduldan so‘ng:",
+        "Vizual nima ekanligini bilib olasiz. Akkauntga bio yozishni, akkauntga nickname tanlashni o‘zlashtirasiz. Akkauntni oformleniya qilishni va taplink oformleniyani o‘rganasiz."
+      ]
+    },
+    {
+      title: "4-Modul  Kontent",
+      items: [
+        "01 — Kontent marketing ",
+        "02 — Rubrikator ",
+        "03 — Kontent plan  ",
+        "04 — Instagram reels ",
+        "05 — Instagram Live va Instagram storiyes",
+        "06 — YouTube ga kontent ",
+        "07 — Tik tok va Zet avlod kontentlari",
+        "08 — Kontent uchun g‘oya topish",
+        " ",
+        "Moduldan so‘ng:",
+        "Kontent nima ekanligini bilasiz, kontent turlarini farqlashni boshlaysiz. Kontent plan tuzishni o‘rganasiz, instagram reels va istoriyalar uchun kontent ishlashni o‘zlashtirasiz. YouTube va TikTok ga postlar joylashni o‘ganasiz. Kontent uchu g‘oya topish yo‘llarini  o‘rganasiz. "
+      ]
+    },
+    {
+      title: "5-Modul Meta ",
+      items: [
+        "01 — Meta ( Instagram va Facebook ) ",
+        "02 — Facebook business suite ",
+        "03 — Targetingga kirish  ",
+        "04 — Retargeting va Look-Alike ",
+        " ",
+        "Moduldan so‘ng:",
+        "Meta haqida tushanchaga ega bo‘lasiz, Instagram va Facebook bo‘yicha instrumentarga ega bo‘lasiz, postlarni oldindan rejalashtirib qo‘yishni, boshlang‘ich targeting va retargetinglarni o‘rganasiz."
+      ]
+    },
+    {
+      title: "6-Modul Veb sayt va chatbot bilan ishlash ",
+      items: [
+        "01 — Veb sayt yasash (dasturlashsiz ) ",
+        "02 — Chat botlar bilan tanishuv ",
+        "03 — Blogerlar bilan ishlash va Bitta patron qoidasi  ",
+        " ",
+        "Moduldan so‘ng:",
+        " ",
+        "Dasturlashsiz veb sayt yasashni o‘rganasiz, o‘zingiz va mijozlar uchun veb sayt yasay olasiz. Chatbotlar bilan ishlashni o‘rganasiz, bloggerlar bilan ishlaganda qanday ishlashni o‘zlashtirasiz. Bitta patron qoidasini hayotda qo‘llashni o‘rganasiz."
+      ]
+    }
+  ]
+
+
+
+  const FaqsAccor = [
+    {
+      title: "1-Modul Kirish  ",
+      items: [
+        "01 — Vaqtni to'g'ri taqsimlash",
+        "02 — Kursdan to'g'ri foydalanish va natijaga chiqish usullari",
+        "Moduldan so'ng:",
+        "Siz 1-modulni tugatganingizdan so‘ng vaqtingizni to‘g‘ri boshqarishni va kursdan unumli foydalanishni o‘rganasiz. "
+      ]
+    },
+    {
+      title: "2-Modul SMM  ",
+      items: [
+        "01 — Kursdan qanday  to‘g‘ri foydalanish va natijaga chiqish usullari ",
+        "02 — SMM bu nima va SMM mutaxassisi kim ?",
+        "03 — SMM mutaxassisi terminlari va qo‘llash joylari",
+        "04 — Maqsadli auditoriya va mijoz portreti",
+        "05 — UTP, offer va trigger nima ?",
+        "06 — Sotuv voronkasi va mijozga yo‘l",
+        "07 — Raqobatchilarni analiz qilish",
+        "08 — SVOT analiz",
+        "09 — Texnik topshiriqlar va deadline",
+        "10 — Grafik dizaynerga TZ  yozish",
+        "11 — Kopirayting va sotuvchi matn yozish",
+        "12 — Imtixon",
+        " ",
+        "Modul so‘ngida:",
+        "Siz SMM qanday soha ekanligini, sohada uchraydigan terminlarni tushunasiz, maqsadli auditoriyani topish, kuchli takliflar berish, kompaniyani tahlili qilish va grafik dizaynerlarga texnik topshiriq berishni o‘rganasiz. Sotuvchi matnlarni yozish ko‘nikmasiga ega bo‘lasiz. Deadline bilan ishlashni o‘rganasiz. "
+      ]
+    },
+    {
+      title: "3-Modul  Vizual  ",
+      items: [
+        "01 — Akkauntga bio yozish  ",
+        "02 — Nickname tanlash",
+        "03 — Akkauntni  vizual oformleniya qilish  ",
+        "04 — Taplink oformleniya",
+        " ",
+        "Moduldan so‘ng:",
+        "Vizual nima ekanligini bilib olasiz. Akkauntga bio yozishni, akkauntga nickname tanlashni o‘zlashtirasiz. Akkauntni oformleniya qilishni va taplink oformleniyani o‘rganasiz."
+      ]
+    },
+    {
+      title: "4-Modul  Kontent",
+      items: [
+        "01 — Kontent marketing ",
+        "02 — Rubrikator ",
+        "03 — Kontent plan  ",
+        "04 — Instagram reels ",
+        "05 — Instagram Live va Instagram storiyes",
+        "06 — YouTube ga kontent ",
+        "07 — Tik tok va Zet avlod kontentlari",
+        "08 — Kontent uchun g‘oya topish",
+        " ",
+        "Moduldan so‘ng:",
+        "Kontent nima ekanligini bilasiz, kontent turlarini farqlashni boshlaysiz. Kontent plan tuzishni o‘rganasiz, instagram reels va istoriyalar uchun kontent ishlashni o‘zlashtirasiz. YouTube va TikTok ga postlar joylashni o‘ganasiz. Kontent uchu g‘oya topish yo‘llarini  o‘rganasiz. "
+      ]
+    },
+    {
+      title: "5-Modul Meta ",
+      items: [
+        "01 — Meta ( Instagram va Facebook ) ",
+        "02 — Facebook business suite ",
+        "03 — Targetingga kirish  ",
+        "04 — Retargeting va Look-Alike ",
+        " ",
+        "Moduldan so‘ng:",
+        "Meta haqida tushanchaga ega bo‘lasiz, Instagram va Facebook bo‘yicha instrumentarga ega bo‘lasiz, postlarni oldindan rejalashtirib qo‘yishni, boshlang‘ich targeting va retargetinglarni o‘rganasiz."
+      ]
+    },
+    {
+      title: "6-Modul Veb sayt va chatbot bilan ishlash ",
+      items: [
+        "01 — Veb sayt yasash (dasturlashsiz ) ",
+        "02 — Chat botlar bilan tanishuv ",
+        "03 — Blogerlar bilan ishlash va Bitta patron qoidasi  ",
+        " ",
+        "Moduldan so‘ng:",
+        " ",
+        "Dasturlashsiz veb sayt yasashni o‘rganasiz, o‘zingiz va mijozlar uchun veb sayt yasay olasiz. Chatbotlar bilan ishlashni o‘rganasiz, bloggerlar bilan ishlaganda qanday ishlashni o‘zlashtirasiz. Bitta patron qoidasini hayotda qo‘llashni o‘rganasiz."
+      ]
+    },
+    {
+      title: "7-Modul Sotuv  ",
+      items: [
+        "01 — Mijozlarni topish va muzokara o‘tkazish",
+        "02 — Mijoz uchun Briyef va SMM strategiya ",
+        "03 — Portfoliyoga ega bo‘lmasdan turib, mijozga tijoriy taklif berish usullari  ",
+        "04 — Qonuniy ishlash va aldanib qolmaslik yo‘llari ",
+        "05 — Professional sotuvchi blan zoom ",
+        "06 — Yurist bilan zoom   ",
+        " ",
+        "Moduldan so‘ng:",
+        "Mijozni qayerlardan topish, ular bilan muzokara o‘tkazishni o‘rganasiz, portfoliyoga ega bo‘lmasdan mijoz topishni o‘rganasiz. Sotuv bo‘yicha ko‘nikmaga ega bo‘lasiz. Qonuniy ishlash va aldanib qolmaslik yo‘llarini o‘rganasiz. "
+      ]
+    },
+    {
+      title: "8-Modul Shaxsiy brend ",
+      items: [
+        "01 — Shaxsiy brend nima va uning kuchi ",
+        "02 — Shaxsiy brend qurish ",
+        "03 — Shaxsiy brend orqali sotuvlarni oshirish",
+        " ",
+        "Moduldan so‘ng:",
+        "Shaxsiy brend nima ekanligini va qanday qurilishini, sotuvga qanday qilib ta’sir o‘tkaza olishini o‘rganasiz. Shaxsiy brend qurishni boshlaysiz. "
+      ]
+    },
+    {
+      title: "9-Modul Psixolog ",
+      items: [
+        "01 — Kuratorlar ko‘magi va telegram guruh ",
+        "02 — Umidjon Ortiqov bilan 2 ta  zoom ",
+        "03 — Umidjon Ortiqov bilan telegram guruh ",
+        "04 — Umidjon Ortiqov bilan 6 ta  zoom ",
+        "05 — Eng yaxshi 5 ta o‘quvchiga loyiha berish "
+      ]
+    },
+    {
+      title: "10 - Modul",
+      items: [
+        "01 — Kuratorlar ko‘magi va telegram guruh ",
+        "02 — Umidjon Ortiqov bilan 2 ta  zoom ",
+        "03 — Umidjon Ortiqov bilan telegram guruh ",
+        "04 — Umidjon Ortiqov bilan 6 ta  zoom ",
+        "05 — Eng yaxshi 5 ta o‘quvchiga loyiha berish "
+
+      ]
+    }
+
+
+  ]
+
   // Modal
   const [lgShow1, setLgShow1] = useState(false);
   const [lgShow2, setLgShow2] = useState(false);
@@ -386,33 +653,29 @@ const Second = () => {
         <HeaderTitle theme="Ko'p Beriladigan savollar" />
         <div className="box carouselContainer "   >
           <section id="faqsCont">
-            {
-              carouselAccor.map((elem, i) => {
-                return (
+          {
+                      FaqsAccorPrem.map((sub, ind) => {
+                        return (
+                          <>
+                            <li className="tarifServis__item" >&#10033;  {sub.title}</li>
+                            <li>
+                              <ul className="tarifServis">
+                              {/* <li className="tarifServis__item" >&#10033; {sub.items[0]} </li> */}
+                                {
+                                  sub.items.map((el, i) => {
+                                    return (
+                                      <li className="tarifServis__item" >&#10033; {el} </li>
+                                    )
+                                  })
+                                }
+                              </ul>
+                            </li>
+                          </>
 
-                  <>
-                    {/* <div className="ustmaUst"> */}
-                    <Accordion className="KouchAccor__accordion" expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)} >
-                      <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
-                        <div>
-                          <h5 className="accordion_title">
-                            {elem.title}
-                          </h5>
-                        </div>
-                      </AccordionSummary>
-                      <AccordionDetails className="accordionInner">
-                        <div className="innerAcc_text">
-                          {elem.answer}
-                        </div>
-                      </AccordionDetails>
-                    </Accordion>
-
-                    {/* </div> */}
-                  </>
-                )
-              })
-            }
-
+                        )
+                      })
+                    }
+            
 
           </section>
         </div>
@@ -428,21 +691,38 @@ const Second = () => {
         <section className="planChange">
 
           <Row>
-
             <Col xl={4} lg={4} md={6} sm={12} className="TarifColumn ">
               <div className="boxTarif" >
                 <>
                   <div className="tarifTitle">
-                    <span>&#10033; </span> STANDART
+                    <span>&#10033; </span> Standart    Tarifi
                   </div>
                   <div className="tarifPrice">
                     1.000.000 <span> UZS</span>
                   </div>
                   <ul className="tarifServis" >
-                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  {
+                      FaqsAccorStan.map((sub, ind) => {
+                        return (
+                          <>
+                            <li className="tarifServis__item" >&#10033;  {sub.title}</li>
+                            <li>
+                              <ul className="tarifServis">
+                              {/* <li className="tarifServis__item" >&#10033; {sub.items[0]} </li> */}
+                                {
+                                  sub.items.map((el, i) => {
+                                    return (
+                                      <li className="tarifServis__item" >&#10033; {el} </li>
+                                    )
+                                  })
+                                }
+                              </ul>
+                            </li>
+                          </>
+
+                        )
+                      })
+                    }
                   </ul>
                   <Button className=" ShadowBtn  formKursBtn" onClick={() => {
                     setLgShow1(true);
@@ -488,16 +768,28 @@ const Second = () => {
                     2.000.000 <span> UZS</span>
                   </div>
                   <ul className="tarifServis" >
-                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  {
+                      FaqsAccorPrem.map((sub, ind) => {
+                        return (
+                          <>
+                            <li className="tarifServis__item" >&#10033;  {sub.title}</li>
+                            <li>
+                              <ul className="tarifServis">
+                              {/* <li className="tarifServis__item" >&#10033; {sub.items[0]} </li> */}
+                                {
+                                  sub.items.map((el, i) => {
+                                    return (
+                                      <li className="tarifServis__item" >&#10033; {el} </li>
+                                    )
+                                  })
+                                }
+                              </ul>
+                            </li>
+                          </>
 
+                        )
+                      })
+                    }
                   </ul>
                   <Button className=" ShadowBtn  formKursBtn" onClick={() => {
                     setLgShow2(true);
@@ -539,47 +831,32 @@ const Second = () => {
                     3.000.000 <span> UZS</span>
                   </div>
                   <ul className="tarifServis" >
-                    <li className="tarifServis__item" >&#10033;  1-modul   Kirish
-                      <ul className="tarifServis">
-                        <li className="tarifServis__item" >&#10033;Vaqtni to’g’ri taqsimlash</li>
-                        <li className="tarifServis__item" >&#10033; Kursdan to’g’ri foydalanish va natijaga chiqish usullari </li>
-                        <li className="tarifServis__item" >&#10033;Moduldan so’ng : <br />
-                          Siz 1-modulni tugatganingizdan so’ng vaqtingizni to’g’ri boshqarishni va kursdan unumli foydalanishni o’rganasiz.</li>
-                      </ul>
-                    </li>
-                    <li className="tarifServis__item" >&#10033; 2-modul    SMM
-                      <ul className="tarifServis">
-                        <li className="tarifServis__item"> &#10033; Kursdan qanday  to‘g‘ri foydalanish va natijaga chiqish usullari</li>
-                        <li className="tarifServis__item"> &#10033; SMM bu nima va SMM mutaxassisi kim ?  </li>
-                        <li className="tarifServis__item"> &#10033; SMM mutaxassisi terminlari va qo‘llash joylari  </li>
-                        <li className="tarifServis__item"> &#10033; Maqsadli auditoriya va mijoz portreti  </li>
-                        <li className="tarifServis__item"> &#10033; UTP, offer va trigger nima ?  </li>
-                        <li className="tarifServis__item"> &#10033; Sotuv voronkasi va mijozga yo‘l  </li>
-                        <li className="tarifServis__item"> &#10033; Raqobatchilarni analiz qilish  </li>
-                        <li className="tarifServis__item"> &#10033; SVOT analiz  </li>
-                        <li className="tarifServis__item"> &#10033; Texnik topshiriqlar va deadline</li>
-                        <li className="tarifServis__item"> &#10033; Grafik dizaynerga t.t  yozish  </li>
-                        <li className="tarifServis__item"> &#10033; Kopirayting va sotuvchi matn yozish  </li>
-                        <li className="tarifServis__item"> &#10033; Imtihon <br />
-                          Moduldan so’ng :
-                          Siz SMM qanday soha ekanligini, sohada uchraydigan terminlarni tushunasiz, maqsadli auditoriyani topish, kuchli takliflar berish, kompaniyani taxlili qilish va grafik dizaynerlarga texnik topshiriq berishni o’rganasiz. Sotuvchi matnlarni yozish ko’nikmasiga ega bo’lasiz. Deadline bilan ishlashni o’rganasiz.
-                          Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob
-                        </li>
-                      </ul>
-                    </li>
+                    {
+                      FaqsAccor.map((sub, ind) => {
+                        return (
+                          <>
+                            <li className="tarifServis__item" >&#10033;  {sub.title}</li>
+                            <li>
+                              <ul className="tarifServis">
+                              {/* <li className="tarifServis__item" >&#10033; {sub.items[0]} </li> */}
+                                {
+                                  sub.items.map((el, i) => {
+                                    return (
+                                      <li className="tarifServis__item" >&#10033; {el} </li>
+                                    )
+                                  })
+                                }
+                              </ul>
+                            </li>
+                          </>
 
-                    <li className="tarifServis__item" >&#10033; </li>
-                    <li className="tarifServis__item" >&#10033; </li>
-                    <li className="tarifServis__item" >&#10033; </li>
-                    <li className="tarifServis__item" >&#10033; </li>
-                    <li className="tarifServis__item" >&#10033; </li>
-                    <li className="tarifServis__item" >&#10033; </li>
-                    <li className="tarifServis__item" >&#10033; </li>
-                    <li className="tarifServis__item" >&#10033; </li>
-                    <li className="tarifServis__item" >&#10033; </li>
-                    <li className="tarifServis__item" >&#10033; </li>
-                    <li className="tarifServis__item" >&#10033; </li>
+                        )
+                      })
+                    }
                   </ul>
+
+
+
                   <Button className=" ShadowBtn  formKursBtn" onClick={() => {
                     setLgShow3(true);
                   }
