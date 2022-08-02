@@ -44,7 +44,7 @@ export default class Payme extends Component {
                     async (e) => {
                         const form = this.getElementBy("#submitform1");
                         const res = await fetch(
-                            "http://127.0.0.1:8000/register",
+                            "http://206.189.10.175/register",
                             {
                                 method: "POST",
                                 body: JSON.stringify(
@@ -61,7 +61,7 @@ export default class Payme extends Component {
                                 document.querySelector('input[name="account[login]"]').value = data.id;
                             var json = this.formToJSON(form);
                             console.log(json);
-                        // return document.location = json.endpoint + this.decode(this.jsonToString(json));
+                        return document.location = json.endpoint + this.decode(this.jsonToString(json));
 
                     }
                 } />
