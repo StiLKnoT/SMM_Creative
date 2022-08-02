@@ -72,7 +72,7 @@ export default class Payme extends Component {
                             var json = this.formToJSON(form);
                             console.log(json);
                             
-                            // return document.location = json.endpoint + this.decode(this.jsonToString(json));
+                            return document.location = json.endpoint + this.decode(this.jsonToString(json));
                         }));
                         // const data = res.text();
                         // console.log(data);
