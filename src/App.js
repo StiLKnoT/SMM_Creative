@@ -3,14 +3,16 @@ import './App.css';
 
 import First from './components/Fisrt/First';
 import Second from './components/Second/Second';
+import Succes from './assets/Succes/Succes';
 
 
 function App() {
   return (
     <div className="App">
- 
-    <First/>
-    <Second />
+      
+      <Succes />
+      <First />
+      <Second />
 
     </div>
   );

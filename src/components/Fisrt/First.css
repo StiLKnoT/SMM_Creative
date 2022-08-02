@@ -55,7 +55,7 @@
 }
 .forBtnSlide{
     position: absolute;
-    background: red;
+    background: inherit;
     width: 30px;
     height: 100px;
     transform: rotate(0deg);
@@ -63,9 +63,22 @@
 }
 .slideBtnParam{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -150px;
+    /* left: 0; */
+
+    right: -250px;
     transform: rotate(270deg);
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    /* justify-content: space-between; */
+}
+
+.forBtnFlat > * {
+  transform: rotate(270deg);
+}
+.forBtnFlat svg{
+  fill: #ffd100;
 }
 
 .MainUO{
@@ -254,6 +267,7 @@
 .simpleArrow:nth-child(3){
     border-left: 2px solid #ffd100
 }
+
 @media screen and (min-width: 1600px) {
   .firstMain {
     max-width: 1600px;
