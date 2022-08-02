@@ -22,7 +22,7 @@ import {ReactComponent as Zero06} from '../../assets/images/Zero06.svg'
 
 function First() {
  
-  return (
+  return ( 
     <div className='firstMain'>
       
        
