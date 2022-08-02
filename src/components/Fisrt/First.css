@@ -204,6 +204,15 @@
     margin: 50px auto 0;
 }
 
+.row > *:nth-child(even)  {
+    height: 100%;
+    border-bottom: 2px solid #FFD100 !important;
+}
+.arrowType{
+    width: 100%;
+    border: 5px solid#FFD100;
+}
+
 
 @media screen and (min-width: 1600px) {
     .firstMain{

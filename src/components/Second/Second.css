@@ -78,6 +78,9 @@ body {
 .brText {
   margin: 30px 0 20px;
 }
+.personBlock > .row {
+  margin: 0 auto;
+}
 .greenCards {
   display: flex;
   align-items: flex-start;
@@ -110,15 +113,15 @@ body {
 .innerGreenCardLeft {
   position: relative;
   display: block;
-  background: #b4ffc9 !important;
+  /* background: #b4ffc9 !important; */
   left: -35px;
 }
 .innerGreenCardLeft > * {
-  background-color: #b4ffc9;
+  /* background-color: #b4ffc9; */
 }
 .greenCard > *,
 .innerGreenCard > * {
-  background-color: #b4ffc9 !important;
+  /* background-color: #b4ffc9 !important; */
 }
 
 .greenCardBtn {
@@ -168,7 +171,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
+.TarifColumn {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
 .boxTarif > * {
   border: 2px solid #222628;
   width: 100%;
@@ -299,14 +306,14 @@ body {
   color: #222628;
   border: 2px solid #222628;
 }
-.btn-close{
+.btn-close {
   position: absolute;
   top: -50px;
   right: -50px;
-  background-color: #FFF !important;
+  background-color: #fff !important;
 }
 .btn-close > * {
-  color: #FFF !important;
+  color: #fff !important;
 }
 .modal-body {
   display: flex;
@@ -325,9 +332,16 @@ body {
 }
 /* Darslar Section */
 
+#darsBlock {
+  position: relative;
+  width: 85% !important;
+  margin: 0 auto;
+}
+
 .darsRow {
   height: 313px;
-  width: 100%;
+  /* width: 90%; */
+  /* margin: 0 auto; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -429,6 +443,10 @@ body {
   background-color: #fff;
   z-index: 1;
 }
+.row {
+  width: 85%;
+  margin: 0 auto;
+}
 .darsRow:nth-child(even) .darsBlockCardShadow:nth-child(2) {
   display: flex;
   align-items: center;
@@ -446,9 +464,64 @@ body {
 
 @media screen and (max-width: 768px) {
   .simpleCard {
-    height: 142px;
+    height: 250px;
   }
   .bannerImgPort {
     height: 142px;
+  }
+  .greenCard {
+    margin: 10px auto;
+  }
+  .greenCard,
+  .greenCard > * {
+    width: 100%;
+  }
+  .innerGreenCard {
+    position: absolute;
+    top: 50px;
+    padding: 0px 3px 0px 45px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .greenCard {
+    position: relative;
+    width: 360px;
+    height: 245px;
+  }
+  .innerGreenCardLeft {
+    position: absolute;
+    /* padding: 20px; */
+    left: 10px;
+    top: -45px;
+    display: flex;
+    flex-direction: column;
+  }
+  .innerGreenCardLeft span {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45.94px;
+    text-align: left;
+  }
+  .innerGreenCard p {
+    font-family: 'Space Grotesk';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .innerGreenCardLeft img {
+    height: 25px;
+    width: 25px;
+  }
+  .greenCardBtn {
+    position: absolute;
+    width: 315px;
+    height: 70px;
+    bottom: 20px;
   }
 }
