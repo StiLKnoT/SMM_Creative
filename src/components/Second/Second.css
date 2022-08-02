@@ -22,7 +22,11 @@ body {
 /* KeysBox Part */
 .keyBox{
   margin: 0 auto  ;
-  max-width: 1200px !important
+  max-width: 1600px !important
+}
+.h2Text{
+  width: 1200px !important;
+  margin: 0 auto !important;
 }
 .box {
   max-width: 1200px !important;
@@ -57,6 +61,7 @@ body {
 .personBlock:last-child {
   border: none;
 }
+
 .bannerImgPort {
   border: 2px solid #222628;
 }
@@ -64,6 +69,21 @@ body {
   padding: 20px;
   border: 2px solid #222628;
   height: 280px;
+}
+.col-xl-3{
+  width: 33% !important;
+  padding: 0px !important;
+  display: flex;
+  justify-content: space-between;
+}
+.col-xl-4 {
+  padding: 0px;
+  width: 33% !important;
+  display: flex;
+  justify-content: space-between;
+}
+.col-xl-8{
+  padding: 0px !important;
 }
 .card__name {
   font-family: "Space Grotesk";
@@ -92,10 +112,24 @@ body {
   /* flex-direction: column; */
   
 }
+.planChange>.row{
+  padding: 0px;
+  width: 1200px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.TarifColumn  {
+  padding: 0px !important;
+}
 .greenCards {
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.personBlock > .row{
+  display: flex;
+  justify-content: space-between;
 }
 .greenCard {
   position: relative;
@@ -127,6 +161,8 @@ body {
   /* background: #b4ffc9 !important; */
   left: -35px;
 }
+
+
 .greenCardBtn {
   position: absolute;
   bottom: 20px;
@@ -201,6 +237,7 @@ body {
 }
 
 .tarifTitle {
+  font-family: 'Monument Extended', sans-serif !important;
   text-transform: uppercase;
   height: 100px;
   display: flex;
@@ -347,6 +384,7 @@ body {
 }
 /* Darslar Section */
 
+
 #darsBlock {
   position: relative;
   width: 85% !important;
@@ -376,7 +414,29 @@ body {
 }
 
 .darsBlockTitle {
+  font-family: 'Monument Extended', sans-serif !important;
+  font-family: 'Monument Extended';
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 38px;
+text-transform: uppercase;
+
+/* brand black color */
+
+color: #222628;
   text-transform: uppercase;
+}
+.darsBlockText{
+  font-family: 'Space Grotesk', sans-serif !important;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+
+/* brand black color */
+
+color: #222628;
 }
 .darsBlockItem:nth-child(3) {
   border-right: 5px solid #ffd100;
@@ -386,6 +446,19 @@ body {
 }
 .darsRow:nth-child(even) .boxShadowBox {
   left: -10px;
+}
+.innerAcc_text{
+  width: 60% !important;
+}
+.accordion_title{
+  font-family: 'Monument Extended', sans-serif !important;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #222628;
+  width: 100%;
 }
 .boxShadowBox,
 .darsBlockItem {
@@ -402,7 +475,11 @@ body {
 
 .darsBlockTitle,
 .darsBlockText {
-  font-size: " Space Grotesk ";
+  font-family: 'Monument Extended', sans-serif !important;
+}
+#CarouselCards{
+  width: 100% !important;
+  margin: 0 auto !important;
 }
 
 .darsBlockCardShadow {
@@ -506,8 +583,19 @@ body {
     font-weight: 700;
     font-size: 24px;
   }
+  .col-sm-12{
+    width: 100% !important;
+  }
+  .boxTarif{
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
 }
-@media screen and (max-width: 567px) {
+.carouselContainer{
+  width: 80%;
+  margin: 40px auto;
+}
+@media screen and (max-width: 576px) {
   .greenCard {
     position: relative;
     width: 360px;
@@ -533,7 +621,7 @@ body {
     font-weight: 700;
     line-height: 31px;
     letter-spacing: 0em;
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: left;
   }
 
@@ -552,6 +640,185 @@ body {
   #Keyslar{
     margin-top: 40px !important;
   }
+  .brText {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .carouselContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .simpleCard {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .accordion_title{
+    font-family: 'Monument Extended', sans-serif !important;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    /* brand black color */
+
+    color: #222628;
+    width: 90%;
+  }
+  .modal-dialog{
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .modal-dialog .ShadowBtn, .modal-lg .ShadowBtn {
+    height: 60px !important;
+  }
+  .box{
+    width: 80% !important;
+  }
+  #CarouselCards{
+    width: 100% !important;
+  }
+  .css-1v5z4dq-MuiPaper-root-MuiCard-root{
+    margin: 0  auto!important;
+  }
+  .greenCardBtn{
+    width: 280px !important;
+  }
+  .box{
+    width: 80% ;
+    margin: 0 auto;
+  }
+  .ColSimpleCard{
+    padding: 0 !important;
+  }
+  .simpleCard{
+    margin: 0 !important;
+    width: 100%;
+    margin-top: 20px !important;
+    height: auto !important;
+  }
+  .innerAcc_text{
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+  /* brand black color */
+
+  color: #222628;
+  }
+  .brText {
+    width: 100% !important;
+    margin: 10px 0 !important;
+  }
+  .simpleCard .card__name{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+  .simpleCard .card__info{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    /* brand black color */
+
+    color: #222628;
+
+  }
+  .react-multiple-carousel__arrow--left{
+    left: 0 !important;
+    position: absolute !important;
+  }
+  .h2Text{
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    /* brand black color */
+
+    color: #222628;
+  }
+  .carousel__arrow--left::before{
+    left: 200px !important;
+   
+  }
+  .carousel__arrow--left::before{
+    font-size: 40px !important;
+  }
+  .h2Text{
+    text-align: start;
+    width: 90% !important;
+    margin: 0 auto;
+    font-size: 18px !important;
+  }
+  .SpikerName{
+    font-family: 'Monument Extended',sans-serif !important;
+    width: 50% !important;
+    font-size: 24px !important;
+  }
+  #SpikerAboutMob{
+    
+    display: flex !important;
+    align-items: end !important;
+    width: 50% !important;
+    margin-left: 50%;
+
+  }
+  .darsBlockTitle{
+    font-family: 'Monument Extended', sans-serif !important;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* brand black color */
+
+  color: #222628;
+  }
+  .darsBlockText{
+    font-family: 'Space Grotesk' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    /* brand black color */
+
+    color: #222628;
+  }
+  .innerAcc_text{
+    font-family: 'Monument Extended', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    /* brand black color */
+
+    color: #222628;
+  }
+  #Keyslar{
+    margin-top: 0px  !important;
+    padding-top: 80px !important;
+  }
   
+ 
 }
 

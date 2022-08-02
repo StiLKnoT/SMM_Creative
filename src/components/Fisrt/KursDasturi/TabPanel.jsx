@@ -38,15 +38,15 @@ const Spikers = [
   'surname': 'Ortiqov',
   'img': MainSpiker,
   'about': 'Qwerty Aljafr academy asoschisi, ijtimoiy tarmoqlar bo‘yicha ekspert, biznesmen',
-  'insta':"https://active-vision.ru/icon/box-shadow/",
-  "telegram":"",
-  "youtube":"",
+  'insta':"https://instagram.com/afshon_official?igshid=YmMyMTA2M2Y=",
+  "telegram":"https://t.me/UmidjonOrtiqov",
+  "youtube":"https://www.youtube.com/c/UmidjonOrtiqov",
   },
   {'name': 'Akmal',
   'surname': 'Rahmonov',
   'img': Spiker2,
   'about': 'Najot Ta’lim markazi mentori,marketing sohasida 3 + yillik tajribaga ega, tajribali marketolog, targetolog',
-  'insta':"https://active-vision.ru/icon/box-shadow/",
+  'insta':"https://instagram.com/akmalrahmonov1?igshid=YmMyMTA2M2Y=",
   "telegram":"",
   "youtube":"",
   },
@@ -54,8 +54,8 @@ const Spikers = [
   'surname': 'JALOLOV',
   'img': Spiker3,
   'about': 'Umidjon Ortiqov va Ilxom Begimqulovning shaxsiy brendlari, Kalibri education  boshqa ko‘plab brendlar bilan muvaffaqiyatli faoliyat olib borgan, tajribali SMM menejer ',
-  'insta':"https://active-vision.ru/icon/box-shadow/",
-  "telegram":"",
+  'insta':"https://instagram.com/islom_jv13?igshid=YmMyMTA2M2Y=",
+  "telegram":"https://t.me/Islom_jv13",
   "youtube":"",
   }
 ]
@@ -64,14 +64,14 @@ const guest = [
   'surname': 'SAFAROV',
   'img': MehSpiker1,
   'about': 'Lead UX/UI dizayner, Socially Design Academy asoschisi',
-  'insta':"https://active-vision.ru/icon/box-shadow/",
+  'insta':"https://instagram.com/ismoil.blog?igshid=YmMyMTA2M2Y=",
   "telegram":"",
   "youtube":"",},
   {'name': 'Axmadjon',
   'surname': 'Majidov',
   'img': MehSpiker2,
   'about': '17 yosh, video editing sohasida 2+ yil tajribaga ega, Qwerty Al-fajr markazida senior video editor',
-  'insta':"https://active-vision.ru/icon/box-shadow/",
+  'insta':"https://instagram.com/infinite___001?igshid=YmMyMTA2M2Y=",
   "telegram":"",
   "youtube":"",}
 ]
@@ -116,9 +116,9 @@ export default function BasicTabs() {
                 <div className='SpikerName'>{name}<br/>{surname}</div>
                 <div className='SpikerAbout'>{about}</div>
                 <div className='SpikerConnect'>
-                  <div className='ConnectIcons'><a target="_blank" className='connectLink' href={insta}><InstaIcon className='connectIcons'/></a></div>
-                  <div className='ConnectIcons'><a target="_blank" className='connectLink' href={telegram}><TelegramIcon className='connectIcons'/></a></div>
-                  <div className='ConnectIcons'><a target="_blank" className='connectLink' href={youtube}><YouTubeIcon className='connectIcons'/></a></div>
+                <a target="_blank" className='connectLink' href={insta}><div className='ConnectIcons'><InstaIcon className='connectIcons'/></div></a>
+                <a target="_blank" className='connectLink' href={telegram}><div className='ConnectIcons'><TelegramIcon className='connectIcons'/></div></a>
+                <a target="_blank" className='connectLink' href={youtube}><div className='ConnectIcons'><YouTubeIcon className='connectIcons'/></div></a>
                 </div>
                 
               </div>

@@ -34,6 +34,21 @@ import umidjon from "../../assets/keyslar/umidjon.png";
 import ilxom from "../../assets/keyslar/ilxom.png";
 import jamila from "../../assets/keyslar/jamila.png";
 import tabib from "../../assets/keyslar/tabib.png";
+import Bobur from "../../assets/images/lids/Bobur.png"
+import Laziz from "../../assets/images/lids/Laziz.png"
+import Olimjon from "../../assets/images/lids/Olimjon.png"
+import Doniyor from "../../assets/images/lids/Doniyor.png"
+import bobur2220 from "../../assets/images/lids/bobur2220.png"
+import Aziz from "../../assets/images/lids/Aziz.png"
+import Nargiza from "../../assets/images/lids/Nargiza.png"
+import Azizbek from "../../assets/images/lids/Azizbek.png"
+import Ixlosbek from "../../assets/images/lids/Ixlosbek.png"
+import Shoxrux from "../../assets/images/lids/Shxrux.png"
+import Sahna from "../../assets/images/lids/Sahna.png"
+import Vays from "../../assets/images/lids/Vays.png"
+import Durdona from "../../assets/images/lids/Durdona.png"
+import Sholponoy from "../../assets/images/lids/Sholponoy.png"
+import Feruzabonu from "../../assets/images/lids/Feruzabonu.png"
 
 // Icons
 import instagramLogo from "../../assets/icons/instagram.png";
@@ -164,12 +179,21 @@ const Second = () => {
     return { img, name, nickname, text }
   }
   const carouselRows = [
-    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Siz insonga katta motivatsiya berasiz va o‘z yo‘lini ko‘rsatasiz. Shuning uchun sizga ishonamiz'),
-    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Ummatga foyda keltirib kelayotganingiz uchun, Allohni eslatib halol ish qilyotganingiz uchun'),
-    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad'),
-    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
-    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
-    createCarousel(umidjon, 'Umidjon', 'afshon_official', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel(Bobur, 'Bobur', 'bobur_13_23', 'Siz insonga katta motivatsiya berasiz va o‘z yo‘lini ko‘rsatasiz. Shuning uchun sizga ishonamiz'),
+    createCarousel(Laziz, 'Laziz', 'ismatillayev571', 'Ummatga foyda keltirib kelayotganingiz uchun, Allohni eslatib halol ish qilyotganingiz uchun'),
+    createCarousel(Olimjon, 'Olimjon Mamadaliyev', 'olimjon__barber', 'Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad'),
+    createCarousel(Doniyor, 'Doniyor', '_doniyor__1', 'Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni'),
+    createCarousel(bobur2220, 'Bobur', 'bobir_22', 'Inson havas bilan yashashi kerak shuning uchun sizga ishonamiz'),
+    createCarousel(Aziz, 'Aziz Abdullayevich', 'aziz_abdullayevich0724', 'Chunki hayotda yordam beradigan yo‘llarni ko‘rsatasiz'),
+    createCarousel(Nargiza, 'Esonova Nargiza', 'esonovanargiza', 'Eng avvalo ishingizda halollik bor'),
+    createCarousel(Azizbek, 'Azizbek', 'aziko__1313', 'Chunki sizlar shu darajaga osonlik bilan erishmagansizlar va sizlarni aqliy faoliyatlaringiz yaxshi'),
+    createCarousel(Ixlosbek, 'Ixlosbek', 'ixlosbek_biznesmen', 'Ishonchli bo‘lganligingiz uchun'),
+    createCarousel(Shoxrux, 'Shoxrux Kamoliddinov', '__shoxrux_kirasavchik__', 'Sizni hurmat qilamiz. To‘g‘ri yo‘lni ko‘rsatasiz, sizga ishonamiz'),
+    createCarousel(Sahna, 'Sahna bezaklari Chirchiq', 'oformleniya_chirchik', 'Ishonch shundaki gaplaringizda aniqlik va odamlarga yo‘l ko‘rsatishda to‘g‘ri yo‘nalish bor'),
+    createCarousel(Vays, 'Vays_05', 'vays_05', 'O‘z sohasining mutaxassisi deb o‘ylayman shuning uchun sizga ishonam'),
+    createCarousel(Durdona, 'Durdona Normatova', 'durdona_normatova', 'Sababi oddiy siz ilmlaringizni beminnat ulashasiz. Shuning uchun chin dildan hurmat qilib kuzatamiz'),
+    createCarousel(Sholponoy, 'Sholpanoy Saginbayeva', 'godblessed.me', 'Aldash ko‘rganim yo‘q borini aytasiz, xato bo‘lsa ham xato deb va uni to‘g‘ri yetkazib berolasiz'),
+    createCarousel(Feruzabonu, 'Feruzabonu', 'guardian__angel.1', 'O‘zingizga ishonganingiz uchun'),
   ]
 
   // Data for Accordion
@@ -506,7 +530,7 @@ const Second = () => {
                         className="img-fluid shadow-4 bannerImgPort "
                       />
                     </Col>
-                    <Col xl={4} lg={3} md={3} sm={12}>
+                    <Col   xl={4} lg={3} md={3} sm={12} className="ColSimpleCard">
                       <div className="simpleCard">
                         <div className="card__name">{el.Name}</div>
                         <div className="card__info">{el.infoText}</div>
@@ -526,8 +550,8 @@ const Second = () => {
                           <p>Instagram obunachilari</p>
                         </div>
                         <button className="ShadowBtn greenCardBtn">
-                          <a href="#">
-                            {" "}
+                          <a target="_blank" href={el.instLink}>
+                            {""}
                             Profilga o'tish <FaArrowRight />{" "}
                           </a>
                         </button>
@@ -544,7 +568,7 @@ const Second = () => {
                           <p>TikTok obunachilari</p>
                         </div>
                         <button className="ShadowBtn greenCardBtn">
-                          <a href="#">
+                          <a target="_blank" href={el.tikLink}>
                             {" "}
                             Profilga o'tish <FaArrowRight />{" "}
                           </a>
@@ -563,7 +587,7 @@ const Second = () => {
                           <p>YouTube obunachilari</p>
                         </div>
                         <button className="ShadowBtn greenCardBtn">
-                          <a href="#">
+                          <a target="_blank" href={el.youLink}>
                             {" "}
                             Profilga o'tish <FaArrowRight />{" "}
                           </a>
@@ -579,7 +603,7 @@ const Second = () => {
 
         {/* Carousel setcion */}
         <HeaderTitle theme="Nega bizni tanlashdi" />
-        <section className=" box carouselContainer " >
+        <section className=" box carouselContainer "  id="CarouselCards">
 
           <Carousel responsive={responsive} id="carCardsBot">
             {
@@ -738,7 +762,7 @@ const Second = () => {
               <div className="boxTarif" >
                 <>
                   <div className="tarifTitle">
-                    <span>&#10033; </span> Premium Tarifi
+                    <span>&#10033; </span> PREMIUM
                   </div>
                   <div className="tarifPrice">
                     2.000.000 <span> UZS</span>
@@ -801,7 +825,7 @@ const Second = () => {
               <div className="boxTarif" >
                 <>
                   <div className="tarifTitle">
-                    <span>&#10033; </span>  Vip Tarifi
+                    <span>&#10033; </span>  VIP
                   </div>
                   <div className="tarifPrice">
                     3.000.000 <span> UZS</span>
@@ -867,7 +891,7 @@ const Second = () => {
 
         {/* Darslar section */}
         <HeaderTitle theme="KURS QANDAY OLIB BORILADI" />
-        <div className="box carouselContainer">
+        <div className="box carouselContainer" id="KursLines">
           <section id="darsBlock" >
             <Row className="darsRow" >
               <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
