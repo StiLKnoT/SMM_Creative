@@ -32,14 +32,10 @@ export default class Payme extends Component {
                 <ShadowButton text="To'lovni amalga oshirish" onclick={
 
                     () => {
-                        var form = this.getElementBy("#submitform1");
-                        var json = this.formToJSON(form);
-                        var str = this.jsonToString(json);
-                        var encoded = this.decode(str);
-                        var t = json.endpoint + encoded;
-                        return document.location = t;
-                    }
+                        var json = this.formToJSON(this.getElementBy("#submitform1"));
+                        return document.location = json.endpoint + this.decode(this.jsonToString(json));
 
+                    }
                 } />
             </form>
         );
@@ -57,10 +53,6 @@ export default class Payme extends Component {
         )
     }
 
-
-
-
-
     formToJSON(form) {
         return {
             endpoint: form.action,
@@ -70,9 +62,8 @@ export default class Payme extends Component {
                 login: form.querySelector('input[name="account[login]"]').value,
             },
             l: form.querySelector('input[name="lang"]').value,
-
-            // description: form.querySelector('input[name="description"]').value,
-            c: "https://4215-213-230-112-146.eu.ngrok.io" ,
+            description: form.querySelector('input[name="description"]').value,
+            c: "https://4215-213-230-112-146.eu.ngrok.io",
             ct: 1500
         };
     }
