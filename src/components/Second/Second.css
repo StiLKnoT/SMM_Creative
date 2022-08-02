@@ -22,7 +22,7 @@ body {
 /* KeysBox Part */
 .keyBox{
   margin: 0 auto  ;
-  width: 1200px;
+  max-width: 1200px !important
 }
 .box {
   max-width: 1200px !important;
@@ -86,7 +86,7 @@ body {
   margin: 0 auto;
   justify-content: center;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   
 }
 .greenCards {
@@ -516,6 +516,7 @@ body {
     font-weight: 700;
     line-height: 31px;
     letter-spacing: 0em;
+    margin-top: 50px;
     text-align: left;
   }
 
