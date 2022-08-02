@@ -187,24 +187,24 @@ body {
   position: absolute;
   padding: 20px;
   left: 0;
-  color: #ffd100 ;
+  color: #ffd100;
 }
-.tarifPrice{
+.tarifPrice {
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size:40px;
+  font-size: 40px;
   line-height: 51.04px;
 }
-.boxTarif:hover .tarifPrice{
+.boxTarif:hover .tarifPrice {
   background-color: #ffd100 !important;
   transition: all 0.3s;
 }
 
 .tarifPrice span {
-  color: #7D7D7D;
+  color: #7d7d7d;
   line-height: 40.83px;
   font-size: 32px;
   font-weight: 400;
@@ -212,7 +212,7 @@ body {
 .tarifServis {
   list-style-type: none;
   border: none;
-  padding: 20px 20px 110px ;
+  padding: 20px 20px 110px;
 }
 
 .formKursBtn {
@@ -302,52 +302,127 @@ body {
 }
 /* Darslar Section */
 
-.darsRow{
+.darsRow {
   height: 313px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.darsRow:nth-child(odd){
-
+.darsRow:nth-child(odd) {
 }
-.darsRow:nth-child(even){
+.darsRow:nth-child(even) {
   flex-direction: row-reverse;
 }
 .darsRow:nth-child(even) .darsBlockItem:nth-child(3) {
   border-right: none;
   border-left: 5px solid #ffd100;
-
+  display: flex;
+  justify-content: flex-start;
+}
+.darsBlockItem:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
 }
 
-
-
-
-.darsBlockTitle{
+.darsBlockTitle {
   text-transform: uppercase;
 }
-.darsRow:first-child .darsBlockItem:nth-child(3){
-  border-right: none;
-}
-.darsBlockItem:nth-child(3){
+.darsBlockItem:nth-child(3) {
   border-right: 5px solid #ffd100;
 }
-.darsBlockItem{
+.boxShadowBox{
+  right: -10px;
+}
+.darsRow:nth-child(even)  .boxShadowBox{
+  left: -10px;
+}
+.boxShadowBox, .darsBlockItem {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 5px solid #ffd100;
   height: 313px;
 }
-.darsRow:last-child .darsBlockItem{
+.darsRow:last-child .darsBlockItem {
   border-bottom: none;
-
 }
 
-.darsBlockTitle, .darsBlockText {
+.darsBlockTitle,
+.darsBlockText {
   font-size: " Space Grotesk ";
 }
+
+.darsBlockCardShadow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 105px;
+  height: 105px;
+  z-index: 2;
+  background: #ffffff;
+  border: 2px solid #222628;
+}
+.darsBlockCardShadow:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content: " ";
+  width: 105px;
+  height: 105px;
+  border: 2px solid #222628;
+  top: 36%;
+  right: -65px;
+  background-color: #FFF;
+  z-index: 1;
+
+}
+.darsBlockCardShadow:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content: " ";
+  width: 105px;
+  height: 105px;
+  border: 2px solid #222628;
+  top: 39%;
+  right: -75px;
+  background-color:#FFF;
+  z-index: 0;
+}
+.darsRow:nth-child(even) .darsBlockCardShadow:nth-child(1){
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content: " ";
+  width: 105px;
+  height: 105px;
+  border: 2px solid #222628;
+  top: 36%;
+  left: -40px;
+  background-color: #FFF;
+  z-index: 1;
+}  
+.darsRow:nth-child(even) .darsBlockCardShadow:nth-child(2){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content: " ";
+  width: 105px;
+  height: 105px;
+  border: 2px solid #222628;
+  top: 39%;
+  left: -30px;
+  background-color: #FFF;
+  z-index: 0;
+  }
 
 
 @media screen and (max-width: 768px) {
