@@ -7,7 +7,7 @@ import Second from './components/Second/Second';
 function App() {
   return (
     <div className="App">
-    {/* <First/> */}
+    <First/>
     <Second />
 
     </div>

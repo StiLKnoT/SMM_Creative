@@ -5,7 +5,7 @@ import ShadowButton from "./components/atom/buttons/ShadowButton";
 
 
 
-
+import NumberFormat from 'react-number-format';
 
 
 export default class Payme extends Component {
@@ -21,9 +21,9 @@ export default class Payme extends Component {
                 <input type="hidden" name="description" value="Description" />
 
 
-                <input className="formInput" type="number" name="account[name]" placeholder="Telefon raqamingiz (+99891 234 56 78 ko‘rinishida)" required />
-                <input className="formInput" type="text" name="account[number]" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required />
-
+                <input className="formInput" type="text" name="account[name]" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required />
+                {/* <input className="formInput" type="text" name="account[number]" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required /> */}
+                <NumberFormat format="+998 (##) ###-##-##" allowEmptyFormatting mask="_"/>
 
                 <input type="hidden" name="amount" value="5000" />
                 <input type="hidden" name="lang" value="ru" />
