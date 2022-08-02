@@ -221,10 +221,10 @@ const Second = () => {
 
   return (
     <>
-      <main className="keyBox">
+      <main className="keyBox" id="Keyslar">
 
         {/* Keys Section */}
-        <HeaderTitle theme="BIZNING keyslar" />
+        <HeaderTitle theme="BIZNING keyslar"  />
         <div className="box">
           <div className="container">
             {rows.map((el, i) => {
@@ -397,8 +397,11 @@ const Second = () => {
 
 
         {/* Tariflar section */}
+        <div className="PaddingDiv" id="tariflar"></div>
+        <HeaderTitle theme="KURS TARIFLARI"  />
 
         <section className="planChange">
+          
           <Row>
 
             <Col xl={4} lg={4} md={6} sm={4}>

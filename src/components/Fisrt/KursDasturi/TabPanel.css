@@ -1,13 +1,37 @@
 .TabPanelButtons{
     flex-direction: column !important;
 }
+.css-k008qs{
+    width: 90%;
+    margin: 0 10%;
+}
+.css-1q2h7u5 {
+    border: 2px solid #222628 !important;
+    color: #000000 !important;
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 800 !important;
+    font-size: 20px !important;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+    width: 380px !important;
+    height: 90px !important;
+    color: #222628 !important;
+}
+.css-ttwr4n{
+    display: none !important;
+}
+.css-1q2h7u5.Mui-selected{
+    background: #FFD100 !important;
+}
+
 #SpikerAboutMob{
     display: none;
 }
-.TabButtons:hover{
-    transform: scale(1.02);
-    transition: 0.4s ease-in-out;
-}
+
 
 .css-8atqhb{
     justify-content: space-between !important;
@@ -204,5 +228,32 @@
     #SpikerAboutMob{
         display: block;
     }
+    .css-1q2h7u5 {
+        font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px !important;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    /* brand black color */
+
+    color: #222628 !important;
+    }
+    .css-k008qs{
+        margin: 0 auto !important;
+        flex-direction: column !important;
+    }
+    .css-1anid1y{
+        margin: 0 auto;
+        width: 90% !important;
+    }
+    .css-1q2h7u5{
+        margin-bottom: 20px !important;
+    }
+    
   
 }

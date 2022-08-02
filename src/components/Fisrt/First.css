@@ -48,11 +48,26 @@
   margin-top: 0px;
   border:none
 }
-.mainImg{
+.MainImg{
     width: 100%;
     height: auto;
     position: relative;
 }
+.forBtnSlide{
+    position: absolute;
+    background: red;
+    width: 30px;
+    height: 100px;
+    transform: rotate(0deg);
+    right: 218px;
+}
+.slideBtnParam{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(270deg);
+}
+
 .MainUO{
     width: 100%;
     height: 100%;
@@ -82,8 +97,8 @@
     justify-content: space-around;
     overflow: hidden;
 }
-#midWheel{
-    margin: 120px 0px !important;
+#midWheel{ 
+    margin: 120px 0px 0px!important;
 }
 .WheelLine{
     display: flex;

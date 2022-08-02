@@ -40,9 +40,14 @@ function First() {
         </div>
 
         <div className='MainImg' style={{position: "relative"}}>
+          <>
           <img  className='MainUO' src={MainUO}/>
           <h4 className='AsosiySpiker'>ASOSIY SPIKER:<br/>
           <span className='UmidjonOrtiqov'>UMIDJON ORTIQOV</span></h4>
+          </>
+          <>
+            <div className="forBtnSlide"> <p className='slideBtnParam' >PASTGA SURING</p>  </div>
+          </>
         </div>
       
 

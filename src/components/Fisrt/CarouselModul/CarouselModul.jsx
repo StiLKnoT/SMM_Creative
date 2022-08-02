@@ -230,7 +230,7 @@ function CarouselModul() {
         {carouselRows.map((el, i) => {
           return (
             <>
-              <div className="KarouselMainCard" key={i}>
+              <div className="KarouselMainCard" id="ModulID" key={i}>
                 <Box
                   className="KarouselMainCard"
                   id="ModulMainCard"

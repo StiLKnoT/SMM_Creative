@@ -26,6 +26,9 @@ body {
   flex-direction: column;
   margin: 0 auto;
 }
+#Keyslar{
+  padding-top: 120px !important;
+}
 .titleBox {
   width: 100%;
   border-top: 1px solid #111111;
@@ -444,6 +447,13 @@ body {
   z-index: 0;
 }
 
+
+@media screen and (max-width: 947px) {
+  #Keyslar{
+    margin-top: 80px !important;
+  }
+  
+}
 @media screen and (max-width: 768px) {
   .simpleCard {
     height: 142px;
@@ -451,4 +461,12 @@ body {
   .bannerImgPort {
     height: 142px;
   }
+  
 }
+@media screen and (max-width: 576px) {
+  #Keyslar{
+    margin-top: 40px !important;
+  }
+  
+}
+
