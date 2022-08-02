@@ -43,15 +43,16 @@ function Wheel() {
       ]
   return (
     <div className='Wheel'>
+      <div className='underWheel'>
     {social.map(({name,img},index)=>{
       return(
-       <div className='WheelLine'>
+        <div className='WheelLine'>
        <img src={img} style={{background: "#222628"}}/>
        <div className='WheelText'>{name}</div>
      </div>
       )
-
     })}
+    </div>
    
   </div>
   )

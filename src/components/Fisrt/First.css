@@ -113,6 +113,24 @@
   justify-content: space-around;
   overflow: hidden;
 }
+.underWheel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  animation: while 15s linear infinite;
+  
+}
+
+@keyframes while {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(100%)
+  }
+}
+
 #midWheel{ 
     margin: 120px 0px 0px!important;
 }

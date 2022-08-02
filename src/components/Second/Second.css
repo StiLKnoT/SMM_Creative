@@ -215,7 +215,7 @@ body {
 }
 
 .boxTarif {
-  min-height: 647px;
+  min-height: 800px;
   max-height: max-content;
   width: 380px;
   border: 2px solid #222628;
@@ -277,7 +277,7 @@ body {
 .tarifServis {
   list-style-type: none;
   border: none;
-  padding: 20px 20px;
+  padding: 20px 20px 50px;
 }
 .formKursBtn {
   position: absolute;
@@ -553,7 +553,49 @@ color: #222628;
   background-color: #fff;
   z-index: 0;
 }
-
+.css-1fjvggn-MuiPaper-root-MuiAccordion-root{
+  margin-bottom: 20px;
+} 
+.boxAccs{
+  
+  height: 150px;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.FAQSaccor{
+  display: block;
+  position: relative !important ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: max-content;
+  z-index: 5;
+  border: 2px solid #222628 !important;
+  box-shadow: 9px 9px 0 0 #fff, 10px 10px 0 0 #222628, 19px 19px 0 0 #fff, 20px 20px 0 0 #222628 !important;
+  margin-bottom: 40px;
+}
+ .tariAccor{
+  display: block;
+  position: relative !important ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: max-content;
+  z-index: 5;
+  border: 2px solid #222628 !important;
+  /* box-shadow: 9px 9px 0 0 #fff, 10px 10px 0 0 #222628, 19px 19px 0 0 #fff, 20px 20px 0 0 #222628 !important; */
+  margin-bottom: 40px;
+ }
+ .css-yw020d-MuiAccordionSummary-expandIconWrapper{
+  position: absolute !important;
+  right: 5px !important;
+ }
+ .MuiAccordionSummary-expandIconWrapper {
+  position: absolute !important;
+  right: 5px !important;
+ }
+ 
 
 @media screen and (max-width: 947px) {
   #Keyslar{

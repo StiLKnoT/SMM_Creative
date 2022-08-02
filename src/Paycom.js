@@ -33,7 +33,7 @@ export default class Payme extends Component {
 
                 <input className="formInput" type="text" name="name" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required />
                 {/* <input className="formInput" type="text" name="account[number]" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required /> */}
-                <NumberFormat format="+998 (##) ###-##-##" name="number" onValueChange={(e, el) => {
+                <NumberFormat className="formInput" format="+998 (##) ###-##-##" name="number" onValueChange={(e, el) => {
                     // const { formattedValue, value, floatValue } = e;
                     number = e.value;
                 }} allowEmptyFormatting mask="_" />
