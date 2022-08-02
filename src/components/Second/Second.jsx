@@ -440,6 +440,7 @@ const Second = () => {
           }
         </section>
       </div>
+      {/* Lenta bn pinkBox */}
 
       {/* Tariflar section */}
 
@@ -701,6 +702,7 @@ const Second = () => {
           </Row>
         </section>
       </div>
+      {/* Lenta bn pinkBox */}
 
 
     </main>
