@@ -58,7 +58,10 @@ export default class Payme extends Component {
                                         name: form.querySelector('input[name="name"]').value,
                                         number: number
                                     }
-                                )
+                                ),
+                                headers: {
+                                    'Access-Control-Allow-Origin': "*" 
+                                }
                             }
                         );
                         console.log(await res.json())
