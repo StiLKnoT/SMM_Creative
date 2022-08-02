@@ -309,9 +309,9 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-.darsRow:nth-child(odd){
+/* .darsRow:nth-child(odd){
 
-}
+} */
 .darsRow:nth-child(even){
   flex-direction: row-reverse;
 }

@@ -103,7 +103,7 @@
 .SpikerConnect{
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 50%;
 }
 .ConnectIcons{
     display: flex;
@@ -200,4 +200,5 @@
     #SpikerAboutMob{
         display: block;
     }
+  
 }

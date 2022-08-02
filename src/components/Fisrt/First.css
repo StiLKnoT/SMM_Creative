@@ -82,6 +82,9 @@
     justify-content: space-around;
     overflow: hidden;
 }
+#midWheel{
+    margin: 120px 0px !important;
+}
 .WheelLine{
     display: flex;
     align-items: center;
@@ -234,11 +237,14 @@
     }
     .CreativeBlock{
         width: 100%;
-        margin: 120px auto 0;
+        margin: 80px auto 0;
         height: 180px;
     }
     .PaddingDiv{
-        padding: 80px 0;
+        padding: 80px auto 0 !important;
+    }
+    #midWheel{
+        margin: 80px 0;
     }
     .h2Text {
         margin: 0 10%;
@@ -269,6 +275,24 @@
         margin-right: 20px;
     }
    
+    
+}
+@media screen and (max-width: 947px) {
+    #kursSpikeri{
+        font-family: 'Monument Extended';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+        text-transform: uppercase;
+
+        /* brand black color */
+
+        color: #222628;
+    }
+
     
 }
 @media screen and (max-width:576px) {
@@ -321,6 +345,22 @@
     }
     .smmText{
         margin-top: 10px;
+    }
+    #Dastur{
+        padding-top: 80px !important;
+    }
+    #kursSpikeri{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+        
+        text-transform: uppercase;
+        
+        /* brand black color */
+        
+        color: #222628;
     }
     
     

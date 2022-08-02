@@ -114,6 +114,9 @@ function First() {
         <TabPanel/>
        
         <ColorBlock/>
+        <div id="midWheel">
+          <Wheel/>
+        </div>
     </div>
   )
 }

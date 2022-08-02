@@ -26,11 +26,11 @@ const TextAnimation ={
 }
 const ImgAnimation ={
     hidden: {
-        x: 100,
+        y: -100,
         opacity: 0,
     },
     visible: custom =>({
-        x: 0,
+        y: 0,
         opacity: 1,
         transition: {delay: custom*0.1}
     }),
@@ -59,7 +59,9 @@ function ForWho() {
         </div>
      
        
-        <div className='ForWhoMain'>
+        <motion.div initial="hidden"
+    whileInView="visible"
+    viewport={{amount: 0.1}} className='ForWhoMain'>
             <div className='ForWhoLeft'>
                 <div className='IconMan'>
                     <img src={IconMan}/>
@@ -78,7 +80,7 @@ function ForWho() {
                 <img src={imgFor}/>
             </motion.div>
 
-        </div>
+        </motion.div>
         <motion.div initial="hidden"
     whileInView="visible"
     viewport={{amount: 0.1}} className='ForWhoMain'>
