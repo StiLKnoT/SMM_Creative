@@ -26,11 +26,11 @@ const TextAnimation ={
 }
 const ImgAnimation ={
     hidden: {
-        y: -100,
+        x: 100,
         opacity: 0,
     },
     visible: custom =>({
-        y: 0,
+        x: 0,
         opacity: 1,
         transition: {delay: custom*0.1}
     }),
@@ -145,7 +145,7 @@ qo‘lingizdagi mutaxassislar bilan ishlashda odatdagidan boshqacha yondashasiz.
               
 
             </div>
-            <motion.div variants={ImgAnimation} custom={2}  className='ForWhoRight'>
+            <motion.div variants={ImgAnimation2} custom={2}  className='ForWhoRight'>
                 <img src={imgFor4}/>
             </motion.div>
 

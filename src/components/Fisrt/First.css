@@ -352,7 +352,7 @@
     #kursSpikeri{
         font-style: normal;
         font-weight: 800;
-        font-size: 14px;
+        font-size: 1em;
         line-height: 21px;
         /* identical to box height */
         
@@ -361,6 +361,12 @@
         /* brand black color */
         
         color: #222628;
+    }
+    .ForWhoH2 h2{
+        font-size: 1em !important;
+    }
+    .h2Text{
+        font-size: 1em !important;
     }
     
     

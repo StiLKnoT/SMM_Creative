@@ -20,6 +20,7 @@ import {ReactComponent as Zero06} from '../../assets/images/Zero06.svg'
 
 
 
+
 function First() {
  
   return (
@@ -86,7 +87,7 @@ function First() {
             </div>
           </div>
         </div>
-
+      
         <ForWho/>
         <ColorBlock/>
         <div className='PaddingDiv' id="Dastur"></div>
