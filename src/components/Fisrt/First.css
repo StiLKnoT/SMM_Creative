@@ -447,5 +447,16 @@ a:hover{
   .react-multiple-carousel__arrow--left::before{
     right: 45px !important;
   }
+  .ColorBlockP{
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 18px;
+
+    /* brand black color */
+
+    color: #222628;
+  }
   
 }
