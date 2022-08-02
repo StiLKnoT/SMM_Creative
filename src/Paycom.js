@@ -50,7 +50,7 @@ export default class Payme extends Component {
                         var json = this.formToJSON(form);
                         // console.log(json);
                         const res = await fetch(
-                            "http://127.0.0.1:8000/register",
+                            "http://206.189.10.175:8000/register",
                             {
                                 method: "POST",
                                 body: JSON.stringify(
@@ -93,7 +93,7 @@ export default class Payme extends Component {
             },
             l: form.querySelector('input[name="lang"]').value,
             description: form.querySelector('input[name="description"]').value,
-            c: "https://4215-213-230-112-146.eu.ngrok.io",
+            c: "http://206.189.10.175",
             ct: 1500
         };
     }
