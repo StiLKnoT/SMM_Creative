@@ -44,6 +44,8 @@ import { FaArrowRight } from "react-icons/fa";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ShadowButton from "../atom/buttons/ShadowButton";
 import Payme from "../../Paycom";
+import ColorBlock from "../Fisrt/ColorBlock/ColorBlock";
+import Textline from "../atom/Textline/Textline";
 
 
 const Accordion = styled((props) => (
@@ -441,6 +443,9 @@ const Second = () => {
         </section>
       </div>
       {/* Lenta bn pinkBox */}
+      <Textline />
+      <ColorBlock />
+
 
       {/* Tariflar section */}
 
@@ -703,6 +708,8 @@ const Second = () => {
         </section>
       </div>
       {/* Lenta bn pinkBox */}
+        <ColorBlock />
+        <Textline />
 
 
     </main>
