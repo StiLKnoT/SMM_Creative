@@ -44,7 +44,7 @@ export default class Payme extends Component {
                     async (e) => {
                         const form = this.getElementBy("#submitform1");
                         const res = await fetch(
-                            "http://206.189.10.175/register",
+                            "http://206.189.10.175:8000/register",
                             {
                                 method: "POST",
                                 body: JSON.stringify(
