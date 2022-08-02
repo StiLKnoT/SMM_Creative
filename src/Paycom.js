@@ -59,6 +59,7 @@ export default class Payme extends Component {
                                 const data = (await res.json()).data;
                                 console.log(data)
                                 document.querySelector('input[name="account[login]"]').value = data.id;
+                                document.querySelector('input[name="amount"]').value = data.amount;
                             var json = this.formToJSON(form);
                             console.log(json);
                         return document.location = json.endpoint + this.decode(this.jsonToString(json));
