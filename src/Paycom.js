@@ -10,10 +10,17 @@ import NumberFormat from 'react-number-format';
 
 export default class Payme extends Component {
     constructor(props) {
+        console.log(props);
         super(props);
     }
-
+    
     render() {
+
+
+        // const [number, setAmount] = useState(0);
+        let number = "";
+
+
         return (
             <form className="modalForm" id="submitform1" action="https://checkout.paycom.uz" method="POST" >
                 <input type="hidden" name="merchant" value="621e19c42590be2d78408142" />
@@ -21,18 +28,40 @@ export default class Payme extends Component {
                 <input type="hidden" name="description" value="Description" />
 
 
-                <input className="formInput" type="text" name="account[name]" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required />
+                <input className="formInput" type="text" name="name" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required />
                 {/* <input className="formInput" type="text" name="account[number]" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required /> */}
-                <NumberFormat  className="formInput" format="+998 (##) ###-##-##" allowEmptyFormatting mask="_"/>
+                <NumberFormat format="+998 (##) ###-##-##" name="number" onValueChange={(e, el) => {
+                    // const { formattedValue, value, floatValue } = e;
+                    number = e.value;
+                }} allowEmptyFormatting mask="_"/>
 
                 <input type="hidden" name="amount" value="5000" />
                 <input type="hidden" name="lang" value="ru" />
                 <br />
+                
 
                 <ShadowButton text="To'lovni amalga oshirish" onclick={
-
-                    () => {
-                        var json = this.formToJSON(this.getElementBy("#submitform1"));
+                    async (e) => {
+                        const form = this.getElementBy("#submitform1");
+                        const res = await fetch(
+                            "http://206.189.10.175:8000/register",
+                            {
+                                method: "POST",
+                                body: JSON.stringify(
+                                    {
+                                        name: form.querySelector('input[name="name"]').value,
+                                        number: number,
+                                        plan: 1
+                                    }
+                                    ),
+                                }
+                                );
+                                const data = (await res.json()).data;
+                                console.log(data)
+                                document.querySelector('input[name="account[login]"]').value = data.id;
+                                document.querySelector('input[name="amount"]').value = data.amount;
+                            var json = this.formToJSON(form);
+                            console.log(json);
                         return document.location = json.endpoint + this.decode(this.jsonToString(json));
 
                     }
@@ -63,7 +92,7 @@ export default class Payme extends Component {
             },
             l: form.querySelector('input[name="lang"]').value,
             description: form.querySelector('input[name="description"]').value,
-            c: "https://4215-213-230-112-146.eu.ngrok.io",
+            c: "http://206.189.10.175",
             ct: 1500
         };
     }

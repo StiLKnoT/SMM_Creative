@@ -11,24 +11,29 @@ import ShadowButton from '../atom/buttons/ShadowButton'
 import ForWho from './ForWho/ForWho'
 import CarouselModul from './CarouselModul/CarouselModul'
 import { FaArrowRight } from "react-icons/fa";
-import {ReactComponent as Zero01} from '../../assets/images/Zero01.svg'
-import {ReactComponent as Zero02} from '../../assets/images/Zero02.svg'
-import {ReactComponent as Zero03} from '../../assets/images/Zero03.svg'
-import {ReactComponent as Zero04} from '../../assets/images/Zero04.svg'
-import {ReactComponent as Zero05} from '../../assets/images/Zero05.svg'
-import {ReactComponent as Zero06} from '../../assets/images/Zero06.svg'
+import Row from 'react-bootstrap/esm/Row';
+import Col from 'react-bootstrap/esm/Col'
+import { ReactComponent as Zero01 } from '../../assets/images/Zero01.svg'
+import { ReactComponent as Zero02 } from '../../assets/images/Zero02.svg'
+import { ReactComponent as Zero03 } from '../../assets/images/Zero03.svg'
+import { ReactComponent as Zero04 } from '../../assets/images/Zero04.svg'
+import { ReactComponent as Zero05 } from '../../assets/images/Zero05.svg'
+import { ReactComponent as Zero06 } from '../../assets/images/Zero06.svg'
+import Line from '../../assets/icons/line.png';
+import TopLine from '../../assets/icons/topLine.png';
+import lines from '../../assets/icons/arrowBlock.png';
 
 
 
 
 function First() {
- 
-  return ( 
-    <div className='firstMain'>
-      
-       
-        <Navbar/>
 
+  return (
+    <div className='firstMain'>
+
+
+      <Navbar />
+      
         <div className='CreativeBlock'>
             <div className='smmCreative'>SMM <br/>CREATIVE</div>
             <div className='textCreative'>
@@ -52,47 +57,13 @@ function First() {
       
 
         <Wheel/>
-        <div className=' button' id="buttonInvisebleMob"><ShadowButton/></div>
+      <div className=' button' id="buttonInvisebleMob"><ShadowButton /></div>
 
-        <div className="AfterCourse">
-         <Textline/>
+      {/* <Textline /> */}
 
-          <div className='LinesBlocks'>
-            <div className='FirstLines'>
+      <img src={lines} />
 
-              <div className='LineBLock LineBLock1'>
-                <div className='LineNumber'>
-                  <div className='zeroNumber'><Zero01/></div>
-                  <hr className='hrBlocks'/>
-                </div>
-                <h5 className='LinesText'>Portfolioga ega bo‘lmasdan mijoz topish va buyurtma olish</h5>
-              </div>
-              
-              <div className='LineBLock LineBLock2'>
-                <div className='LineNumber'>
-                  <div className='zeroNumber'><Zero02/></div>
-                    <hr className='hrBlocks'/>
-                </div>
-                <h5 className='LinesText'>Qimmat mijozlarni qayerdan topish va ular bilan ishlash</h5>
-              </div>
-
-              <div className='LineBLock LineBLock3'>
-                <div className='LineNumber'>
-                  <div className='zeroNumber'><Zero03/></div>
-                    <hr className='hrBlocks'/>
-                </div>
-                <h5 className='LinesText'>O‘z biznesingizga yoki loyihangizga mijozlar oqimini tashkil qilish</h5>
-              </div>
-            </div>
-
-            <div className='SecondLines'>
-              <div className='LineBLock4'></div>
-              <div className='LineBLock5'></div>
-              <div className='LineBLock6'></div>
-            </div>
-          </div>
-        </div>
-      
+            
         <ForWho/>
         <ColorBlock/>
         <div className='PaddingDiv' id="Dastur"></div>
@@ -128,3 +99,29 @@ function First() {
 }
 
 export default First
+
+
+
+{/* <div className='LineBLock LineBLock1'>
+                <div className='LineNumber'>
+                  <div className='zeroNumber'><Zero01/></div>
+                  <hr className='hrBlocks'/>
+                </div>
+                <h5 className='LinesText'>Portfolioga ega bo‘lmasdan mijoz topish va buyurtma olish</h5>
+              </div>
+              
+              <div className='LineBLock LineBLock2'>
+                <div className='LineNumber'>
+                  <div className='zeroNumber'><Zero02/></div>
+                    <hr className='hrBlocks'/>
+                </div>
+                <h5 className='LinesText'>Qimmat mijozlarni qayerdan topish va ular bilan ishlash</h5>
+              </div>
+
+              <div className='LineBLock LineBLock3'>
+                <div className='LineNumber'>
+                  <div className='zeroNumber'><Zero03/></div>
+                    <hr className='hrBlocks'/>
+                </div>
+                <h5 className='LinesText'>O‘z biznesingizga yoki loyihangizga mijozlar oqimini tashkil qilish</h5>
+              </div> */}
