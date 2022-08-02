@@ -10,11 +10,22 @@ import ColorBlock from './ColorBlock/ColorBlock'
 import ShadowButton from '../atom/buttons/ShadowButton'
 import ForWho from './ForWho/ForWho'
 import CarouselModul from './CarouselModul/CarouselModul'
+import { FaArrowRight } from "react-icons/fa";
+import {ReactComponent as Zero01} from '../../assets/images/Zero01.svg'
+import {ReactComponent as Zero02} from '../../assets/images/Zero02.svg'
+import {ReactComponent as Zero03} from '../../assets/images/Zero03.svg'
+import {ReactComponent as Zero04} from '../../assets/images/Zero04.svg'
+import {ReactComponent as Zero05} from '../../assets/images/Zero05.svg'
+import {ReactComponent as Zero06} from '../../assets/images/Zero06.svg'
+
+
 
 function First() {
  
   return (
     <div className='firstMain'>
+      
+       
         <Navbar/>
 
         <div className='CreativeBlock'>
@@ -45,7 +56,7 @@ function First() {
 
               <div className='LineBLock LineBLock1'>
                 <div className='LineNumber'>
-                  <div className='zeroNumber'>01</div>
+                  <div className='zeroNumber'><Zero01/></div>
                   <hr className='hrBlocks'/>
                 </div>
                 <h5 className='LinesText'>Portfolioga ega bo‘lmasdan mijoz topish va buyurtma olish</h5>
@@ -53,7 +64,7 @@ function First() {
               
               <div className='LineBLock LineBLock2'>
                 <div className='LineNumber'>
-                  <div className='zeroNumber'>02</div>
+                  <div className='zeroNumber'><Zero02/></div>
                     <hr className='hrBlocks'/>
                 </div>
                 <h5 className='LinesText'>Qimmat mijozlarni qayerdan topish va ular bilan ishlash</h5>
@@ -61,7 +72,7 @@ function First() {
 
               <div className='LineBLock LineBLock3'>
                 <div className='LineNumber'>
-                  <div className='zeroNumber'>03</div>
+                  <div className='zeroNumber'><Zero03/></div>
                     <hr className='hrBlocks'/>
                 </div>
                 <h5 className='LinesText'>O‘z biznesingizga yoki loyihangizga mijozlar oqimini tashkil qilish</h5>
@@ -75,14 +86,31 @@ function First() {
             </div>
           </div>
         </div>
+
         <ForWho/>
         <ColorBlock/>
+        <div className='PaddingDiv' id="Dastur"></div>
         <div className='ForWhoH2'>
             <h2>KURS DASTURI BILAN TANISHING</h2>
         </div>
         <CarouselModul/>
-        <ColorBlock/>
-        
+        <div className='ColorBlock'>
+   
+          <div className='ColorBlockCenter'>
+              <h2 className='ColorBlockH2'>O‘quvchilar uchun bonuslar</h2>
+              <p className='ColorBlockP'>Biz o‘quvchilarga shunchaki dars beribgina qolmay, ular uchun foydali bo‘lgan bonuslarni ham taqdim etamiz</p>
+              <a href="#"><div className='ShadowBtn'>
+                <p className='InBtn'>Bonuslarni ko‘rish<FaArrowRight/></p>
+              
+                </div>
+              </a>
+          </div>
+        </div>
+        <div className='PaddingDiv' id="PaddingDiv">
+        <div className='ForWhoH2White'>
+          <h2 className='ForWhoH2Text' id='kursSpikeri'>KURS SPIKERLARI BILAN TANISHING</h2>
+        </div>
+        </div>
         <TabPanel/>
        
         <ColorBlock/>

@@ -3,9 +3,9 @@
 }
 .CreativeBlock{
     display: flex;
-    margin-top: 142px;
+    margin-top: 120px;
     width: 1200px;
-    margin: 142px auto 0;
+    margin: 120px auto 0;
     height: 287px;
 }
 .smmCreative {
@@ -137,6 +137,48 @@
     font-size: 18px;
     line-height: 26px;
 }
+.ForWhoH2White{
+    border-top: 2px solid #222628;
+    border-bottom: 2px solid #222628;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #222628;
+    margin-bottom: 50px;
+}
+#kursSpikeri{
+    width: 90%;
+    margin: 0 10%;
+    height: 64px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+}
+.PaddingDiv{
+    padding-top: 120px !important;
+}
+
+/* #kursSpikeri{
+    border-top: 2px solid #222628;
+    border-bottom: 2px solid #222628;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 64px;
+    background: #fff;
+    color: #222628;
+ 
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #222628;
+} */
 .LineNumber{
     display: flex;
     align-items: center;
@@ -192,11 +234,14 @@
     }
     .CreativeBlock{
         width: 100%;
-        margin: 80px auto 0;
+        margin: 120px auto 0;
         height: 180px;
     }
+    .PaddingDiv{
+        padding: 80px 0;
+    }
     .h2Text {
-        margin-left: 100px;
+        margin: 0 10%;
         font-family: 'Monument Extended';
         font-style: normal;
         font-weight: 800;

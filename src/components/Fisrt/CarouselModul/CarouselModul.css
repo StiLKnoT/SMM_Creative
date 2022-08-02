@@ -1,13 +1,22 @@
 
 #ModulCard{
     width: 790px;
+    min-height: 200px;
+    max-height: 1000px;
+    padding-bottom: 150px;
 }
+
 #ModulMainCard{
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
 }
+.react-multi-carousel-list  {
+    min-height: 200px !important;
+
+}
+
 .ModulLeftH2{
     font-family: 'Monument Extended';
     font-style: normal;
@@ -32,6 +41,10 @@
 
     color: #222628;
 }
+#cardContentCarousel{
+    position: relative;
+    height: auto;
+}
 #ModulUnderBlock{
     top: 0px !important;
 }
@@ -39,6 +52,8 @@
     background: #B4FFC9;
     padding-bottom: 80px !important;
     border-bottom: 2px solid #222628;
+    min-height: 200px;
+    max-height: 1000px;
 }
 @media screen and (max-width: 947px) {
     #ModulMainCard{
@@ -49,7 +64,7 @@
 }
 @media screen and (max-width: 576px) {
     #ModulCard{
-        width: 100% !important;
+        width: 90% !important;
     }
     #ModulMainCard{
         display: flex !important;

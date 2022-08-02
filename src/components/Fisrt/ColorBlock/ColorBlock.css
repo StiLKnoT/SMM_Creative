@@ -4,14 +4,14 @@
     justify-content: center;
     background: #CDB4FF;
     height: 339px;
-    margin: 80px auto;
+    margin: 80px auto 0;
     border-top: 2px solid #222628;
     border-bottom: 2px solid #222628;
     /* box-shadow: 2px 2px 2px 0 #222628; */
     
 }
 .ColorBlockCenter{
-    width: 50%;
+    width: 51%;
     margin-left: 25%;
     
 }

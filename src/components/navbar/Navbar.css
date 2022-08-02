@@ -13,7 +13,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    height: 142px;
+    height: 120px;
     background-color: #F5F5F5;
 }
 .link{
@@ -33,6 +33,7 @@
     list-style-type: none;
     text-transform: uppercase;
     padding: 0px;
+    margin-bottom: 0px !important;
 }
 .link{
     text-decoration: none;
