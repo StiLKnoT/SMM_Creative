@@ -13,24 +13,27 @@ import CarouselModul from './CarouselModul/CarouselModul'
 import { FaArrowRight } from "react-icons/fa";
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col'
-import {ReactComponent as Zero01} from '../../assets/images/Zero01.svg'
-import {ReactComponent as Zero02} from '../../assets/images/Zero02.svg'
-import {ReactComponent as Zero03} from '../../assets/images/Zero03.svg'
-import {ReactComponent as Zero04} from '../../assets/images/Zero04.svg'
-import {ReactComponent as Zero05} from '../../assets/images/Zero05.svg'
-import {ReactComponent as Zero06} from '../../assets/images/Zero06.svg'
+import { ReactComponent as Zero01 } from '../../assets/images/Zero01.svg'
+import { ReactComponent as Zero02 } from '../../assets/images/Zero02.svg'
+import { ReactComponent as Zero03 } from '../../assets/images/Zero03.svg'
+import { ReactComponent as Zero04 } from '../../assets/images/Zero04.svg'
+import { ReactComponent as Zero05 } from '../../assets/images/Zero05.svg'
+import { ReactComponent as Zero06 } from '../../assets/images/Zero06.svg'
+import Line from '../../assets/icons/line.png';
+import TopLine from '../../assets/icons/topLine.png';
+import lines from '../../assets/icons/arrowBlock.png';
 
 
 
 
 function First() {
- 
-  return ( 
-    <div className='firstMain'>
-      
-       
-        <Navbar/>
 
+  return (
+    <div className='firstMain'>
+
+
+      <Navbar />
+      
         <div className='CreativeBlock'>
             <div className='smmCreative'>SMM <br/>CREATIVE</div>
             <div className='textCreative'>
@@ -41,7 +44,7 @@ function First() {
 
         </div>
 
-        <div className='MainImg' style={{position: "relative"}}>
+      <div className='MainImg' style={{position: "relative"}}>
           <img  className='MainUO' src={MainUO}/>
           <h4 className='AsosiySpiker'>ASOSIY SPIKER:<br/>
           <span className='UmidjonOrtiqov'>UMIDJON ORTIQOV</span></h4>
@@ -49,64 +52,13 @@ function First() {
       
 
         <Wheel/>
-        <div className=' button' id="buttonInvisebleMob"><ShadowButton/></div>
+      <div className=' button' id="buttonInvisebleMob"><ShadowButton /></div>
 
-        <div className="AfterCourse">
-         <Textline/>
+      {/* <Textline /> */}
 
-          <div className='LinesBlocks'>
-            <Row className='FirstLines'>
-                <Col  className='drawenSecColumn' style={{display:"flex", flexDirection:"column",}} xl={2} lg={2} md={2} sm={2} >
-                  <Zero01 />
-                  <p>lorem ipsum dolor</p>
-                  </Col>
-                <Col xl={2} lg={2} md={2} sm={2} >
-                  
-                </Col>
-                <Col  className='drawenSecColumn' style={{display:"flex", flexDirection:"column",}} xl={2} lg={2} md={2} sm={2} >
-                  <Zero02 />
-                  <p>lorem ipsum dolor</p>
-                  </Col>
-                <Col xl={2} lg={2} md={2} sm={2} >
-                  
-                </Col>
-                <Col  className='drawenSecColumn' style={{display:"flex", flexDirection:"column",}} xl={2} lg={2} md={2} sm={2} >
-                  <Zero03 />
-                  <p>lorem ipsum dolor</p>
-                  </Col>
-                <Col xl={2} lg={2} md={2} sm={2} >
-                  
-                </Col>
-            </Row>
+      <img src={lines} />
 
-            <br />
-
-            <Row className='SecondLines'>
-                <Col  className='drawenSecColumn' style={{display:"flex", flexDirection:"column",}} xl={2} lg={2} md={2} sm={2} >
-                  <Zero04 />
-                  <p>lorem ipsum dolor</p>
-                  </Col>
-                <Col xl={2} lg={2} md={2} sm={2} >
-                  
-                </Col>
-                <Col  className='drawenSecColumn' style={{display:"flex", flexDirection:"column",}} xl={2} lg={2} md={2} sm={2} >
-                  <Zero05 />
-                  <p>lorem ipsum dolor</p>
-                  </Col>
-                <Col xl={2} lg={2} md={2} sm={2} >
-                  
-                </Col>
-                <Col  className='drawenSecColumn' style={{display:"flex", flexDirection:"column",}} xl={2} lg={2} md={2} sm={2} >
-                  <Zero06 />
-                  <p>lorem ipsum dolor</p>
-                  </Col>
-                <Col xl={2} lg={2} md={2} sm={2} >
-                  
-                </Col>
-            </Row>
-          </div>
-        </div>
-      
+            
         <ForWho/>
         <ColorBlock/>
         <div className='PaddingDiv' id="Dastur"></div>
@@ -145,7 +97,7 @@ export default First
 
 
 
-              {/* <div className='LineBLock LineBLock1'>
+{/* <div className='LineBLock LineBLock1'>
                 <div className='LineNumber'>
                   <div className='zeroNumber'><Zero01/></div>
                   <hr className='hrBlocks'/>

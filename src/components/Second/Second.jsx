@@ -231,15 +231,16 @@ const Second = () => {
             {rows.map((el, i) => {
               return (
                 <div className="personBlock">
-                  <Row style={{width:"95%"}} key={i}>
-                    <Col xl={8} lg={8} md={8} sm={12}>
+                  <Row key={i}>
+                    <Col xl={8} lg={8} md={12} sm={12}>
                       <img
                         src={el.bannerImg}
                         alt={el.Name}
                         className="img-fluid shadow-4 bannerImgPort "
                       />
                     </Col>
-                    <Col xl={4} lg={4} md={4} sm={12}>
+                    <Col   xl={8} lg={8
+                    } md={12} sm={12}>
                       <div className="simpleCard">
                         <div className="card__name">{el.Name}</div>
                         <div className="card__info">{el.infoText}</div>
@@ -248,8 +249,8 @@ const Second = () => {
                   </Row>
                   <h4 className="brText"> Biz bilan hamkorlikdan so'ng </h4>
 
-                  <Row style={{width:"95%"}} className="greenCards">
-                    <Col xl={4} lg={4} md={4} sm={12} className=" greenCardCol ">
+                  <Row className="greenCards">
+                    <Col xl={4} lg={4} md={8} sm={12} className=" greenCardCol ">
                       <div className="greenCard">
                         <div className="innerGreenCard">
                           <div className="innerGreenCardLeft">
@@ -267,7 +268,7 @@ const Second = () => {
                       </div>
                     </Col>
 
-                    <Col xl={4} lg={4} md={4} sm={12} className=" greenCardCol ">
+                    <Col xl={4} lg={4} md={8} sm={12} className=" greenCardCol ">
                       <div className="greenCard">
                         <div className="innerGreenCard">
                           <div className="innerGreenCardLeft">
@@ -276,7 +277,7 @@ const Second = () => {
                           </div>
                           <p>TikTok obunachilari</p>
                         </div>
-                        <button className="greenCardBtn">
+                        <button className="ShadowBtn greenCardBtn">
                           <a href="#">
                             {" "}
                             Profilga o'tish <FaArrowRight />{" "}
@@ -285,7 +286,7 @@ const Second = () => {
                       </div>
                     </Col>
 
-                    <Col xl={4} lg={4} md={4} sm={12} className=" greenCardCol ">
+                    <Col xl={4} lg={4} md={12} sm={12} className=" greenCardCol ">
                       <div className="greenCard">
                         {/* <YouTubeLogo /> */}
                         <div className="innerGreenCard">
@@ -295,7 +296,7 @@ const Second = () => {
                           </div>
                           <p>YouTube obunachilari</p>
                         </div>
-                        <button className="greenCardBtn">
+                        <button className="ShadowBtn greenCardBtn">
                           <a href="#">
                             {" "}
                             Profilga o'tish <FaArrowRight />{" "}
