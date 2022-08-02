@@ -11,6 +11,8 @@ import ShadowButton from '../atom/buttons/ShadowButton'
 import ForWho from './ForWho/ForWho'
 import CarouselModul from './CarouselModul/CarouselModul'
 import { FaArrowRight } from "react-icons/fa";
+import Row from 'react-bootstrap/esm/Row';
+import Col from 'react-bootstrap/esm/Col'
 import {ReactComponent as Zero01} from '../../assets/images/Zero01.svg'
 import {ReactComponent as Zero02} from '../../assets/images/Zero02.svg'
 import {ReactComponent as Zero03} from '../../assets/images/Zero03.svg'
@@ -53,38 +55,55 @@ function First() {
          <Textline/>
 
           <div className='LinesBlocks'>
-            <div className='FirstLines'>
+            <Row className='FirstLines'>
+                <Col  className='drawenSecColumn' style={{display:"flex", flexDirection:"column",}} xl={2} lg={2} md={2} sm={2} >
+                  <Zero01 />
+                  <p>lorem ipsum dolor</p>
+                  </Col>
+                <Col xl={2} lg={2} md={2} sm={2} >
+                  
+                </Col>
+                <Col  className='drawenSecColumn' style={{display:"flex", flexDirection:"column",}} xl={2} lg={2} md={2} sm={2} >
+                  <Zero02 />
+                  <p>lorem ipsum dolor</p>
+                  </Col>
+                <Col xl={2} lg={2} md={2} sm={2} >
+                  
+                </Col>
+                <Col  className='drawenSecColumn' style={{display:"flex", flexDirection:"column",}} xl={2} lg={2} md={2} sm={2} >
+                  <Zero03 />
+                  <p>lorem ipsum dolor</p>
+                  </Col>
+                <Col xl={2} lg={2} md={2} sm={2} >
+                  
+                </Col>
+            </Row>
 
-              <div className='LineBLock LineBLock1'>
-                <div className='LineNumber'>
-                  <div className='zeroNumber'><Zero01/></div>
-                  <hr className='hrBlocks'/>
-                </div>
-                <h5 className='LinesText'>Portfolioga ega bo‘lmasdan mijoz topish va buyurtma olish</h5>
-              </div>
-              
-              <div className='LineBLock LineBLock2'>
-                <div className='LineNumber'>
-                  <div className='zeroNumber'><Zero02/></div>
-                    <hr className='hrBlocks'/>
-                </div>
-                <h5 className='LinesText'>Qimmat mijozlarni qayerdan topish va ular bilan ishlash</h5>
-              </div>
+            <br />
 
-              <div className='LineBLock LineBLock3'>
-                <div className='LineNumber'>
-                  <div className='zeroNumber'><Zero03/></div>
-                    <hr className='hrBlocks'/>
-                </div>
-                <h5 className='LinesText'>O‘z biznesingizga yoki loyihangizga mijozlar oqimini tashkil qilish</h5>
-              </div>
-            </div>
-
-            <div className='SecondLines'>
-              <div className='LineBLock4'></div>
-              <div className='LineBLock5'></div>
-              <div className='LineBLock6'></div>
-            </div>
+            <Row className='SecondLines'>
+                <Col  className='drawenSecColumn' style={{display:"flex", flexDirection:"column",}} xl={2} lg={2} md={2} sm={2} >
+                  <Zero04 />
+                  <p>lorem ipsum dolor</p>
+                  </Col>
+                <Col xl={2} lg={2} md={2} sm={2} >
+                  
+                </Col>
+                <Col  className='drawenSecColumn' style={{display:"flex", flexDirection:"column",}} xl={2} lg={2} md={2} sm={2} >
+                  <Zero05 />
+                  <p>lorem ipsum dolor</p>
+                  </Col>
+                <Col xl={2} lg={2} md={2} sm={2} >
+                  
+                </Col>
+                <Col  className='drawenSecColumn' style={{display:"flex", flexDirection:"column",}} xl={2} lg={2} md={2} sm={2} >
+                  <Zero06 />
+                  <p>lorem ipsum dolor</p>
+                  </Col>
+                <Col xl={2} lg={2} md={2} sm={2} >
+                  
+                </Col>
+            </Row>
           </div>
         </div>
       
@@ -123,3 +142,29 @@ function First() {
 }
 
 export default First
+
+
+
+              {/* <div className='LineBLock LineBLock1'>
+                <div className='LineNumber'>
+                  <div className='zeroNumber'><Zero01/></div>
+                  <hr className='hrBlocks'/>
+                </div>
+                <h5 className='LinesText'>Portfolioga ega bo‘lmasdan mijoz topish va buyurtma olish</h5>
+              </div>
+              
+              <div className='LineBLock LineBLock2'>
+                <div className='LineNumber'>
+                  <div className='zeroNumber'><Zero02/></div>
+                    <hr className='hrBlocks'/>
+                </div>
+                <h5 className='LinesText'>Qimmat mijozlarni qayerdan topish va ular bilan ishlash</h5>
+              </div>
+
+              <div className='LineBLock LineBLock3'>
+                <div className='LineNumber'>
+                  <div className='zeroNumber'><Zero03/></div>
+                    <hr className='hrBlocks'/>
+                </div>
+                <h5 className='LinesText'>O‘z biznesingizga yoki loyihangizga mijozlar oqimini tashkil qilish</h5>
+              </div> */}
