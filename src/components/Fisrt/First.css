@@ -1,12 +1,12 @@
-.firstMain{
-    background-color: #F5F5F5;
+.firstMain {
+  background-color: #f5f5f5;
 }
-.CreativeBlock{
-    display: flex;
-    margin-top: 120px;
-    width: 1200px;
-    margin: 120px auto 0;
-    height: 287px;
+.CreativeBlock {
+  display: flex;
+  margin-top: 120px;
+  width: 1200px;
+  margin: 120px auto 0;
+  height: 287px;
 }
 .smmCreative {
   width: 45%;
@@ -30,15 +30,15 @@
   border-left: 2px solid #222628;
 }
 .smmText {
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 140%;    
-    color: #222628;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 140%;
+  color: #222628;
 }
-#buttonInvisebleMob{
-    display: none;
+#buttonInvisebleMob {
+  display: none;
 }
 .line {
   width: 2px;
@@ -46,123 +46,138 @@
   background-color: black;
   height: 100% !important;
   margin-top: 0px;
-  border:none
+  border: none;
 }
-.mainImg{
+.MainImg{
     width: 100%;
     height: auto;
     position: relative;
 }
+.forBtnSlide{
+    position: absolute;
+    background: red;
+    width: 30px;
+    height: 100px;
+    transform: rotate(0deg);
+    right: 218px;
+}
+.slideBtnParam{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(270deg);
+}
+
 .MainUO{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.AsosiySpiker{
-    position: absolute;
-    bottom: 8%;
-    left: 11%;
-    font-family: 'Monument Extended';
-    font-style: normal;
-    background: none;
-    font-weight: 800;
-    font-size: 32px;
-    color: #FFFFFF;
-    line-height: 120%;
+.AsosiySpiker {
+  position: absolute;
+  bottom: 8%;
+  left: 11%;
+  font-family: "Monument Extended";
+  font-style: normal;
+  background: none;
+  font-weight: 800;
+  font-size: 32px;
+  color: #ffffff;
+  line-height: 120%;
 }
-.UmidjonOrtiqov{
-    background: none;
+.UmidjonOrtiqov {
+  background: none;
 }
-.Wheel{
-    width: 100%;
-    background-color: #222628;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    overflow: hidden;
+.Wheel {
+  width: 100%;
+  background-color: #222628;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
 }
-#midWheel{
-    margin: 120px 0px !important;
+#midWheel{ 
+    margin: 120px 0px 0px!important;
 }
-.WheelLine{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #222628;
+.WheelLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #222628;
 }
-.WheelText{
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 10px;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #222628;
+.WheelText {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 10px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #222628;
 }
-.sunSVG{
-    width: 20px;
-    height: 20px;
+.sunSVG {
+  width: 20px;
+  height: 20px;
 }
-.Wheel svg path{
-    font-size: 16px;
-    background-color: #222628;
+.Wheel svg path {
+  font-size: 16px;
+  background-color: #222628;
 }
-.AfterCourse{
-    margin-top: 120px;
+.AfterCourse {
+  margin-top: 120px;
 }
-.hrLine{
-    height: 2px;
-    background: #222628;
+.hrLine {
+  height: 2px;
+  background: #222628;
 }
-.h2Text{
-    font-size: 32px;
-    font-weight: 800;
-    margin-left: 200px;
-    line-height: 38px;
-    font-style: normal;
-    text-transform: uppercase;
-    color: #222628;
+.h2Text {
+  font-size: 32px;
+  font-weight: 800;
+  margin-left: 200px;
+  line-height: 38px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #222628;
 }
-.FirstLines{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 120px;
+.FirstLines {
+  display: flex;
+  justify-content: space-between;
+  width: 100% !important;
+  margin: 0 120px;
 }
-.LineBLock{
-    width: 33%;
+.LineBLock {
+  width: 33%;
 }
-.LinesText{
-    width: 80%;
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+.LinesText {
+  width: 80%;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
 }
-.ForWhoH2White{
-    border-top: 2px solid #222628;
-    border-bottom: 2px solid #222628;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-style: normal;
-    text-transform: uppercase;
-    color: #222628;
-    margin-bottom: 50px;
+.ForWhoH2White {
+  border-top: 2px solid #222628;
+  border-bottom: 2px solid #222628;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #222628;
+  margin-bottom: 50px;
 }
-#kursSpikeri{
-    width: 90%;
-    margin: 0 10%;
-    height: 64px;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 38px;
-    display: flex;
-    align-items: center;
+#kursSpikeri {
+  width: 90%;
+  margin: 0 10%;
+  height: 64px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
 }
-.PaddingDiv{
-    padding-top: 120px !important;
+.PaddingDiv {
+  padding-top: 120px !important;
 }
 
 /* #kursSpikeri{
@@ -182,201 +197,220 @@
     text-transform: uppercase;
     color: #222628;
 } */
-.LineNumber{
-    display: flex;
-    align-items: center;
+.LineNumber {
+  display: flex;
+  align-items: center;
 }
-.zeroNumber{
-    font-style: normal;
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 85%;
-    }
-
-.hrBlocks{
-    width: 70%;
-    height: 2px !important;
-    color: #FFD100;;
-    background-color: #FFD100;;
-}
-.LinesBlocks{
-    width: 90%;
-    margin: 50px auto 0;
+.zeroNumber {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 85%;
 }
 
-.row > *:nth-child(even)  {
-    height: 100%;
-    border-bottom: 2px solid #FFD100 !important;
+.hrBlocks {
+  width: 70%;
+  height: 2px !important;
+  color: #ffd100;
+  background-color: #ffd100;
 }
-.arrowType{
-    width: 100%;
-    border: 5px solid#FFD100;
+.LinesBlocks {
+  width: 90%;
+  margin: 50px auto ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+/* .FirstLines{
+    width: 95%;
+    margin: 0 auto ;
+} */
+/* .AfterCourse .row > *:nth-child(even) {
+  height: 0px;
+  border-bottom: 2px solid #ffd100 !important;
+} */
+.drawenSecColumn {
+  height: 171px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.liniyaImg{
+    height: 2px;
 
-
+}
+.drawenSecColumn p {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #222628;
+}
+.simpleArrow:nth-child(3){
+    border-left: 2px solid #ffd100
+}
 @media screen and (min-width: 1600px) {
-    .firstMain{
-        max-width: 1600px;
-        margin: 0 auto;
-        background-color: #F5F5F5;
-    }
-    
+  .firstMain {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+  }
 }
 @media screen and (max-width: 1200px) {
-    .mainImg{
-        width: 100%;
-    }
-    .CreativeBlock{
-        width: 100%;
-    }
-    .Wheel{
-        overflow: hidden;
-    }
+  .mainImg {
+    width: 100%;
+  }
+  .CreativeBlock {
+    width: 100%;
+  }
+  .Wheel {
+    overflow: hidden;
+  }
 }
 @media screen and (max-width: 947px) {
-    .smmCreative{
-        font-style: normal;
-        font-weight: 800;
-        font-size: 34px;
-        line-height: 110%;
-        padding-left: 100px;
-    }
-    .textCreative{
-        padding-right: 100px;
-    }
-    .CreativeBlock{
-        width: 100%;
-        margin: 80px auto 0;
-        height: 180px;
-    }
-    .PaddingDiv{
-        padding: 80px auto 0 !important;
-    }
-    #midWheel{
-        margin: 80px 0;
-    }
-    .h2Text {
-        margin: 0 10%;
-        font-family: 'Monument Extended';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 22px;
-    }
-    .smmText{
-        font-family: 'Space Grotesk';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 140%;
-    }
-    .AsosiySpiker{
-        font-size: 12px;
-        font-weight: 400;
-    }
-    .AfterCourse{
-        margin-top: 100px;
-    }
-    .WheelText{
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        margin-right: 20px;
-    }
-   
-    
+  .smmCreative {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 110%;
+    padding-left: 100px;
+  }
+  .textCreative {
+    padding-right: 100px;
+  }
+  .CreativeBlock {
+    width: 100%;
+    margin: 80px auto 0;
+    height: 180px;
+  }
+  .PaddingDiv {
+    padding: 80px auto 0 !important;
+  }
+  #midWheel {
+    margin: 80px 0;
+  }
+  .h2Text {
+    margin: 0 10%;
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .smmText {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .AsosiySpiker {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .AfterCourse {
+    margin-top: 100px;
+  }
+  .WheelText {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 20px;
+  }
 }
 @media screen and (max-width: 947px) {
-    #kursSpikeri{
-        font-family: 'Monument Extended';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 22px;
-        /* identical to box height */
+  #kursSpikeri {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
 
-        text-transform: uppercase;
+    text-transform: uppercase;
 
-        /* brand black color */
+    /* brand black color */
 
-        color: #222628;
-    }
-
-    
+    color: #222628;
+  }
 }
-@media screen and (max-width:576px) {
-    .CreativeBlock {
-        margin-top: 80px;
-        flex-direction: column !important;
-    }
-    .h2Text {
-        font-size: 14px;
-    }
-    .ForWhoH2 h2{
-        font-family: 'Monument Extended';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 14px !important;
-        line-height: 21px;
-        text-transform: uppercase;
-        color: #222628;
-        width: 90%;
-        margin: 0 auto !important;
-        text-align: center;
-    }
-    .FirstLines{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .smmCreative{
-        width: 90%;
-        margin: 0 auto;
-        padding: 30px 0 0 0!important;
-    }
-    .textCreative {
-        width: 90%;
-        margin: 0 auto;
-        border: none;
-        padding: 0px !important;
-    }
-    #buttonInviseble{
-        display: none;
-    }
-    #buttonInvisebleMob{
-        display: block;
-    }
-    #buttonInvisebleMob{
-        width: 80%;
-        margin: 50px 12% 50px 8%;
-    }
-    .SpikerImg, .SpikerImg img{
-        width: 100% !important;
-    }
-    .smmText{
-        margin-top: 10px;
-    }
-    #Dastur{
-        padding-top: 80px !important;
-    }
-    #kursSpikeri{
-        font-style: normal;
-        font-weight: 800;
-        font-size: 1em;
-        line-height: 21px;
-        /* identical to box height */
-        
-        text-transform: uppercase;
-        
-        /* brand black color */
-        
-        color: #222628;
-    }
-    .ForWhoH2 h2{
-        font-size: 1em !important;
-    }
-    .h2Text{
-        font-size: 1em !important;
-    }
-    
-    
+@media screen and (max-width: 576px) {
+  .CreativeBlock {
+    margin-top: 80px;
+    flex-direction: column !important;
+  }
+  .h2Text {
+    font-size: 14px;
+  }
+  .ForWhoH2 h2 {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px !important;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #222628;
+    width: 90%;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  .FirstLines {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .smmCreative {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0 0 0 !important;
+  }
+  .textCreative {
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    padding: 0px !important;
+  }
+  #buttonInviseble {
+    display: none;
+  }
+  #buttonInvisebleMob {
+    display: block;
+  }
+  #buttonInvisebleMob {
+    width: 80%;
+    margin: 50px 12% 50px 8%;
+  }
+  .SpikerImg,
+  .SpikerImg img {
+    width: 100% !important;
+  }
+  .smmText {
+    margin-top: 10px;
+  }
+  #Dastur {
+    padding-top: 80px !important;
+  }
+  #kursSpikeri {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    /* brand black color */
+
+    color: #222628;
+  }
+  .ForWhoH2 h2 {
+    font-size: 1em !important;
+  }
+  .h2Text {
+    font-size: 1em !important;
+  }
 }

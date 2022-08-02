@@ -26,10 +26,10 @@ const Footer = () => {
                                 <a className="link" href="#Dastur">Dastur</a>
                             </li>
                             <li>
-                                <a className="link" href="">Keyslar</a>
+                                <a className="link" href="#Keyslar">Keyslar</a>
                             </li>
                             <li>
-                                <a className="link" href="">Tariflar</a>
+                                <a className="link" href="#tariflar">Tariflar</a>
                             </li>
                         </ul>
                     </div>

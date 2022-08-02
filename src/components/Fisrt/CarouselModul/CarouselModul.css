@@ -1,12 +1,16 @@
-
 #ModulCard{
     width: 790px;
     min-height: auto;
     max-height: max-content;
-    height: max-content;
+    height: max-content !important;
     margin-bottom: 20px !important;
+    
    
 }
+
+/* .CarouselModul:nth-child(1){
+    height: max-content !important;
+} */
 
 #ModulMainCard{
     display: flex;
@@ -14,10 +18,8 @@
     width: 80%;
     margin: 0 auto;
 }
-.react-multi-carousel-list  {
-    min-height: 200px !important;
 
-}
+
 
 .ModulLeftH2{
     font-family: 'Monument Extended';
@@ -69,20 +71,34 @@
         width: 90% !important;
         margin: 0 auto !important;
     }
-    
+    .ForWhoH2 h2{
+        font-family: 'Monument Extended';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+        text-transform: uppercase;
+
+        /* brand black color */
+
+        color: #222628;
+    }
 }
 @media screen and (max-width: 576px) {
     #ModulCard{
-        width: 90% !important;
+   
+        height: max-content !important;
     }
     #ModulMainCard{
         display: flex !important;
         flex-direction: column !important;
-    }
-    #ModulMainCard {
         width: 100% !important;
       
     }
+   
+
     .ForWhoMain{
         flex-direction: column;
     }
@@ -114,4 +130,31 @@
     .react-multi-carousel-item{
         margin: 0px !important;
     }
+    #ModulId{
+        margin-top: 0px !important;
+    }
+    .ModulLeftText{
+        margin-top: 20px !important;
+    }
+    /* #ModulCard{
+        width: 90% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        
+    } */
+    .react-multi-carousel-item{
+        margin: 0px !important;
+    }
+    .ModulLeft{
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+    #ModulCard{
+        margin: 0 5%;
+        width: 90% !important;
+    }
+    #ModulID{
+        padding-bottom: 20px !important;
+    }
+    
 }

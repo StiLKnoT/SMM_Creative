@@ -20,11 +20,18 @@ body {
   background: #f3f3f3;
 }
 /* KeysBox Part */
+.keyBox{
+  margin: 0 auto  ;
+  max-width: 1200px !important
+}
 .box {
   max-width: 1200px !important;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+}
+#Keyslar{
+  padding-top: 120px !important;
 }
 .titleBox {
   width: 100%;
@@ -80,6 +87,10 @@ body {
 }
 .personBlock > .row {
   margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  /* flex-direction: column; */
+  
 }
 .greenCards {
   display: flex;
@@ -213,7 +224,6 @@ body {
   background-color: #ffd100 !important;
   transition: all 0.3s;
 }
-
 .tarifPrice span {
   color: #7d7d7d;
   line-height: 40.83px;
@@ -225,12 +235,10 @@ body {
   border: none;
   padding: 20px 20px 110px;
 }
-
 .formKursBtn {
   position: absolute;
   bottom: 25px;
-  /* left: 40%; */
-  width: 340px;
+  width: 80%;
   height: 85px;
   border-radius: 0 !important;
   border: 2px solid #222628 !important;
@@ -444,7 +452,7 @@ body {
   z-index: 1;
 }
 .row {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
 }
 .darsRow:nth-child(even) .darsBlockCardShadow:nth-child(2) {
@@ -462,6 +470,13 @@ body {
   z-index: 0;
 }
 
+
+@media screen and (max-width: 947px) {
+  #Keyslar{
+    margin-top: 80px !important;
+  }
+  
+}
 @media screen and (max-width: 768px) {
   .simpleCard {
     height: 250px;
@@ -511,6 +526,7 @@ body {
     font-weight: 700;
     line-height: 31px;
     letter-spacing: 0em;
+    margin-top: 50px;
     text-align: left;
   }
 
@@ -525,3 +541,10 @@ body {
     bottom: 20px;
   }
 }
+@media screen and (max-width: 576px) {
+  #Keyslar{
+    margin-top: 40px !important;
+  }
+  
+}
+

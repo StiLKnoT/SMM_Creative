@@ -106,8 +106,8 @@
     background-color: #fafafa !important;
 }
 .react-multi-carousel-list  {
-    padding-top: 60px;
-    height: 500px !important;
+    padding-top: 80px;
+    /* height: 500px !important; */
 } 
 .react-multi-carousel-list {
     display: flex;
@@ -197,4 +197,14 @@
     .react-multiple-carousel__arrow {
         z-index: 1 !important;
     }
+}
+@media screen and (max-width: 576px) {
+    .react-multi-carousel-item,
+    .react-multi-carousel-item--active {
+        margin: 0 !important;
+    }
+    .css-12dv9jb{
+        margin: 0 10% !important;
+    }
+    
 }

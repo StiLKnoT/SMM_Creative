@@ -101,7 +101,7 @@ export default function BasicTabs() {
       <Box sx={{  }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" className='TabPanelButtons'>
           <Tab label="Spikerlar" {...a11yProps(0)} className="TabButtons"/>
-          <Tab label="Mehmon spikerlar" {...a11yProps(1)} className="TabButtons TabButtons2"/>
+          <Tab label="Mehmon spikerlar" {...a11yProps(1)} className="TabButtons TabButtons2"/>
         </Tabs>
       </Box>
       <TabPanel value={value} index={0} className="TabValue">
