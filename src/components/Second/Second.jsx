@@ -44,6 +44,9 @@ import { FaArrowRight } from "react-icons/fa";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ShadowButton from "../atom/buttons/ShadowButton";
 import Payme from "../../Paycom";
+import ColorBlock from "../Fisrt/ColorBlock/ColorBlock";
+import Textline from "../atom/Textline/Textline";
+import Wheel from "../Fisrt/Wheel/Wheel";
 
 
 const Accordion = styled((props) => (
@@ -440,6 +443,10 @@ const Second = () => {
           }
         </section>
       </div>
+      {/* Lenta bn pinkBox */}
+<Wheel />
+      <ColorBlock />
+
 
       {/* Tariflar section */}
 
@@ -616,7 +623,11 @@ const Second = () => {
               <div className="darsBlockText"> Kurs modullardan tashkil topgan. Sizga ma’lum vaqtda darslar ochib beriladi </div>
             </Col>
             <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="boxShadowBox">
               <div className="darsBlockCardShadow">1  </div>
+               <div className="darsBlockCardShadow">1  </div>
+                <div className="darsBlockCardShadow">1  </div>
+              </div>
             </Col>
           </Row>
           <Row className="darsRow" >
@@ -627,7 +638,11 @@ const Second = () => {
               <div className="darsBlockText"> Darslar so‘ngida siz berilgan uy vazifalarini topshirasiz </div>
             </Col>
             <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="boxShadowBox">
               <div className="darsBlockCardShadow"> 2 </div>
+               <div className="darsBlockCardShadow"> 2 </div>
+                <div className="darsBlockCardShadow"> 2 </div>
+              </div>
             </Col>
           </Row>
           <Row className="darsRow" >
@@ -638,7 +653,11 @@ const Second = () => {
               <div className="darsBlockText"> Vazifalaringiz kurs rahbaringiz tomonidan tekshirib boriladi </div>
             </Col>
             <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="boxShadowBox">
               <div className="darsBlockCardShadow"> 3 </div>
+               <div className="darsBlockCardShadow"> 3 </div>
+                <div className="darsBlockCardShadow"> 3 </div>
+              </div>
             </Col>
           </Row>
 
@@ -650,7 +669,11 @@ const Second = () => {
               <div className="darsBlockText"> Kurs rahbari bilan belgilangan vaqtda to‘g‘ridan-to‘g‘ri aloqada bo‘lasiz </div>
             </Col>
             <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="boxShadowBox">
               <div className="darsBlockCardShadow">4  </div>
+               <div className="darsBlockCardShadow">4  </div>
+                <div className="darsBlockCardShadow">4  </div>
+              </div>
             </Col>
           </Row>
           <Row className="darsRow" >
@@ -661,7 +684,11 @@ const Second = () => {
               <div className="darsBlockText"> Barcha modullar so‘ngida kurs rahbari hamda ekspertlar bilan muloqot qilasiz </div>
             </Col>
             <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="boxShadowBox">
               <div className="darsBlockCardShadow">5  </div>
+               <div className="darsBlockCardShadow">5  </div>
+                <div className="darsBlockCardShadow">5  </div>
+              </div>
             </Col>
           </Row>
           <Row className="darsRow" >
@@ -672,12 +699,18 @@ const Second = () => {
               <div className="darsBlockText"> Modul so‘ngida umumiy imtihon vazifasini bajarasiz </div>
             </Col>
             <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="boxShadowBox">
               <div className="darsBlockCardShadow">  6</div>
+               <div className="darsBlockCardShadow">  6</div>
+                <div className="darsBlockCardShadow">  6</div>
+              </div>
             </Col>
           </Row>
         </section>
       </div>
-
+      {/* Lenta bn pinkBox */}
+        <ColorBlock />
+        <Wheel />
 
     </main>
   );
