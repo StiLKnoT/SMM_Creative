@@ -3,7 +3,7 @@
 import { Component } from "react";
 import ShadowButton from "./components/atom/buttons/ShadowButton";
 
-
+// import fetch from 'sync-fetch';
 
 import NumberFormat from 'react-number-format';
 
@@ -13,7 +13,7 @@ export default class Payme extends Component {
         console.log(props);
         super(props);
     }
-    
+
     render() {
 
 
@@ -21,8 +21,11 @@ export default class Payme extends Component {
         let number = "";
 
 
+
         return (
-            <form className="modalForm" id="submitform1" action="https://checkout.paycom.uz" method="POST" >
+            <form className="modalForm" id="submitform1" action="https://checkout.paycom.uz" method="POST" onSubmit={(e) => {
+                e.preventDefault();
+            }} >
                 <input type="hidden" name="merchant" value="621e19c42590be2d78408142" />
                 <input type="hidden" name="account[login]" value="703897" />
                 <input type="hidden" name="description" value="Description" />
@@ -33,18 +36,18 @@ export default class Payme extends Component {
                 <NumberFormat format="+998 (##) ###-##-##" name="number" onValueChange={(e, el) => {
                     // const { formattedValue, value, floatValue } = e;
                     number = e.value;
-                }} allowEmptyFormatting mask="_"/>
+                }} allowEmptyFormatting mask="_" />
 
                 <input type="hidden" name="amount" value="5000" />
                 <input type="hidden" name="lang" value="ru" />
                 <br />
-                
+
 
                 <ShadowButton text="To'lovni amalga oshirish" onclick={
-                    async (e) => {
+                    (e) => {
                         const form = this.getElementBy("#submitform1");
-                        const res = await fetch(
-                            "http://206.189.10.175:8000/register",
+
+                        const res = fetch("http://127.0.0.1:8000/register",
                             {
                                 method: "POST",
                                 body: JSON.stringify(
@@ -53,16 +56,38 @@ export default class Payme extends Component {
                                         number: number,
                                         plan: 1
                                     }
-                                    ),
-                                }
-                                );
-                                const data = (await res.json()).data;
-                                console.log(data)
-                                document.querySelector('input[name="account[login]"]').value = data.id;
-                                document.querySelector('input[name="amount"]').value = data.amount;
+                                ),
+                            }
+                        ).then(res => res.json().then(({data}) => {
+                            // console.log(res);
+                            // const data = res.text();
+                            // console.log(data);
+
+
+                            console.log(data);
+                            document.querySelector('input[name="account[login]"]').value = data.id;
+                            document.querySelector('input[name="amount"]').value = data.amount;
+
+
                             var json = this.formToJSON(form);
                             console.log(json);
-                        return document.location = json.endpoint + this.decode(this.jsonToString(json));
+                            
+                            // return document.location = json.endpoint + this.decode(this.jsonToString(json));
+                        }));
+                        // const data = res.text();
+                        // console.log(data);
+
+
+                        // console.log(data);
+                        // document.querySelector('input[name="account[login]"]').value = data.id;
+                        // document.querySelector('input[name="amount"]').value = data.amount;
+
+
+                        // var json = this.formToJSON(form);
+                        // console.log(json);
+                        // return document.location = json.endpoint + this.decode(this.jsonToString(json));
+
+                        
 
                     }
                 } />
