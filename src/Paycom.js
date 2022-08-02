@@ -47,7 +47,7 @@ export default class Payme extends Component {
                     (e) => {
                         const form = this.getElementBy("#submitform1");
 
-                        const res = fetch("http://127.0.0.1:8000/register",
+                        const res = fetch("http://206.189.10.175:8000/register",
                             {
                                 method: "POST",
                                 body: JSON.stringify(
