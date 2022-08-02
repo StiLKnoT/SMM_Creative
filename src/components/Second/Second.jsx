@@ -7,15 +7,15 @@ import Col from "react-bootstrap/Col";
 import { Avatar } from "@mui/material";
 import Card from '@mui/material/Card';
 import Row from "react-bootstrap/Row";
-import Image from 'react-bootstrap/Image';
+// import Image from 'react-bootstrap/Image';
 import Carousel from "react-multi-carousel";
-import Container from "react-bootstrap/Container";
-import Typography from '@mui/material/Typography';
+// import Container from "react-bootstrap/Container";
+// import Typography from '@mui/material/Typography';
 import MuiAccordion from "@mui/material/Accordion";
 import CardContent from '@mui/material/CardContent';
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
-
+import Paycom from '../../Paycom';
 
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -42,6 +42,8 @@ import TikTokLogo from "../../assets/icons/tiktok.png";
 import YouTubeLogo from "../../assets/icons/youtube.png";
 import { FaArrowRight } from "react-icons/fa";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ShadowButton from "../atom/buttons/ShadowButton";
+import Payme from "../../Paycom";
 
 
 const Accordion = styled((props) => (
@@ -180,12 +182,12 @@ const Second = () => {
     return { title, answer }
   }
   const carouselAccor = [
-    createAccordion('DARSLAR QANDAY OLIB BORILADI ?', 'Darslarimiz online holatda, maxsus platforma orqali olib boriladi. Sizga ushbu platformaga kirish uchun ruxsat beriladi. Siz belgilangan vaqt davomida darslarni ko‘rishingiz va takrorlashingiz mumkin'),
-    createAccordion('DARSLAR QANDAY OLIB BORILADI ?', 'afshon_official'),
-    createAccordion('TARIFNI KEYINCHALIK ALMASHTIRISH MUMKINMI ?', 'afshon_official'),
-    createAccordion('BO‘LIB TO‘LASH IMKONIYATI MAVJUDMI ?', 'afshon_official'),
-    createAccordion('DARSLAR YOZIB OLINADIMI ?', 'afshon_official'),
-    createAccordion('DARSLARNI QANCHA VAQT DAVOMIDA KO‘RISH MUMKIN ?', 'afshon_official'),
+    createAccordion('DARSLAR QANDAY OLIB BORILADI ?', 'Darslarimiz online holatda, maxsus yopiq guruh orqali olib boriladi. Sizga ushbu guruhga kirish uchun ruxsat beriladi. Siz belgilangan vaqt davomida darslarni ko‘rishingiz va takrorlashingiz mumkin'),
+    createAccordion("DARSLARNI KIM O'TADI ?", " Asosiy darsni Umidjon Ortiqov o'tadi va SMM sohasiga oid mehmon spikerlar o'tadi  "),
+    createAccordion('TARIFNI KEYINCHALIK ALMASHTIRISH MUMKINMI ?', "Darslar  boshlanganidan so'ng 5 kun ichida almashtirishingiz mumkin. "),
+    createAccordion('BO‘LIB TO‘LASH IMKONIYATI MAVJUDMI ?', " Albatta, kursning 50% qismini oldindan to'lab qolgan qismini 1 oy muddat ichida to'lashingiz mumkin  "),
+    createAccordion('DARSLAR YOZIB OLINADIMI ?', " Darslarga maxsus yopiq guruhda ruxsat beriladi.  "),
+    createAccordion('DARSLARNI QANCHA VAQT DAVOMIDA KO‘RISH MUMKIN ?', "Darslardan 2 oy ichida foydalanishingiz mumkin. "),
   ]
 
 
@@ -208,15 +210,6 @@ const Second = () => {
       items: 1
     }
   };
-
-  function scrollL(params) {
-    window.scroll({
-      top: 100,
-      left: 100,
-      behavior: 'smooth'
-    });
-  }
-
 
   // Modal
   const [lgShow1, setLgShow1] = useState(false);
@@ -374,136 +367,316 @@ const Second = () => {
       <div className="titleBox">
         <h4 className="titleBox__item">Ko'p Beriladigan savollar</h4>
       </div>
-      <div className="box carouselContainer">
-        {
-          carouselAccor.map((elem, i) => {
-            return (
-              <Accordion className="KouchAccor__accordion" expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)} >
-                <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
-                  <div>
-                    <h5 className="accordion_title">
-                      {elem.title}
-                    </h5>
-                  </div>
-                </AccordionSummary>
-                <AccordionDetails className="accordionInner">
-                  <div className="innerAcc_text">
-                    {elem.answer}
-                  </div>
-                </AccordionDetails>
-              </Accordion>
-            )
-          })
-        }
+      <div className="box carouselContainer "   >
+        <section id="faqsCont">
+          {
+            carouselAccor.map((elem, i) => {
+              return (
+
+
+                <div className="ustmaUst">
+                  <Accordion className="KouchAccor__accordion" expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)} >
+                    <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
+                      <div>
+                        <h5 className="accordion_title">
+                          {elem.title}
+                        </h5>
+                      </div>
+                    </AccordionSummary>
+                    <AccordionDetails className="accordionInner">
+                      <div className="innerAcc_text">
+                        {elem.answer}
+                      </div>
+                    </AccordionDetails>
+                  </Accordion>
+
+                  <Accordion className="KouchAccor__accordion" expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)} >
+                    <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
+                      <div>
+                        <h5 className="accordion_title">
+                          {elem.title}
+                        </h5>
+                      </div>
+                    </AccordionSummary>
+                    <AccordionDetails className="accordionInner">
+                      <div className="innerAcc_text">
+                        {elem.answer}
+                      </div>
+                    </AccordionDetails>
+                  </Accordion>
+
+                  <Accordion className="KouchAccor__accordion" expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)} >
+                    <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
+                      <div>
+                        <h5 className="accordion_title">
+                          {elem.title}
+                        </h5>
+                      </div>
+                    </AccordionSummary>
+                    <AccordionDetails className="accordionInner">
+                      <div className="innerAcc_text">
+                        {elem.answer}
+                      </div>
+                    </AccordionDetails>
+                  </Accordion>
+
+                  <Accordion className="KouchAccor__accordion" expanded={expanded === `panel${i}`} onChange={handleChange(`panel${i}`)} >
+                    <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
+                      <div>
+                        <h5 className="accordion_title">
+                          {elem.title}
+                        </h5>
+                      </div>
+                    </AccordionSummary>
+                    <AccordionDetails className="accordionInner">
+                      <div className="innerAcc_text">
+                        {elem.answer}
+                      </div>
+                    </AccordionDetails>
+                  </Accordion>
+                </div>
+              )
+            })
+          }
+        </section>
       </div>
 
       {/* Tariflar section */}
 
-      <>
+      <section className="planChange">
+        <Row>
 
-        <section className="planChange">
-          <Row>
+          <Col xl={4} lg={4} md={6} sm={4}>
+            <div className="boxTarif" >
+              <>
+                <div className="tarifTitle">
+                  <span>&#10033; </span> Silver    Tarifi
+                </div>
+                <div className="tarifPrice">
+                  1.000.000 <span> UZS</span>
+                </div>
+                <ul className="tarifServis" >
+                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                </ul>
+                <Button className=" ShadowBtn  formKursBtn" onClick={() => {
+                  setLgShow1(true);
+                }
+                }>
+                  <p className="InBtn" >Kursga yozilish</p>
 
-            <Col xl={4} lg={4} md={4} sm={4}>
-              <div className="boxTarif" >
+                </Button>
+                <Modal
+                  size="lg"
+                  className="payBox"
+                  show={lgShow1}
+                  onHide={
+                    () => {
+                      setLgShow1(false)
+                    }
+                  }
+                  aria-labelledby="modal1"
+                >
+                  <Modal.Header closeButton>
+                    <Modal.Title id="modal1">
+                      SMM CREATIVE 2.0 kursiga yozilish
+                    </Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
 
-                <>
-                  <Button onClick={() => setLgShow1(true)}>Kursga yozilish</Button>
-                  <Modal
-                    size="lg"
-                    className="payBox"
-                    show={lgShow1}
-                    onHide={() => setLgShow1(false)}
-                    aria-labelledby="modal1"
-                  >
-                    <Modal.Header closeButton>
-                      <Modal.Title id="modal1">
-                        SMM CREATIVE 2.0 kursiga yozilish
-                      </Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                    <form>
-                        <input type="text" placeholder="Name" required />
-                        <br />
-                        <input type="number" placeholder="Name" required />
-                        <button  > Ro'yxatdan o'tish </button>
-                      </form>
-                    </Modal.Body>
-                  </Modal>
-                </>
-              </div>
+                    <Payme />
+
+                  </Modal.Body>
+                </Modal>
+              </>
+            </div>
+          </Col>
+
+          <Col xl={4} lg={4} md={6} sm={4}>
+
+            <div className="boxTarif" >
+              <>
+                <div className="tarifTitle">
+                  <span>&#10033; </span> Gold Tarifi
+                </div>
+                <div className="tarifPrice">
+                  2.000.000 <span> UZS</span>
+                </div>
+                <ul className="tarifServis" >
+                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+
+                </ul>
+                <Button className=" ShadowBtn  formKursBtn" onClick={() => {
+                  setLgShow2(true);
+                }
+                }>
+                  <p className="InBtn" >Kursga yozilish</p>
+
+                </Button>
+                <Modal
+                  size="lg"
+                  className="payBox"
+                  show={lgShow2}
+                  onHide={() => setLgShow2(false)}
+                  aria-labelledby="modal2"
+                >
+
+                  <Modal.Header closeButton>
+                    <Modal.Title id="modal2">
+                      SMM CREATIVE 2.0 kursiga yozilish
+                    </Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <Payme />
+
+                  </Modal.Body>
+                </Modal>
+              </>
+            </div>
+          </Col>
+
+          <Col xl={4} lg={4} md={12} sm={4}>
+
+            <div className="boxTarif" >
+              <>
+                <div className="tarifTitle">
+                  <span>&#10033; </span>  Platinum Tarifi
+                </div>
+                <div className="tarifPrice">
+                  3.000.000 <span> UZS</span>
+                </div>
+                <ul className="tarifServis" >
+                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                  <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
+                  <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                </ul>
+                <Button className=" ShadowBtn  formKursBtn" onClick={() => {
+                  setLgShow3(true);
+                }
+                }>
+                  <p className="InBtn" >Kursga yozilish</p>
+
+                </Button>
+                <Modal
+                  size="lg"
+                  className="payBox"
+                  show={lgShow3}
+                  onHide={() => setLgShow3(false)}
+                  aria-labelledby="modal3"
+                >
+                  <Modal.Header closeButton>
+                    <Modal.Title id="modal3">
+                      SMM CREATIVE 2.0 kursiga yozilish
+                    </Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+
+                    <Payme />
+
+                  </Modal.Body>
+                </Modal>
+              </>
+            </div>
+          </Col>
+
+        </Row>
+      </section>
+
+      {/* Darslar section */}
+      <div className="titleBox">
+        <h4 className="titleBox__item">KURS QANDAY OLIB BORILADI</h4>
+      </div>
+      <div className="box carouselContainer">
+        <section id="darsBlock" >
+          <Row className="darsRow" >
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockTitle"> Darslar </div>
             </Col>
-
-            <Col xl={4} lg={4} md={4} sm={4}>
-
-              <div className="boxTarif" >
-
-                <>
-                  <Button onClick={() => setLgShow2(true)}>Kursga yozilish</Button>
-                  <Modal
-                    size="lg"
-                    className="payBox"
-                    show={lgShow2}
-                    onHide={() => setLgShow2(false)}
-                    aria-labelledby="modal2"
-                  >
-
-                    <Modal.Header closeButton>
-                      <Modal.Title id="modal2">
-                        SMM CREATIVE 2.0 kursiga yozilish
-                      </Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                    <form>
-                        <input type="text" placeholder="Name" required />
-                        <br />
-                        <input type="number" placeholder="Name" required />
-                        <button> Ro'yxatdan o'tish </button>
-                      </form>
-                    </Modal.Body>
-                  </Modal>
-                </>
-              </div>
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockText"> Kurs modullardan tashkil topgan. Sizga ma’lum vaqtda darslar ochib beriladi </div>
             </Col>
-
-            <Col xl={4} lg={4} md={4} sm={4}>
-
-              <div className="boxTarif" >
-
-                <>
-                  <Button onClick={() => setLgShow3(true)}>Kursga yozilish</Button>
-                  <Modal
-                    size="lg"
-                    className="payBox"
-                    show={lgShow3}
-                    onHide={() => setLgShow3(false)}
-                    aria-labelledby="modal3"
-                  >
-                    <Modal.Header closeButton>
-                      <Modal.Title id="modal3">
-                        SMM CREATIVE 2.0 kursiga yozilish
-                      </Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                      <form>
-                        <input type="text" placeholder="Name" required />
-                        <br />
-                        <input type="number" placeholder="Name" required />
-                        <button> Ro'yxatdan o'tish </button>
-                      </form>
-                    </Modal.Body>
-                  </Modal>
-                </>
-              </div>
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockCardShadow">1  </div>
             </Col>
+          </Row>
+          <Row className="darsRow" >
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockTitle"> Vazifalar </div>
+            </Col>
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockText"> Darslar so‘ngida siz berilgan uy vazifalarini topshirasiz </div>
+            </Col>
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockCardShadow"> 2 </div>
+            </Col>
+          </Row>
+          <Row className="darsRow" >
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockTitle"> Tekshiruv </div>
+            </Col>
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockText"> Vazifalaringiz kurs rahbaringiz tomonidan tekshirib boriladi </div>
+            </Col>
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockCardShadow"> 3 </div>
+            </Col>
+          </Row>
 
+          <Row className="darsRow" >
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockTitle"> ALOQA </div>
+            </Col>
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockText"> Kurs rahbari bilan belgilangan vaqtda to‘g‘ridan-to‘g‘ri aloqada bo‘lasiz </div>
+            </Col>
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockCardShadow">4  </div>
+            </Col>
+          </Row>
+          <Row className="darsRow" >
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockTitle"> EKSPERTLAR </div>
+            </Col>
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockText"> Barcha modullar so‘ngida kurs rahbari hamda ekspertlar bilan muloqot qilasiz </div>
+            </Col>
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockCardShadow">5  </div>
+            </Col>
+          </Row>
+          <Row className="darsRow" >
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockTitle"> Imtixon </div>
+            </Col>
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockText"> Modul so‘ngida umumiy imtihon vazifasini bajarasiz </div>
+            </Col>
+            <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >
+              <div className="darsBlockCardShadow">  6</div>
+            </Col>
           </Row>
         </section>
-
-
-      </>
-
-
+      </div>
 
 
     </main>

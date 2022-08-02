@@ -25,7 +25,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 .titleBox {
   width: 100%;
@@ -146,7 +145,7 @@ body {
 
 /*  Tariflar Section  */
 
-.planChange{
+.planChange {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -154,34 +153,201 @@ body {
   justify-content: space-around;
 }
 
-.boxTarif{
-  height: 500px;
+.boxTarif {
+  min-height: 647px;
+  max-height: max-content;
   width: 380px;
   border: 2px solid #222628;
+  margin: 200px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.payBox{
+
+.boxTarif > * {
+  border: 2px solid #222628;
+  width: 100%;
+  font-family: "Space Grotesk";
+}
+
+.tarifTitle {
+  text-transform: uppercase;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41px;
+  color: #222628;
+}
+.tarifTitle span {
+  position: absolute;
+  padding: 20px;
+  left: 0;
+  color: #ffd100 ;
+}
+.tarifPrice{
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size:40px;
+  line-height: 51.04px;
+}
+.boxTarif:hover .tarifPrice{
+  background-color: #ffd100 !important;
+  transition: all 0.3s;
+}
+
+.tarifPrice span {
+  color: #7D7D7D;
+  line-height: 40.83px;
+  font-size: 32px;
+  font-weight: 400;
+}
+.tarifServis {
+  list-style-type: none;
+  border: none;
+  padding: 20px 20px 110px ;
+}
+
+.formKursBtn {
+  position: absolute;
+  bottom: 25px;
+  /* left: 40%; */
+  width: 340px;
+  height: 85px;
+  border-radius: 0 !important;
+  border: 2px solid #222628 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 8px 8px 0px -1px rgba(0, 0, 0, 1) !important;
+  background-color: #ffffff !important;
+}
+.formKursBtn:hover {
+  background-color: #ffd100 !important ;
+}
+.payBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.modal-header{
+.modal-dialog,
+.modal-lg {
+  top: 35%;
+  width: 560px !important;
+  height: 280px !important;
+  background: #fff;
+  border: 2px solid #222628;
+  border-bottom: 2px solid #222628;
+  border-right: 2px solid #222628;
+  z-index: 10;
+
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 9px 9px 0px 0px rgba(255, 255, 255, 1),
+    10px 10px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.modal-dialog .ShadowBtn,
+.modal-lg .ShadowBtn {
+  height: 80px;
+  width: 335px;
+  margin: 5px;
+}
+
+.modalForm {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+}
+
+.modal-content {
+  height: 100%;
+}
+.modal-header {
   display: flex;
   align-items: center !important;
   justify-content: center !important;
+  border: none;
 }
-.modal-title{
+.modal-title {
   width: 100%;
-  display: flex;
-  align-items: center ;
-  justify-content: center ;
-}
-.modal-body{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+}
+.modal-body form {
+  width: 100%;
+}
+.formInput {
+  border: none;
+  border-bottom: 2px solid #222628;
+  width: 90%;
+  margin-top: 10px;
+}
+/* Darslar Section */
 
+.darsRow{
+  height: 313px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.darsRow:nth-child(odd){
+
+}
+.darsRow:nth-child(even){
+  flex-direction: row-reverse;
+}
+.darsRow:nth-child(even) .darsBlockItem:nth-child(3) {
+  border-right: none;
+  border-left: 5px solid #ffd100;
+
+}
+
+
+
+
+.darsBlockTitle{
+  text-transform: uppercase;
+}
+.darsRow:first-child .darsBlockItem:nth-child(3){
+  border-right: none;
+}
+.darsBlockItem:nth-child(3){
+  border-right: 5px solid #ffd100;
+}
+.darsBlockItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid #ffd100;
+  height: 313px;
+}
+.darsRow:last-child .darsBlockItem{
+  border-bottom: none;
+
+}
+
+.darsBlockTitle, .darsBlockText {
+  font-size: " Space Grotesk ";
+}
 
 
 @media screen and (max-width: 768px) {

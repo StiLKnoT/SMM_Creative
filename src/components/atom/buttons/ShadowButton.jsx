@@ -2,13 +2,14 @@ import React from 'react'
 import './ShadowButton.css'
 import { FaArrowRight } from "react-icons/fa";
 
-function ShadowButton() {
+function ShadowButton(props) {
+  console.log(props)
   return (
-    <a href="#"><div className='ShadowBtn'>
-        <p className='InBtn'>Kursga yozilish <FaArrowRight/></p>
+    <div className='ShadowBtn' onClick={props.onclick}  >
+        <p className='InBtn'>{props.text ? props.text : "Kursga yozilish"}<FaArrowRight/></p>
       
     </div>
-    </a>
+    
   )
 }
 
