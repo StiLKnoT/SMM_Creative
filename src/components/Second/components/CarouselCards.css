@@ -149,8 +149,15 @@
     width: 100vw !important;
 }
 
+@media screen and (min-width: 1600px) {
+    .container{
+        max-width: 1600px !important;
+        margin: 0 auto !important;
+    }
 
-@media screen and (min-width:1200px) {
+    
+}
+/* @media screen and (min-width:1200px) {
     .container {
         max-width: 1200px;
         margin: 0 auto;
@@ -160,7 +167,7 @@
         z-index: 1 !important;
     }
 
-}
+} */
 
 @media screen and (max-width: 947px) {
     .react-multiple-carousel__arrow--left {

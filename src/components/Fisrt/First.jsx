@@ -39,7 +39,7 @@ function First() {
             <div className='textCreative'>
                 <div className='smmText'>Shunchaki SMM’ni bilish kamlik qiladi,<br/>
                 “SMM Creative” kursi - boshqacha yondashuv</div>
-                <div className=' button' id="buttonInviseble"><ShadowButton/></div>
+                <div className=' button' id="buttonInviseble"><a href='#tariflar'><ShadowButton/></a></div>
             </div>
 
         </div>
@@ -57,11 +57,11 @@ function First() {
       
 
         <Wheel/>
-      <div className=' button' id="buttonInvisebleMob"><ShadowButton /></div>
+      <div className=' button' id="buttonInvisebleMob"><a href='#tariflar'><ShadowButton /></a></div>
 
       {/* <Textline /> */}
 
-      <img src={lines} />
+      <img className="firsLines" src={lines} />
 
             
         <ForWho/>

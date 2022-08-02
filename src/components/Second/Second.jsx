@@ -239,7 +239,7 @@ const Second = () => {
                         className="img-fluid shadow-4 bannerImgPort "
                       />
                     </Col>
-                    <Col   xl={4} lg={3} md={3} sm={12}>
+                    <Col   xl={4} lg={3} md={3} sm={12} className="ColSimpleCard">
                       <div className="simpleCard">
                         <div className="card__name">{el.Name}</div>
                         <div className="card__info">{el.infoText}</div>
@@ -312,7 +312,7 @@ const Second = () => {
 
         {/* Carousel setcion */}
         <HeaderTitle theme="Nega bizni tanlashdi" />
-        <section className=" box carouselContainer " >
+        <section className=" box carouselContainer "  id="CarouselCards">
 
           <Carousel responsive={responsive} id="carCardsBot">
             {
@@ -563,7 +563,7 @@ const Second = () => {
 
         {/* Darslar section */}
         <HeaderTitle theme="KURS QANDAY OLIB BORILADI" />
-        <div className="box carouselContainer">
+        <div className="box carouselContainer" id="KursLines">
           <section id="darsBlock" >
             <Row className="darsRow" >
               <Col className="darsBlockItem" xl={4} lg={4} md={4} sm={4} >

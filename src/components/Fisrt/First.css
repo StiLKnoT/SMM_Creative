@@ -1,6 +1,9 @@
 .firstMain {
   background-color: #f5f5f5;
 }
+.firsLines{
+  width: 100% !important;
+}
 .CreativeBlock {
   display: flex;
   margin-top: 120px;
@@ -177,7 +180,7 @@
   align-items: center;
 }
 .PaddingDiv {
-  padding-top: 120px !important;
+  padding-top: 120px;
 }
 
 /* #kursSpikeri{
@@ -290,6 +293,7 @@
   }
   .PaddingDiv {
     padding: 80px auto 0 !important;
+    padding-top: 80px !important;
   }
   #midWheel {
     margin: 80px 0;
@@ -412,5 +416,8 @@
   }
   .h2Text {
     font-size: 1em !important;
+  }
+  .react-multiple-carousel__arrow::before, .react-multiple-carousel__arrow--left::before{
+    font-size: 32px !important;
   }
 }

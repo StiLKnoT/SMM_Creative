@@ -141,10 +141,10 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  /* .container {
     max-width: 1200px;
     margin: 0 auto;
-  }
+  } */
 
   .react-multiple-carousel__arrow {
     z-index: 1 !important;
