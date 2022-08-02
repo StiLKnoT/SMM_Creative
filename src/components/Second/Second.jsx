@@ -409,7 +409,7 @@ const Second = () => {
               <div className="boxTarif" >
                 <>
                   <div className="tarifTitle">
-                    <span>&#10033; </span> Silver    Tarifi
+                    <span>&#10033; </span> STANDART
                   </div>
                   <div className="tarifPrice">
                     1.000.000 <span> UZS</span>
@@ -458,7 +458,7 @@ const Second = () => {
               <div className="boxTarif" >
                 <>
                   <div className="tarifTitle">
-                    <span>&#10033; </span> Gold Tarifi
+                    <span>&#10033; </span> PREMIUM
                   </div>
                   <div className="tarifPrice">
                     2.000.000 <span> UZS</span>
@@ -509,7 +509,7 @@ const Second = () => {
               <div className="boxTarif" >
                 <>
                   <div className="tarifTitle">
-                    <span>&#10033; </span>  Platinum Tarifi
+                    <span>&#10033; </span>  VIP
                   </div>
                   <div className="tarifPrice">
                     3.000.000 <span> UZS</span>

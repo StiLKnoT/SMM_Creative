@@ -222,6 +222,7 @@ body {
 }
 
 .tarifTitle {
+  font-family: 'Monument Extended', sans-serif !important;
   text-transform: uppercase;
   height: 100px;
   display: flex;
@@ -368,6 +369,7 @@ body {
 }
 /* Darslar Section */
 
+
 #darsBlock {
   position: relative;
   width: 85% !important;
@@ -397,7 +399,29 @@ body {
 }
 
 .darsBlockTitle {
+  font-family: 'Monument Extended', sans-serif !important;
+  font-family: 'Monument Extended';
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 38px;
+text-transform: uppercase;
+
+/* brand black color */
+
+color: #222628;
   text-transform: uppercase;
+}
+.darsBlockText{
+  font-family: 'Space Grotesk', sans-serif !important;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+
+/* brand black color */
+
+color: #222628;
 }
 .darsBlockItem:nth-child(3) {
   border-right: 5px solid #ffd100;
@@ -407,6 +431,19 @@ body {
 }
 .darsRow:nth-child(even) .boxShadowBox {
   left: -10px;
+}
+.innerAcc_text{
+  width: 60% !important;
+}
+.accordion_title{
+  font-family: 'Monument Extended', sans-serif !important;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #222628;
+  width: 100%;
 }
 .boxShadowBox,
 .darsBlockItem {
@@ -423,7 +460,11 @@ body {
 
 .darsBlockTitle,
 .darsBlockText {
-  font-size: " Space Grotesk ";
+  font-family: 'Monument Extended', sans-serif !important;
+}
+#CarouselCards{
+  width: 100% !important;
+  margin: 0 auto !important;
 }
 
 .darsBlockCardShadow {
@@ -536,7 +577,7 @@ body {
   }
 }
 .carouselContainer{
-  width: 50%;
+  width: 80%;
   margin: 40px auto;
 }
 @media screen and (max-width: 576px) {
@@ -565,7 +606,7 @@ body {
     font-weight: 700;
     line-height: 31px;
     letter-spacing: 0em;
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: left;
   }
 
@@ -597,7 +638,7 @@ body {
     margin: 0 auto;
   }
   .accordion_title{
-    font-family: 'Monument Extended';
+    font-family: 'Monument Extended', sans-serif !important;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -626,7 +667,7 @@ body {
     margin: 0  auto!important;
   }
   .greenCardBtn{
-    width: 300px !important;
+    width: 280px !important;
   }
   .box{
     width: 80% ;
@@ -640,6 +681,17 @@ body {
     width: 100%;
     margin-top: 20px !important;
     height: auto !important;
+  }
+  .innerAcc_text{
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+  /* brand black color */
+
+  color: #222628;
   }
   .brText {
     width: 100% !important;
@@ -671,13 +723,87 @@ body {
     left: 0 !important;
     position: absolute !important;
   }
-  /* .react-multiple-carousel__arrow--left{
-    right: px !important;
-    font-size: 12px !important;
-  } */
-  /* #KursLines{
-    width: 80% !important;
+  .h2Text{
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    /* brand black color */
+
+    color: #222628;
+  }
+  .carousel__arrow--left::before{
+    left: 200px !important;
+   
+  }
+  .carousel__arrow--left::before{
+    font-size: 40px !important;
+  }
+  .h2Text{
+    text-align: start;
+    width: 90% !important;
     margin: 0 auto;
-  } */
+    font-size: 18px !important;
+  }
+  .SpikerName{
+    font-family: 'Monument Extended',sans-serif !important;
+    width: 50% !important;
+    font-size: 24px !important;
+  }
+  #SpikerAboutMob{
+    
+    display: flex !important;
+    align-items: end !important;
+    width: 50% !important;
+    margin-left: 50%;
+
+  }
+  .darsBlockTitle{
+    font-family: 'Monument Extended', sans-serif !important;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  /* brand black color */
+
+  color: #222628;
+  }
+  .darsBlockText{
+    font-family: 'Space Grotesk' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    /* brand black color */
+
+    color: #222628;
+  }
+  .innerAcc_text{
+    font-family: 'Monument Extended', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    /* brand black color */
+
+    color: #222628;
+  }
+  #Keyslar{
+    margin-top: 0px  !important;
+    padding-top: 80px !important;
+  }
+  
+ 
 }
 

@@ -15,6 +15,7 @@
     background-color: #F5F5F5;
 }
 .ForWhoH2 h2{
+    font-family: 'Monument Extended', sans-serif;
     width: 90%;
     margin: 0 auto;
     font-size: 32px;
@@ -39,7 +40,7 @@
     margin-left: 10%;
 }
 .ForLeftH2{
-    font-family: 'Monument Extended';
+    font-family: 'Monument Extended', sans-serif !important;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;

@@ -158,6 +158,9 @@
   font-size: 18px;
   line-height: 26px;
 }
+a:hover{
+  color: #ffd100 !important;
+}
 .ForWhoH2White {
   border-top: 2px solid #222628;
   border-bottom: 2px solid #222628;
@@ -169,11 +172,15 @@
   color: #222628;
   margin-bottom: 50px;
 }
+.smmText{
+  text-transform: uppercase !important;
+}
 #kursSpikeri {
+  font-family: "Monument Extended", sans-serif !important;
   width: 90%;
   margin: 0 10%;
   height: 64px;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 800;
   line-height: 38px;
   display: flex;
@@ -352,7 +359,7 @@
     font-size: 14px;
   }
   .ForWhoH2 h2 {
-    font-family: "Monument Extended";
+    font-family: "Monument Extended", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px !important;
@@ -420,4 +427,11 @@
   .react-multiple-carousel__arrow::before, .react-multiple-carousel__arrow--left::before{
     font-size: 32px !important;
   }
+  .css-heg063-MuiTabs-flexContainer{
+    margin-top: 0px !important;
+  }
+  .react-multiple-carousel__arrow--left::before{
+    right: 45px !important;
+  }
+  
 }
