@@ -458,5 +458,8 @@ a:hover{
 
     color: #222628;
   }
+  .slideBtnParam{
+    top: -100% !important;
+  }
   
 }

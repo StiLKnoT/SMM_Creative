@@ -803,6 +803,10 @@ color: #222628;
     margin-top: 0px  !important;
     padding-top: 80px !important;
   }
+  .btn-close{
+    position: absolute;
+    right: 2% !important;
+  }
   
  
 }
