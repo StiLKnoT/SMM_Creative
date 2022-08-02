@@ -46,6 +46,7 @@ import ShadowButton from "../atom/buttons/ShadowButton";
 import Payme from "../../Paycom";
 import ColorBlock from "../Fisrt/ColorBlock/ColorBlock";
 import Textline from "../atom/Textline/Textline";
+import Wheel from "../Fisrt/Wheel/Wheel";
 
 
 const Accordion = styled((props) => (
@@ -443,7 +444,7 @@ const Second = () => {
         </section>
       </div>
       {/* Lenta bn pinkBox */}
-      <Textline />
+<Wheel />
       <ColorBlock />
 
 
@@ -709,8 +710,7 @@ const Second = () => {
       </div>
       {/* Lenta bn pinkBox */}
         <ColorBlock />
-        <Textline />
-
+        <Wheel />
 
     </main>
   );
