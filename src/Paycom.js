@@ -10,6 +10,7 @@ import NumberFormat from 'react-number-format';
 
 export default class Payme extends Component {
     constructor(props) {
+        console.log(props);
         super(props);
     }
     
@@ -30,10 +31,8 @@ export default class Payme extends Component {
                 <input className="formInput" type="text" name="name" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required />
                 {/* <input className="formInput" type="text" name="account[number]" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required /> */}
                 <NumberFormat format="+998 (##) ###-##-##" name="number" onValueChange={(e, el) => {
-                    const { formattedValue, value, floatValue } = e;
-                    number = value;
-
-
+                    // const { formattedValue, value, floatValue } = e;
+                    number = e.value;
                 }} allowEmptyFormatting mask="_"/>
 
                 <input type="hidden" name="amount" value="5000" />
@@ -43,29 +42,25 @@ export default class Payme extends Component {
 
                 <ShadowButton text="To'lovni amalga oshirish" onclick={
                     async (e) => {
-                        // e.peventDefault();
-                        // console.log(e)
                         const form = this.getElementBy("#submitform1");
-                        // console.log(form.querySelector('input[name="number"]'));
-                        var json = this.formToJSON(form);
-                        // console.log(json);
                         const res = await fetch(
-                            "http://206.189.10.175:8000/register",
+                            "http://127.0.0.1:8000/register",
                             {
                                 method: "POST",
                                 body: JSON.stringify(
                                     {
                                         name: form.querySelector('input[name="name"]').value,
-                                        number: number
+                                        number: number,
+                                        plan: 1
                                     }
-                                ),
-                                headers: {
-                                    'Access-Control-Allow-Origin': "*" 
+                                    ),
                                 }
-                            }
-                        );
-                        console.log(await res.json())
-                        
+                                );
+                                const data = (await res.json()).data;
+                                console.log(data)
+                                document.querySelector('input[name="account[login]"]').value = data.id;
+                            var json = this.formToJSON(form);
+                            console.log(json);
                         // return document.location = json.endpoint + this.decode(this.jsonToString(json));
 
                     }

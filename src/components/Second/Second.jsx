@@ -442,13 +442,15 @@ const Second = () => {
                     </Modal.Header>
                     <Modal.Body>
 
-                      <Payme />
+                      <Payme plan={1} />
 
                     </Modal.Body>
                   </Modal>
                 </>
               </div>
             </Col>
+
+            
 
             <Col xl={4} lg={4} md={6} sm={4}>
 
