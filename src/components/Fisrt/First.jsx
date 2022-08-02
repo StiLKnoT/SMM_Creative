@@ -22,8 +22,7 @@ import { ReactComponent as Zero06 } from '../../assets/images/Zero06.svg'
 import Line from '../../assets/icons/line.png';
 import TopLine from '../../assets/icons/topLine.png';
 import lines from '../../assets/icons/arrowBlock.png';
-
-
+import { BsTriangle } from "react-icons/bs";
 
 
 function First() {
@@ -33,28 +32,35 @@ function First() {
 
 
       <Navbar />
-      
-        <div className='CreativeBlock'>
-            <div className='smmCreative'>SMM <br/>CREATIVE</div>
-            <div className='textCreative'>
-                <div className='smmText'>Shunchaki SMM’ni bilish kamlik qiladi,<br/>
-                “SMM Creative” kursi - boshqacha yondashuv</div>
-                <div className=' button' id="buttonInviseble"><a href='#tariflar'><ShadowButton/></a></div>
+
+      <div className='CreativeBlock'>
+        <div className='smmCreative'>SMM <br />CREATIVE</div>
+        <div className='textCreative'>
+          <div className='smmText'>Shunchaki SMM’ni bilish kamlik qiladi,<br />
+            “SMM Creative” kursi - boshqacha yondashuv</div>
+          <div className=' button' id="buttonInviseble"><a href='#tariflar'><ShadowButton /></a></div>
+        </div>
+
+      </div>
+
+      <div className='MainImg' style={{ position: "relative" }}>
+        <>
+          <img className='MainUO' src={MainUO} />
+          <h4 className='AsosiySpiker'>ASOSIY SPIKER:<br />
+            <span className='UmidjonOrtiqov'>UMIDJON ORTIQOV</span></h4>
+        </>
+        <>
+          <div className="forBtnSlide"> <p className='slideBtnParam'>
+            <a href="#Dastur">
+            <div className='forBtnFlat'>
+              <BsTriangle /><BsTriangle /><BsTriangle />
             </div>
 
-        </div>
+            PASTGA SURING</a></p> 
+             </div>
+        </>
+      </div>
 
-        <div className='MainImg' style={{position: "relative"}}>
-          <>
-          <img  className='MainUO' src={MainUO}/>
-          <h4 className='AsosiySpiker'>ASOSIY SPIKER:<br/>
-          <span className='UmidjonOrtiqov'>UMIDJON ORTIQOV</span></h4>
-          </>
-          <>
-            <div className="forBtnSlide"> <p className='slideBtnParam' >PASTGA SURING</p>  </div>
-          </>
-        </div>
-      
 
         <Wheel/>
       <div className=' button' id="buttonInvisebleMob"><a href='#tariflar'><ShadowButton /></a></div>
@@ -63,37 +69,37 @@ function First() {
 
       <img className="firsLines" src={lines} />
 
-            
-        <ForWho/>
-        <ColorBlock/>
-        <div className='PaddingDiv' id="Dastur"></div>
-        <div className='ForWhoH2'>
-            <h2>KURS DASTURI BILAN TANISHING</h2>
-        </div>
-        <CarouselModul/>
-        <div className='ColorBlock'>
-   
-          <div className='ColorBlockCenter'>
-              <h2 className='ColorBlockH2'>O‘quvchilar uchun bonuslar</h2>
-              <p className='ColorBlockP'>Biz o‘quvchilarga shunchaki dars beribgina qolmay, ular uchun foydali bo‘lgan bonuslarni ham taqdim etamiz</p>
-              <a href="#"><div className='ShadowBtn'>
-                <p className='InBtn'>Bonuslarni ko‘rish<FaArrowRight/></p>
-              
-                </div>
-              </a>
+
+      <ForWho />
+      <ColorBlock />
+      <div className='PaddingDiv' id="Dastur"></div>
+      <div className='ForWhoH2'>
+        <h2>KURS DASTURI BILAN TANISHING</h2>
+      </div>
+      <CarouselModul />
+      <div className='ColorBlock'>
+
+        <div className='ColorBlockCenter'>
+          <h2 className='ColorBlockH2'>O‘quvchilar uchun bonuslar</h2>
+          <p className='ColorBlockP'>Biz o‘quvchilarga shunchaki dars beribgina qolmay, ular uchun foydali bo‘lgan bonuslarni ham taqdim etamiz</p>
+          <a href="#"><div className='ShadowBtn'>
+            <p className='InBtn'>Bonuslarni ko‘rish<FaArrowRight /></p>
+
           </div>
+          </a>
         </div>
-        <div className='PaddingDiv' id="PaddingDiv">
+      </div>
+      <div className='PaddingDiv' id="PaddingDiv">
         <div className='ForWhoH2White'>
           <h2 className='ForWhoH2Text' id='kursSpikeri'>KURS SPIKERLARI BILAN TANISHING</h2>
         </div>
-        </div>
-        <TabPanel/>
-       
-        <ColorBlock/>
-        <div id="midWheel">
-          <Wheel/>
-        </div>
+      </div>
+      <TabPanel />
+
+      <ColorBlock />
+      <div id="midWheel">
+        <Wheel />
+      </div>
     </div>
   )
 }

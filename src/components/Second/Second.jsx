@@ -225,7 +225,7 @@ const Second = () => {
       <main className="keyBox" id="Keyslar">
 
         {/* Keys Section */}
-        <HeaderTitle theme="BIZNING keyslar"  />
+        <HeaderTitle theme="BIZNING keyslar" />
         <div className="box">
           <div className="containerr">
             {rows.map((el, i) => {
@@ -399,13 +399,13 @@ const Second = () => {
 
         {/* Tariflar section */}
         <div className="PaddingDiv" id="tariflar"></div>
-        <HeaderTitle theme="KURS TARIFLARI"  />
+        <HeaderTitle theme="KURS TARIFLARI" />
 
         <section className="planChange">
-          
+
           <Row>
 
-            <Col xl={4} lg={4} md={6} sm={12}  className="TarifColumn ">
+            <Col xl={4} lg={4} md={6} sm={12} className="TarifColumn ">
               <div className="boxTarif" >
                 <>
                   <div className="tarifTitle">
@@ -453,7 +453,7 @@ const Second = () => {
               </div>
             </Col>
 
-            <Col  className="TarifColumn" xl={4} lg={4} md={6} sm={12}  >
+            <Col className="TarifColumn" xl={4} lg={4} md={6} sm={12}  >
 
               <div className="boxTarif" >
                 <>
@@ -504,7 +504,7 @@ const Second = () => {
               </div>
             </Col>
 
-            <Col  className="TarifColumn " xl={4} lg={4} md={12} sm={12}>
+            <Col className="TarifColumn " xl={4} lg={4} md={12} sm={12}>
 
               <div className="boxTarif" >
                 <>
@@ -515,19 +515,46 @@ const Second = () => {
                     3.000.000 <span> UZS</span>
                   </div>
                   <ul className="tarifServis" >
-                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
-                    <li className="tarifServis__item" >&#10033;  Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob</li>
-                    <li className="tarifServis__item" >&#10033;  Platformaga to‘liq a’zolik</li>
+                    <li className="tarifServis__item" >&#10033;  1-modul   Kirish
+                      <ul className="tarifServis">
+                        <li className="tarifServis__item" >&#10033;Vaqtni to’g’ri taqsimlash</li>
+                        <li className="tarifServis__item" >&#10033; Kursdan to’g’ri foydalanish va natijaga chiqish usullari </li>
+                        <li className="tarifServis__item" >&#10033;Moduldan so’ng : <br />
+                          Siz 1-modulni tugatganingizdan so’ng vaqtingizni to’g’ri boshqarishni va kursdan unumli foydalanishni o’rganasiz.</li>
+                      </ul>
+                    </li>
+                    <li className="tarifServis__item" >&#10033; 2-modul    SMM
+                      <ul className="tarifServis">
+                        <li className="tarifServis__item"> &#10033; Kursdan qanday  to‘g‘ri foydalanish va natijaga chiqish usullari</li>
+                        <li className="tarifServis__item"> &#10033; SMM bu nima va SMM mutaxassisi kim ?  </li>
+                        <li className="tarifServis__item"> &#10033; SMM mutaxassisi terminlari va qo‘llash joylari  </li>
+                        <li className="tarifServis__item"> &#10033; Maqsadli auditoriya va mijoz portreti  </li>
+                        <li className="tarifServis__item"> &#10033; UTP, offer va trigger nima ?  </li>
+                        <li className="tarifServis__item"> &#10033; Sotuv voronkasi va mijozga yo‘l  </li>
+                        <li className="tarifServis__item"> &#10033; Raqobatchilarni analiz qilish  </li>
+                        <li className="tarifServis__item"> &#10033; SVOT analiz  </li>
+                        <li className="tarifServis__item"> &#10033; Texnik topshiriqlar va deadline</li>
+                        <li className="tarifServis__item"> &#10033; Grafik dizaynerga t.t  yozish  </li>
+                        <li className="tarifServis__item"> &#10033; Kopirayting va sotuvchi matn yozish  </li>
+                        <li className="tarifServis__item"> &#10033; Imtihon <br />
+                          Moduldan so’ng :
+                          Siz SMM qanday soha ekanligini, sohada uchraydigan terminlarni tushunasiz, maqsadli auditoriyani topish, kuchli takliflar berish, kompaniyani taxlili qilish va grafik dizaynerlarga texnik topshiriq berishni o’rganasiz. Sotuvchi matnlarni yozish ko’nikmasiga ega bo’lasiz. Deadline bilan ishlashni o’rganasiz.
+                          Modul oxirida ZOOM darslarida o‘qituvchi bilan savol-javob
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li className="tarifServis__item" >&#10033; </li>
+                    <li className="tarifServis__item" >&#10033; </li>
+                    <li className="tarifServis__item" >&#10033; </li>
+                    <li className="tarifServis__item" >&#10033; </li>
+                    <li className="tarifServis__item" >&#10033; </li>
+                    <li className="tarifServis__item" >&#10033; </li>
+                    <li className="tarifServis__item" >&#10033; </li>
+                    <li className="tarifServis__item" >&#10033; </li>
+                    <li className="tarifServis__item" >&#10033; </li>
+                    <li className="tarifServis__item" >&#10033; </li>
+                    <li className="tarifServis__item" >&#10033; </li>
                   </ul>
                   <Button className=" ShadowBtn  formKursBtn" onClick={() => {
                     setLgShow3(true);
