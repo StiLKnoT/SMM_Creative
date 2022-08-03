@@ -10,15 +10,17 @@ import NumberFormat from 'react-number-format';
 
 export default class Payme extends Component {
     constructor(props) {
-        console.log(props);
         super(props);
+        this.plan = props.plan;
     }
 
     render() {
 
 
-        // const [number, setAmount] = useState(0);
         let number = "";
+        var self = this;
+
+        console.log(self.plan);
 
 
 
@@ -32,9 +34,9 @@ export default class Payme extends Component {
 
 
                 <input className="formInput" type="text" name="name" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required />
-                {/* <input className="formInput" type="text" name="account[number]" placeholder="Ismingiz (Sizga qanday murojaat qilishimizni hohlaysiz?)" required /> */}
+               
                 <NumberFormat className="formInput" format="+998 (##) ###-##-##" name="number" onValueChange={(e, el) => {
-                    // const { formattedValue, value, floatValue } = e;
+
                     number = e.value;
                 }} allowEmptyFormatting mask="_" />
 
@@ -47,22 +49,18 @@ export default class Payme extends Component {
                     (e) => {
                         const form = this.getElementBy("#submitform1");
 
-                        const res = fetch("http://206.189.10.175:8000/register",
+                        const res = fetch("http://198.199.73.117/register",
                             {
                                 method: "POST",
                                 body: JSON.stringify(
                                     {
                                         name: form.querySelector('input[name="name"]').value,
                                         number: number,
-                                        plan: 1
+                                        plan: self.plan
                                     }
                                 ),
                             }
                         ).then(res => res.json().then(({data}) => {
-                            // console.log(res);
-                            // const data = res.text();
-                            // console.log(data);
-
 
                             console.log(data);
                             document.querySelector('input[name="account[login]"]').value = data.id;
@@ -74,20 +72,6 @@ export default class Payme extends Component {
                             
                             return document.location = json.endpoint + this.decode(this.jsonToString(json));
                         }));
-                        // const data = res.text();
-                        // console.log(data);
-
-
-                        // console.log(data);
-                        // document.querySelector('input[name="account[login]"]').value = data.id;
-                        // document.querySelector('input[name="amount"]').value = data.amount;
-
-
-                        // var json = this.formToJSON(form);
-                        // console.log(json);
-                        // return document.location = json.endpoint + this.decode(this.jsonToString(json));
-
-                        
 
                     }
                 } />

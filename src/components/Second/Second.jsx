@@ -1015,7 +1015,7 @@ const Second = () => {
                       </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                      <Payme />
+                      <Payme plan={2} />
                     </Modal.Body>
                   </Modal>
                 </>
@@ -1097,7 +1097,7 @@ const Second = () => {
                       </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                      <Payme />
+                      <Payme plan={3} />
                     </Modal.Body>
                   </Modal>
                 </>
