@@ -768,7 +768,7 @@ const Second = () => {
         </div>
 
         {/* Carousel setcion */}
-        <HeaderTitle theme="Nega bizni tanlashdi" />
+        <HeaderTitle theme="Nega bizni tanlashadi" />
         <section className=" box carouselContainer " id="CarouselCards">
           <Carousel autoPlay
   autoPlaySpeed={3200} rewind responsive={responsive} id="carCardsBot">
