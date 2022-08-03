@@ -75,7 +75,8 @@ export default class Payme extends Component {
 
                     }
                 } />
-                <ShadowButton text="Ro'yxatdan o'tish"  />
+
+                <ShadowButton text="Ro'yxatdan o'tish" />
                 </div>
             </form>
         );
