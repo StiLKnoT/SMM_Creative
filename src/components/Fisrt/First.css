@@ -104,6 +104,13 @@
 
   color: #222628;
 }
+.modal-body form{
+  height: 220px !important;
+}
+
+.modal-dialog .modal-lg{
+  height: 320px !important;
+}
 .textCreative {
   width: 55%;
   display: flex;

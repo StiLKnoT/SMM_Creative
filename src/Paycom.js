@@ -42,7 +42,7 @@ export default class Payme extends Component {
                 <input type="hidden" name="lang" value="ru" />
                 <br />
 
-
+                <div className="FormBtns">
                 <ShadowButton text="To'lovni amalga oshirish" onclick={
                     (e) => {
                         const form = this.getElementBy("#submitform1");
@@ -91,6 +91,8 @@ export default class Payme extends Component {
 
                     }
                 } />
+                <ShadowButton text="Ro'yxatdan o'tish"  />
+                </div>
             </form>
         );
     }

@@ -394,20 +394,6 @@ const Second = () => {
         "Meta haqida tushanchaga ega bo‘lasiz, Instagram va Facebook bo‘yicha instrumentarga ega bo‘lasiz, postlarni oldindan rejalashtirib qo‘yishni, boshlang‘ich targeting va retargetinglarni o‘rganasiz.",
       ],
     },
-    
-    {
-      title: "6 - Modul Sotuv  ",
-      items: [
-        "01 — Mijozlarni topish va muzokara o‘tkazish",
-        "02 — Mijoz uchun Briyef va SMM strategiya ",
-        "03 — Portfoliyoga ega bo‘lmasdan turib, mijozga tijoriy taklif berish usullari  ",
-        "04 — Qonuniy ishlash va aldanib qolmaslik yo‘llari ",
-        "05 — Yurist bilan zoom   ",
-
-        "Moduldan so‘ng:",
-        "Mijozni qayerlardan topish, ular bilan muzokara o‘tkazishni o‘rganasiz, portfoliyoga ega bo‘lmasdan mijoz topishni o‘rganasiz. Sotuv bo‘yicha ko‘nikmaga ega bo‘lasiz. Qonuniy ishlash va aldanib qolmaslik yo‘llarini o‘rganasiz. ",
-      ],
-    }
   ];
 
   const FaqsAccorPrem = [
@@ -519,8 +505,13 @@ const Second = () => {
     {
       title: "9 - Modul Psixolog ",
       items: [
-        "01 — Kuratorlar ko‘magi va telegram guruh ",
-        "02 — Umidjon Ortiqov bilan 2 ta  zoom ",
+        "01 — Muzokara oldidan yoki uchrashuvda qo‘rquvlarni yengish yo‘li ",
+        "02 — Psixolog bilan zoom  ",
+        "03 — Kuratorlar ko‘magi va telegram guruh ",
+        "04 — Umidjon Ortiqov bilan 2 ta  zoom ",
+        "Moduldan so‘ng:",
+        "Mijozlar bilan muzokara oldida bo‘ladigan qo‘rquvlarni yengish usullarini o‘rganasiz. Savollaringizga javob olasiz."
+     
       ],
     }
   ];
@@ -635,21 +626,16 @@ const Second = () => {
     {
       title: "9 - Modul Psixolog ",
       items: [
-        "01 — Kuratorlar ko‘magi va telegram guruh ",
-        "02 — Umidjon Ortiqov bilan 2 ta  zoom ",
-        "03 — Umidjon Ortiqov bilan telegram guruh ",
-        "04 — Umidjon Ortiqov bilan 6 ta  zoom ",
-        "05 — Eng yaxshi 5 ta o‘quvchiga loyiha berish ",
-      ],
-    },
-    {
-      title: "10 - Modul",
-      items: [
-        "01 — Kuratorlar ko‘magi va telegram guruh ",
-        "02 — Umidjon Ortiqov bilan 2 ta  zoom ",
-        "03 — Umidjon Ortiqov bilan telegram guruh ",
-        "04 — Umidjon Ortiqov bilan 6 ta  zoom ",
-        "05 — Eng yaxshi 5 ta o‘quvchiga loyiha berish ",
+        "01 — Muzokara oldidan yoki uchrashuvda qo‘rquvlarni yengish yo‘li ",
+        "02 — Psixolog bilan zoom  ",
+        "03 — Kuratorlar ko‘magi va telegram guruh ",
+        "04 — Umidjon Ortiqov bilan 2 ta  zoom ",
+        "05 — Umidjon Ortiqov bilan telegram guruh ",
+        "06 — Umidjon Ortiqov bilan 6 ta  zoom ",
+        "07 — Eng yaxshi 5 ta o‘quvchiga loyiha berish ",
+        "Moduldan so‘ng:",
+        "Mijozlar bilan muzokara oldida bo‘ladigan qo‘rquvlarni yengish usullarini o‘rganasiz. Savollaringizga javob olasiz"
+
       ],
     },
   ];
@@ -935,7 +921,7 @@ const Second = () => {
                   >
                     <p className="InBtn">Kursga yozilish</p>
                   </Button>
-                  <Modal
+                  <Modal 
                     size="lg"
                     className="payBox"
                     show={lgShow1}
