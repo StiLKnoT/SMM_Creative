@@ -103,7 +103,7 @@ function ForWho() {
     whileInView="visible"
     viewport={{amount: 0.1}}><motion.div variants={TextAnimation} custom={3} className='ForWhoForm'>
                     <h2 className='ForWhoFormH2'>Kurs yakunida</h2>
-                    <p className='ForWhoFormP'>-Oldingidan tajribali SMM mutaxassisiga aylanasiz, oldingidan sifatli va mijoz bilan davomiy ishlashni o‘rganasiz. Qimmatroq  pulga ishlashni yo‘lga qoyasiz. Grafik dizaynerlar, moushin grafika va boshqa mutaxassislar bilan ishlashda odatdagidan boshqacha yondashasiz</p>
+                    <p className='ForWhoFormP'>-Oldingidan tajribali SMM mutaxassisiga aylanasiz, oldingidan sifatli va mijoz bilan davomiy ishlashni o‘rganasiz. Qimmatroq  pulga ishlashni yo‘lga qoyasiz. Grafik dizaynerlar, moushin grafika va boshqa mutaxassislar bilan ishlashda odatdagidan boshqacha yondashasiz.</p>
                 </motion.div>
                 </motion.div>
               
@@ -188,7 +188,7 @@ function ForWho() {
         viewport={{amount: 0.1}}><motion.div variants={TextAnimation} custom={3} className='ForWhoForm'>
                     <h2 className='ForWhoFormH2'>Kurs yakunida</h2>
                     <p className='ForWhoFormP'>—Ijtimoiy tarmoqlar orqali yangi mijozlar jalb qilishni, qo‘shimcha daromad qilishni o‘rganasiz.
- Siz o‘z sohangizdagi bilim va tajribangizni SMM orqali ijtimoiy tarmoqlarda to‘g‘ri targ‘ib qilishni yo‘lga qoyasiz. O‘z xizmatlaringizni ko‘proq odamlarga sotishni o‘rganasiz
+ Siz o‘z sohangizdagi bilim va tajribangizni SMM orqali ijtimoiy tarmoqlarda to‘g‘ri targ‘ib qilishni yo‘lga qoyasiz. O‘z xizmatlaringizni ko‘proq odamlarga sotishni o‘rganasiz.
  </p>
                 </motion.div>
                 </motion.div>

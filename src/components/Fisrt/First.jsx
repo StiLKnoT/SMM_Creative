@@ -86,9 +86,9 @@ function First() {
 
         <div className='ColorBlockCenter'>
           <h2 className='ColorBlockH2'>O‘quvchilar uchun bonuslar</h2>
-          <p className='ColorBlockP'>Biz o‘quvchilarga shunchaki dars beribgina qolmay, ular uchun foydali bo‘lgan bonuslarni ham taqdim etamiz</p>
+          <p className='ColorBlockP'>Biz o‘quvchilarga shunchaki dars beribgina qolmay, ular uchun foydali bo‘lgan bonuslarni ham taqdim etamiz!</p>
           <a onClick={()=>setBtnBonus(!btnBonus)}><div className='ShadowBtn'>
-            <p className='InBtn'>Bonuslarni ko‘rish<FaArrowRight /></p>
+            <p className='InBtn'>Bonuslarni ko‘rish <FaArrowRight /></p>
 
           </div>
           </a>

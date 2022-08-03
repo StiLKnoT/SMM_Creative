@@ -195,6 +195,8 @@ body {
 
 
 .greenCardBtn {
+  font-size: 24px !important;
+  font-weight: 500;
   position: absolute;
   bottom: 20px;
   height: 80px;
@@ -939,6 +941,9 @@ color: #222628;
   .modal-lg {
     height: 360px !important;
 
+}
+.greenCardBtn{
+  font-size: 20px !important;
 }
 
  

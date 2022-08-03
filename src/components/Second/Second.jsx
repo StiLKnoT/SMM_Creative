@@ -174,7 +174,7 @@ const Second = () => {
     ),
     createData(
       ` ${hadaf}`,
-      " HADAF ACADEMY",
+      " “HADAF ACADEMY”",
       "Hadaf  academy Arab tiliga ixtisoslashgan  markaz hisoblanib. Arab tili bo'yicha ilm maskanidir.",
       " 622",
       "https://instagram.com/hadaf_ia?igshid=YmMyMTA2M2Y=",
@@ -185,7 +185,7 @@ const Second = () => {
     ),
     createData(
       ` ${ajou}`,
-      "ADJU",
+      "“ADJU”",
       "Toshkent shahridagi ADJU universiteti. Arxitektura, qurilish, elektrotexnika va kompyuter muhandisligi bo'yicha talabalarga ilm beruvchi universitet.",
       " 2366",
       "https://instagram.com/ajou_uz?igshid=YmMyMTA2M2Y=",
@@ -196,11 +196,11 @@ const Second = () => {
     ),
     createData(
       ` ${kalibri}`,
-      " “Kalibri education",
+      " “Kalibri   education”",
       " Kalibri education IT  sohasida ta'lim berishga yo'naltirilgan o'quv markaz hisoblanadi.",
       " 1 249",
       "https://instagram.com/kalibri_edu?igshid=YmMyMTA2M2Y=",
-      "Kalibri EDU",
+      " Kalibri EDU",
       "https://https://t.me/Kalibri_edu",
       " Kalibri EDU",
       "https://youtube.com/channel/UCe6Vw_DhhXckGBS8vb2hYIw"
@@ -215,85 +215,85 @@ const Second = () => {
       Bobur,
       "Bobur",
       "bobur_13_23",
-      "Siz insonga katta motivatsiya berasiz va o‘z yo‘lini ko‘rsatasiz. Shuning uchun sizga ishonamiz"
+      "Siz insonga katta motivatsiya berasiz va o‘z yo‘lini ko‘rsatasiz. Shuning uchun sizga ishonamiz."
     ),
     createCarousel(
       Laziz,
       "Laziz",
       "ismatillayev571",
-      "Ummatga foyda keltirib kelayotganingiz uchun, Allohni eslatib halol ish qilyotganingiz uchun"
+      "Ummatga foyda keltirib kelayotganingiz uchun, Allohni eslatib halol ish qilyotganingiz uchun."
     ),
     createCarousel(
       Olimjon,
       "Olimjon Mamadaliyev",
       "olimjon__barber",
-      "Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad"
+      "Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad!"
     ),
     createCarousel(
       Doniyor,
       "Doniyor",
       "_doniyor__1",
-      "Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni"
+      "Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni."
     ),
     createCarousel(
       bobur2220,
       "Bobur",
       "bobir_22",
-      "Inson havas bilan yashashi kerak shuning uchun sizga ishonamiz"
+      "Inson havas bilan yashashi kerak shuning uchun sizga ishonamiz."
     ),
     createCarousel(
       Aziz,
       "Aziz Abdullayevich",
       "aziz_abdullayevich0724",
-      "Chunki hayotda yordam beradigan yo‘llarni ko‘rsatasiz"
+      "Chunki hayotda yordam beradigan yo‘llarni ko‘rsatasiz."
     ),
     createCarousel(
       Nargiza,
       "Esonova Nargiza",
       "esonovanargiza",
-      "Eng avvalo ishingizda halollik bor"
+      "Eng avvalo ishingizda halollik bor."
     ),
     createCarousel(
       Azizbek,
       "Azizbek",
       "aziko__1313",
-      "Chunki sizlar shu darajaga osonlik bilan erishmagansizlar va sizlarni aqliy faoliyatlaringiz yaxshi"
+      "Chunki sizlar shu darajaga osonlik bilan erishmagansizlar va sizlarni aqliy faoliyatlaringiz yaxshi."
     ),
     createCarousel(
       Ixlosbek,
       "Ixlosbek",
       "ixlosbek_biznesmen",
-      "Ishonchli bo‘lganligingiz uchun"
+      "Ishonchli bo‘lganligingiz uchun."
     ),
     createCarousel(
       Shoxrux,
       "Shoxrux Kamoliddinov",
       "__shoxrux_kirasavchik__",
-      "Sizni hurmat qilamiz. To‘g‘ri yo‘lni ko‘rsatasiz, sizga ishonamiz"
+      "Sizni hurmat qilamiz. To‘g‘ri yo‘lni ko‘rsatasiz, sizga ishonamiz."
     ),
     createCarousel(
       Sahna,
       "Sahna bezaklari Chirchiq",
       "oformleniya_chirchik",
-      "Ishonch shundaki gaplaringizda aniqlik va odamlarga yo‘l ko‘rsatishda to‘g‘ri yo‘nalish bor"
+      "Ishonch shundaki gaplaringizda aniqlik va odamlarga yo‘l ko‘rsatishda to‘g‘ri yo‘nalish bor."
     ),
     createCarousel(
       Vays,
       "Vays_05",
       "vays_05",
-      "O‘z sohasining mutaxassisi deb o‘ylayman shuning uchun sizga ishonam"
+      "O‘z sohasining mutaxassisi deb o‘ylayman shuning uchun sizga ishonaman."
     ),
     createCarousel(
       Durdona,
       "Durdona Normatova",
       "durdona_normatova",
-      "Sababi oddiy siz ilmlaringizni beminnat ulashasiz. Shuning uchun chin dildan hurmat qilib kuzatamiz"
+      "Sababi oddiy siz ilmlaringizni beminnat ulashasiz. Shuning uchun chin dildan hurmat qilib kuzatamiz."
     ),
     createCarousel(
       Sholponoy,
       "Sholpanoy Saginbayeva",
       "godblessed.me",
-      "Aldash ko‘rganim yo‘q borini aytasiz, xato bo‘lsa ham xato deb va uni to‘g‘ri yetkazib berolasiz"
+      "Aldash ko‘rganim yo‘q borini aytasiz, xato bo‘lsa ham xato deb va uni to‘g‘ri yetkazib berolasiz."
     ),
     createCarousel(
       Feruzabonu,
@@ -905,7 +905,7 @@ const Second = () => {
                     <span>&#10033; </span> Standart Tarifi
                   </div>
                   <div className="tarifPrice">
-                  159$
+                  179$
                   </div>
                   <ul className="tarifServis">
                     {FaqsAccorStan.map((sub, ind) => {
@@ -986,7 +986,7 @@ const Second = () => {
                     <span>&#10033; </span> PREMIUM
                   </div>
                   <div className="tarifPrice">
-                  199$
+                  229$
                   </div>
                   <ul className="tarifServis">
                   {FaqsAccorPrem.map((sub, ind) => {
@@ -1065,7 +1065,7 @@ const Second = () => {
                     <span>&#10033; </span> VIP
                   </div>
                   <div className="tarifPrice">
-                  369$
+                  399$
                   </div>
                   <ul className="tarifServis">
                   {FaqsAccor.map((sub, ind) => {
