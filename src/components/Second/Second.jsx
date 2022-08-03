@@ -142,7 +142,7 @@ const Second = () => {
     createData(
       ` ${ilxom}`,
       "ILXOM BEGIMQULOV",
-      "“Asia consult”  “ZET LINE GROUP” va “EDUGATWEY” kompaniyalari asoschisi, biznesmen. ",
+      "“Asia consult”,  “ZET LINE GROUP” va “EDUGATWEY” kompaniyalari asoschisi, biznesmen. ",
       " 28.6 K",
       "https://instagram.com/ilxom.begimkulov?igshid=YmMyMTA2M2Y=",
       " 33.7 K",
