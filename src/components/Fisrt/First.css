@@ -182,7 +182,7 @@
 }
 .slideBtnParam{
     position: absolute;
-    top: -333px;
+    top: -260px;
     font-size: 20px;
     
     /* left: 0; */
@@ -249,6 +249,7 @@
   animation: while 35s infinite linear ;
   
 }
+
 #strelka:hover{
   color: #ffd100 !important;
 }
@@ -256,6 +257,15 @@
   display: flex;
   color: #fff;
   font-family: 10px;
+  animation: strelka 3s infinite linear ;
+}
+@keyframes strelka {
+  20%{
+    transform: translateX(-20%);
+  }
+  80%{
+    transform: translateX(10%);
+  }
 }
 @keyframes while {
   0%{
@@ -620,9 +630,9 @@ a:hover{
     color: #222628;
   }
   .slideBtnParam{
-    top: -80px !important;
-    font-size: 12px !important;
-    right: -270px !important;
+    top: -90px !important;
+    font-size: 10px !important;
+    right: -255px !important;
   }
   .UmidjonOrtiqov{
     font-family: 'Monument Extended', sans-serif;
@@ -676,6 +686,15 @@ a:hover{
   }
   .firsLinesMob{
     display: none;
+  }
+ 
+  @keyframes strelka {
+    20%{
+      transform: translateX(-20%);
+    }
+    80%{
+      transform: translateX(10%);
+    }
   }
   
 }
