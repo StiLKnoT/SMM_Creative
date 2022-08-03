@@ -131,7 +131,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  animation: while 20s infinite linear ;
+  animation: while 35s infinite linear ;
   
 }
 #strelka:hover{
@@ -534,5 +534,13 @@ a:hover{
   }
   .PaddingDiv{
     padding-top: 80px !important;
+  }
+  .underWheel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation: while 40s infinite linear ;
+
   }
 }
