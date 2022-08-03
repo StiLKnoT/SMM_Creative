@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/images/Logo.png";
-import { CgMenuGridO } from "react-icons/cg";
-import { FaAngleLeft } from "react-icons/fa";
 import { MdOutlineMenu, MdOutlineClose } from "react-icons/md";
 
 function Navbar() {
@@ -12,9 +10,6 @@ function Navbar() {
   }
 
   const [isOpen, setOpen] = useState(true);
-  function onOpen() {
-    setOpen(!isOpen);
-  }
 
   return (
     <>
