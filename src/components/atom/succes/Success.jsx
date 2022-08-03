@@ -13,7 +13,7 @@ const Succes = () => {
 
 
     return (
-        <div className='succesModal'  >
+        <div className='succesModal'>
             <Modal
                 size="lg"
                 className="succesBox"
