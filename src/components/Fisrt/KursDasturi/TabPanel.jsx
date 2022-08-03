@@ -37,7 +37,7 @@ const Spikers = [
   {'name': 'Umidjon',
   'surname': 'Ortiqov',
   'img': MainSpiker,
-  'about': 'Qwerty Aljafr academy asoschisi, ijtimoiy tarmoqlar bo‘yicha ekspert, biznesmen',
+  'about': "IT tadbirkor “Qwerty al-fajr IT company” va “Kalibri education”  asoschisi, Ijtimoiy tarmoqlar bo'yicha expert",
   'insta':"https://instagram.com/afshon_official?igshid=YmMyMTA2M2Y=",
   "telegram":"https://t.me/UmidjonOrtiqov",
   "youtube":"https://www.youtube.com/c/UmidjonOrtiqov",

@@ -42,7 +42,7 @@ function First() {
         <div className='smmCreative'>SMM <br />CREATIVE</div>
         <div className='textCreative'>
           <div className='smmText'>Shunchaki SMM’ni bilish kamlik qiladi,<br />
-            “SMM Creative” kursi - boshqacha yondashuv</div>
+            “SMM CREATIVE” kursi - boshqacha yondashuv</div>
           <div className=' button' id="buttonInviseble"><a href='#tariflar'><ShadowButton /></a></div>
         </div>
 
