@@ -10,7 +10,6 @@ import Succes from './components/atom/succes/Success'
 
 export default class Payme extends Component {
     constructor(props) {
-        <Succes/>
         super(props);
         this.plan = props.plan;
     }
@@ -100,7 +99,7 @@ export default class Payme extends Component {
 
 
                             // Modal uchun codega joy
-                            location.href += "success=1";
+                            window.location.href += "success=1";
 
                         }));
 
