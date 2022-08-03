@@ -21,7 +21,7 @@ const TextAnimation ={
     visible: custom =>({
         x: 0,
         opacity: 1,
-        transition: {delay: custom*0.1, duration: 0.8}
+        transition: {delay: custom*0.1, duration: 0.4}
     }),
 }
 const ImgAnimation ={
@@ -32,7 +32,7 @@ const ImgAnimation ={
     visible: custom =>({
         x: 0,
         opacity: 1,
-        transition: {delay: custom*0.1, duration: 0.8}
+        transition: {delay: custom*0.1, duration: 0.4}
     }),
 }
 const ImgAnimation2 ={
@@ -43,7 +43,7 @@ const ImgAnimation2 ={
     visible: custom =>({
         y: 0,
         opacity: 1,
-        transition: {delay: custom*0.1, duration: 0.8}
+        transition: {delay: custom*0.1, duration: 0.4}
     }),
 }
 function ForWho() {

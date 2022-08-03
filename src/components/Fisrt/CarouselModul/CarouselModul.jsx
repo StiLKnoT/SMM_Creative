@@ -226,8 +226,25 @@ const responsives = {
 function CarouselModul() {
   return (
     <div className="CarouselModul">
-      <Carousel responsive={responsives} id="carCardsBot" autoPlay
-  autoPlaySpeed={3200} rewind >
+      <Carousel responsive={responsives} id="carCardsBot" autoPlay infinite
+  autoPlaySpeed={3000}
+  arrows
+
+  centerMode={false}
+  className=""
+  containerClass="container-with-dots"
+  dotListClass=""
+  draggable
+  focusOnSelect={false}
+
+  itemClass=""
+  keyBoardControl
+  minimumTouchDrag={80}
+  pauseOnHover
+  renderArrowsWhenDisabled={false}
+  renderButtonGroupOutside={false}
+  renderDotsOutside={false}
+  >
         
         {carouselRows.map((el, i) => {
           return (

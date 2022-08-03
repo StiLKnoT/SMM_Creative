@@ -87,18 +87,19 @@ function First() {
         <div className='ColorBlockCenter'>
           <h2 className='ColorBlockH2'>O‘quvchilar uchun bonuslar</h2>
           <p className='ColorBlockP'>Biz o‘quvchilarga shunchaki dars beribgina qolmay, ular uchun foydali bo‘lgan bonuslarni ham taqdim etamiz</p>
-          <button onClick={()=>setBtnBonus(!btnBonus)}><div className='ShadowBtn'>
+          <a onClick={()=>setBtnBonus(!btnBonus)}><div className='ShadowBtn'>
             <p className='InBtn'>Bonuslarni ko‘rish<FaArrowRight /></p>
 
           </div>
-          </button>
+          </a>
         </div>
      
       </div>
       {btnBonus ?  <div className='Bonuslar'>
+
           <div className='BonusCard'>
             <div>
-              <a href={Word} download><img src={Word}/></a>
+              <img src={Word}/>
               <h2 className='BonusFileDoc'>doc</h2>
             </div>
             <div>
@@ -107,8 +108,38 @@ function First() {
           </div>
 
           <div className='BonusCard'>
+            <div>
+              <img src={Word}/>
+              <h2 className='BonusFileDoc'>doc</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>SMM xizmati uchun shartnomadan namuna</h2>
+            </div>
+          </div>
+
+          <div className='BonusCard'>
+            <div>
+              <img src={Word}/>
+              <h2 className='BonusFileDoc'>doc</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>SMM strategiya uchun Briyeaf namuna</h2>
+            </div>
+          </div>
+
+          <div className='BonusCard'>
+            <div>
+              <img src={Word}/>
+              <h2 className='BonusFileDoc'>doc</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>Texnik topshiriq berish bo‘yicha namuna</h2>
+            </div>
+          </div>
+
+          <div className='BonusCard'>
           <div>
-            <a href={Excell} download><img src={Excell}/></a>
+            <img src={Excell}/>
               <h2 className='BonusFileXLS'>xls</h2>
             </div>
             <div>
@@ -118,7 +149,7 @@ function First() {
 
           <div className='BonusCard'>
           <div>
-          <a href={PowerP} download><img src={PowerP}/></a>
+          <img src={PowerP}/>
               <h2 className='BonusFilePdf'>pdf</h2>
             </div>
             <div>
@@ -137,24 +168,96 @@ function First() {
           </div>
           
           <div className='BonusCard'>
-            <div>
-              <a href={Word} download><img src={Word}/></a>
-              <h2 className='BonusFileDoc'>doc</h2>
+          <div>
+          <img src={PowerP}/>
+              <h2 className='BonusFilePdf'>pdf</h2>
             </div>
             <div>
-              <h2 className='BonusFileText'>Foydalanish uchun adabiyotlar ro‘yxati</h2>
+              <h2 className='BonusFileText'>Kontent uchun g‘oyalar topish</h2>
             </div>
           </div>
 
           <div className='BonusCard'>
-            <div>
-              <a href={Word} download><img src={Word}/></a>
-              <h2 className='BonusFileDoc'>doc</h2>
+          <div>
+          <img src={PowerP}/>
+              <h2 className='BonusFilePdf'>pdf</h2>
             </div>
             <div>
-              <h2 className='BonusFileText'>Foydalanish uchun adabiyotlar ro‘yxati</h2>
+              <h2 className='BonusFileText'>Gayd 
+“UTP tuzish”</h2>
             </div>
           </div>
+
+          <div className='BonusCard'>
+          <div>
+          <img src={PowerP}/>
+              <h2 className='BonusFilePdf'>pdf</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>4U bo‘yicha  offer</h2>
+            </div>
+          </div>
+
+          <div className='BonusCard'>
+          <div>
+          <img src={PowerP}/>
+              <h2 className='BonusFilePdf'>pdf</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>AIDA formulasi</h2>
+            </div>
+          </div>
+
+          <div className='BonusCard'>
+          <div>
+          <img src={PowerP}/>
+              <h2 className='BonusFilePdf'>pdf</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>Instagramda konkurs o‘tkazish</h2>
+            </div>
+          </div>
+         
+          <div className='BonusCard'>
+          <div>
+          <img src={PowerP}/>
+              <h2 className='BonusFilePdf'>pdf</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>Matn yozish qoidalari</h2>
+            </div>
+          </div>
+         
+          <div className='BonusCard'>
+          <div>
+          <img src={PowerP}/>
+              <h2 className='BonusFilePdf'>pdf</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>Sotuvchi matnlar yozilishih</h2>
+            </div>
+          </div>
+
+          <div className='BonusCard'>
+          <div>
+          <img src={PowerP}/>
+              <h2 className='BonusFilePdf'>pdf</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>Bitta patron qoidasi</h2>
+            </div>
+          </div>
+
+          <div className='BonusCard'>
+          <div>
+          <a href={Video} download><img src={Video}/></a>
+              <h2 className='BonusFileVideo'>video</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>Mijoz bilan muzokara  </h2>
+            </div>
+          </div>
+         
 
           
         </div>: null}

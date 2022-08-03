@@ -7,9 +7,9 @@ import Box from '@mui/material/Box';
 import './TabPanel.css'
 import MainSpiker from '../../../assets/images/MainSpiker.png'
 import Spiker2 from '../../../assets/images/Spiker2.png'
-import Spiker3 from '../../../assets/images/Spiker3.png'
+import Spiker3 from '../../../assets/images/islomSpiker.png'
 import MehSpiker1 from '../../../assets/images/MehSpiker1.png'
-import MehSpiker2 from '../../../assets/images/MehSpiker2.png'
+import MehSpiker2 from '../../../assets/images/Ahmadjon.jpg'
 import {ReactComponent as InstaIcon} from '../../../assets/images/InstaIcon.svg'
 import {ReactComponent as TelegramIcon} from '../../../assets/images/TelegramIcon.svg'
 import {ReactComponent as YouTubeIcon} from '../../../assets/images/YouTubeIcon.svg'
@@ -72,7 +72,7 @@ const guest = [
   'img': MehSpiker2,
   'about': '17 yosh, video editing sohasida 2+ yil tajribaga ega, Qwerty Al-fajr markazida senior video editor',
   'insta':"https://instagram.com/infinite___001?igshid=YmMyMTA2M2Y=",
-  "telegram":"https://instagram.com/infinite___001?igshid=YmMyMTA2M2Y=",
+  "telegram":"https://t.me/infinite001A",
   "youtube":"https://instagram.com/infinite___001?igshid=YmMyMTA2M2Y=",}
 ]
 

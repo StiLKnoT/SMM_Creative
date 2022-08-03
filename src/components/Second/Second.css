@@ -28,6 +28,14 @@ body {
   width: 1200px !important;
   margin: 0 auto !important;
 }
+.css-1tp5dum{
+  background-color: #fff !important;
+}
+#titlePriceAcc{
+  font-family: "Monument Extended" !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
 .box {
   max-width: 1200px !important;
   display: flex;
