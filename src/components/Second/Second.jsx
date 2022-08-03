@@ -1267,7 +1267,7 @@ const Second = () => {
       <Footer />
       <div className="UnderFooter">
         <div className="UnderFooterLeft">
-          <h3 className="underH3"> © QwertyAlfajr2022-</h3>
+          <h3 className="underH3"> © Qwerty Al-fajr 2022</h3>
           <h3 className="underH3">Barcha huquqlar himoyalangan
           </h3>
         </div>
