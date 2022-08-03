@@ -5,6 +5,7 @@
   width: 100% !important;
   object-fit: cover;
 }
+
 .CreativeBlock {
   display: flex;
   margin-top: 120px;
@@ -22,6 +23,84 @@
   display: flex;
   justify-content: start;
   align-items: center;
+  color: #222628;
+}
+.Bonuslar{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+}
+.BonusCard{
+  width: 15%;
+  height: 175px;
+  border: 2px solid #222628;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px 20px 0 0;
+  overflow: hidden;
+}
+.BonusFileVideo{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background: #C77F2C;
+  width: max-content;
+  padding: 0 5px;
+  margin-top: 10px;
+  color: #FFFFFF;
+}
+.BonusFileDoc{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background: #408DB8;
+  width: max-content;
+  padding: 0 5px;
+  margin-top: 10px;
+  color: #FFFFFF;
+}
+.BonusFilePdf{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background: #DD3640;
+  width: max-content;
+  padding: 0 5px;
+  margin-top: 10px;
+  color: #FFFFFF;
+}
+.BonusFileXLS{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background: #40B85A;
+  width: max-content;
+  padding: 0 5px;
+  margin-top: 10px;
+  color: #FFFFFF;
+}
+.BonusFileText{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  overflow: hidden;
+
+  /* brand black color */
+
   color: #222628;
 }
 .textCreative {
@@ -337,6 +416,10 @@ a:hover{
   .Wheel {
     overflow: hidden;
   }
+  .Bonuslar{
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 947px) {
   .smmCreative {
@@ -542,5 +625,9 @@ a:hover{
     justify-content: center;
     animation: while 40s infinite linear ;
 
+  }
+  .BonusCard{
+    width: 40%;
+    margin: 20px auto;
   }
 }

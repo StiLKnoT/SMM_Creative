@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import TabPanel from './KursDasturi/TabPanel'
 import Navbar from '../navbar/Navbar'
 import './First.css'
@@ -23,10 +24,14 @@ import Line from '../../assets/icons/line.png';
 import TopLine from '../../assets/icons/topLine.png';
 import lines from '../../assets/icons/arrowBlock.png';
 import { BsTriangle } from "react-icons/bs";
+import Word from '../../assets/images/Word.png'
+import Excell from '../../assets/images/Excell.png'
+import PowerP from '../../assets/images/PowerP.png'
+import Video from '../../assets/images/Video.png'
 
 
 function First() {
-
+  const [btnBonus, setBtnBonus] = useState(false);
   return (
     <div className='firstMain'>
 
@@ -82,13 +87,78 @@ function First() {
         <div className='ColorBlockCenter'>
           <h2 className='ColorBlockH2'>O‘quvchilar uchun bonuslar</h2>
           <p className='ColorBlockP'>Biz o‘quvchilarga shunchaki dars beribgina qolmay, ular uchun foydali bo‘lgan bonuslarni ham taqdim etamiz</p>
-          <a href="#"><div className='ShadowBtn'>
+          <button onClick={()=>setBtnBonus(!btnBonus)}><div className='ShadowBtn'>
             <p className='InBtn'>Bonuslarni ko‘rish<FaArrowRight /></p>
 
           </div>
-          </a>
+          </button>
         </div>
+     
       </div>
+      {btnBonus ?  <div className='Bonuslar'>
+          <div className='BonusCard'>
+            <div>
+              <a href={Word} download><img src={Word}/></a>
+              <h2 className='BonusFileDoc'>doc</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>Foydalanish uchun adabiyotlar ro‘yxati</h2>
+            </div>
+          </div>
+
+          <div className='BonusCard'>
+          <div>
+            <a href={Excell} download><img src={Excell}/></a>
+              <h2 className='BonusFileXLS'>xls</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>Kontent plan bo‘yicha namuna</h2>
+            </div>
+          </div>
+
+          <div className='BonusCard'>
+          <div>
+          <a href={PowerP} download><img src={PowerP}/></a>
+              <h2 className='BonusFilePdf'>pdf</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>Cheklist  “SMM mutaxassisi qanday mijoz topishi”</h2>
+            </div>
+          </div>
+
+          <div className='BonusCard'>
+          <div>
+          <a href={Video} download><img src={Video}/></a>
+              <h2 className='BonusFileVideo'>video</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>Sotuvchi istoriyalar tayyorlash</h2>
+            </div>
+          </div>
+          
+          <div className='BonusCard'>
+            <div>
+              <a href={Word} download><img src={Word}/></a>
+              <h2 className='BonusFileDoc'>doc</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>Foydalanish uchun adabiyotlar ro‘yxati</h2>
+            </div>
+          </div>
+
+          <div className='BonusCard'>
+            <div>
+              <a href={Word} download><img src={Word}/></a>
+              <h2 className='BonusFileDoc'>doc</h2>
+            </div>
+            <div>
+              <h2 className='BonusFileText'>Foydalanish uchun adabiyotlar ro‘yxati</h2>
+            </div>
+          </div>
+
+          
+        </div>: null}
+     
       <div className='PaddingDiv' id="PaddingDiv">
         <div className='ForWhoH2White'>
           <h2 className='ForWhoH2Text' id='kursSpikeri'>KURS SPIKERLARI BILAN TANISHING</h2>
