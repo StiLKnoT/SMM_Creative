@@ -414,7 +414,14 @@ body {
   border-bottom: 2px solid #222628;
   width: 90%;
   margin-top: 10px;
+  padding: 10px;
+  outline: none;
 }
+
+.FormBtns .InBtn{
+  font-size: 18px !important;
+}
+
 /* Darslar Section */
 
 

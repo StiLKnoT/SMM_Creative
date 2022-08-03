@@ -16,6 +16,10 @@
     height: 120px;
     background-color: #F5F5F5;
 }
+#kursMobMenu{
+    height: 70px;
+    width: 350px;
+}
 .link{
     margin-left: 50px;
 }
