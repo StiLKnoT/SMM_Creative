@@ -47,8 +47,8 @@ const Spikers = [
   'img': Spiker2,
   'about': 'Najot Ta’lim markazi mentori,marketing sohasida 3 + yillik tajribaga ega, tajribali marketolog, targetolog',
   'insta':"https://instagram.com/akmalrahmonov1?igshid=YmMyMTA2M2Y=",
-  "telegram":"",
-  "youtube":"",
+  "telegram":"https://instagram.com/akmalrahmonov1?igshid=YmMyMTA2M2Y=",
+  "youtube":"https://instagram.com/akmalrahmonov1?igshid=YmMyMTA2M2Y=",
   },
   {'name': 'Islom',
   'surname': 'JALOLOV',
@@ -56,7 +56,7 @@ const Spikers = [
   'about': 'Umidjon Ortiqov va Ilxom Begimqulovning shaxsiy brendlari, Kalibri education  boshqa ko‘plab brendlar bilan muvaffaqiyatli faoliyat olib borgan, tajribali SMM menejer ',
   'insta':"https://instagram.com/islom_jv13?igshid=YmMyMTA2M2Y=",
   "telegram":"https://t.me/Islom_jv13",
-  "youtube":"",
+  "youtube":"https://instagram.com/islom_jv13?igshid=YmMyMTA2M2Y=",
   }
 ]
 const guest = [
@@ -65,15 +65,15 @@ const guest = [
   'img': MehSpiker1,
   'about': 'Lead UX/UI dizayner, Socially Design Academy asoschisi',
   'insta':"https://instagram.com/ismoil.blog?igshid=YmMyMTA2M2Y=",
-  "telegram":"",
-  "youtube":"",},
+  "telegram":"https://t.me/sociallyuz",
+  "youtube":"https://www.youtube.com/c/Sociallyuz",},
   {'name': 'Axmadjon',
   'surname': 'Majidov',
   'img': MehSpiker2,
   'about': '17 yosh, video editing sohasida 2+ yil tajribaga ega, Qwerty Al-fajr markazida senior video editor',
   'insta':"https://instagram.com/infinite___001?igshid=YmMyMTA2M2Y=",
-  "telegram":"",
-  "youtube":"",}
+  "telegram":"https://instagram.com/infinite___001?igshid=YmMyMTA2M2Y=",
+  "youtube":"https://instagram.com/infinite___001?igshid=YmMyMTA2M2Y=",}
 ]
 
 TabPanel.propTypes = {

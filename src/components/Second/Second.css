@@ -61,6 +61,10 @@ body {
 .personBlock:last-child {
   border: none;
 }
+.UnderFooter{
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .bannerImgPort {
   border: 2px solid #222628;
@@ -102,6 +106,7 @@ body {
   line-height: 26px;
   color: #222628;
 }
+
 .brText {
   margin: 30px 0 20px;
 }
@@ -111,6 +116,9 @@ body {
   display: flex;
   /* flex-direction: column; */
   
+}
+#footerIC{
+  margin: 20px;
 }
 .planChange>.row{
   padding: 0px;
@@ -130,6 +138,17 @@ body {
 .personBlock > .row{
   display: flex;
   justify-content: space-between;
+}
+.underH3{
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* brand black color */
+
+  color: #222628;
 }
 .greenCard {
   position: relative;
@@ -390,6 +409,14 @@ body {
   width: 85% !important;
   margin: 0 auto;
 }
+.UnderFooter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.UnderFooterRight{
+  display: flex;;
+}
 
 .darsRow {
   height: 313px;
@@ -472,7 +499,10 @@ color: #222628;
 .darsRow:last-child .darsBlockItem {
   border-bottom: none;
 }
-
+#UnderRightH3{
+  display: flex;
+  align-items: center;
+}
 .darsBlockTitle,
 .darsBlockText {
   font-family: 'Monument Extended', sans-serif !important;
@@ -596,6 +626,12 @@ color: #222628;
   right: 5px !important;
  }
  
+ @media screen and (max-width: 1200px ) {
+  .UnderFooter{
+    width: 100% !important;
+  }
+  
+ }
 
 @media screen and (max-width: 947px) {
   #Keyslar{
@@ -613,10 +649,10 @@ color: #222628;
   .greenCard {
     margin: 10px auto;
   }
-  .greenCard,
+  /* .greenCard,
   .greenCard > * {
     width: 100%;
-  }
+  } */
   .innerGreenCard {
     position: absolute;
     top: 50px;
@@ -864,7 +900,24 @@ color: #222628;
     position: absolute;
     right: 2% !important;
   }
-  
+  #footerLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .UnderFooter{
+    flex-direction: column;
+  }
+  .UnderFooterRight {
+    flex-direction: column;
+  }
+  .UnderFooterLeft{
+    margin-bottom: 10px;
+  }
+  .underH3{
+    text-align: center;
+    display: block !important;
+  }
  
 }
 

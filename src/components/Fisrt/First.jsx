@@ -56,7 +56,7 @@ function First() {
               <BsTriangle /><BsTriangle /><BsTriangle />
             </div>
 
-            PASTGA SURING</a></p> 
+             PASTGA SURING</a></p> 
              </div>
         </>
       </div>

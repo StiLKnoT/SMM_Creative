@@ -49,6 +49,9 @@ import Vays from "../../assets/images/lids/Vays.png";
 import Durdona from "../../assets/images/lids/Durdona.png";
 import Sholponoy from "../../assets/images/lids/Sholponoy.png";
 import Feruzabonu from "../../assets/images/lids/Feruzabonu.png";
+import {ReactComponent as InstaIcon} from '../../assets/images/InstaIcon.svg'
+import {ReactComponent as TelegramIcon} from '../../assets/images/TelegramIcon.svg'
+import {ReactComponent as YouTubeIcon} from '../../assets/images/YouTubeIcon.svg'
 
 // Icons
 import instagramLogo from "../../assets/icons/instagram.png";
@@ -138,33 +141,33 @@ const Second = () => {
       "ILXOM BEGIMQULOV",
       "“Asiaconsult.uz” firmasi asoschisi, muvaffaquyatli tadbirkor, biznes trener, chet el ta’limi bo‘yicha mutaxassis ",
       " 24 K",
-      "https://instagram.com/afshon_official",
-      " 29.7 K",
-      "https://tiktok.com/afshon_official",
+      "https://instagram.com/ilxom.begimkulov?igshid=YmMyMTA2M2Y=",
+      " 33.7 K",
+      "https://www.tiktok.com/@ilxom_begimqulov",
       " 31 K",
-      "https://www.youtube.com/c/UmidjonOrtiqov"
+      "https://www.youtube.com/c/IlxomBegimqulov"
     ),
     createData(
       ` ${jamila}`,
       "JAMILA TOXIROVNA",
       "Parapsixolog, sohada 4+ yillik katta tajriba ega, psixolog - konsultant",
       " 532 ",
-      "https://instagram.com/afshon_official",
+      "https://www.instagram.com/jamila_toxirovna/",
       " 1 000",
-      "https://tiktok.com/afshon_official",
-      " 20",
-      "https://www.youtube.com/c/UmidjonOrtiqov"
+      "https://www.tiktok.com/@jamila_toxirovna",
+      "Jamila Toxirovna",
+      "https://youtube.com/channel/UCzByFj-u29zC3lXpf-zeZzg"
     ),
     createData(
       ` ${tabib}`,
       " “AT-TABIB” loyihasi",
       "Xalq tabobati yordamida kasalliklarga davo topish, salomatlikka doir foydali maslahatlar ulashuvchi loyiha",
       " 1 412",
-      "https://instagram.com/afshon_official",
-      " 20",
-      "https://tiktok.com/afshon_official",
+      "https://instagram.com/at.tabib?igshid=YmMyMTA2M2Y=",
+      " AT - TABIB",
+      "https://www.tiktok.com/attabibuz",
       " 4.5 K",
-      "https://www.youtube.com/c/UmidjonOrtiqov"
+      "https://www.youtube.com/c/Attabib"
     ),
   ];
   // Data for Carousel
@@ -697,12 +700,14 @@ const Second = () => {
                           </div>
                           <p>Instagram obunachilari</p>
                         </div>
-                        <button className="ShadowBtn greenCardBtn">
-                          <a target="_blank" href={el.instLink}>
+                        
+                        <a target="_blank" href={el.instLink} style={{display:"flex", justifyContent:"center"}}><button className="ShadowBtn greenCardBtn">
+         
                             {""}
                             Profilga o'tish <FaArrowRight />{" "}
-                          </a>
+                
                         </button>
+                        </a>
                       </div>
                     </Col>
 
@@ -721,12 +726,13 @@ const Second = () => {
                           </div>
                           <p>TikTok obunachilari</p>
                         </div>
-                        <button className="ShadowBtn greenCardBtn">
-                          <a target="_blank" href={el.tikLink}>
+                        <a target="_blank" href={el.tikLink} style={{display:"flex", justifyContent:"center"}}><button  className="ShadowBtn greenCardBtn">
+                        
                             {" "}
                             Profilga o'tish <FaArrowRight />{" "}
-                          </a>
+                         
                         </button>
+                        </a>
                       </div>
                     </Col>
 
@@ -746,12 +752,12 @@ const Second = () => {
                           </div>
                           <p>YouTube obunachilari</p>
                         </div>
-                        <button className="ShadowBtn greenCardBtn">
-                          <a target="_blank" href={el.youLink}>
+                        <a target="_blank" href={el.youLink} style={{display:"flex", justifyContent:"center"}}><button className="ShadowBtn greenCardBtn">
+
                             {" "}
                             Profilga o'tish <FaArrowRight />{" "}
-                          </a>
                         </button>
+                        </a>
                       </div>
                     </Col>
                   </Row>
@@ -764,7 +770,8 @@ const Second = () => {
         {/* Carousel setcion */}
         <HeaderTitle theme="Nega bizni tanlashdi" />
         <section className=" box carouselContainer " id="CarouselCards">
-          <Carousel responsive={responsive} id="carCardsBot">
+          <Carousel autoPlay
+  autoPlaySpeed={3200} rewind responsive={responsive} id="carCardsBot">
             {carouselRows.map((el, i) => {
               return (
                 <>
@@ -1217,11 +1224,21 @@ const Second = () => {
         <Wheel />
       </main>
       <Footer />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <div className="UnderFooter">
+        <div className="UnderFooterLeft">
+          <h3 className="underH3">@QwertyAlfajr2022-</h3>
+          <h3 className="underH3">Barcha huquqlar himoyalangan
+          </h3>
+        </div>
+        <div className="UnderFooterRight">
+       <h3 className="underH3" id="UnderRightH3">Ijtimoiy tarmoqlarimiz:</h3>
+          <div className="footerIcons" style={{display: "flex"}}>
+            <a target="_blank" className='connectLink' id="footerIC" href="https://instagram.com/afshon_official"><div className='ConnectIcons'><InstaIcon className='connectIcons'/></div></a>
+                <a target="_blank" className='connectLink' id="footerIC" href="https://t.me/UmidjonOrtiqov"><div className='ConnectIcons'><TelegramIcon className='connectIcons'/></div></a>
+                <a target="_blank" className='connectLink' id="footerIC" href="https://www.youtube.com/c/UmidjonOrtiqov"><div className='ConnectIcons'><YouTubeIcon className='connectIcons'/></div></a>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

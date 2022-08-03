@@ -75,30 +75,30 @@ function Navbar() {
             >
               <ul className={isAcctive ? "MainNavLi" : "MainNavLiActive"}>
                 <li>
-                  <a className="link" onClick={onMenu} href="#PaddingDiv">
+                  <a className="link" id="mobNavLink" onClick={onMenu} href="#PaddingDiv">
                     SPIKERLAR
                   </a>
                 </li>
                 <li>
-                  <a className="link" onClick={onMenu} href="#kimlarUchun">
+                  <a className="link" id="mobNavLink" onClick={onMenu} href="#kimlarUchun">
                     Kurs kimlar uchun?
                   </a>
                 </li>
 
                 <li>
-                  <a className="link" onClick={onMenu} href="#Dastur">
+                  <a className="link" id="mobNavLink" onClick={onMenu} href="#Dastur">
                     Dastur
                   </a>
                 </li>
 
                 <li>
-                  <a className="link" onClick={onMenu} href="#Keyslar">
+                  <a className="link" id="mobNavLink" onClick={onMenu} href="#Keyslar">
                     Keyslar
                   </a>
                 </li>
 
                 <li>
-                  <a className="link" onClick={onMenu} href="#tariflar">
+                  <a className="link" id="mobNavLink" onClick={onMenu} href="#tariflar">
                     Tariflar
                   </a>
                 </li>

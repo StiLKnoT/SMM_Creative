@@ -89,7 +89,7 @@
 }
 .menuMob{
     display: flex;
-    position: absolute !important;
+    position: fixed !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -99,6 +99,7 @@
     width: 105vw;
     background: #FFF;
     z-index: 100000000000000;
+    
 }
 .innerMenuMob{
     position: absolute;
@@ -179,6 +180,7 @@
     }
     .menuGridTemp {
         display: block;
+        right: 10%;
     }
     
 }
@@ -226,5 +228,18 @@
         width: 90%;
         margin: 0 auto;
     }
-    
+    .link{
+        margin: 0px !important;
+    }
+    #mobNavLink{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: #fff !important;
+ 
+    }
+    .menuMob{
+        background-color: #222628;
+    }
 }

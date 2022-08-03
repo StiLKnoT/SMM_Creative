@@ -182,6 +182,9 @@
         font-size: 12px;
         line-height: 18px;
     }
+    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+        width: 40% !important;
+    }
     
 }
 @media screen and (max-width: 576px) {
@@ -244,6 +247,7 @@
     color: #222628 !important;
     }
     .css-k008qs{
+        width: 100% !important;
         margin: 0 auto !important;
         flex-direction: column !important;
     }

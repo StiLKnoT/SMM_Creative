@@ -8,10 +8,10 @@ const Footer = () => {
         <>
             <div className='footer'>
                 <div className="footer__header">
-                    <div className="Navbar">
+                    <div className="Navbar" id="footerLogo">
                         <ul className="navSections">
                             <div className="logoBlock">
-                                <div><a href="#">
+                                <div><a target="_blank" href="https://instagram.com/afshon_official">
                                     <img className="logoIcon" src={logo} />
                                 </a>
                                 </div>

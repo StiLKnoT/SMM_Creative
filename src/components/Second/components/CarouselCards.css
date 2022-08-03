@@ -187,6 +187,9 @@
     #CarouselCards{
         margin-bottom: 80px !important;
     }
+    .Karousel__card{
+        width: 100% !important;
+    }
 
 }
 

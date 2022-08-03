@@ -67,17 +67,22 @@ function ForWho() {
                     <img src={IconMan}/>
 
                 </div>
-                <motion.h2 variants={TextAnimation} custom={1} className='ForLeftH2'>SMM mutaxassisi bo‘lib <br/> ishlamoqchi bo‘lganlar uchun</motion.h2>
-                <motion.p variants={TextAnimation} custom={2} className='ForLeftP'>Siz SMM nimaligini bilmaysiz va hali bu sohada<br/> ishlab ko‘rmagansiz.</motion.p>
-                <motion.div variants={TextAnimation} custom={2} className='ForWhoForm'>
+                <motion.h2 variants={TextAnimation} custom={4} className='ForLeftH2'>SMM mutaxassisi bo‘lib <br/> ishlamoqchi bo‘lganlar uchun</motion.h2>
+                <motion.p variants={TextAnimation} custom={5} className='ForLeftP'>Siz SMM nimaligini bilmaysiz va hali bu sohada<br/> ishlab ko‘rmagansiz.</motion.p>
+                <motion.div  initial="hidden"
+    whileInView="visible"
+    viewport={{amount: 0.1}}><motion.div variants={TextAnimation} custom={5} className='ForWhoForm'>
                     <h2 className='ForWhoFormH2'>Kurs yakunida</h2>
                     <p className='ForWhoFormP'>— SMM sohasini tushunib yetasiz, mutaxassislik ko‘nikmasiga ega bo‘lasiz. Birinchi mijozlarni qayerdan topishni va qanday ishni yo‘lga qo‘yishni bilasiz.</p>
+                </motion.div>
                 </motion.div>
               
 
             </div>
-            <motion.div variants={ImgAnimation} custom={2} className='ForWhoRight'>
-                <img src={imgFor}/>
+            <motion.div initial="hidden"
+    whileInView="visible"
+    viewport={{amount: 0.1}} className='ForWhoRight'>
+                <motion.img variants={ImgAnimation} custom={6} src={imgFor}/>
             </motion.div>
 
         </motion.div>
@@ -89,18 +94,23 @@ function ForWho() {
                     <img src={IconMan2}/>
 
                 </div>
-                <motion.h2  variants={TextAnimation} custom={1} className='ForLeftH2'>SMM kursini tugatgan, lekin<br/> tajribasi oz yosh SMM<br/> mutaxassislar uchun</motion.h2>
-                <motion.p  variants={TextAnimation} custom={2} className='ForLeftP'>Ish topishda qiynalyapsiz yoki tajribangiz kamligi<br/> uchun tayyor ishingizni ham boy beryapsiz.</motion.p>
-                <motion.div variants={TextAnimation} custom={2} className='ForWhoForm'>
+                <motion.h2  variants={TextAnimation} custom={4} className='ForLeftH2'>SMM kursini tugatgan, lekin<br/> tajribasi oz yosh SMM<br/> mutaxassislar uchun</motion.h2>
+                <motion.p  variants={TextAnimation} custom={5} className='ForLeftP'>Ish topishda qiynalyapsiz yoki tajribangiz kamligi<br/> uchun tayyor ishingizni ham boy beryapsiz.</motion.p>
+                <motion.div  initial="hidden"
+    whileInView="visible"
+    viewport={{amount: 0.1}}><motion.div variants={TextAnimation} custom={5} className='ForWhoForm'>
                     <h2 className='ForWhoFormH2'>Kurs yakunida</h2>
                     <p className='ForWhoFormP'>— Talabgir SMM mutaxassisiga aylanasiz, mijoz bilan sifatli va davomiy ishlash va xizmatni yuqori pulga taqdim h o‘rganasiz. 
 qo‘lingizdagi mutaxassislar bilan ishlashda odatdagidan boshqacha yondashasiz..</p>
                 </motion.div>
+                </motion.div>
               
 
             </div>
-            <motion.div variants={ImgAnimation2} custom={3} className='ForWhoRight'>
-                <img src={imgFor2}/>
+            <motion.div initial="hidden"
+    whileInView="visible"
+    viewport={{amount: 0.1}} className='ForWhoRight'>
+                <motion.img variants={ImgAnimation2} custom={6} src={imgFor2}/>
             </motion.div>
 
         </motion.div>
@@ -113,17 +123,22 @@ qo‘lingizdagi mutaxassislar bilan ishlashda odatdagidan boshqacha yondashasiz.
                     <img src={IconMan3}/>
 
                 </div>
-                <motion.h2  variants={TextAnimation} custom={1} className='ForLeftH2'>Biznesni endi yo‘lga qo‘ygan<br/> tadbirkorlar uchun</motion.h2>
-                <motion.p  variants={TextAnimation} custom={2} className='ForLeftP'>SMM orqali mijozlaringiz va sotuvlaringizni<br/> oshirishni xohlaysiz, lekin mutaxassisiga ajratishga<br/> hozir byudjetingiz yetarli emas.</motion.p>
-                <motion.div  variants={TextAnimation} custom={2} className='ForWhoForm'>
+                <motion.h2  variants={TextAnimation} custom={4} className='ForLeftH2'>Biznesni endi yo‘lga qo‘ygan<br/> tadbirkorlar uchun</motion.h2>
+                <motion.p  variants={TextAnimation} custom={5} className='ForLeftP'>SMM orqali mijozlaringiz va sotuvlaringizni<br/> oshirishni xohlaysiz, lekin mutaxassisiga ajratishga<br/> hozir byudjetingiz yetarli emas.</motion.p>
+                <motion.div  initial="hidden"
+    whileInView="visible"
+    viewport={{amount: 0.1}}><motion.div  variants={TextAnimation} custom={5} className='ForWhoForm'>
                     <h2 className='ForWhoFormH2'>Kurs yakunida</h2>
                     <p className='ForWhoFormP'>— O‘z mahsulotingizni ijtimoiy tarmoqlarda to‘g‘ri taqdim qilishni, SMM’ni biznesda qanday to‘g‘ri qo‘llash va sotuvni ko‘tarish uchun instrumentlarga ega bo‘lasiz.</p>
+                </motion.div>
                 </motion.div>
               
 
             </div>
-            <motion.div variants={ImgAnimation} custom={2} className='ForWhoRight'>
-                <img src={imgFor3}/>
+            <motion.div  initial="hidden"
+        whileInView="visible"
+        viewport={{amount: 0.1}} className='ForWhoRight'>
+                <motion.img variants={ImgAnimation} custom={6} src={imgFor3}/>
             </motion.div>
 
         </motion.div>
@@ -136,17 +151,22 @@ qo‘lingizdagi mutaxassislar bilan ishlashda odatdagidan boshqacha yondashasiz.
                     <img src={IconMan4}/>
 
                 </div>
-                <motion.h2 variants={TextAnimation} custom={1} className='ForLeftH2'>Tajribali biznesmenlar uchun</motion.h2>
-                <motion.p variants={TextAnimation} custom={2} className='ForLeftP'>SMM mutaxassislari bilan ishlaysiz, ularning ish <br/> sifatini qanday nazotat qilishini va qanday KPI <br/> qo‘yishni bilmayapsiz. Biznesingizga SMM foyda <br/> berishiga ikkilanyapsiz yoki SMM mutaxassislarini <br/> sifatlisini tanlay olmayapsiz.</motion.p>
-                <motion.div variants={TextAnimation} custom={2} className='ForWhoForm'>
+                <motion.h2 variants={TextAnimation} custom={4} className='ForLeftH2'>Tajribali biznesmenlar uchun</motion.h2>
+                <motion.p variants={TextAnimation} custom={5} className='ForLeftP'>SMM mutaxassislari bilan ishlaysiz, ularning ish <br/> sifatini qanday nazotat qilishini va qanday KPI <br/> qo‘yishni bilmayapsiz. Biznesingizga SMM foyda <br/> berishiga ikkilanyapsiz yoki SMM mutaxassislarini <br/> sifatlisini tanlay olmayapsiz.</motion.p>
+                <motion.div initial="hidden"
+    whileInView="visible"
+    viewport={{amount: 0.1}}><motion.div variants={TextAnimation} custom={5} className='ForWhoForm'>
                     <h2 className='ForWhoFormH2'>Kurs yakunida</h2>
                     <p className='ForWhoFormP'>— SMM mutaxassislariga qanday topshiriq berishni va ularni qanday nazorat qilishni, ish qay darajada rivojlanayotganini tahlil qila olasiz.  O‘z biznesingiz uchun guruhda zo‘r o‘qigan SMM mutaxassislarini topishingiz mumkin.</p>
+                </motion.div>
                 </motion.div>
               
 
             </div>
-            <motion.div variants={ImgAnimation2} custom={2}  className='ForWhoRight'>
-                <img src={imgFor4}/>
+            <motion.div  initial="hidden"
+        whileInView="visible"
+        viewport={{amount: 0.1}} className='ForWhoRight'>
+                <motion.img variants={ImgAnimation} custom={6}  src={imgFor4}/>
             </motion.div>
 
         </motion.div>
@@ -159,17 +179,22 @@ qo‘lingizdagi mutaxassislar bilan ishlashda odatdagidan boshqacha yondashasiz.
                     <img src={IconMan5}/>
 
                 </div>
-                <motion.h2 variants={TextAnimation} custom={1} className='ForLeftH2'>Boshqa soha vakillari uchun</motion.h2>
-                <motion.p variants={TextAnimation} custom={2} className='ForLeftP'>O‘z sohangizda mutaxassissiz misol uchun oshpaz,<br/> tikuvchi, yoki boshqa bir soha mutaxassisi. Hozirda <br/> oylikka ishlaysiz va daromadni ostirishni istaysiz.</motion.p>
-                <motion.div variants={TextAnimation} custom={2} className='ForWhoForm'>
+                <motion.h2 variants={TextAnimation} custom={4} className='ForLeftH2'>Boshqa soha vakillari uchun</motion.h2>
+                <motion.p variants={TextAnimation} custom={5} className='ForLeftP'>O‘z sohangizda mutaxassissiz misol uchun oshpaz,<br/> tikuvchi, yoki boshqa bir soha mutaxassisi. Hozirda <br/> oylikka ishlaysiz va daromadni ostirishni istaysiz.</motion.p>
+                <motion.div  initial="hidden"
+        whileInView="visible"
+        viewport={{amount: 0.1}}><motion.div variants={TextAnimation} custom={5} className='ForWhoForm'>
                     <h2 className='ForWhoFormH2'>Kurs yakunida</h2>
                     <p className='ForWhoFormP'>— Ijtimoiy tarmoqlar orqali yangi mijozlar jalb qilishni, qo‘shimcha daromad qilishni, xizmatlaringizni ko‘proq odamlarga sotishni o‘rganasiz. O‘z sohangizdagi bilim va tajribangizni SMM orqali ijtimoiy tarmoqlarda to‘g‘ri targ‘ib qilishni yo‘lga qoyasiz. </p>
+                </motion.div>
                 </motion.div>
               
 
             </div>
-            <motion.div variants={ImgAnimation} custom={2}  className='ForWhoRight'>
-                <img src={imgFor5}/>
+            <motion.div  initial="hidden"
+        whileInView="visible"
+        viewport={{amount: 0.1}} className='ForWhoRight'>
+                <motion.img variants={ImgAnimation} custom={6} src={imgFor5}/>
             </motion.div>
 
         </motion.div>

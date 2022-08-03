@@ -226,7 +226,9 @@ const responsives = {
 function CarouselModul() {
   return (
     <div className="CarouselModul">
-      <Carousel responsive={responsives} id="carCardsBot">
+      <Carousel responsive={responsives} id="carCardsBot" autoPlay
+  autoPlaySpeed={3200} rewind >
+        
         {carouselRows.map((el, i) => {
           return (
             <>
