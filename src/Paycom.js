@@ -6,10 +6,11 @@ import ShadowButton from "./components/atom/buttons/ShadowButton";
 // import fetch from 'sync-fetch';
 
 import NumberFormat from 'react-number-format';
-
+import Succes from './components/atom/succes/Success'
 
 export default class Payme extends Component {
     constructor(props) {
+        <Succes/>
         super(props);
         this.plan = props.plan;
     }
@@ -76,7 +77,35 @@ export default class Payme extends Component {
                     }
                 } />
 
-                <ShadowButton text="Ro'yxatdan o'tish" />
+                <ShadowButton text="Ro'yxatdan o'tish"  onclick={
+                    (e) => {
+                        const form = this.getElementBy("#submitform1");
+
+                        const res = fetch("http://198.199.73.117/just_register",
+                            {
+                                method: "POST",
+                                body: JSON.stringify(
+                                    {
+                                        name: form.querySelector('input[name="name"]').value,
+                                        number: number,
+                                        plan: self.plan
+                                    }
+                                ),
+                            }
+                        ).then(res => res.json().then(({data}) => {
+
+                            console.log(data);
+                            document.querySelector('input[name="account[login]"]').value = data.id;
+                            document.querySelector('input[name="amount"]').value = data.amount;
+
+
+                            // Modal uchun codega joy
+                            location.href += "success=1";
+
+                        }));
+
+                    }
+                } />
                 </div>
             </form>
         );
