@@ -34,6 +34,9 @@ import umidjon from "../../assets/keyslar/umidjon.png";
 import ilxom from "../../assets/keyslar/ilxom.png";
 import jamila from "../../assets/keyslar/jamila.png";
 import tabib from "../../assets/keyslar/tabib.png";
+import hadaf from "../../assets/images/hadaf.png";
+import ajou from "../../assets/images/ajou.png";
+import kalibri from "../../assets/images/kalibrisayt.png"
 import Bobur from "../../assets/images/lids/Bobur.png";
 import Laziz from "../../assets/images/lids/Laziz.png";
 import Olimjon from "../../assets/images/lids/Olimjon.png";
@@ -109,7 +112,8 @@ const Second = () => {
     tikNum,
     tikLink,
     youNum,
-    youLink
+    youLink,
+    withUs
   ) => {
     return {
       bannerImg,
@@ -121,6 +125,7 @@ const Second = () => {
       tikLink,
       youNum,
       youLink,
+      withUs
     };
   };
 
@@ -128,46 +133,86 @@ const Second = () => {
     createData(
       ` ${umidjon}`,
       " Umidjon Ortiqov ",
-      "IT tadbirkor, Founder “Kalibri edu”, Ijtimoiy tarmoqlar bo’yicha ekspert, biznesmen",
+      "IT tadbirkor “Qwerty al-fajr IT company” va “Kalibri education”  asoschisi, Ijtimoiy tarmoqlar bo'yicha expert.",
       " 26.9 K",
       "https://instagram.com/afshon_official",
       " 21.4 K",
       "https://tiktok.com/afshon_official",
       " 35.7 K",
-      "https://www.youtube.com/c/UmidjonOrtiqov"
+      "https://www.youtube.com/c/UmidjonOrtiqov",
+      ""
     ),
     createData(
       ` ${ilxom}`,
       "ILXOM BEGIMQULOV",
-      "“Asiaconsult.uz” firmasi asoschisi, muvaffaquyatli tadbirkor, biznes trener, chet el ta’limi bo‘yicha mutaxassis ",
+      "“Asia consult”,  “ZET LINE GROUP” va “EDUGATWEY” kompaniyalari asoschisi, biznesmen. ",
       " 28.6 K",
       "https://instagram.com/ilxom.begimkulov?igshid=YmMyMTA2M2Y=",
       " 33.7 K",
       "https://www.tiktok.com/@ilxom_begimqulov",
       " 31.2 K",
-      "https://www.youtube.com/c/IlxomBegimqulov"
+      "https://www.youtube.com/c/IlxomBegimqulov",
+      "Biz bilan hamkorlikdan so'ng"
     ),
     createData(
       ` ${jamila}`,
       "JAMILA TOXIROVNA",
-      "Parapsixolog, sohada 4+ yillik katta tajriba ega, psixolog - konsultant",
+      "Parapsixolog, sohada 4+ yillik katta tajriba ega, psixolog - konsultant.",
       " 549 ",
       "https://www.instagram.com/jamila_toxirovna/",
       " 1 000",
       "https://www.tiktok.com/@jamila_toxirovna",
       "Jamila Toxirovna",
-      "https://youtube.com/channel/UCzByFj-u29zC3lXpf-zeZzg"
+      "https://youtube.com/channel/UCzByFj-u29zC3lXpf-zeZzg",
+      "Biz bilan hamkorlikdan so'ng"
     ),
     createData(
       ` ${tabib}`,
       " “AT-TABIB” loyihasi",
-      "Xalq tabobati yordamida kasalliklarga davo topish, salomatlikka doir foydali maslahatlar ulashuvchi loyiha",
+      "Xalq tabobati yordamida kasalliklarga davo topish, salomatlikka doir foydali maslahatlar ulashuvchi loyiha.",
       " 1 412",
       "https://instagram.com/at.tabib?igshid=YmMyMTA2M2Y=",
       " AT - TABIB",
       "https://www.tiktok.com/attabibuz",
       " 4.5 K",
-      "https://www.youtube.com/c/Attabib"
+      "https://www.youtube.com/c/Attabib",
+      "Biz bilan hamkorlikdan so'ng"
+    ),
+    createData(
+      ` ${hadaf}`,
+      " “HADAF ACADEMY”",
+      "Hadaf  academy Arab tiliga ixtisoslashgan  markaz hisoblanib. Arab tili bo'yicha ilm maskanidir.",
+      " 622",
+      "https://instagram.com/hadaf_ia?igshid=YmMyMTA2M2Y=",
+      " HADAF",
+      "https://t.me/hadaf_IA",
+      " 96",
+      "https://youtube.com/channel/UChVmjROatASf8lL48taIhYw",
+      "Biz bilan hamkorlikdan so'ng"
+    ),
+    createData(
+      ` ${ajou}`,
+      "“ADJU”",
+      "Toshkent shahridagi ADJU universiteti. Arxitektura, qurilish, elektrotexnika va kompyuter muhandisligi bo'yicha talabalarga ilm beruvchi universitet.",
+      " 2366",
+      "https://instagram.com/ajou_uz?igshid=YmMyMTA2M2Y=",
+      " ADJU",
+      "https://t.me/ajou_uz",
+      " 451",
+      "https://youtube.com/c/AjouUniversityinTashkent",
+      "Biz bilan hamkorlikdan so'ng"
+    ),
+    createData(
+      ` ${kalibri}`,
+      " “Kalibri   education”",
+      " Kalibri education IT  sohasida ta'lim berishga yo'naltirilgan o'quv markaz hisoblanadi.",
+      " 1 249",
+      "https://instagram.com/kalibri_edu?igshid=YmMyMTA2M2Y=",
+      " Kalibri EDU",
+      "https://https://t.me/Kalibri_edu",
+      " Kalibri EDU",
+      "https://youtube.com/channel/UCe6Vw_DhhXckGBS8vb2hYIw",
+      "Biz bilan hamkorlikdan so'ng"
     ),
   ];
   // Data for Carousel
@@ -179,85 +224,85 @@ const Second = () => {
       Bobur,
       "Bobur",
       "bobur_13_23",
-      "Siz insonga katta motivatsiya berasiz va o‘z yo‘lini ko‘rsatasiz. Shuning uchun sizga ishonamiz"
+      "Siz insonga katta motivatsiya berasiz va o‘z yo‘lini ko‘rsatasiz. Shuning uchun sizga ishonamiz."
     ),
     createCarousel(
       Laziz,
       "Laziz",
       "ismatillayev571",
-      "Ummatga foyda keltirib kelayotganingiz uchun, Allohni eslatib halol ish qilyotganingiz uchun"
+      "Ummatga foyda keltirib kelayotganingiz uchun, Allohni eslatib halol ish qilyotganingiz uchun."
     ),
     createCarousel(
       Olimjon,
       "Olimjon Mamadaliyev",
       "olimjon__barber",
-      "Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad"
+      "Sizda intilish, o‘sish kuzatyapman, shuning uchun ishonch bildiraman, omad!"
     ),
     createCarousel(
       Doniyor,
       "Doniyor",
       "_doniyor__1",
-      "Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni"
+      "Men ko‘rmadim hech qayerda sizga o‘xshab motivatsiya beradigan insonni."
     ),
     createCarousel(
       bobur2220,
       "Bobur",
       "bobir_22",
-      "Inson havas bilan yashashi kerak shuning uchun sizga ishonamiz"
+      "Inson havas bilan yashashi kerak shuning uchun sizga ishonamiz."
     ),
     createCarousel(
       Aziz,
       "Aziz Abdullayevich",
       "aziz_abdullayevich0724",
-      "Chunki hayotda yordam beradigan yo‘llarni ko‘rsatasiz"
+      "Chunki hayotda yordam beradigan yo‘llarni ko‘rsatasiz."
     ),
     createCarousel(
       Nargiza,
       "Esonova Nargiza",
       "esonovanargiza",
-      "Eng avvalo ishingizda halollik bor"
+      "Eng avvalo ishingizda halollik bor."
     ),
     createCarousel(
       Azizbek,
       "Azizbek",
       "aziko__1313",
-      "Chunki sizlar shu darajaga osonlik bilan erishmagansizlar va sizlarni aqliy faoliyatlaringiz yaxshi"
+      "Chunki sizlar shu darajaga osonlik bilan erishmagansizlar va sizlarni aqliy faoliyatlaringiz yaxshi."
     ),
     createCarousel(
       Ixlosbek,
       "Ixlosbek",
       "ixlosbek_biznesmen",
-      "Ishonchli bo‘lganligingiz uchun"
+      "Ishonchli bo‘lganligingiz uchun."
     ),
     createCarousel(
       Shoxrux,
       "Shoxrux Kamoliddinov",
       "__shoxrux_kirasavchik__",
-      "Sizni hurmat qilamiz. To‘g‘ri yo‘lni ko‘rsatasiz, sizga ishonamiz"
+      "Sizni hurmat qilamiz. To‘g‘ri yo‘lni ko‘rsatasiz, sizga ishonamiz."
     ),
     createCarousel(
       Sahna,
       "Sahna bezaklari Chirchiq",
       "oformleniya_chirchik",
-      "Ishonch shundaki gaplaringizda aniqlik va odamlarga yo‘l ko‘rsatishda to‘g‘ri yo‘nalish bor"
+      "Ishonch shundaki gaplaringizda aniqlik va odamlarga yo‘l ko‘rsatishda to‘g‘ri yo‘nalish bor."
     ),
     createCarousel(
       Vays,
       "Vays_05",
       "vays_05",
-      "O‘z sohasining mutaxassisi deb o‘ylayman shuning uchun sizga ishonam"
+      "O‘z sohasining mutaxassisi deb o‘ylayman shuning uchun sizga ishonaman."
     ),
     createCarousel(
       Durdona,
       "Durdona Normatova",
       "durdona_normatova",
-      "Sababi oddiy siz ilmlaringizni beminnat ulashasiz. Shuning uchun chin dildan hurmat qilib kuzatamiz"
+      "Sababi oddiy siz ilmlaringizni beminnat ulashasiz. Shuning uchun chin dildan hurmat qilib kuzatamiz."
     ),
     createCarousel(
       Sholponoy,
       "Sholpanoy Saginbayeva",
       "godblessed.me",
-      "Aldash ko‘rganim yo‘q borini aytasiz, xato bo‘lsa ham xato deb va uni to‘g‘ri yetkazib berolasiz"
+      "Aldash ko‘rganim yo‘q borini aytasiz, xato bo‘lsa ham xato deb va uni to‘g‘ri yetkazib berolasiz."
     ),
     createCarousel(
       Feruzabonu,
@@ -280,11 +325,11 @@ const Second = () => {
   const carouselAccor = [
     createAccordion(
       "DARSLAR QANDAY OLIB BORILADI ?",
-      "Darslarimiz online holatda, maxsus yopiq guruh orqali olib boriladi. Sizga ushbu guruhga kirish uchun ruxsat beriladi. Siz belgilangan vaqt davomida darslarni ko‘rishingiz va takrorlashingiz mumkin"
+      "Darslarimiz online holatda, maxsus yopiq guruh orqali olib boriladi. Sizga ushbu guruhga kirish uchun ruxsat beriladi. Siz belgilangan vaqt davomida darslarni ko‘rishingiz va takrorlashingiz mumkin."
     ),
     createAccordion(
       "DARSLARNI KIM O'TADI ?",
-      " Asosiy darsni Umidjon Ortiqov o'tadi va SMM sohasiga oid mehmon spikerlar o'tadi  "
+      " Asosiy darsni Umidjon Ortiqov o'tadi va SMM sohasiga oid mehmon spikerlar o'tadi.  "
     ),
     createAccordion(
       "TARIFNI KEYINCHALIK ALMASHTIRISH MUMKINMI ?",
@@ -292,7 +337,7 @@ const Second = () => {
     ),
     createAccordion(
       "BO‘LIB TO‘LASH IMKONIYATI MAVJUDMI ?",
-      " Albatta, kursning 50% qismini oldindan to'lab qolgan qismini 1 oy muddat ichida to'lashingiz mumkin  "
+      " Albatta, kursning 50% qismini oldindan to'lab qolgan qismini 1 oy muddat ichida to'lashingiz mumkin.  "
     ),
     createAccordion(
       "DARSLAR YOZIB OLINADIMI ?",
@@ -670,7 +715,7 @@ const Second = () => {
                       </div>
                     </Col>
                   </Row>
-                  <h4 className="brText"> Biz bilan hamkorlikdan so'ng </h4>
+                  <h4 className="brText"> {el.withUs} </h4>
 
                   <Row className="greenCards">
                     <Col
@@ -692,7 +737,7 @@ const Second = () => {
                         <a target="_blank" href={el.instLink} style={{display:"flex", justifyContent:"center"}}><button className="ShadowBtn greenCardBtn">
          
                             {""}
-                            Profilga o'tish <FaArrowRight />{" "}
+                            Profilga o'tish <FaArrowRight />{" "}
                 
                         </button>
                         </a>
@@ -717,7 +762,7 @@ const Second = () => {
                         <a target="_blank" href={el.tikLink} style={{display:"flex", justifyContent:"center"}}><button  className="ShadowBtn greenCardBtn">
                         
                             {" "}
-                            Profilga o'tish <FaArrowRight />{" "}
+                            Profilga o'tish <FaArrowRight />{" "}
                          
                         </button>
                         </a>
@@ -743,7 +788,7 @@ const Second = () => {
                         <a target="_blank" href={el.youLink} style={{display:"flex", justifyContent:"center"}}><button className="ShadowBtn greenCardBtn">
 
                             {" "}
-                            Profilga o'tish <FaArrowRight />{" "}
+                            Profilga o'tish <FaArrowRight />{" "}
                         </button>
                         </a>
                       </div>
@@ -869,7 +914,7 @@ const Second = () => {
                     <span>&#10033; </span> Standart Tarifi
                   </div>
                   <div className="tarifPrice">
-                  159$
+                  179$
                   </div>
                   <ul className="tarifServis">
                     {FaqsAccorStan.map((sub, ind) => {
@@ -950,7 +995,7 @@ const Second = () => {
                     <span>&#10033; </span> PREMIUM
                   </div>
                   <div className="tarifPrice">
-                  199$
+                  229$
                   </div>
                   <ul className="tarifServis">
                   {FaqsAccorPrem.map((sub, ind) => {
@@ -1029,7 +1074,7 @@ const Second = () => {
                     <span>&#10033; </span> VIP
                   </div>
                   <div className="tarifPrice">
-                  369$
+                  399$
                   </div>
                   <ul className="tarifServis">
                   {FaqsAccor.map((sub, ind) => {
@@ -1231,7 +1276,7 @@ const Second = () => {
       <Footer />
       <div className="UnderFooter">
         <div className="UnderFooterLeft">
-          <h3 className="underH3">@QwertyAlfajr2022-</h3>
+          <h3 className="underH3"> © Qwerty Al-fajr 2022</h3>
           <h3 className="underH3">Barcha huquqlar himoyalangan
           </h3>
         </div>

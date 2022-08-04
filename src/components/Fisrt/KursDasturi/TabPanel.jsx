@@ -37,7 +37,7 @@ const Spikers = [
   {'name': 'Umidjon',
   'surname': 'Ortiqov',
   'img': MainSpiker,
-  'about': 'Qwerty Aljafr academy asoschisi, ijtimoiy tarmoqlar bo‘yicha ekspert, biznesmen',
+  'about': "IT tadbirkor “Qwerty al-fajr IT company” va “Kalibri education”  asoschisi, Ijtimoiy tarmoqlar bo'yicha expert",
   'insta':"https://instagram.com/afshon_official?igshid=YmMyMTA2M2Y=",
   "telegram":"https://t.me/UmidjonOrtiqov",
   "youtube":"https://www.youtube.com/c/UmidjonOrtiqov",
@@ -70,7 +70,7 @@ const guest = [
   {'name': 'Axmadjon',
   'surname': 'Majidov',
   'img': MehSpiker2,
-  'about': '17 yosh, video editing sohasida 2+ yil tajribaga ega, Qwerty Al-fajr markazida senior video editor',
+  'about': '17 yosh, video editing sohasida 3+ yil tajribaga ega, Qwerty Al-fajr markazida senior video editor',
   'insta':"https://instagram.com/infinite___001?igshid=YmMyMTA2M2Y=",
   "telegram":"https://t.me/infinite001A",
   "youtube":"https://instagram.com/infinite___001?igshid=YmMyMTA2M2Y=",}

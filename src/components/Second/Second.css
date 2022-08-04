@@ -195,6 +195,8 @@ body {
 
 
 .greenCardBtn {
+  font-size: 24px !important;
+  font-weight: 500;
   position: absolute;
   bottom: 20px;
   height: 80px;
@@ -412,7 +414,14 @@ body {
   border-bottom: 2px solid #222628;
   width: 90%;
   margin-top: 10px;
+  padding: 10px;
+  outline: none;
 }
+
+.FormBtns .InBtn{
+  font-size: 18px !important;
+}
+
 /* Darslar Section */
 
 
@@ -937,8 +946,11 @@ color: #222628;
   }
   .modal-dialog,
   .modal-lg {
-    height: 360px !important;
+    height: 410px !important;
 
+}
+.greenCardBtn{
+  font-size: 20px !important;
 }
 
  

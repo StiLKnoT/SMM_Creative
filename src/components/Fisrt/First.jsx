@@ -28,6 +28,7 @@ import Word from '../../assets/images/Word.png'
 import Excell from '../../assets/images/Excell.png'
 import PowerP from '../../assets/images/PowerP.png'
 import Video from '../../assets/images/Video.png'
+import linesMob from '../../assets/icons/arrowBlockMob.png';
 
 
 function First() {
@@ -42,7 +43,7 @@ function First() {
         <div className='smmCreative'>SMM <br />CREATIVE</div>
         <div className='textCreative'>
           <div className='smmText'>Shunchaki SMM’ni bilish kamlik qiladi,<br />
-            “SMM Creative” kursi - boshqacha yondashuv</div>
+            “SMM CREATIVE” kursi - boshqacha yondashuv</div>
           <div className=' button' id="buttonInviseble"><a href='#tariflar'><ShadowButton /></a></div>
         </div>
 
@@ -71,9 +72,10 @@ function First() {
       <div className=' button' id="buttonInvisebleMob"><a href='#tariflar'><ShadowButton /></a></div>
 
       {/* <Textline /> */}
-
-      <img className="firsLines" src={lines} />
-
+      <div className="pngBlock">
+        <img className="firsLines" src={lines} unselectable="on" />
+        <img className="firsLinesMob" src={linesMob} unselectable="on" />
+      </div>
 
       <ForWho />
       <ColorBlock />
@@ -86,7 +88,7 @@ function First() {
 
         <div className='ColorBlockCenter'>
           <h2 className='ColorBlockH2'>O‘quvchilar uchun bonuslar</h2>
-          <p className='ColorBlockP'>Biz o‘quvchilarga shunchaki dars beribgina qolmay, ular uchun foydali bo‘lgan bonuslarni ham taqdim etamiz</p>
+          <p className='ColorBlockP'>Biz o‘quvchilarga shunchaki dars beribgina qolmay, ular uchun foydali bo‘lgan bonuslarni ham taqdim etamiz!</p>
           <a onClick={()=>setBtnBonus(!btnBonus)}><div className='ShadowBtn'>
             <p className='InBtn'>Bonuslarni ko‘rish<FaArrowRight /></p>
 

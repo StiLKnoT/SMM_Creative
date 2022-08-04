@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/images/Logo.png";
 import { MdOutlineMenu, MdOutlineClose } from "react-icons/md";
+import { FaArrowRight } from "react-icons/fa";
 
 function Navbar() {
   const [isAcctive, setAcctive] = useState(true);
@@ -70,33 +71,63 @@ function Navbar() {
             >
               <ul className={isAcctive ? "MainNavLi" : "MainNavLiActive"}>
                 <li>
-                  <a className="link" id="mobNavLink" onClick={onMenu} href="#PaddingDiv">
+                  <a
+                    className="link"
+                    id="mobNavLink"
+                    onClick={onMenu}
+                    href="#PaddingDiv"
+                  >
                     SPIKERLAR
                   </a>
                 </li>
                 <li>
-                  <a className="link" id="mobNavLink" onClick={onMenu} href="#kimlarUchun">
+                  <a
+                    className="link"
+                    id="mobNavLink"
+                    onClick={onMenu}
+                    href="#kimlarUchun"
+                  >
                     Kurs kimlar uchun?
                   </a>
                 </li>
 
                 <li>
-                  <a className="link" id="mobNavLink" onClick={onMenu} href="#Dastur">
+                  <a
+                    className="link"
+                    id="mobNavLink"
+                    onClick={onMenu}
+                    href="#Dastur"
+                  >
                     Dastur
                   </a>
                 </li>
 
                 <li>
-                  <a className="link" id="mobNavLink" onClick={onMenu} href="#Keyslar">
+                  <a
+                    className="link"
+                    id="mobNavLink"
+                    onClick={onMenu}
+                    href="#Keyslar"
+                  >
                     Keyslar
                   </a>
                 </li>
 
                 <li>
-                  <a className="link" id="mobNavLink" onClick={onMenu} href="#tariflar">
+                  <a
+                    className="link"
+                    id="mobNavLink"
+                    onClick={onMenu}
+                    href="#tariflar"
+                  >
                     Tariflar
                   </a>
                 </li>
+                {/* <br />
+         
+                <button className="ShadowBtn" id="kursMobMenu" >
+                  <p className="InBtn">  <a href="#tariflar" className="link">   Kursga yozilish</a> <FaArrowRight id="strelkaSVG" /> </p>
+                </button> */}
               </ul>
             </div>
           </div>
