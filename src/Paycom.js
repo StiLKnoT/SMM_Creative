@@ -97,7 +97,7 @@ export default class Payme extends Component {
 
 
                             // Modal uchun codega joy
-                            window.location.href += "success=1";
+                            window.location.href += "?success=1";
 
                         }));
 
