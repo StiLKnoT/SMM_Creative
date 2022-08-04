@@ -94,8 +94,6 @@ export default class Payme extends Component {
                         ).then(res => res.json().then(({data}) => {
 
                             console.log(data);
-                            document.querySelector('input[name="account[login]"]').value = data.id;
-                            document.querySelector('input[name="amount"]').value = data.amount;
 
 
                             // Modal uchun codega joy
