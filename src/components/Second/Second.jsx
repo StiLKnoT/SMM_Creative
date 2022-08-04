@@ -112,7 +112,8 @@ const Second = () => {
     tikNum,
     tikLink,
     youNum,
-    youLink
+    youLink,
+    withUs
   ) => {
     return {
       bannerImg,
@@ -124,6 +125,7 @@ const Second = () => {
       tikLink,
       youNum,
       youLink,
+      withUs
     };
   };
 
@@ -137,18 +139,20 @@ const Second = () => {
       " 21.4 K",
       "https://tiktok.com/afshon_official",
       " 35.7 K",
-      "https://www.youtube.com/c/UmidjonOrtiqov"
+      "https://www.youtube.com/c/UmidjonOrtiqov",
+      ""
     ),
     createData(
       ` ${ilxom}`,
       "ILXOM BEGIMQULOV",
-      "“Asia consult”  “ZET LINE GROUP” va “EDUGATWEY” kompaniyalari asoschisi, biznesmen. ",
+      "“Asia consult”,  “ZET LINE GROUP” va “EDUGATWEY” kompaniyalari asoschisi, biznesmen. ",
       " 28.6 K",
       "https://instagram.com/ilxom.begimkulov?igshid=YmMyMTA2M2Y=",
       " 33.7 K",
       "https://www.tiktok.com/@ilxom_begimqulov",
       " 31.2 K",
-      "https://www.youtube.com/c/IlxomBegimqulov"
+      "https://www.youtube.com/c/IlxomBegimqulov",
+      "Biz bilan hamkorlikdan so'ng"
     ),
     createData(
       ` ${jamila}`,
@@ -159,7 +163,8 @@ const Second = () => {
       " 1 000",
       "https://www.tiktok.com/@jamila_toxirovna",
       "Jamila Toxirovna",
-      "https://youtube.com/channel/UCzByFj-u29zC3lXpf-zeZzg"
+      "https://youtube.com/channel/UCzByFj-u29zC3lXpf-zeZzg",
+      "Biz bilan hamkorlikdan so'ng"
     ),
     createData(
       ` ${tabib}`,
@@ -170,7 +175,8 @@ const Second = () => {
       " AT - TABIB",
       "https://www.tiktok.com/attabibuz",
       " 4.5 K",
-      "https://www.youtube.com/c/Attabib"
+      "https://www.youtube.com/c/Attabib",
+      "Biz bilan hamkorlikdan so'ng"
     ),
     createData(
       ` ${hadaf}`,
@@ -181,7 +187,8 @@ const Second = () => {
       " HADAF",
       "https://t.me/hadaf_IA",
       " 96",
-      "https://youtube.com/channel/UChVmjROatASf8lL48taIhYw"
+      "https://youtube.com/channel/UChVmjROatASf8lL48taIhYw",
+      "Biz bilan hamkorlikdan so'ng"
     ),
     createData(
       ` ${ajou}`,
@@ -192,7 +199,8 @@ const Second = () => {
       " ADJU",
       "https://t.me/ajou_uz",
       " 451",
-      "https://youtube.com/c/AjouUniversityinTashkent"
+      "https://youtube.com/c/AjouUniversityinTashkent",
+      "Biz bilan hamkorlikdan so'ng"
     ),
     createData(
       ` ${kalibri}`,
@@ -203,7 +211,8 @@ const Second = () => {
       " Kalibri EDU",
       "https://https://t.me/Kalibri_edu",
       " Kalibri EDU",
-      "https://youtube.com/channel/UCe6Vw_DhhXckGBS8vb2hYIw"
+      "https://youtube.com/channel/UCe6Vw_DhhXckGBS8vb2hYIw",
+      "Biz bilan hamkorlikdan so'ng"
     ),
   ];
   // Data for Carousel
@@ -706,7 +715,7 @@ const Second = () => {
                       </div>
                     </Col>
                   </Row>
-                  <h4 className="brText"> Biz bilan hamkorlikdan so'ng </h4>
+                  <h4 className="brText"> {el.withUs} </h4>
 
                   <Row className="greenCards">
                     <Col
@@ -1267,7 +1276,7 @@ const Second = () => {
       <Footer />
       <div className="UnderFooter">
         <div className="UnderFooterLeft">
-          <h3 className="underH3">@QwertyAlfajr2022-</h3>
+          <h3 className="underH3"> © Qwerty Al-fajr 2022</h3>
           <h3 className="underH3">Barcha huquqlar himoyalangan
           </h3>
         </div>
