@@ -104,7 +104,7 @@ export default class Payme extends Component {
             },
             l: form.querySelector('input[name="lang"]').value,
             description: form.querySelector('input[name="description"]').value,
-            c: "http://206.189.10.175",
+            c: location.origin,
             ct: 1500
         };
     }
