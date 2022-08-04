@@ -39,3 +39,9 @@
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width: 576px) { 
+    .succesModal{
+        width: 360px;
+        height: 245px;
+    }
+}

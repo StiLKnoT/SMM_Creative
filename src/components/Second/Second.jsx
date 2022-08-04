@@ -134,7 +134,7 @@ const Second = () => {
       ` ${umidjon}`,
       " Umidjon Ortiqov ",
       "IT tadbirkor “Qwerty al-fajr IT company” va “Kalibri education”  asoschisi, Ijtimoiy tarmoqlar bo'yicha expert.",
-      " 26.9 K",
+      " 27 K",
       "https://instagram.com/afshon_official",
       " 21.4 K",
       "https://tiktok.com/afshon_official",
@@ -1263,6 +1263,7 @@ const Second = () => {
                 <div className="boxShadowBox">
                   <div className="darsBlockCardShadow"> 6</div>
                   <div className="darsBlockCardShadow"> 6</div>
+                  {/* JasurMirboboyev, NurlanKArshiev, ShukrulloKomiljonov */}
                   <div className="darsBlockCardShadow"> 6</div>
                 </div>
               </Col>
