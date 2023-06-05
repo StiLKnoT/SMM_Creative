@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState,lazy } from 'react';
 import SuccesImg from '../../../assets/icons/success.png'
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/esm/Button';
+// import Modal from 'react-bootstrap/Modal';
+// import Button from 'react-bootstrap/esm/Button';
 import './Succes.css'
+
+
+// const Button = lazy(() => import('react-bootstrap/esm/Button'));
+const Modal = lazy(() => import('react-bootstrap/Modal'));
+
 
 
 const Succes = () => {

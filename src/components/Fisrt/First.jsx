@@ -1,27 +1,15 @@
-import React from 'react'
-import { useState } from 'react'
-import TabPanel from './KursDasturi/TabPanel'
-import Navbar from '../navbar/Navbar'
+import React, {useState,lazy} from 'react'
 import './First.css'
+
+// import TabPanel from './KursDasturi/TabPanel'
+// import Navbar from '../navbar/Navbar'
 import MainUO from '../../assets/images/mainUO.webp'
-import sunIcon from '../../assets/images/sun.png'
-import Textline from '../atom/Textline/Textline'
-import Wheel from './Wheel/Wheel'
-import ColorBlock from './ColorBlock/ColorBlock'
-import ShadowButton from '../atom/buttons/ShadowButton'
-import ForWho from './ForWho/ForWho'
-import CarouselModul from './CarouselModul/CarouselModul'
+// import Wheel from './Wheel/Wheel'
+// import ColorBlock from './ColorBlock/ColorBlock'
+// import ShadowButton from '../atom/buttons/ShadowButton'
+// import ForWho from './ForWho/ForWho'
+// import CarouselModul from './CarouselModul/CarouselModul'
 import { FaArrowRight } from "react-icons/fa";
-import Row from 'react-bootstrap/esm/Row';
-import Col from 'react-bootstrap/esm/Col'
-import { ReactComponent as Zero01 } from '../../assets/images/Zero01.svg'
-import { ReactComponent as Zero02 } from '../../assets/images/Zero02.svg'
-import { ReactComponent as Zero03 } from '../../assets/images/Zero03.svg'
-import { ReactComponent as Zero04 } from '../../assets/images/Zero04.svg'
-import { ReactComponent as Zero05 } from '../../assets/images/Zero05.svg'
-import { ReactComponent as Zero06 } from '../../assets/images/Zero06.svg'
-import Line from '../../assets/icons/line.png';
-import TopLine from '../../assets/icons/topLine.png';
 import lines from '../../assets/icons/arrowBlock.png';
 import { BsTriangle } from "react-icons/bs";
 import Word from '../../assets/images/Word.png'
@@ -29,6 +17,19 @@ import Excell from '../../assets/images/Excell.png'
 import PowerP from '../../assets/images/PowerP.png'
 import Video from '../../assets/images/Video.png'
 import linesMob from '../../assets/icons/arrowBlockMob.png';
+
+const TabPanel = lazy(() => import("./KursDasturi/TabPanel"));
+const Navbar = lazy(() => import("../navbar/Navbar"));
+const Wheel = lazy(() => import("./Wheel/Wheel"));
+const ColorBlock = lazy(() => import("./ColorBlock/ColorBlock"));
+const ShadowButton = lazy(() => import("../atom/buttons/ShadowButton"));
+const ForWho = lazy(() => import("./ForWho/ForWho"));
+const CarouselModul = lazy(() => import("./CarouselModul/CarouselModul"));
+
+
+
+
+
 
 
 function First() {
@@ -51,7 +52,7 @@ function First() {
 
       <div className='MainImg' style={{ position: "relative" }}>
         <>
-          <img className='MainUO' src={MainUO} />
+          <img className='MainUO' src={MainUO} alt={"Asosiy spiker"} />
           <h4 className='AsosiySpiker'>ASOSIY SPIKER:<br />
             <span className='UmidjonOrtiqov'>UMIDJON ORTIQOV</span></h4>
         </>
@@ -73,8 +74,8 @@ function First() {
 
       {/* <Textline /> */}
       <div className="pngBlock">
-        <img className="firsLines" src={lines} unselectable="on" />
-        <img className="firsLinesMob" src={linesMob} unselectable="on" />
+        <img className="firsLines" src={lines} alt={"Lines"} unselectable="on" />
+        <img className="firsLinesMob" alt={"Lines-Mobile"} src={linesMob} unselectable="on" />
       </div>
 
       <ForWho />
@@ -89,7 +90,7 @@ function First() {
         <div className='ColorBlockCenter'>
           <h2 className='ColorBlockH2'>O‘quvchilar uchun bonuslar</h2>
           <p className='ColorBlockP'>Biz o‘quvchilarga shunchaki dars beribgina qolmay, ular uchun foydali bo‘lgan bonuslarni ham taqdim etamiz!</p>
-          <a onClick={()=>setBtnBonus(!btnBonus)}><div className='ShadowBtn'>
+          <a onClick={()=>setBtnBonus(!btnBonus)} href={"javascript:void(0"}><div className='ShadowBtn'>
             <p className='InBtn'>Bonuslarni ko‘rish<FaArrowRight /></p>
 
           </div>
@@ -101,7 +102,7 @@ function First() {
 
           <div className='BonusCard'>
             <div>
-              <img src={Word}/>
+              <img src={Word} alt={"Word"}/>
               <h2 className='BonusFileDoc'>doc</h2>
             </div>
             <div>
@@ -111,7 +112,7 @@ function First() {
 
           <div className='BonusCard'>
             <div>
-              <img src={Word}/>
+              <img src={Word} alt={"Word"}/>
               <h2 className='BonusFileDoc'>doc</h2>
             </div>
             <div>
@@ -121,7 +122,7 @@ function First() {
 
           <div className='BonusCard'>
             <div>
-              <img src={Word}/>
+              <img src={Word} alt={"Word"}/>
               <h2 className='BonusFileDoc'>doc</h2>
             </div>
             <div>

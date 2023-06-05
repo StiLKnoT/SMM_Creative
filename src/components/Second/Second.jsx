@@ -1,26 +1,4 @@
-import React, { useState } from "react";
-import { Input, Link } from "@mui/material";
-import { styled } from "@mui/material/styles";
-// Components
-import Payme from "../../Paycom";
-import Paycom from "../../Paycom";
-import Footer from "../navbar/Footer";
-import Box from "@mui/material/Box";
-import Col from "react-bootstrap/Col";
-import { Avatar } from "@mui/material";
-import Card from "@mui/material/Card";
-import Row from "react-bootstrap/Row";
-import Wheel from "../Fisrt/Wheel/Wheel";
-import Modal from "react-bootstrap/Modal";
-import Carousel from "react-multi-carousel";
-import Button from "react-bootstrap/Button";
-import MuiAccordion from "@mui/material/Accordion";
-import Typography from "@mui/material/Typography";
-import HeaderTitle from "../atom/header/HeaderTitle";
-import ColorBlock from "../Fisrt/ColorBlock/ColorBlock";
-import CardContent from "@mui/material/CardContent";
-import MuiAccordionDetails from "@mui/material/AccordionDetails";
-import MuiAccordionSummary from "@mui/material/AccordionSummary";
+import React, { useState,lazy } from "react";
 
 // Styles
 import "./Second.css";
@@ -63,6 +41,54 @@ import TikTokLogo from "../../assets/icons/tiktok.png";
 import YouTubeLogo from "../../assets/icons/youtube.png";
 import { FaArrowRight } from "react-icons/fa";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
+
+
+
+// Components
+
+// import Payme from "../../Paycom";
+// import Footer from "../navbar/Footer";
+// import Box from "@mui/material/Box";
+// import Col from "react-bootstrap/Col";
+import { Avatar } from "@mui/material";
+// import Card from "@mui/material/Card";
+// import Row from "react-bootstrap/Row";
+// import Wheel from "../Fisrt/Wheel/Wheel";
+// import Modal from "react-bootstrap/Modal";
+// import Carousel from "react-multi-carousel";
+// import Button from "react-bootstrap/Button";
+// import MuiAccordion from "@mui/material/Accordion";
+// import Typography from "@mui/material/Typography";
+// import HeaderTitle from "../atom/header/HeaderTitle";
+// import ColorBlock from "../Fisrt/ColorBlock/ColorBlock";
+// import CardContent from "@mui/material/CardContent";
+// import MuiAccordionDetails from "@mui/material/AccordionDetails";
+// import MuiAccordionSummary from "@mui/material/AccordionSummary";
+import { styled } from "@mui/material/styles";
+
+const Payme = lazy(() => import('../../Paycom'));
+const Footer = lazy(() => import('../navbar/Footer'));
+const Box = lazy(() => import('@mui/material/Box'));
+const Col = lazy(() => import('react-bootstrap/Col'));
+const Card = lazy(() => import('@mui/material/Card'));
+const Row = lazy(() => import('react-bootstrap/Row'));
+const Wheel = lazy(() => import('../Fisrt/Wheel/Wheel'));
+const Modal = lazy(() => import('react-bootstrap/Modal'));
+const Carousel = lazy(() => import('react-multi-carousel'));
+const Button = lazy(() => import('react-bootstrap/Button'));
+const MuiAccordion = lazy(() => import('@mui/material/Accordion'));
+const Typography = lazy(() => import('@mui/material/Typography'));
+const HeaderTitle = lazy(() => import('../atom/header/HeaderTitle'));
+const ColorBlock = lazy(() => import('../Fisrt/ColorBlock/ColorBlock'));
+const CardContent = lazy(() => import('@mui/material/CardContent'));
+const MuiAccordionDetails = lazy(() => import('@mui/material/AccordionDetails'));
+const MuiAccordionSummary = lazy(() => import('@mui/material/AccordionSummary'));
+
+
+
+
+
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />

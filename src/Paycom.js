@@ -6,7 +6,7 @@ import ShadowButton from "./components/atom/buttons/ShadowButton";
 // import fetch from 'sync-fetch';
 
 import NumberFormat from 'react-number-format';
-import Succes from './components/atom/succes/Success'
+// import Succes from './components/atom/succes/Success'
 
 export default class Payme extends Component {
     constructor(props) {
@@ -49,7 +49,7 @@ export default class Payme extends Component {
                     (e) => {
                         const form = this.getElementBy("#submitform1");
 
-                        const res = fetch("https://api.smm-online.uz/register",
+                        fetch("https://api.smm-online.uz/register",
                             {
                                 method: "POST",
                                 body: JSON.stringify(
@@ -80,7 +80,7 @@ export default class Payme extends Component {
                     (e) => {
                         const form = this.getElementBy("#submitform1");
 
-                        const res = fetch("https://api.smm-online.uz/just_register",
+                        fetch("https://api.smm-online.uz/just_register",
                             {
                                 method: "POST",
                                 body: JSON.stringify(
@@ -143,7 +143,7 @@ export default class Payme extends Component {
             Object.keys(json).forEach(
                 (n) => {
                     json[n] && (
-                        "ac" == n && "object" == typeof json[n] ?
+                        "ac" === n && "object" === typeof json[n] ?
                             Object.keys(json[n]).forEach((val) => {
                                 json[n][val] && (
                                     t += (

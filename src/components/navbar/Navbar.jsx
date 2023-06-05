@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/images/Logo.png";
 import { MdOutlineMenu, MdOutlineClose } from "react-icons/md";
-import { FaArrowRight } from "react-icons/fa";
 
 function Navbar() {
   const [isAcctive, setAcctive] = useState(true);
-  function onMenu() {
-    setAcctive(!isAcctive);
-  }
-
-  const [isOpen, setOpen] = useState(true);
+  // function () => setAcctive(!isAcctive)() {
+  //   setAcctive(!isAcctive);
+  // }
 
   return (
     <>
@@ -53,7 +50,7 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="menuGridTemp" onClick={onMenu}>
+      <div className="menuGridTemp" onClick={() => setAcctive(!isAcctive)}>
         <MdOutlineMenu className={isAcctive ? "MenuGrid" : "CloseMenuGrid"} />
         <MdOutlineClose className={isAcctive ? "CloseMenuGrid" : "MenuGrid"} />
       </div>
@@ -64,9 +61,7 @@ function Navbar() {
               className={
                 isAcctive
                   ? "MainNav"
-                  : "MainNavActive " || isOpen
-                  ? "MainNavActive"
-                  : "MainNav"
+                  : "MainNavActive "
               }
             >
               <ul className={isAcctive ? "MainNavLi" : "MainNavLiActive"}>
@@ -74,7 +69,7 @@ function Navbar() {
                   <a
                     className="link"
                     id="mobNavLink"
-                    onClick={onMenu}
+                    onClick={() => setAcctive(!isAcctive)}
                     href="#PaddingDiv"
                   >
                     SPIKERLAR
@@ -84,7 +79,7 @@ function Navbar() {
                   <a
                     className="link"
                     id="mobNavLink"
-                    onClick={onMenu}
+                    onClick={() => setAcctive(!isAcctive)}
                     href="#kimlarUchun"
                   >
                     Kurs kimlar uchun?
@@ -95,7 +90,7 @@ function Navbar() {
                   <a
                     className="link"
                     id="mobNavLink"
-                    onClick={onMenu}
+                    onClick={() => setAcctive(!isAcctive)}
                     href="#Dastur"
                   >
                     Dastur
@@ -106,7 +101,7 @@ function Navbar() {
                   <a
                     className="link"
                     id="mobNavLink"
-                    onClick={onMenu}
+                    onClick={() => setAcctive(!isAcctive)}
                     href="#Keyslar"
                   >
                     Keyslar
@@ -117,7 +112,7 @@ function Navbar() {
                   <a
                     className="link"
                     id="mobNavLink"
-                    onClick={onMenu}
+                    onClick={() => setAcctive(!isAcctive)}
                     href="#tariflar"
                   >
                     Tariflar

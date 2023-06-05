@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksmm_creative=self.webpackChunksmm_creative||[]).push([[413],{2413:function(e,t,n){n.r(t),n.d(t,{default:function(){return a}});n(2791);var s=n(6355),c=n(184);var a=function(e){return(0,c.jsx)("button",{className:"ShadowBtn",onClick:e.onclick,children:(0,c.jsxs)("p",{className:"InBtn",children:[e.text?e.text:"Kursga yozilish","\xa0",(0,c.jsx)(s.Z1Y,{id:"strelkaSVG"})]})})}}}]);
+//# sourceMappingURL=413.0bf820e9.chunk.js.map

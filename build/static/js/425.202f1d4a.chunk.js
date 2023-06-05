@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksmm_creative=self.webpackChunksmm_creative||[]).push([[425],{1787:function(e,s,r){r.r(s),r.d(s,{default:function(){return c}});r(2791);var a=r(184);var c=function(e){return(0,a.jsxs)("div",{className:"headerTitleBlock",children:[(0,a.jsx)("hr",{className:"hrLine"}),(0,a.jsx)("h2",{className:"h2Text",children:e.theme}),(0,a.jsx)("hr",{className:"hrLine"})]})}}}]);
+//# sourceMappingURL=425.202f1d4a.chunk.js.map

@@ -1,9 +1,6 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import Container from "react-bootstrap/Container";
-import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
-import { Avatar } from "@mui/material";
 import Card from "@mui/material/Card";
 import Box from "@mui/material/Box";
 import "./CarouselModul.css";
@@ -190,18 +187,6 @@ const carouselRows = [
   ),
 ];
 
-// Data for Accordion
-const createAccordion = (title, answer) => {
-  return { title, answer };
-};
-const carouselAccor = [
-  createCarousel("Umidjon", "afshon_official"),
-  createCarousel("Umidjon", "afshon_official"),
-  createCarousel("Umidjon", "afshon_official"),
-  createCarousel("Umidjon", "afshon_official"),
-  createCarousel("Umidjon", "afshon_official"),
-  createCarousel("Umidjon", "afshon_official"),
-];
 
 // Carousel responsive settings
 const responsives = {
