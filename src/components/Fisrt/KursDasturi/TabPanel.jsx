@@ -5,11 +5,11 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import './TabPanel.css'
-import MainSpiker from '../../../assets/images/MainSpiker.png'
-import Spiker2 from '../../../assets/images/Spiker2.png'
-import Spiker3 from '../../../assets/images/islomSpiker.png'
-import MehSpiker1 from '../../../assets/images/MehSpiker1.png'
-import MehSpiker2 from '../../../assets/images/Ahmadjon.jpg'
+import MainSpiker from '../../../assets/images/MainSpiker.webp'
+import Spiker2 from '../../../assets/images/Spiker2.webp'
+import Spiker3 from '../../../assets/images/islomSpiker.webp'
+import MehSpiker1 from '../../../assets/images/MehSpiker1.webp'
+import MehSpiker2 from '../../../assets/images/Ahmadjon.webp'
 import {ReactComponent as InstaIcon} from '../../../assets/images/InstaIcon.svg'
 import {ReactComponent as TelegramIcon} from '../../../assets/images/TelegramIcon.svg'
 import {ReactComponent as YouTubeIcon} from '../../../assets/images/YouTubeIcon.svg'

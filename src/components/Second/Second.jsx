@@ -30,13 +30,13 @@ import "./components/Accordion.css";
 import "react-multi-carousel/lib/styles.css";
 
 // Images
-import umidjon from "../../assets/keyslar/umidjon.png";
-import ilxom from "../../assets/keyslar/ilxom.png";
-import jamila from "../../assets/keyslar/jamila.png";
-import tabib from "../../assets/keyslar/tabib.png";
-import hadaf from "../../assets/images/hadaf.png";
-import ajou from "../../assets/images/ajou.png";
-import kalibri from "../../assets/images/kalibrisayt.png"
+import umidjon from "../../assets/keyslar/umidjon.webp";
+import ilxom from "../../assets/keyslar/ilxom.webp";
+import jamila from "../../assets/keyslar/jamila.webp";
+import tabib from "../../assets/keyslar/tabib.webp";
+import hadaf from "../../assets/images/hadaf.webp";
+import ajou from "../../assets/images/ajou.webp";
+import kalibri from "../../assets/images/kalibrisayt.webp"
 import Bobur from "../../assets/images/lids/Bobur.png";
 import Laziz from "../../assets/images/lids/Laziz.png";
 import Olimjon from "../../assets/images/lids/Olimjon.png";

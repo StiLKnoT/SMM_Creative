@@ -1,17 +1,17 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import imgFor from '../../../assets/images/ForWho1.png'
-import imgFor2 from '../../../assets/images/ForWho2.png'
-import imgFor3 from '../../../assets/images/ForWho3.png'
-import imgFor4 from '../../../assets/images/ForWho4.png'
-import imgFor5 from '../../../assets/images/ForWho5.png'
+import imgFor from '../../../assets/images/ForWho1.webp'
+import imgFor2 from '../../../assets/images/ForWho2.webp'
+import imgFor3 from '../../../assets/images/ForWho3.webp'
+import imgFor4 from '../../../assets/images/ForWho4.webp'
+import imgFor5 from '../../../assets/images/ForWho5.webp'
 
 import './ForWho.css'
-import IconMan from '../../../assets/images/IconMan.png'
-import IconMan2 from '../../../assets/images/ManIcon2.png'
-import IconMan3 from '../../../assets/images/ManIcon3.png'
-import IconMan4 from '../../../assets/images/ManIcon4.png'
-import IconMan5 from '../../../assets/images/ManIcon5.png'
+import IconMan from '../../../assets/images/IconMan.webp'
+import IconMan2 from '../../../assets/images/ManIcon2.webp'
+import IconMan3 from '../../../assets/images/ManIcon3.webp'
+import IconMan4 from '../../../assets/images/ManIcon4.webp'
+import IconMan5 from '../../../assets/images/ManIcon5.webp'
 
 const TextAnimation ={
     hidden: {
