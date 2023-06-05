@@ -49,7 +49,7 @@ export default class Payme extends Component {
                     (e) => {
                         const form = this.getElementBy("#submitform1");
 
-                        const res = fetch("http://198.199.73.117/register",
+                        const res = fetch("https://api.smm-online.uz/register",
                             {
                                 method: "POST",
                                 body: JSON.stringify(
@@ -80,7 +80,7 @@ export default class Payme extends Component {
                     (e) => {
                         const form = this.getElementBy("#submitform1");
 
-                        const res = fetch("http://198.199.73.117/just_register",
+                        const res = fetch("https://api.smm-online.uz/just_register",
                             {
                                 method: "POST",
                                 body: JSON.stringify(
